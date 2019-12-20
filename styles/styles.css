@@ -1,0 +1,507 @@
+body {
+  margin: 20px;
+  padding: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+p {
+  font-size: 1em;
+}
+
+img {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.design {
+  fill: #ee5f24;
+  animation: pulse 2.25s infinite;
+  transform-origin: 21% 53%;
+}
+
+.packaging {
+  fill: #ee5f24;
+  animation: pulse 2.25s infinite;
+  transform-origin: 33% 35%;
+}
+.manufacture {
+  fill: #ee5f24;
+  animation: pulse 2.25s infinite;
+  transform-origin: 46% 31%;
+}
+.warehouse {
+  fill: #ee5f24;
+  animation: pulse 2.25s infinite;
+  transform-origin: 59% 25%;
+}
+.headquarters {
+  fill: #ee5f24;
+  animation: pulse 2.25s infinite;
+  transform-origin: 53% 48%;
+}
+.plane1 {
+  fill: #808285;
+  animation: pulse 2.25s infinite;
+  transform-origin: 39% 23%;
+}
+.plane2 {
+  fill: #808285;
+  animation: pulse 2.25s infinite;
+  transform-origin: 50% 90%;
+}
+.revalorize {
+  fill: #808285;
+  animation: pulse 2.25s infinite;
+  transform-origin: 45% 23%;
+}
+.hasPopup {
+  fill: #ee5f24;
+  animation: pulse 2.25s infinite;
+  transform-origin: 30% 30%;
+}
+@keyframes pulse {
+  0% {
+    fill: #ee5f24;
+    transform: scale(1, 1);
+    transition-timing-function: ease-in;
+  }
+  50% {
+    fill: #8db845;
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    fill: #ee5f24;
+    transform: scale(1, 1);
+  }
+}
+
+/* styles from Illustrator export */
+.cls-1,
+.cls-100,
+.cls-130,
+.cls-131,
+.cls-155,
+.cls-207,
+.cls-25,
+.cls-62,
+.cls-63,
+.cls-64,
+.cls-66,
+.cls-67,
+.cls-77,
+.cls-78,
+.cls-91,
+.cls-92 {
+  fill: none;
+}
+
+.cls-2 {
+  fill: #193e4f;
+}
+
+.cls-3 {
+  font-size: 17px;
+}
+
+.cls-147,
+.cls-3,
+.cls-90 {
+  fill: #fff;
+}
+
+.cls-107,
+.cls-132,
+.cls-208,
+.cls-3,
+.cls-68 {
+  font-family: RobotoCondensed-Bold, Roboto Condensed;
+  font-weight: 700;
+}
+
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-9,
+.cls-10,
+.cls-15,
+.cls-17,
+.cls-19,
+.cls-21,
+.cls-22,
+.cls-24,
+.cls-28,
+.cls-29,
+.cls-30,
+.cls-32,
+.cls-35,
+.cls-37,
+.cls-38,
+.cls-42,
+.cls-43,
+.cls-46,
+.cls-47,
+.cls-53,
+.cls-54,
+.cls-57,
+.cls-60,
+.cls-61,
+.cls-70,
+.cls-72,
+.cls-75,
+.cls-76,
+.cls-80,
+.cls-87,
+.cls-88,
+.cls-93,
+.cls-94,
+.cls-95,
+.cls-96,
+.cls-97,
+.cls-98,
+.cls-103,
+.cls-106,
+.cls-113,
+.cls-114,
+.cls-118,
+.cls-121,
+.cls-124,
+.cls-125,
+.cls-127,
+.cls-128,
+.cls-129,
+.cls-133,
+.cls-134,
+.cls-137,
+.cls-140,
+.cls-141,
+.cls-150,
+.cls-151,
+.cls-156,
+.cls-159,
+.cls-162,
+.cls-170,
+.cls-172,
+.cls-173,
+.cls-174,
+.cls-175,
+.cls-177,
+.cls-180,
+.cls-182,
+.cls-183,
+.cls-187,
+.cls-191,
+.cls-192,
+.cls-193,
+.cls-194,
+.cls-196,
+.cls-197,
+.cls-200,
+.cls-203,
+.cls-204 {
+  letter-spacing: 0em;
+}
+
+.cls-8,
+.cls-11,
+.cls-12,
+.cls-14,
+.cls-23,
+.cls-27,
+.cls-31,
+.cls-39,
+.cls-44,
+.cls-45,
+.cls-48,
+.cls-51,
+.cls-55,
+.cls-58,
+.cls-59,
+.cls-69,
+.cls-71,
+.cls-81,
+.cls-85,
+.cls-86,
+.cls-99,
+.cls-102,
+.cls-108,
+.cls-111,
+.cls-115,
+.cls-116,
+.cls-117,
+.cls-120,
+.cls-136,
+.cls-138,
+.cls-139,
+.cls-142,
+.cls-143,
+.cls-144,
+.cls-160,
+.cls-161,
+.cls-163,
+.cls-167,
+.cls-168,
+.cls-205,
+.cls-211 {
+  letter-spacing: 0.01em;
+}
+
+.cls-13,
+.cls-16,
+.cls-18,
+.cls-33,
+.cls-52,
+.cls-84,
+.cls-89,
+.cls-104,
+.cls-112,
+.cls-119,
+.cls-122,
+.cls-126,
+.cls-149,
+.cls-154,
+.cls-169,
+.cls-171,
+.cls-176,
+.cls-181,
+.cls-184,
+.cls-185,
+.cls-186,
+.cls-188,
+.cls-189,
+.cls-190,
+.cls-198,
+.cls-199,
+.cls-201,
+.cls-202,
+.cls-206,
+.cls-210 {
+  letter-spacing: -0.01em;
+}
+
+.cls-135,
+.cls-145,
+.cls-146,
+.cls-178 {
+  letter-spacing: 0.02em;
+}
+
+.cls-82,
+.cls-105,
+.cls-123,
+.cls-166,
+.cls-179 {
+  letter-spacing: -0.02em;
+}
+
+.cls-20,
+.cls-34,
+.cls-40,
+.cls-50,
+.cls-73,
+.cls-109,
+.cls-157,
+.cls-195 {
+  letter-spacing: 0.03em;
+}
+
+.cls-79,
+.cls-148,
+.cls-158 {
+  letter-spacing: -0.03em;
+}
+
+.cls-153 {
+  letter-spacing: 0.04em;
+}
+
+.cls-152,
+.cls-209 {
+  letter-spacing: -0.04em;
+}
+
+.cls-41,
+.cls-56,
+.cls-110 {
+  letter-spacing: -0.05em;
+}
+
+.cls-74 {
+  letter-spacing: -0.06em;
+}
+
+.cls-83 {
+  letter-spacing: -0.08em;
+}
+
+.cls-207,
+.cls-25 {
+  stroke: #8db845;
+}
+
+.cls-130,
+.cls-147,
+.cls-155,
+.cls-207,
+.cls-25,
+.cls-62,
+.cls-63,
+.cls-64,
+.cls-66,
+.cls-67,
+.cls-77,
+.cls-78 {
+  stroke-miterlimit: 10;
+}
+
+.cls-25 {
+  stroke-width: 2.02px;
+}
+
+.cls-208,
+.cls-26 {
+  fill: #8db845;
+}
+
+.cls-107,
+.cls-36 {
+  fill: #1b75bc;
+}
+
+.cls-49 {
+  fill: #ee5f24;
+}
+
+.cls-62,
+.cls-66 {
+  stroke: #1b75bc;
+}
+
+.cls-155,
+.cls-62 {
+  stroke-width: 2.56px;
+}
+
+.cls-131,
+.cls-63,
+.cls-64 {
+  stroke: #808285;
+}
+
+.cls-63 {
+  stroke-width: 2.85px;
+  stroke-dasharray: 3.8 2.85;
+}
+
+.cls-64 {
+  stroke-width: 2.71px;
+  stroke-dasharray: 3.61 2.71;
+}
+
+.cls-132,
+.cls-65 {
+  fill: #808285;
+}
+
+.cls-66,
+.cls-67 {
+  stroke-width: 3.26px;
+}
+
+.cls-155,
+.cls-67 {
+  stroke: #ee5f24;
+}
+
+.cls-107,
+.cls-132,
+.cls-68 {
+  font-size: 14px;
+}
+
+.cls-101,
+.cls-165,
+.cls-68 {
+  fill: #231f20;
+}
+
+.cls-130,
+.cls-147,
+.cls-77,
+.cls-78,
+.cls-91,
+.cls-92 {
+  stroke: #fff;
+}
+
+.cls-77 {
+  stroke-width: 1.79px;
+}
+
+.cls-78 {
+  stroke-width: 1.29px;
+}
+
+.cls-100,
+.cls-131,
+.cls-91,
+.cls-92 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cls-91 {
+  stroke-width: 1.7px;
+}
+
+.cls-92 {
+  stroke-width: 1.9px;
+}
+
+.cls-100 {
+  stroke: #231f20;
+}
+
+.cls-100,
+.cls-131 {
+  stroke-width: 2.45px;
+}
+
+.cls-130 {
+  stroke-width: 2.18px;
+}
+
+.cls-147 {
+  stroke-width: 0.5px;
+}
+
+.cls-164 {
+  clip-path: url(#clip-path);
+}
+
+.cls-165 {
+  font-size: 16px;
+  font-family: RobotoCondensed-Regular, Roboto Condensed;
+}
+
+.cls-207 {
+  stroke-width: 2.5px;
+}
+
+.cls-208 {
+  font-size: 30px;
+}
