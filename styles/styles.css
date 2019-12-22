@@ -74,6 +74,26 @@ li.tooltipItem:before {
   animation: pulse 2.25s infinite;
   transform-origin: 33% 35%;
 }
+#packagingtooltip {
+  width: 200px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+/* pointer from tooltip to designicon */
+#packagingtooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
 
 /* Manufacture Product */
 .manufacture {
