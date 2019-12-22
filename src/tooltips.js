@@ -38,6 +38,23 @@ function hidePackagingTooltip(event) {
 }
 
 // Manufacture
+let manufactureicon = document.getElementById("manufactureicon");
+let manufacturetooltip = document.getElementById("manufacturetooltip");
+
+manufactureicon.addEventListener("mouseover", showManufactureTooltip);
+manufactureicon.addEventListener("mouseout", hideManufactureTooltip);
+
+function showManufactureTooltip(event) {
+  let manufactureiconPos = manufactureicon.getBoundingClientRect();
+  manufacturetooltip.style.left = manufactureiconPos.right + 10 + "px";
+  manufacturetooltip.style.top =
+    window.scrollY + manufactureiconPos.top - 30 + "px";
+  manufacturetooltip.style.display = "block";
+}
+
+function hideManufactureTooltip(event) {
+  manufacturetooltip.style.display = "none";
+}
 
 // Warehouse
 
