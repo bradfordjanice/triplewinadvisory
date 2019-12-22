@@ -57,5 +57,57 @@ function hideManufactureTooltip(event) {
 }
 
 // Warehouse
+let warehouseicon = document.getElementById("warehouseicon");
+let warehousetooltip = document.getElementById("warehousetooltip");
+
+warehouseicon.addEventListener("mouseover", showWarehouseTooltip);
+warehouseicon.addEventListener("mouseout", hideWarehouseTooltip);
+
+function showWarehouseTooltip(event) {
+  let warehouseiconPos = warehouseicon.getBoundingClientRect();
+  warehousetooltip.style.left = warehouseiconPos.right + 10 + "px";
+  warehousetooltip.style.top =
+    window.scrollY + warehouseiconPos.top - 30 + "px";
+  warehousetooltip.style.display = "block";
+}
+
+function hideWarehouseTooltip(event) {
+  warehousetooltip.style.display = "none";
+}
 
 // Headquarters
+let headquartersicon = document.getElementById("headquartersicon");
+let headquarterstooltip = document.getElementById("headquarterstooltip");
+
+headquartersicon.addEventListener("mouseover", showHeadquartersTooltip);
+headquartersicon.addEventListener("mouseout", hideHeadquartersTooltip);
+
+function showHeadquartersTooltip(event) {
+  let headquartersiconPos = headquartersicon.getBoundingClientRect();
+  headquarterstooltip.style.left = headquartersiconPos.right + 10 + "px";
+  headquarterstooltip.style.top =
+    window.scrollY + headquartersiconPos.top - 30 + "px";
+  headquarterstooltip.style.display = "block";
+}
+
+function hideHeadquartersTooltip(event) {
+  headquarterstooltip.style.display = "none";
+}
+
+// Plane1
+let plane1icon = document.getElementById("plane1icon");
+let plane1tooltip = document.getElementById("plane1tooltip");
+
+plane1icon.addEventListener("mouseover", showPlane1Tooltip);
+plane1icon.addEventListener("mouseout", hidePlane1Tooltip);
+
+function showPlane1Tooltip(event) {
+  let plane1iconPos = plane1icon.getBoundingClientRect();
+  plane1icon.style.left = plane1iconPos.right + 10 + "px";
+  plane1tooltip.style.top = window.scrollY + plane1iconPos.top - 30 + "px";
+  plane1tooltip.style.display = "block";
+}
+
+function hidePlane1Tooltip(event) {
+  plane1tooltip.style.display = "none";
+}

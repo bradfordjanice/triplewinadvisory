@@ -40,6 +40,19 @@ li.tooltipItem {
 li.tooltipItem:before {
   content: "\2756\0020\0020";
 }
+ul.tooltipSublist {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 0;
+  padding-left: 1em;
+}
+li.tooltipSublistItem {
+  font-size: 0.9em;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  margin: 0.3em 0;
+  padding-left: 0;
+}
 
 /* Design Product */
 #designtooltip {
@@ -83,7 +96,6 @@ li.tooltipItem:before {
   position: absolute;
   display: none;
 }
-/* pointer from tooltip to designicon */
 #packagingtooltip::before {
   content: "";
   width: 12px;
@@ -95,6 +107,33 @@ li.tooltipItem:before {
   top: 40px;
 }
 
+/* Plane 1 */
+/*
+.plane1iconPath {
+  fill: #808285;
+  animation: pulseicon 2.25s infinite;
+  transform-origin: 45% 35%;
+}
+#plane1tooltip {
+  width: 200px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#plane1tooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
+*/
 /* Manufacture Product */
 .manufactureiconBkgnd {
   fill: #ee5f24;
@@ -110,7 +149,6 @@ li.tooltipItem:before {
   position: absolute;
   display: none;
 }
-/* pointer from tooltip to designicon */
 #manufacturetooltip::before {
   content: "";
   width: 12px;
@@ -123,24 +161,65 @@ li.tooltipItem:before {
 }
 
 /* Warehouse Product */
-.warehouse {
+.warehouseiconBkgnd {
   fill: #ee5f24;
   animation: pulse 2.25s infinite;
   transform-origin: 59% 25%;
 }
+#warehousetooltip {
+  width: 200px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#warehousetooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
 
 /* Corporate HQ */
-.headquarters {
+.headquartersiconBkgnd {
   fill: #ee5f24;
   animation: pulse 2.25s infinite;
   transform-origin: 53% 48%;
+}
+#headquarterstooltip {
+  width: 200px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#headquarterstooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: -6px;
+  top: 40px;
 }
 
 /* Airplanes */
 .plane1 {
   fill: #808285;
-  animation: pulse 2.25s infinite;
+  animation: pulseicon 2.25s infinite;
   transform-origin: 39% 23%;
+}
+.plane1iconBkgnd {
+  fill: white;
 }
 .plane2 {
   fill: #808285;
@@ -173,6 +252,19 @@ li.tooltipItem:before {
   }
   100% {
     fill: #ee5f24;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes pulseicon {
+  0% {
+    transform: scale(1, 1);
+    transition-timing-function: ease-in;
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
     transform: scale(1, 1);
   }
 }
