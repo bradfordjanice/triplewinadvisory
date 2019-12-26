@@ -77,21 +77,27 @@ function hideWarehouseTooltip(event) {
 
 // Headquarters
 let headquartersicon = document.getElementById("headquartersicon");
-let headquarterstooltip = document.getElementById("headquarterstooltip");
+let headquarterstooltipL = document.getElementById("headquarterstooltipL");
+let headquarterstooltipR = document.getElementById("headquarterstooltipR");
 
 headquartersicon.addEventListener("mouseover", showHeadquartersTooltip);
 headquartersicon.addEventListener("mouseout", hideHeadquartersTooltip);
 
 function showHeadquartersTooltip(event) {
   let headquartersiconPos = headquartersicon.getBoundingClientRect();
-  headquarterstooltip.style.left = headquartersiconPos.right + 10 + "px";
-  headquarterstooltip.style.top =
-    window.scrollY + headquartersiconPos.top - 30 + "px";
-  headquarterstooltip.style.display = "block";
+  headquarterstooltipR.style.left = headquartersiconPos.right + 13 + "px";
+  headquarterstooltipR.style.top =
+    window.scrollY + headquartersiconPos.top - 100 + "px";
+  headquarterstooltipR.style.display = "block";
+  headquarterstooltipL.style.left = headquartersiconPos.right - 310 + "px";
+  headquarterstooltipL.style.top =
+    window.scrollY + headquartersiconPos.top - 115 + "px";
+  headquarterstooltipL.style.display = "block";
 }
 
 function hideHeadquartersTooltip(event) {
-  headquarterstooltip.style.display = "none";
+  headquarterstooltipR.style.display = "none";
+  headquarterstooltipL.style.display = "none";
 }
 
 // Plane1

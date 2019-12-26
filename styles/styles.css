@@ -165,8 +165,8 @@ li.tooltipSublistItem {
   animation: pulse 2.25s infinite;
   transform-origin: 53% 48%;
 }
-#headquarterstooltip {
-  width: 200px;
+#headquarterstooltipR {
+  width: 220px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
   background-color: #8db845;
@@ -174,7 +174,7 @@ li.tooltipSublistItem {
   position: absolute;
   display: none;
 }
-#headquarterstooltip::before {
+#headquarterstooltipR::before {
   content: "";
   width: 12px;
   height: 12px;
@@ -182,7 +182,26 @@ li.tooltipSublistItem {
   background-color: #8db845;
   position: absolute;
   left: -6px;
-  top: 40px;
+  top: 125px;
+}
+#headquarterstooltipL {
+  width: 220px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#headquarterstooltipL::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: 232px;
+  top: 138px;
 }
 @keyframes pulse {
   0% {
