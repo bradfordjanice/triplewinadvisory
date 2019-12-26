@@ -56,7 +56,7 @@ li.tooltipSublistItem {
 
 /* Design Product */
 #designtooltip {
-  width: 200px;
+  width: 230px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
   background-color: #8db845;
@@ -88,7 +88,7 @@ li.tooltipSublistItem {
   transform-origin: 33% 35%;
 }
 #packagingtooltip {
-  width: 200px;
+  width: 300px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
   background-color: #8db845;
@@ -114,7 +114,7 @@ li.tooltipSublistItem {
   transform-origin: 46% 31%;
 }
 #manufacturetooltip {
-  width: 200px;
+  width: 220px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
   background-color: #8db845;
@@ -140,7 +140,7 @@ li.tooltipSublistItem {
   transform-origin: 59% 25%;
 }
 #warehousetooltip {
-  width: 200px;
+  width: 260px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
   background-color: #8db845;
@@ -166,7 +166,7 @@ li.tooltipSublistItem {
   transform-origin: 53% 48%;
 }
 #headquarterstooltipR {
-  width: 220px;
+  width: 230px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
   background-color: #8db845;
@@ -186,7 +186,7 @@ li.tooltipSublistItem {
 }
 #headquarterstooltipL {
   width: 220px;
-  padding: 20px 10px 20px 8px;
+  padding: 20px 25px 20px 8px;
   font-size: 1em;
   background-color: #8db845;
   border-radius: 6px;
@@ -200,7 +200,7 @@ li.tooltipSublistItem {
   transform: rotate(45deg);
   background-color: #8db845;
   position: absolute;
-  left: 232px;
+  left: 246px;
   top: 138px;
 }
 @keyframes pulse {
@@ -229,7 +229,7 @@ li.tooltipSublistItem {
   fill: white;
 }
 #plane1tooltip {
-  width: 200px;
+  width: 300px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
   background-color: #8db845;
@@ -256,7 +256,7 @@ li.tooltipSublistItem {
   fill: white;
 }
 #plane2tooltip {
-  width: 200px;
+  width: 300px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
   background-color: #8db845;
@@ -272,7 +272,7 @@ li.tooltipSublistItem {
   background-color: #8db845;
   position: absolute;
   left: -6px;
-  top: 315px;
+  top: 265px;
 }
 @keyframes pulseicon {
   0% {

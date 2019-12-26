@@ -89,7 +89,7 @@ function showHeadquartersTooltip(event) {
   headquarterstooltipR.style.top =
     window.scrollY + headquartersiconPos.top - 100 + "px";
   headquarterstooltipR.style.display = "block";
-  headquarterstooltipL.style.left = headquartersiconPos.right - 310 + "px";
+  headquarterstooltipL.style.left = headquartersiconPos.right - 330 + "px";
   headquarterstooltipL.style.top =
     window.scrollY + headquartersiconPos.top - 115 + "px";
   headquarterstooltipL.style.display = "block";
@@ -128,7 +128,7 @@ plane2icon.addEventListener("mouseout", hideplane2Tooltip);
 function showplane2Tooltip(event) {
   let plane2iconPos = plane2icon.getBoundingClientRect();
   plane2tooltip.style.left = plane2iconPos.right + 10 + "px";
-  plane2tooltip.style.top = window.scrollY + plane2iconPos.top - 300 + "px";
+  plane2tooltip.style.top = window.scrollY + plane2iconPos.top - 255 + "px";
   plane2tooltip.style.display = "block";
 }
 
