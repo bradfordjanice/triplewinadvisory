@@ -114,25 +114,7 @@ li.tooltipSublistItem {
   animation: pulseicon 2.25s infinite;
   transform-origin: 45% 35%;
 }
-#plane1tooltip {
-  width: 200px;
-  padding: 20px 10px 20px 8px;
-  font-size: 1em;
-  background-color: #8db845;
-  border-radius: 6px;
-  position: absolute;
-  display: none;
-}
-#plane1tooltip::before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  transform: rotate(45deg);
-  background-color: #8db845;
-  position: absolute;
-  left: -6px;
-  top: 40px;
-}
+
 */
 /* Manufacture Product */
 .manufactureiconBkgnd {
@@ -211,30 +193,7 @@ li.tooltipSublistItem {
   left: -6px;
   top: 40px;
 }
-
-/* Airplanes */
-.plane1 {
-  fill: #808285;
-  animation: pulseicon 2.25s infinite;
-  transform-origin: 39% 23%;
-}
-.plane1iconBkgnd {
-  fill: white;
-}
-.plane2 {
-  fill: #808285;
-  animation: pulse 2.25s infinite;
-  transform-origin: 50% 90%;
-}
-
-/* Revalorize Product */
-.revalorize {
-  fill: #808285;
-  animation: pulse 2.25s infinite;
-  transform-origin: 45% 23%;
-}
-
-/* To pulse icons */
+/* To pulse icons with circle backgrounds */
 .hasPopup {
   fill: #ee5f24;
   animation: pulse 2.25s infinite;
@@ -256,6 +215,61 @@ li.tooltipSublistItem {
   }
 }
 
+/* Airplanes */
+#plane1icon {
+  fill: #808285;
+  animation: pulseicon 2.25s infinite;
+  transform-origin: 39% 23%;
+}
+.plane1iconBkgnd {
+  fill: white;
+}
+#plane1tooltip {
+  width: 200px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#plane1tooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
+#plane2icon {
+  fill: #808285;
+  animation: pulseicon 2.25s infinite;
+  transform-origin: 50% 90%;
+}
+.plane2iconBkgnd {
+  fill: white;
+}
+#plane2tooltip {
+  width: 200px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#plane2tooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: -6px;
+  top: 315px;
+}
 @keyframes pulseicon {
   0% {
     transform: scale(1, 1);
@@ -267,6 +281,13 @@ li.tooltipSublistItem {
   100% {
     transform: scale(1, 1);
   }
+}
+
+/* Revalorize Product */
+.revalorize {
+  fill: #808285;
+  animation: pulse 2.25s infinite;
+  transform-origin: 45% 23%;
 }
 
 /* styles from Illustrator export */

@@ -103,11 +103,29 @@ plane1icon.addEventListener("mouseout", hidePlane1Tooltip);
 
 function showPlane1Tooltip(event) {
   let plane1iconPos = plane1icon.getBoundingClientRect();
-  plane1icon.style.left = plane1iconPos.right + 10 + "px";
+  plane1tooltip.style.left = plane1iconPos.right + 10 + "px";
   plane1tooltip.style.top = window.scrollY + plane1iconPos.top - 30 + "px";
   plane1tooltip.style.display = "block";
 }
 
 function hidePlane1Tooltip(event) {
   plane1tooltip.style.display = "none";
+}
+
+// Plane2
+let plane2icon = document.getElementById("plane2icon");
+let plane2tooltip = document.getElementById("plane2tooltip");
+
+plane2icon.addEventListener("mouseover", showplane2Tooltip);
+plane2icon.addEventListener("mouseout", hideplane2Tooltip);
+
+function showplane2Tooltip(event) {
+  let plane2iconPos = plane2icon.getBoundingClientRect();
+  plane2tooltip.style.left = plane2iconPos.right + 10 + "px";
+  plane2tooltip.style.top = window.scrollY + plane2iconPos.top - 300 + "px";
+  plane2tooltip.style.display = "block";
+}
+
+function hideplane2Tooltip(event) {
+  plane2tooltip.style.display = "none";
 }
