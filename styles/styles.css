@@ -9,7 +9,7 @@ h1 {
   text-align: center;
 }
 h2 {
-  font-size: 1.4em;
+  font-size: 1.25em;
 }
 p {
   font-size: 1em;
@@ -107,15 +107,6 @@ li.tooltipSublistItem {
   top: 40px;
 }
 
-/* Plane 1 */
-/*
-.plane1iconPath {
-  fill: #808285;
-  animation: pulseicon 2.25s infinite;
-  transform-origin: 45% 35%;
-}
-
-*/
 /* Manufacture Product */
 .manufactureiconBkgnd {
   fill: #ee5f24;
@@ -193,12 +184,6 @@ li.tooltipSublistItem {
   left: -6px;
   top: 40px;
 }
-/* To pulse icons with circle backgrounds */
-.hasPopup {
-  fill: #ee5f24;
-  animation: pulse 2.25s infinite;
-  transform-origin: 30% 30%;
-}
 @keyframes pulse {
   0% {
     fill: #ee5f24;
@@ -272,13 +257,16 @@ li.tooltipSublistItem {
 }
 @keyframes pulseicon {
   0% {
+    fill: #808285;
     transform: scale(1, 1);
     transition-timing-function: ease-in;
   }
   50% {
+    fill: #8db845;
     transform: scale(1.1, 1.1);
   }
   100% {
+    fill: #808285;
     transform: scale(1, 1);
   }
 }
