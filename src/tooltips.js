@@ -20,6 +20,7 @@ function hideDesignTooltip(event) {
 }
 */
 /* Add time delay */
+/*
 let designicon = document.getElementById("designiconHotspot");
 let designtooltip = document.getElementById("designtooltip");
 
@@ -36,15 +37,40 @@ function showDesignTooltip(event) {
 }
 
 function hideDesignTooltip(event) {
-  setTimeout(function() {
+  clearTimeout(function() {
     designtooltip.style.display = "none";
-  }, 100);
+  }, 500);
+}
+*/
+/* Second try... */
+let designicon = document.getElementById("designiconHotspot");
+let designtooltip = document.getElementById("designtooltip");
+let designTimeoutFunction;
+
+designicon.addEventListener("mouseover", showDesignTooltip);
+designicon.addEventListener("mouseout", stopDesignTooltip);
+
+function showDesignTooltip(event) {
+  designTimeoutFunction = setTimeout(function() {
+    let designiconPos = designicon.getBoundingClientRect();
+    designtooltip.style.left = designiconPos.right + 10 + "px";
+    designtooltip.style.top = window.scrollY + designiconPos.top - 30 + "px";
+    designtooltip.style.display = "block";
+  }, 500);
+}
+
+function stopDesignTooltip(event) {
+  /* stops the popup from appearing before time interval completes */
+  clearTimeout(designTimeoutFunction);
+  /* hides popup on mouseout */
+  designtooltip.style.display = "none";
 }
 
 // Packaging
 let packagingicon = document.getElementById("packagingicon");
 let packagingtooltip = document.getElementById("packagingtooltip");
 
+/* try mouseleave - may not need the extra circle hotspot */
 packagingicon.addEventListener("mouseover", showPackagingTooltip);
 packagingicon.addEventListener("mouseout", hidePackagingTooltip);
 
