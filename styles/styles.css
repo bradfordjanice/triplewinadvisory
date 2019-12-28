@@ -14,6 +14,75 @@ h2 {
 p {
   font-size: 1em;
 }
+
+/* title and subtitle */
+.title {
+  fill: #8db845;
+  font-size: 30px;
+  font-family: RobotoCondensed-Bold, "Roboto Condensed";
+  font-weight: 700;
+}
+.subtitle {
+  fill: #231f20;
+  font-size: 16px;
+  font-family: RobotoCondensed-Regular, "Roboto Condensed";
+}
+
+/* Buttons */
+.buttonlabel {
+  font-size: 17px;
+  fill: #fff;
+  font-family: RobotoCondensed-Bold, "Roboto Condensed";
+  font-weight: 700;
+}
+#typicalbtnOutline {
+  fill: none;
+  stroke: #ee5f24;
+  stroke-miterlimit: 10;
+  stroke-width: 2.02px;
+}
+.typicalbtnBkgnd {
+  fill: #ee5f24;
+}
+#circularbtnOutline {
+  fill: none;
+  stroke: #1b75bc;
+  stroke-miterlimit: 10;
+  stroke-width: 2.02px;
+}
+.circularbtnBkgnd {
+  fill: #1b75bc;
+}
+#efficiencybtnOutline {
+  fill: none;
+  stroke: #8db845;
+  stroke-miterlimit: 10;
+  stroke-width: 2.02px;
+}
+.efficiencybtnBkgnd {
+  fill: #8db845;
+}
+#ecologybtnOutline {
+  fill: none;
+  stroke: #193e4f;
+  stroke-miterlimit: 10;
+  stroke-width: 2.02px;
+}
+.ecologybtnBkgnd {
+  fill: #193e4f;
+}
+.iconlabel {
+  fill: #231f20;
+  font-size: 14px;
+  font-family: RobotoCondensed-Bold, "Roboto Condensed";
+  font-weight: 700;
+}
+.revalorizelabel {
+  fill: #1b75bc;
+}
+.returnlabel {
+  fill: #808285;
+}
 img {
   display: block;
   margin-top: 20px;
@@ -78,6 +147,10 @@ li.tooltipSublistItem {
 .designiconBkgnd {
   fill: #ee5f24;
   animation: pulse 2.25s infinite;
+  transform-origin: 21% 53%;
+}
+#designiconHotspot {
+  fill: none;
   transform-origin: 21% 53%;
 }
 
@@ -340,8 +413,10 @@ li.tooltipSublistItem {
   font-weight: 700;
 }
 
-.cls-4,
-.cls-5,
+.cls-49 {
+  fill: #ee5f24;
+}
+
 .cls-6,
 .cls-7,
 .cls-9,
@@ -350,13 +425,6 @@ li.tooltipSublistItem {
 .cls-17,
 .cls-19,
 .cls-21,
-.cls-22,
-.cls-24,
-.cls-28,
-.cls-29,
-.cls-30,
-.cls-32,
-.cls-35,
 .cls-37,
 .cls-38,
 .cls-42,
@@ -428,9 +496,6 @@ li.tooltipSublistItem {
 .cls-11,
 .cls-12,
 .cls-14,
-.cls-23,
-.cls-27,
-.cls-31,
 .cls-39,
 .cls-44,
 .cls-45,
@@ -471,7 +536,6 @@ li.tooltipSublistItem {
 .cls-13,
 .cls-16,
 .cls-18,
-.cls-33,
 .cls-52,
 .cls-84,
 .cls-89,
@@ -517,7 +581,6 @@ li.tooltipSublistItem {
 }
 
 .cls-20,
-.cls-34,
 .cls-40,
 .cls-50,
 .cls-73,
@@ -580,18 +643,13 @@ li.tooltipSublistItem {
   stroke-width: 2.02px;
 }
 
-.cls-208,
-.cls-26 {
+.cls-208 {
   fill: #8db845;
 }
 
 .cls-107,
 .cls-36 {
   fill: #1b75bc;
-}
-
-.cls-49 {
-  fill: #ee5f24;
 }
 
 .cls-62,
