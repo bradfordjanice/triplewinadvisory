@@ -124,6 +124,15 @@ li.tooltipSublistItem {
 }
 
 /* Design Product */
+.designiconBkgnd {
+  fill: #ee5f24;
+  animation: pulse 2.25s infinite;
+  transform-origin: 21% 53%;
+}
+#designiconHotspot {
+  fill: none;
+  transform-origin: 21% 53%;
+}
 #designtooltip {
   width: 230px;
   padding: 20px 10px 20px 8px;
@@ -144,20 +153,15 @@ li.tooltipSublistItem {
   left: -6px;
   top: 40px;
 }
-.designiconBkgnd {
-  fill: #ee5f24;
-  animation: pulse 2.25s infinite;
-  transform-origin: 21% 53%;
-}
-#designiconHotspot {
-  fill: none;
-  transform-origin: 21% 53%;
-}
 
 /* Procure Packaging */
 .packagingiconBkgnd {
   fill: #ee5f24;
   animation: pulse 2.25s infinite;
+  transform-origin: 33% 35%;
+}
+#packagingiconHotspot {
+  fill: none;
   transform-origin: 33% 35%;
 }
 #packagingtooltip {
@@ -186,6 +190,10 @@ li.tooltipSublistItem {
   animation: pulse 2.25s infinite;
   transform-origin: 46% 31%;
 }
+#manufactureiconHotspot {
+  fill: none;
+  transform-origin: 46% 31%;
+}
 #manufacturetooltip {
   width: 220px;
   padding: 20px 10px 20px 8px;
@@ -212,6 +220,10 @@ li.tooltipSublistItem {
   animation: pulse 2.25s infinite;
   transform-origin: 59% 25%;
 }
+#warehouseiconHotspot {
+  fill: none;
+  transform-origin: 59% 25%;
+}
 #warehousetooltip {
   width: 260px;
   padding: 20px 10px 20px 8px;
@@ -236,6 +248,10 @@ li.tooltipSublistItem {
 .headquartersiconBkgnd {
   fill: #ee5f24;
   animation: pulse 2.25s infinite;
+  transform-origin: 53% 48%;
+}
+#headquartersiconHotspot {
+  fill: none;
   transform-origin: 53% 48%;
 }
 #headquarterstooltipR {
@@ -298,6 +314,10 @@ li.tooltipSublistItem {
   animation: pulseicon 2.25s infinite;
   transform-origin: 39% 23%;
 }
+#plane1iconHotspot {
+  fill: none;
+  transform-origin: 39% 23%;
+}
 .plane1iconBkgnd {
   fill: white;
 }
@@ -323,6 +343,10 @@ li.tooltipSublistItem {
 #plane2icon {
   fill: #808285;
   animation: pulseicon 2.25s infinite;
+  transform-origin: 50% 90%;
+}
+#plane2iconHotspot {
+  fill: none;
   transform-origin: 50% 90%;
 }
 .plane2iconBkgnd {

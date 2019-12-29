@@ -1,48 +1,6 @@
 // console.log("Hello Project.");
 
 // Design
-/*
-let designicon = document.getElementById("designicon");
-let designtooltip = document.getElementById("designtooltip");
-
-designicon.addEventListener("mouseover", showDesignTooltip);
-designicon.addEventListener("mouseout", hideDesignTooltip);
-
-function showDesignTooltip(event) {
-  let designiconPos = designicon.getBoundingClientRect();
-  designtooltip.style.left = designiconPos.right + 10 + "px";
-  designtooltip.style.top = window.scrollY + designiconPos.top - 30 + "px";
-  designtooltip.style.display = "block";
-}
-
-function hideDesignTooltip(event) {
-  designtooltip.style.display = "none";
-}
-*/
-/* Add time delay */
-/*
-let designicon = document.getElementById("designiconHotspot");
-let designtooltip = document.getElementById("designtooltip");
-
-designicon.addEventListener("mouseover", showDesignTooltip);
-designicon.addEventListener("mouseout", hideDesignTooltip);
-
-function showDesignTooltip(event) {
-  setTimeout(function() {
-    let designiconPos = designicon.getBoundingClientRect();
-    designtooltip.style.left = designiconPos.right + 10 + "px";
-    designtooltip.style.top = window.scrollY + designiconPos.top - 30 + "px";
-    designtooltip.style.display = "block";
-  }, 500);
-}
-
-function hideDesignTooltip(event) {
-  clearTimeout(function() {
-    designtooltip.style.display = "none";
-  }, 500);
-}
-*/
-/* Second try... */
 let designicon = document.getElementById("designiconHotspot");
 let designtooltip = document.getElementById("designtooltip");
 let designTimeoutFunction;
@@ -70,7 +28,6 @@ function stopDesignTooltip(event) {
 let packagingicon = document.getElementById("packagingicon");
 let packagingtooltip = document.getElementById("packagingtooltip");
 
-/* try mouseleave - may not need the extra circle hotspot */
 packagingicon.addEventListener("mouseover", showPackagingTooltip);
 packagingicon.addEventListener("mouseout", hidePackagingTooltip);
 
