@@ -1,8 +1,8 @@
 // console.log("Hello Project.");
 
 // Design
-let designicon = document.getElementById("designiconHotspot");
-let designtooltip = document.getElementById("designtooltip");
+const designicon = document.getElementById("designiconHotspot");
+const designtooltip = document.getElementById("designtooltip");
 let designTimeoutFunction;
 
 designicon.addEventListener("mouseover", showDesignTooltip);
@@ -10,7 +10,7 @@ designicon.addEventListener("mouseout", stopDesignTooltip);
 
 function showDesignTooltip(event) {
   designTimeoutFunction = setTimeout(function() {
-    let designiconPos = designicon.getBoundingClientRect();
+    designiconPos = designicon.getBoundingClientRect();
     designtooltip.style.left = designiconPos.right + 10 + "px";
     designtooltip.style.top = window.scrollY + designiconPos.top - 30 + "px";
     designtooltip.style.display = "block";
@@ -25,8 +25,8 @@ function stopDesignTooltip(event) {
 }
 
 // Packaging
-let packagingicon = document.getElementById("packagingiconHotspot");
-let packagingtooltip = document.getElementById("packagingtooltip");
+const packagingicon = document.getElementById("packagingiconHotspot");
+const packagingtooltip = document.getElementById("packagingtooltip");
 let packagingTimeoutFunction;
 
 packagingicon.addEventListener("mouseover", showPackagingTooltip);
@@ -34,7 +34,7 @@ packagingicon.addEventListener("mouseout", stopPackagingTooltip);
 
 function showPackagingTooltip(event) {
   packagingTimeoutFunction = setTimeout(function() {
-    let packagingiconPos = packagingicon.getBoundingClientRect();
+    packagingiconPos = packagingicon.getBoundingClientRect();
     packagingtooltip.style.left = packagingiconPos.right + 10 + "px";
     packagingtooltip.style.top =
       window.scrollY + packagingiconPos.top - 30 + "px";
@@ -48,8 +48,8 @@ function stopPackagingTooltip(event) {
 }
 
 // Manufacture
-let manufactureicon = document.getElementById("manufactureiconHotspot");
-let manufacturetooltip = document.getElementById("manufacturetooltip");
+const manufactureicon = document.getElementById("manufactureiconHotspot");
+const manufacturetooltip = document.getElementById("manufacturetooltip");
 let manufactureTimeoutFunction;
 
 manufactureicon.addEventListener("mouseover", showManufactureTooltip);
@@ -57,7 +57,7 @@ manufactureicon.addEventListener("mouseout", stopManufactureTooltip);
 
 function showManufactureTooltip(event) {
   manufactureTimeoutFunction = setTimeout(function() {
-    let manufactureiconPos = manufactureicon.getBoundingClientRect();
+    manufactureiconPos = manufactureicon.getBoundingClientRect();
     manufacturetooltip.style.left = manufactureiconPos.right + 10 + "px";
     manufacturetooltip.style.top =
       window.scrollY + manufactureiconPos.top - 30 + "px";
@@ -71,8 +71,8 @@ function stopManufactureTooltip(event) {
 }
 
 // Warehouse
-let warehouseicon = document.getElementById("warehouseiconHotspot");
-let warehousetooltip = document.getElementById("warehousetooltip");
+const warehouseicon = document.getElementById("warehouseiconHotspot");
+const warehousetooltip = document.getElementById("warehousetooltip");
 let warehouseTimeoutFunction;
 
 warehouseicon.addEventListener("mouseover", showWarehouseTooltip);
@@ -80,7 +80,7 @@ warehouseicon.addEventListener("mouseout", stopWarehouseTooltip);
 
 function showWarehouseTooltip(event) {
   warehouseiconFunction = setTimeout(function() {
-    let warehouseiconPos = warehouseicon.getBoundingClientRect();
+    warehouseiconPos = warehouseicon.getBoundingClientRect();
     warehousetooltip.style.left = warehouseiconPos.right + 10 + "px";
     warehousetooltip.style.top =
       window.scrollY + warehouseiconPos.top - 30 + "px";
@@ -94,9 +94,9 @@ function stopWarehouseTooltip(event) {
 }
 
 // Headquarters
-let headquartersicon = document.getElementById("headquartersiconHotspot");
-let headquarterstooltipL = document.getElementById("headquarterstooltipL");
-let headquarterstooltipR = document.getElementById("headquarterstooltipR");
+const headquartersicon = document.getElementById("headquartersiconHotspot");
+const headquarterstooltipL = document.getElementById("headquarterstooltipL");
+const headquarterstooltipR = document.getElementById("headquarterstooltipR");
 let headquartersTimeoutFunction;
 
 headquartersicon.addEventListener("mouseover", showHeadquartersTooltip);
@@ -104,7 +104,7 @@ headquartersicon.addEventListener("mouseout", stopHeadquartersTooltip);
 
 function showHeadquartersTooltip(event) {
   headquartersTimeoutFunction = setTimeout(function() {
-    let headquartersiconPos = headquartersicon.getBoundingClientRect();
+    headquartersiconPos = headquartersicon.getBoundingClientRect();
     headquarterstooltipR.style.left = headquartersiconPos.right + 13 + "px";
     headquarterstooltipR.style.top =
       window.scrollY + headquartersiconPos.top - 100 + "px";
@@ -123,8 +123,8 @@ function stopHeadquartersTooltip(event) {
 }
 
 // Plane1
-let plane1icon = document.getElementById("plane1iconHotspot");
-let plane1tooltip = document.getElementById("plane1tooltip");
+const plane1icon = document.getElementById("plane1iconHotspot");
+const plane1tooltip = document.getElementById("plane1tooltip");
 let plane1TimeoutFunction;
 
 plane1icon.addEventListener("mouseover", showPlane1Tooltip);
@@ -132,7 +132,7 @@ plane1icon.addEventListener("mouseout", stopPlane1Tooltip);
 
 function showPlane1Tooltip(event) {
   plane1TimeoutFunction = setTimeout(function() {
-    let plane1iconPos = plane1icon.getBoundingClientRect();
+    plane1iconPos = plane1icon.getBoundingClientRect();
     plane1tooltip.style.left = plane1iconPos.right + 10 + "px";
     plane1tooltip.style.top = window.scrollY + plane1iconPos.top - 30 + "px";
     plane1tooltip.style.display = "block";
@@ -145,8 +145,8 @@ function stopPlane1Tooltip(event) {
 }
 
 // Plane2
-let plane2icon = document.getElementById("plane2iconHotspot");
-let plane2tooltip = document.getElementById("plane2tooltip");
+const plane2icon = document.getElementById("plane2iconHotspot");
+const plane2tooltip = document.getElementById("plane2tooltip");
 let plane2TimeoutFunction;
 
 plane2icon.addEventListener("mouseover", showPlane2Tooltip);
@@ -154,7 +154,7 @@ plane2icon.addEventListener("mouseout", stopPlane2Tooltip);
 
 function showPlane2Tooltip(event) {
   plane2TimeoutFunction = setTimeout(function() {
-    let plane2iconPos = plane2icon.getBoundingClientRect();
+    plane2iconPos = plane2icon.getBoundingClientRect();
     plane2tooltip.style.left = plane2iconPos.right + 10 + "px";
     plane2tooltip.style.top = window.scrollY + plane2iconPos.top - 255 + "px";
     plane2tooltip.style.display = "block";
