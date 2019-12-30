@@ -318,9 +318,6 @@ li.tooltipSublistItem {
   fill: none;
   transform-origin: 39% 23%;
 }
-.plane1iconBkgnd {
-  fill: white;
-}
 #plane1tooltip {
   width: 300px;
   padding: 20px 10px 20px 8px;
@@ -348,9 +345,6 @@ li.tooltipSublistItem {
 #plane2iconHotspot {
   fill: none;
   transform-origin: 50% 90%;
-}
-.plane2iconBkgnd {
-  fill: white;
 }
 #plane2tooltip {
   width: 300px;

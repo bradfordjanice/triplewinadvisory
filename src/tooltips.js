@@ -123,37 +123,45 @@ function stopHeadquartersTooltip(event) {
 }
 
 // Plane1
-let plane1icon = document.getElementById("plane1icon");
+let plane1icon = document.getElementById("plane1iconHotspot");
 let plane1tooltip = document.getElementById("plane1tooltip");
+let plane1TimeoutFunction;
 
 plane1icon.addEventListener("mouseover", showPlane1Tooltip);
-plane1icon.addEventListener("mouseout", hidePlane1Tooltip);
+plane1icon.addEventListener("mouseout", stopPlane1Tooltip);
 
 function showPlane1Tooltip(event) {
-  let plane1iconPos = plane1icon.getBoundingClientRect();
-  plane1tooltip.style.left = plane1iconPos.right + 10 + "px";
-  plane1tooltip.style.top = window.scrollY + plane1iconPos.top - 30 + "px";
-  plane1tooltip.style.display = "block";
+  plane1TimeoutFunction = setTimeout(function() {
+    let plane1iconPos = plane1icon.getBoundingClientRect();
+    plane1tooltip.style.left = plane1iconPos.right + 10 + "px";
+    plane1tooltip.style.top = window.scrollY + plane1iconPos.top - 30 + "px";
+    plane1tooltip.style.display = "block";
+  }, 500);
 }
 
-function hidePlane1Tooltip(event) {
+function stopPlane1Tooltip(event) {
+  clearTimeout(plane1TimeoutFunction);
   plane1tooltip.style.display = "none";
 }
 
 // Plane2
-let plane2icon = document.getElementById("plane2icon");
+let plane2icon = document.getElementById("plane2iconHotspot");
 let plane2tooltip = document.getElementById("plane2tooltip");
+let plane2TimeoutFunction;
 
-plane2icon.addEventListener("mouseover", showplane2Tooltip);
-plane2icon.addEventListener("mouseout", hideplane2Tooltip);
+plane2icon.addEventListener("mouseover", showPlane2Tooltip);
+plane2icon.addEventListener("mouseout", stopPlane2Tooltip);
 
-function showplane2Tooltip(event) {
-  let plane2iconPos = plane2icon.getBoundingClientRect();
-  plane2tooltip.style.left = plane2iconPos.right + 10 + "px";
-  plane2tooltip.style.top = window.scrollY + plane2iconPos.top - 255 + "px";
-  plane2tooltip.style.display = "block";
+function showPlane2Tooltip(event) {
+  plane2TimeoutFunction = setTimeout(function() {
+    let plane2iconPos = plane2icon.getBoundingClientRect();
+    plane2tooltip.style.left = plane2iconPos.right + 10 + "px";
+    plane2tooltip.style.top = window.scrollY + plane2iconPos.top - 255 + "px";
+    plane2tooltip.style.display = "block";
+  }, 500);
 }
 
-function hideplane2Tooltip(event) {
+function stopPlane2Tooltip(event) {
+  clearTimeout(plane2TimeoutFunction);
   plane2tooltip.style.display = "none";
 }
