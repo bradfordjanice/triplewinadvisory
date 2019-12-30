@@ -25,21 +25,25 @@ function stopDesignTooltip(event) {
 }
 
 // Packaging
-let packagingicon = document.getElementById("packagingicon");
+let packagingicon = document.getElementById("packagingiconHotspot");
 let packagingtooltip = document.getElementById("packagingtooltip");
+let packagingTimeoutFunction;
 
 packagingicon.addEventListener("mouseover", showPackagingTooltip);
-packagingicon.addEventListener("mouseout", hidePackagingTooltip);
+packagingicon.addEventListener("mouseout", stopPackagingTooltip);
 
 function showPackagingTooltip(event) {
-  let packagingiconPos = packagingicon.getBoundingClientRect();
-  packagingtooltip.style.left = packagingiconPos.right + 10 + "px";
-  packagingtooltip.style.top =
-    window.scrollY + packagingiconPos.top - 30 + "px";
-  packagingtooltip.style.display = "block";
+  packagingTimeoutFunction = setTimeout(function() {
+    let packagingiconPos = packagingicon.getBoundingClientRect();
+    packagingtooltip.style.left = packagingiconPos.right + 10 + "px";
+    packagingtooltip.style.top =
+      window.scrollY + packagingiconPos.top - 30 + "px";
+    packagingtooltip.style.display = "block";
+  }, 500);
 }
 
-function hidePackagingTooltip(event) {
+function stopPackagingTooltip(event) {
+  clearTimeout(packagingTimeoutFunction);
   packagingtooltip.style.display = "none";
 }
 
