@@ -94,26 +94,30 @@ function stopWarehouseTooltip(event) {
 }
 
 // Headquarters
-let headquartersicon = document.getElementById("headquartersicon");
+let headquartersicon = document.getElementById("headquartersiconHotspot");
 let headquarterstooltipL = document.getElementById("headquarterstooltipL");
 let headquarterstooltipR = document.getElementById("headquarterstooltipR");
+let headquartersTimeoutFunction;
 
 headquartersicon.addEventListener("mouseover", showHeadquartersTooltip);
-headquartersicon.addEventListener("mouseout", hideHeadquartersTooltip);
+headquartersicon.addEventListener("mouseout", stopHeadquartersTooltip);
 
 function showHeadquartersTooltip(event) {
-  let headquartersiconPos = headquartersicon.getBoundingClientRect();
-  headquarterstooltipR.style.left = headquartersiconPos.right + 13 + "px";
-  headquarterstooltipR.style.top =
-    window.scrollY + headquartersiconPos.top - 100 + "px";
-  headquarterstooltipR.style.display = "block";
-  headquarterstooltipL.style.left = headquartersiconPos.right - 330 + "px";
-  headquarterstooltipL.style.top =
-    window.scrollY + headquartersiconPos.top - 115 + "px";
-  headquarterstooltipL.style.display = "block";
+  headquartersTimeoutFunction = setTimeout(function() {
+    let headquartersiconPos = headquartersicon.getBoundingClientRect();
+    headquarterstooltipR.style.left = headquartersiconPos.right + 13 + "px";
+    headquarterstooltipR.style.top =
+      window.scrollY + headquartersiconPos.top - 100 + "px";
+    headquarterstooltipR.style.display = "block";
+    headquarterstooltipL.style.left = headquartersiconPos.right - 330 + "px";
+    headquarterstooltipL.style.top =
+      window.scrollY + headquartersiconPos.top - 115 + "px";
+    headquarterstooltipL.style.display = "block";
+  }, 500);
 }
 
-function hideHeadquartersTooltip(event) {
+function stopHeadquartersTooltip(event) {
+  clearTimeout(headquartersTimeoutFunction);
   headquarterstooltipR.style.display = "none";
   headquarterstooltipL.style.display = "none";
 }
