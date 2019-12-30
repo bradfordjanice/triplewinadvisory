@@ -48,40 +48,48 @@ function stopPackagingTooltip(event) {
 }
 
 // Manufacture
-let manufactureicon = document.getElementById("manufactureicon");
+let manufactureicon = document.getElementById("manufactureiconHotspot");
 let manufacturetooltip = document.getElementById("manufacturetooltip");
+let manufactureTimeoutFunction;
 
 manufactureicon.addEventListener("mouseover", showManufactureTooltip);
-manufactureicon.addEventListener("mouseout", hideManufactureTooltip);
+manufactureicon.addEventListener("mouseout", stopManufactureTooltip);
 
 function showManufactureTooltip(event) {
-  let manufactureiconPos = manufactureicon.getBoundingClientRect();
-  manufacturetooltip.style.left = manufactureiconPos.right + 10 + "px";
-  manufacturetooltip.style.top =
-    window.scrollY + manufactureiconPos.top - 30 + "px";
-  manufacturetooltip.style.display = "block";
+  manufactureTimeoutFunction = setTimeout(function() {
+    let manufactureiconPos = manufactureicon.getBoundingClientRect();
+    manufacturetooltip.style.left = manufactureiconPos.right + 10 + "px";
+    manufacturetooltip.style.top =
+      window.scrollY + manufactureiconPos.top - 30 + "px";
+    manufacturetooltip.style.display = "block";
+  }, 500);
 }
 
-function hideManufactureTooltip(event) {
+function stopManufactureTooltip(event) {
+  clearTimeout(manufactureTimeoutFunction);
   manufacturetooltip.style.display = "none";
 }
 
 // Warehouse
-let warehouseicon = document.getElementById("warehouseicon");
+let warehouseicon = document.getElementById("warehouseiconHotspot");
 let warehousetooltip = document.getElementById("warehousetooltip");
+let warehouseTimeoutFunction;
 
 warehouseicon.addEventListener("mouseover", showWarehouseTooltip);
-warehouseicon.addEventListener("mouseout", hideWarehouseTooltip);
+warehouseicon.addEventListener("mouseout", stopWarehouseTooltip);
 
 function showWarehouseTooltip(event) {
-  let warehouseiconPos = warehouseicon.getBoundingClientRect();
-  warehousetooltip.style.left = warehouseiconPos.right + 10 + "px";
-  warehousetooltip.style.top =
-    window.scrollY + warehouseiconPos.top - 30 + "px";
-  warehousetooltip.style.display = "block";
+  warehouseiconFunction = setTimeout(function() {
+    let warehouseiconPos = warehouseicon.getBoundingClientRect();
+    warehousetooltip.style.left = warehouseiconPos.right + 10 + "px";
+    warehousetooltip.style.top =
+      window.scrollY + warehouseiconPos.top - 30 + "px";
+    warehousetooltip.style.display = "block";
+  }, 500);
 }
 
-function hideWarehouseTooltip(event) {
+function stopWarehouseTooltip(event) {
+  clearTimeout(warehouseiconFunction);
   warehousetooltip.style.display = "none";
 }
 
