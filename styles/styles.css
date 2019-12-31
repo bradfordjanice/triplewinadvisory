@@ -19,20 +19,44 @@ p {
 .title {
   fill: #8db845;
   font-size: 30px;
-  font-family: RobotoCondensed-Bold, "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
 }
+.titleAnimation {
+  animation-name: zoomout;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: normal;
+}
+@keyframes zoomout {
+  0% {
+    transform: translate(300px, 400px);
+    font-size: 4em;
+  }
+  60% {
+    transform: translate(300px, 400px);
+    font-size: 4em;
+  }
+  100% {
+    transform: translate(447.4px, 32.9px);
+    font-size: 30px;
+  }
+}
+
 .subtitle {
   fill: #231f20;
   font-size: 16px;
-  font-family: RobotoCondensed-Regular, "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /* Buttons */
 .buttonlabel {
   font-size: 17px;
   fill: #fff;
-  font-family: RobotoCondensed-Bold, "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
 }
 #typicalbtnOutline {
@@ -74,7 +98,7 @@ p {
 .iconlabel {
   fill: #231f20;
   font-size: 14px;
-  font-family: RobotoCondensed-Bold, "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
 }
 .revalorizelabel {
@@ -102,7 +126,7 @@ ul.tooltipList {
 li.tooltipItem {
   font-size: 1em;
   color: black;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   margin: 0.5em 0;
   padding-left: 1em;
 }
@@ -118,7 +142,7 @@ ul.tooltipSublist {
 li.tooltipSublistItem {
   font-size: 0.9em;
   color: black;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   margin: 0.3em 0;
   padding-left: 0;
 }
@@ -555,11 +579,6 @@ li.tooltipSublistItem {
 
 .cls-164 {
   clip-path: url(#clip-path);
-}
-
-.cls-165 {
-  font-size: 16px;
-  font-family: RobotoCondensed-Regular, Roboto Condensed;
 }
 
 .cls-207 {
