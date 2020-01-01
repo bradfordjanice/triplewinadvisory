@@ -1,5 +1,3 @@
-// console.log("Hello Project.");
-
 // Design
 const designicon = document.getElementById("designiconHotspot");
 const designtooltip = document.getElementById("designtooltip");
