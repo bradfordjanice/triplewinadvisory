@@ -95,6 +95,7 @@ img {
   stroke: #ee5f24;
   stroke-miterlimit: 10;
   stroke-width: 2.02px;
+  opacity: 0%;
 }
 .typicalbtnBkgnd {
   fill: #ee5f24;
@@ -104,6 +105,7 @@ img {
   stroke: #1b75bc;
   stroke-miterlimit: 10;
   stroke-width: 2.02px;
+  opacity: 0%;
 }
 .circularbtnBkgnd {
   fill: #1b75bc;
@@ -113,6 +115,7 @@ img {
   stroke: #8db845;
   stroke-miterlimit: 10;
   stroke-width: 2.02px;
+  opacity: 100%;
 }
 .efficiencybtnBkgnd {
   fill: #8db845;
@@ -122,6 +125,7 @@ img {
   stroke: #193e4f;
   stroke-miterlimit: 10;
   stroke-width: 2.02px;
+  opacity: 0%;
 }
 .ecologybtnBkgnd {
   fill: #193e4f;
@@ -161,7 +165,7 @@ ul.tooltipList {
   list-style-type: none;
   margin-left: 0;
   padding-left: 1em;
-  text-indent: -1.1em;
+  /* text-indent: -1.1em; */
 }
 li.tooltipItem {
   font-size: 1em;
@@ -170,14 +174,18 @@ li.tooltipItem {
   margin: 0.5em 0;
   padding-left: 1em;
 }
+/*
 li.tooltipItem:before {
   content: "\2756\0020\0020";
 }
+*/
 ul.tooltipSublist {
   list-style-type: disc;
   list-style-position: inside;
-  margin-left: 0;
+  /* margin-left: 1em; */
+  margin-left: 0.5em;
   padding-left: 1em;
+  text-indent: -1.1em;
 }
 li.tooltipSublistItem {
   font-size: 0.9em;
