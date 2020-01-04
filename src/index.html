@@ -68,7 +68,7 @@ Animator: Janice Bradford
               </text>
             </g>
             <!-- Efficiency Measures Button -->
-            <g id="efficiencybtn">
+            <g id="efficiencybtn" pointer-events="all">
               <rect id="efficiencybtnOutline" x="1.01" y="112.74" width="301.99" height="52.49"/>
               <rect class="efficiencybtnBkgnd" data-name="efficiency-btn-bkgnd" x="7.32" y="118.27" width="289.82" height="42.18"/>
               <text class="buttonlabel" text-anchor="start" transform="translate(41.96 145.47)" x="0" y="0">
@@ -85,6 +85,9 @@ Animator: Janice Bradford
             </g>
           </g> <!-- end of Button group -->
 
+          <!--
+            NOTE:  Perhaps use removeEventListener to stop tooltips when changing graphs.
+          -->
           <!-- VALUE CHAIN EFFICIENCIES GRAPHIC -->
 
           <!-- title group -->
@@ -880,6 +883,7 @@ Animator: Janice Bradford
     </div> <!-- wrapper -->
   </body>
 
+  <!-- <script src="../src/buttons.js"></script> -->
   <script src="../src/tooltips.js"></script>
 
 </html>
