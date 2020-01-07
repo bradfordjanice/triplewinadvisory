@@ -17,6 +17,7 @@ p {
 }
 
 /* size and center animation on web page */
+/* make this responsive to window size */
 #efficienciesAnimation,
 #typicalAnimation {
   display: block;
