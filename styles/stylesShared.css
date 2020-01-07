@@ -16,6 +16,15 @@ p {
   font-size: 1em;
 }
 
+/* size and center animation on web page */
+#efficienciesAnimation,
+#typicalAnimation {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}
+
 /* title and subtitle */
 .title {
   font-size: 30px;
