@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+
+<!-- 
+Project: Triple Win Advisory Value Chain Efficiencies Animation
+File Name: efficiencies.html
+Date: 12/16/19
+Animator: Janice Bradford
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="animation author" content="Janice Bradford" />
+    <meta
+      name="description"
+      content="Efficiency intervention measures that support GHG emissions reductions."
+    />
+    <meta name="keywords" content="supply chain efficiencies" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Triple Win Advisory</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../styles/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/stylesShared.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/stylesEfficiencies.css" rel="stylesheet" type="text/css" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <main>
+      <div id="efficienciesAnimation">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1175.68 818.87">
+
+          <defs>        
+            <clipPath id="clip-path" transform="translate(17.96 -23.52)">
+              <path class="cls-1" d="M238.39,478.71l-8.75,9.94-2,6.75,9.53-4,.4,16.29s-.4,9.94-18.28,9.94-27.82,2-33.78-7.95.4-47.29.4-47.29A189.12,189.12,0,0,1,215.34,460c15.89,0,22.25,2,22.25,2Z"/>
+            </clipPath>
+          </defs>
+                  
+          <!-- Triple Win Advisory Logo -->
+          <g id="logo">
+            <image id="logo-img" width="800" height="300" transform="translate(927.32 0.3) scale(0.31)" xlink:href="data:image/png;base64,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"/>
+          </g> <!-- end of Logo -->
+         
+          <!-- Button Group -->
+          <g id="buttonGroup">
+            <!-- Typical Value Chain Model Button -->
+            <g id="typicalbtn">
+              <rect id="typicalbtnOutline" x="1.01" y="1" width="301.99" height="52.49"/>
+              <rect class="typicalbtnBkgnd" x="7.32" y="6.37" width="289.82" height="42.18"/>
+              <text class="buttonlabel" text-anchor="start" transform="translate(41.96 33.46)" x="0" y="0">
+                <tspan x="0" y="0">TYPICAL VALUE CHAIN MODEL</tspan>
+              </text>
+            </g>
+            <!-- Circular Value Chain Model Button -->
+            <g id="circularbtn">
+              <rect id="circularbtnOutline" x="1.01" y="56.74" width="301.99" height="52.49"/>
+              <rect class="circularbtnBkgnd" x="7.32" y="62.32" width="289.82" height="42.18"/>
+              <text class="buttonlabel" text-anchor="start" transform="translate(41.96 89.97)" x="0" y="0">
+                <tspan x="0" y="0">CIRCULAR VALUE CHAIN MODEL</tspan>
+              </text>
+            </g>
+            <!-- Efficiency Measures Button -->
+            <g id="efficiencybtn" pointer-events="all">
+              <rect id="efficiencybtnOutline" x="1.01" y="112.74" width="301.99" height="52.49"/>
+              <rect class="efficiencybtnBkgnd" data-name="efficiency-btn-bkgnd" x="7.32" y="118.27" width="289.82" height="42.18"/>
+              <text class="buttonlabel" text-anchor="start" transform="translate(41.96 145.47)" x="0" y="0">
+                <tspan x="0" y="0">EFFICIENCY MEASURES</tspan>
+              </text>
+            </g>
+            <!-- Industrial Ecology Measures Button -->
+            <g id="ecologybtn">
+              <rect id="ecologybtnOutline" x="1.01" y="168.74" width="301.99" height="52.49"/>
+              <rect class="ecologybtnBkgnd" x="7.32" y="174.22" width="289.82" height="42.18"/>
+              <text class="buttonlabel" text-anchor="start" transform="translate(41.96 202.0)" x="0" y="0">
+                <tspan x="0" y="0">INDUSTRIAL ECOLOGY MEASURES</tspan>
+              </text>
+            </g>
+          </g> <!-- end of Button group -->
+
+          <!--
+            NOTE:  Perhaps use removeEventListener to stop tooltips when changing graphs if they are all loaded on the same page.
+          -->
+          <!-- VALUE CHAIN EFFICIENCIES GRAPHIC -->
+
+          <!-- title group -->
+          <g id="efficienciesTitlegroup">
+            <!-- title -->
+            <text class="title titleAnimation" text-anchor="start" transform="translate(447.4 32.9)" x="0" y="0">
+              <tspan class="" x="0" y="0">VALUE CHAIN EFFICIENCIES</tspan>
+            </text>
+            <!-- title underline -->
+            <line id="efficiencies-underline" class="titleUnderline subtitleAnimation" x1="450.17" y1="44.88" x2="785.07" y2="44.88"/>
+            <!-- subtitle -->
+            <text class="subtitle subtitleAnimation" text-anchor="start" transform="translate(340.6 69.5)" x="0" y="0">
+              <tspan x="0" y="0">Efficiency intervention measures that support GHG emissions reductions.</tspan>
+            </text>
+          </g>
+
+          <!-- Value Chain Efficiencies icon group -->
+          <g class="efficienciesIcongroup ">
+            <!-- Design Product -->
+            <g id="A1-design-product">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="end" transform="translate(177.4 450.2)" x="0" y="0">
+                <tspan x="0.2em" dy="1.1em">DESIGN</tspan>
+                <tspan x="0" dy="1.1em">PRODUCT</tspan>
+              </text>
+              <!-- icon -->
+              <g id="designicon">
+                <!-- icon background-->
+                <circle class="designiconBkgndPulse" cx="233.29" cy="463.35" r="40.23"/>
+                <!-- icon -->
+                <g>
+                  <rect class="iconDrawing" x="207.2" y="474.59" width="46.06" height="2.09"/>
+                  <path class="iconDrawing" d="M207.59,511.87a1,1,0,0,1-1.05-1.05v-5.53a1,1,0,0,1,2.09,0v5.53A1,1,0,0,1,207.59,511.87Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M215.57,511.87a1,1,0,0,1-1-1.05v-5.53a1,1,0,0,1,2.09,0v5.53A1,1,0,0,1,215.57,511.87Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M223.87,511.87H199.52a1,1,0,1,1,0-2.09h24.35a1,1,0,0,1,0,2.09Z" transform="translate(17.96 -23.52)"/>
+                  <g>
+                    <path class="iconDrawing" d="M202.82,500.35h0a1.11,1.11,0,0,1-1.08-1.14l.39-14.8-3,1.68a1.11,1.11,0,0,1-1.45-.32L193,479.16a1.14,1.14,0,0,1-.18-.86,1.08,1.08,0,0,1,.49-.72L203.65,471a1.1,1.1,0,0,1,1.47.26s3.2,4.06,8,4.06a1.11,1.11,0,0,1,0,2.22,12.92,12.92,0,0,1-9.07-4.16l-8.57,5.47,3.43,4.85,3.81-2.15a1.11,1.11,0,0,1,1.66,1l-.45,16.76A1.11,1.11,0,0,1,202.82,500.35Z" transform="translate(17.96 -23.52)"/>
+                    <path class="iconDrawing" d="M224.11,499.87a1.11,1.11,0,0,1-1.1-1.08l-.43-16.28a1.09,1.09,0,0,1,.53-1,1.12,1.12,0,0,1,1.12,0l3.81,2.15,3.43-4.85-8.57-5.47a12.92,12.92,0,0,1-9.07,4.16,1.11,1.11,0,1,1,0-2.22c4.79,0,8-4,8-4.06a1.11,1.11,0,0,1,1.48-.26l10.34,6.61a1,1,0,0,1,.49.72,1.1,1.1,0,0,1-.18.86l-4.68,6.61a1.11,1.11,0,0,1-1.45.32l-3-1.68.37,14.32a1.11,1.11,0,0,1-1.08,1.14Z" transform="translate(17.96 -23.52)"/>
+                  </g>
+                  <g>
+                    <g>
+                      <path class="iconDrawing" d="M235,492.09a.47.47,0,0,1-.32-.12l-3.57-3.38a.48.48,0,0,1-.15-.32.46.46,0,0,1,.13-.33l14.34-15.18a.45.45,0,0,1,.33-.14.4.4,0,0,1,.33.12l3.57,3.38a.43.43,0,0,1,.14.32.44.44,0,0,1-.12.33L235.37,492A.47.47,0,0,1,235,492.09Zm-2.92-3.85L235,491l13.7-14.5-2.89-2.73Z" transform="translate(17.96 -23.52)"/>
+                      <path class="iconDrawing" d="M235,492.55a.91.91,0,0,1-.63-.25l-3.57-3.38a.93.93,0,0,1-.29-.64.87.87,0,0,1,.25-.65l14.34-15.18a1,1,0,0,1,.64-.29.88.88,0,0,1,.66.25l3.57,3.38a.91.91,0,0,1,0,1.29l-14.35,15.18A.92.92,0,0,1,235,492.55Zm10.78-19.48-14.36,15.18,3.58,3.39h0l14.34-15.18ZM235,491.61l-3.55-3.36L245.8,473.1l3.55,3.36Zm-2.28-3.39,2.24,2.12,13.09-13.85-2.24-2.11Z" transform="translate(17.96 -23.52)"/>
+                    </g>
+                    <g>
+                      <path class="iconDrawing" d="M246.94,479.27a.48.48,0,0,1-.32-.13l-3.46-3.27a.46.46,0,1,1,.64-.67l3.45,3.26a.46.46,0,0,1,0,.66A.44.44,0,0,1,246.94,479.27Z" transform="translate(17.96 -23.52)"/>
+                      <path class="iconDrawing" d="M246.94,479.72a.9.9,0,0,1-.64-.26l-3.45-3.26a.92.92,0,0,1,0-1.29.93.93,0,0,1,.65-.29.83.83,0,0,1,.65.25l3.45,3.27a.91.91,0,0,1,0,1.29A.92.92,0,0,1,246.94,479.72Zm-3.45-4.19,3.45,3.29h0Z" transform="translate(17.96 -23.52)"/>
+                    </g>
+                    <g>
+                      <path class="iconDrawing" d="M229.31,494.86a.47.47,0,0,1-.44-.62L231,488.1a.46.46,0,0,1,.59-.28.47.47,0,0,1,.29.59l-1.78,5.08,4.7-2.28a.48.48,0,0,1,.63.22.47.47,0,0,1-.22.62l-5.71,2.77A.52.52,0,0,1,229.31,494.86Z" transform="translate(17.96 -23.52)"/>
+                      <path class="iconDrawing" d="M229.31,495.31a.88.88,0,0,1-.6-.23.91.91,0,0,1-.26-1l2.14-6.15a.93.93,0,0,1,1.17-.56.91.91,0,0,1,.56,1.17l-1.41,4.05,3.72-1.8a.87.87,0,0,1,.69-.05.94.94,0,0,1,.53.47.9.9,0,0,1,0,.7.88.88,0,0,1-.46.52l-5.72,2.77A.9.9,0,0,1,229.31,495.31Zm2.16-7.05-2.17,6.13v0h0l5.71-2.77-5.69,2.73Z" transform="translate(17.96 -23.52)"/>
+                    </g>
+                  </g>
+                  <g class="cls-164">
+                    <path class="iconDrawing" d="M235.22,505.62H189.16a1,1,0,0,1-1-1V465.07a1,1,0,0,1,1-1.05h46.06a1,1,0,0,1,1.05,1.05v39.51A1,1,0,0,1,235.22,505.62Zm-45-2.09h44V466.12h-44Z" transform="translate(17.96 -23.52)"/>
+                  </g>
+                </g>
+              </g>
+              <!-- hot spot -->
+              <circle id="designiconHotspot" pointer-events="all" cx="233.29" cy="463.35" r="40.23"/>
+            </g>
+            <!-- Arrow from Design Product icon to Source Raw Materials icon-->
+            <g id="a1-a2-arrow">
+              <g>
+                <path class="pathRed" d="M215.36,446.66A158.91,158.91,0,0,1,231.49,410" transform="translate(17.96 -23.52)"/>
+                <polygon class="arrowRed" points="254.36 399.07 251.87 399.65 249.02 387.36 236.96 391.1 236.2 388.65 250.89 384.1 254.36 399.07"/>
+              </g>
+            </g>
+            <!-- Source Raw Materials Icon -->
+            <g id="A2-source-raw-materials">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="end" transform="translate(230.3 319.0)" x="0" y="0">
+                <tspan x="0.2em" dy="1.1em">SOURCE RAW</tspan>
+                <tspan x="0" dy="1.1em">MATERIALS</tspan>
+              </text>
+              <!-- icon -->
+              <circle id="materials-bkgnd" class="iconRed" cx="285.14" cy="343.31" r="40.23"/>
+              <g id="materials-icon">
+                <path class="iconDrawing" d="M260.23,393.8a1.14,1.14,0,0,1-1.14-1.13V385a1.14,1.14,0,0,1,2.28,0v7.7A1.14,1.14,0,0,1,260.23,393.8Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M274.73,393.8a1.14,1.14,0,0,1-1.13-1.13V385a1.14,1.14,0,0,1,2.27,0v7.68A1.14,1.14,0,0,1,274.73,393.8Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M273.75,386.11a11,11,0,0,1-6.06-1.8,11,11,0,0,1-6.05,1.8,11.18,11.18,0,0,1-10.77-8.29,11.12,11.12,0,0,1-4.23-17.6,10.91,10.91,0,0,1-.83-4.19A11.15,11.15,0,0,1,257,344.9a10.23,10.23,0,0,1,1.56.11,11.11,11.11,0,0,1,16.88.09,11.44,11.44,0,0,1,2.08-.2A11.14,11.14,0,0,1,288.6,356a10.84,10.84,0,0,1-.86,4.28,11.11,11.11,0,0,1-3.1,16.93A11.07,11.07,0,0,1,273.75,386.11Zm-6.06-4.62.69.53a8.85,8.85,0,0,0,14.12-5.7l.09-.59.53-.26a8.86,8.86,0,0,0,2.47-14.16l-.57-.58.36-.72a8.77,8.77,0,0,0,.95-4,8.82,8.82,0,0,0-11.1-8.56l-.74.19L274,347a8.84,8.84,0,0,0-14.16-.11l-.43.56-.69-.14a9.16,9.16,0,0,0-1.8-.18,8.88,8.88,0,0,0-8.87,8.86,8.74,8.74,0,0,0,.92,3.91l.36.73-.58.58a8.86,8.86,0,0,0,3.43,14.64l.61.21.13.64A8.86,8.86,0,0,0,267,382Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M256.2,372.09a2.35,2.35,0,0,1-.64-.09c-2.06-.57-2.72-1.73-2.91-2.6-.57-2.56,2.29-5.66,4.8-7.81A1.19,1.19,0,1,1,259,363.4c-3,2.61-4.21,4.64-4,5.48.1.42.72.67,1.22.81.44,0,1.87-1.57,3.25-5.13a1.2,1.2,0,0,1,2.23.87C260.68,368,258.7,372.09,256.2,372.09Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M277.88,372.1c-2.08,0-3.56-2.72-4.75-5.46a1.2,1.2,0,1,1,2.2-.95c1.7,3.9,2.58,4,2.59,4h0c.42-.12,1.13-.37,1.22-.77.16-.69-.72-2.41-3.7-5A1.19,1.19,0,1,1,277,362.1c3.44,3,4.9,5.42,4.46,7.35-.2.85-.86,2-2.91,2.55A2.88,2.88,0,0,1,277.88,372.1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M267.77,377.79c-4.31,0-7.89-5.16-8.21-11.91,0-.58,0-1.17,0-1.75h0a4.05,4.05,0,0,1-.08-8.1,4.06,4.06,0,0,1,3.83-2.76,3.93,3.93,0,0,1,.84.09,4.05,4.05,0,0,1,3.27-1.67,4,4,0,0,1,3.3,1.72,4,4,0,0,1,4.88,2.62,4.05,4.05,0,0,1-.14,8.1h-.2c0,.33.06.67.07,1,.33,6.88-2.87,12.45-7.29,12.66Zm-6.95-16.24a1.16,1.16,0,0,1,.66.22,1.11,1.11,0,0,1,.46,1.06,17,17,0,0,0-.11,2.94c.25,5.34,3,9.75,5.94,9.75h.15c3-.15,5.39-4.86,5.13-10.28a16.77,16.77,0,0,0-.32-2.5,1.14,1.14,0,0,1,1.74-1.17,1.79,1.79,0,1,0,.5-3.2,1.13,1.13,0,0,1-1-.18,1.16,1.16,0,0,1-.46-.89,1.78,1.78,0,0,0-1.77-1.75,1.73,1.73,0,0,0-1,.28,1.13,1.13,0,0,1-1,.12,1.12,1.12,0,0,1-.69-.73,1.77,1.77,0,0,0-3.36-.07,1.1,1.1,0,0,1-.66.67,1.17,1.17,0,0,1-.95-.05,1.78,1.78,0,0,0-2.61,1.54,1.1,1.1,0,0,1-.46.9,1.15,1.15,0,0,1-1,.18,1.48,1.48,0,0,0-.51-.09,1.78,1.78,0,1,0,.78,3.37A1.11,1.11,0,0,1,260.82,361.55Z" transform="translate(17.96 -23.52)"/>
+              </g>
+            </g>
+            <!-- path from Raw Materials to Procure Packaging -->
+            <path id="A2-A3-path" class="pathGreyDashed" d="M297.31,340.88a361.92,361.92,0,0,1,49.3-29.63" transform="translate(17.96 -23.52)"/>
+            <!-- Procure Packaging Icon -->
+            <g id="A3-procure-packaging">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="end" transform="translate(350.4 251.6)" x="0" y="0">
+                <tspan x="0.2em" dy="1.1em">PROCURE</tspan>
+                <tspan x="0" dy="1.1em">PACKAGING</tspan>
+              </text>
+              <!-- icon -->
+              <g id="packagingicon">
+                <!-- icon background -->
+                <circle class="packagingiconBkgndPulse" cx="400.7" cy="271.14" r="40.23"/>
+                <!-- icon -->
+                <g>
+                  <path class="iconDrawing" d="M391.49,316.83H361.25a1.11,1.11,0,0,1-1.11-1.11V286.46a1.11,1.11,0,0,1,1.11-1.11h30.24a1.11,1.11,0,0,1,1.11,1.11v29.26A1.11,1.11,0,0,1,391.49,316.83Zm-29.14-2.21h28V287.56h-28Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M391.49,316.83a1.13,1.13,0,0,1-.78-.32,1.12,1.12,0,0,1,0-1.57l11.87-11.87v-27.7H374.85L362,287.27a1.11,1.11,0,1,1-1.51-1.63l13.18-12.19a1.09,1.09,0,0,1,.75-.3h29.27a1.11,1.11,0,0,1,1.11,1.11v29.27a1.11,1.11,0,0,1-.33.78l-12.19,12.2A1.14,1.14,0,0,1,391.49,316.83Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M391.49,287.56a1.09,1.09,0,0,1-.78-.32,1.1,1.1,0,0,1,0-1.56l10.74-10.9a1.11,1.11,0,1,1,1.57,1.56l-10.73,10.89A1.11,1.11,0,0,1,391.49,287.56Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M371.18,301.34a.69.69,0,0,1-.51-.21.72.72,0,0,1-.23-.53V286a.76.76,0,0,1,.19-.5L381,274.09a.74.74,0,0,1,1,0,.72.72,0,0,1,.05,1l-10.21,11.17v13.59l8.6-.28V286.29a.75.75,0,0,1,.19-.49l10.08-11.38a.74.74,0,0,1,1-.06.73.73,0,0,1,.07,1L382,286.57v13.71a.73.73,0,0,1-.72.73l-10.08.33Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M374.26,308.17H368.4a.74.74,0,0,1,0-1.48h5.86a.74.74,0,0,1,0,1.48Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M374.26,311.86H368.4a.74.74,0,1,1,0-1.47h5.86a.74.74,0,0,1,0,1.47Z" transform="translate(17.96 -23.52)"/>
+                </g>
+              </g>
+              <!-- hot spot -->
+              <circle id="packagingiconHotspot" pointer-events="all" cx="400.7" cy="271.14" r="40.23"/>
+            </g>
+            <!-- path from Procure Packaging to Manufacture Product -->
+            <path id="A3-A4-path" class="pathGreyDashed" d="M422.07,281.58A566.64,566.64,0,0,1,482.92,267" transform="translate(17.96 -23.52)"/>
+            <!-- Plane 1 -->
+            <g id="transport-airplane-1">
+              <!-- icon -->
+              <g id="plane1iconPulse">
+                <path d="M450.66,205.3c-1.87.17-2.54.45-9.8,2l-2.39-2.14,2-.44a2.6,2.6,0,0,0-1.11-5.09l-5.67,1.25-10.83-9.71a3,3,0,0,0-2.58-.68,2.93,2.93,0,0,0-2.1,3.94l6.46,16.43-3.7.81a21.5,21.5,0,0,0-4.44,1.62l-4.56-5.25a2.81,2.81,0,0,0-4.71,2.92l2.57,6.14c-1.94,1.25-3.24,2.22-3.3,2.27a.86.86,0,0,0,.34,1.54c.07,0,1.66.35,3.94.68l.24,6.65a2.81,2.81,0,0,0,5.5.68l1.94-6.68a22,22,0,0,0,4.72-.39l3.7-.82,1,17.63a2.94,2.94,0,0,0,3.56,2.7,3,3,0,0,0,2.06-1.7l5.76-13.35,5.67-1.25a2.6,2.6,0,1,0-1.11-5.08l-2,.44,1.27-3c7.26-1.63,8-1.65,9.74-2.28h0c4.12-1.48,6.54-4.1,6-6.51S455,204.92,450.66,205.3Zm-10.93-4a.87.87,0,1,1,.37,1.69l-3.23.71-1.59-1.43Zm-19.94-7.54a1.19,1.19,0,0,1,1.91-1.32l17.07,15.29-12.41,2.72Zm-10.2,15a1.05,1.05,0,0,1,1,.34l4.26,4.91c-1.14.59-2.35,1.29-3.61,2.07l-2.45-5.87A1.07,1.07,0,0,1,409.59,208.85Zm4.47,20.34a1.07,1.07,0,0,1-1.3-1l-.23-6.35c1.47.18,2.86.31,4.14.37l-1.82,6.24A1,1,0,0,1,414.06,229.19Zm30.14-7.51a.87.87,0,0,1,.37,1.7l-4.45,1,.85-2ZM431.91,239a1.19,1.19,0,0,1-2.28-.4l-1-17.91L441,217.94Zm-9.1-18.82a21.53,21.53,0,0,1-5.16.34,63.08,63.08,0,0,1-8.45-.91,65.2,65.2,0,0,1,7.44-4.44,21.61,21.61,0,0,1,4.68-1.77c29.25-6.39,27.61-6.15,29.25-6.32a4.25,4.25,0,0,1,1.44,6.58C450.45,214.17,452,213.71,422.81,220.16Zm31.68-7.64a5.7,5.7,0,0,0-1.2-5.48c1.4.14,3.57.68,3.86,2C457.39,210.13,456.31,211.45,454.49,212.52Z" transform="translate(17.96 -23.52)"/>
+              </g>
+              <!-- hot spot -->
+              <circle id="plane1iconHotspot" pointer-events="all" cx="450.7" cy="191.14" r="40.23"/>
+            </g>
+            <!-- Manufacture Product Icon -->
+            <g id="A4-manufacture-product" >
+              <!-- label -->
+              <text class="iconlabel" text-anchor="middle" transform="translate(537.4 285.1)" x="0" y="0">
+                <tspan x="0" dy="1.1em">MANUFACTURE</tspan>
+                <tspan x="0" dy="1.1em">PRODUCT</tspan>
+              </text>
+              <!-- icon -->
+              <g id="manufactureicon">
+                <!-- icon background -->
+                <circle class="manufactureiconBkgndPulse" cx="542.07" cy="236.79" r="40.23"/>
+                <!-- icon -->
+                <g>
+                  <path id="Shape" class="iconDrawing" d="M544.79,247.81h-.92a4.17,4.17,0,0,0-3.75-3.3c0-.54-.11-.64-1.15-2.72V238l1-1.95a1.67,1.67,0,0,0-.07-1.62,1.63,1.63,0,0,0-1.42-.78H532a1.65,1.65,0,0,0-1.42.78,1.69,1.69,0,0,0-.07,1.63l.57,1.13c-24.44,4.52-20.66,3.94-22.87,3.94a.83.83,0,0,0,0,1.66H509v1.66h-2.5a4.17,4.17,0,0,0-4.15,4.16v11.64a4.17,4.17,0,0,0,4.15,4.16h.84v4.15h-1.67a1.66,1.66,0,0,0-1.66,1.67h-2.49a1.66,1.66,0,0,0-1.67,1.66v2.49a4.17,4.17,0,0,0,4.16,4.16v3.33a1.66,1.66,0,0,0,1.66,1.66h12.47a1.67,1.67,0,0,0,1.67-1.66v-3.33H539.8a4.17,4.17,0,0,0,4.16-4.16V255.29h.83a2.49,2.49,0,0,0,2.49-2.49v-2.5A2.49,2.49,0,0,0,544.79,247.81Zm-2.5.83v21.62h-10.8v-10a4.18,4.18,0,0,0-4.16-4.16h-6.65a4.16,4.16,0,0,0-4.16,4.16,2.49,2.49,0,0,1-2.49,2.49H510.7V246.15h29.1A2.48,2.48,0,0,1,542.29,248.64Zm-24.11,19.95h-5v-4.15H514a4.15,4.15,0,0,0,4.15-4.16,2.49,2.49,0,0,1,2.5-2.49h6.65a2.48,2.48,0,0,1,2.49,2.49v10h-10A1.67,1.67,0,0,0,518.18,268.59Zm-6.65-25.77a.82.82,0,0,0,.71-.42l19.25-3.57v3c-1,2.07-1.15,2.16-1.15,2.69H510.7v-1.66ZM532,244.48l.83-1.66h4.79l.83,1.66Zm5.31-3.32h-4.16v-2.5h4.16Zm1.14-5.82-.83,1.66h-4.79l-.83-1.66Zm-34.4,24.94V248.64a2.49,2.49,0,0,1,2.49-2.49H509v16.62h-2.5A2.49,2.49,0,0,1,504.05,260.28Zm5,4.16h2.49v4.15H509Zm-7.48,10v-2.49h2.49v5A2.49,2.49,0,0,1,501.56,274.41Zm16.62,7.49h-6.65v-1.67a.83.83,0,0,0-1.66,0v1.67h-4.16V270.26h4.16v1.66a.83.83,0,0,0,1.66,0v-1.66h6.65Zm21.62-5H519.85v-5h22.44v2.49A2.49,2.49,0,0,1,539.8,276.91Zm5.82-24.11a.83.83,0,0,1-.83.83H544v-4.16h.83a.83.83,0,0,1,.83.83Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M536.89,256.12a3.74,3.74,0,1,0,3.74,3.74A3.74,3.74,0,0,0,536.89,256.12Zm0,5.82a2.08,2.08,0,1,1,2.08-2.08A2.08,2.08,0,0,1,536.89,261.94Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M510.7,274.41a.83.83,0,0,0-.83.83v1.67a.83.83,0,0,0,1.66,0v-1.67A.83.83,0,0,0,510.7,274.41Z" transform="translate(17.96 -23.52)"/>
+                </g>
+              </g>
+              <!-- hot spot -->
+              <circle id="manufactureiconHotspot" pointer-events="all" cx="542.07" cy="236.79" r="40.23"/>
+            </g>
+            <!-- path from Manufacture Product to Warehouse Product -->
+            <path id="A4-A5-path" class="pathGreyDashed" d="M565.64,257.58q15.95-.76,32.24-.78,18.45,0,36.47,1" transform="translate(17.96 -23.52)"/>
+            <!-- Ship -->
+            <g id="transport-ship">
+              <g id="ship-icon">
+                <path class="iconDrawingIsolated" d="M627.22,207.57a5.55,5.55,0,0,1-1.57-.2l2.35-4a.8.8,0,0,0,.13-.47l0-8.34a.93.93,0,0,0-.93-.92h-1.06l-1.77-11.25a.93.93,0,0,0-.92-.78l-7.41,0a.93.93,0,0,0-.92.93l0,13.89h-1.86l0-15.75a.93.93,0,0,0-.93-.92L579,180a.91.91,0,0,0-.92.93l0,13-4.63,0a.94.94,0,0,0-.79.44.93.93,0,0,0,0,.9l5.55,10.95a8.22,8.22,0,0,0-1.77.78,5.18,5.18,0,0,1-2.91.82.93.93,0,0,0,0,1.85,6.9,6.9,0,0,0,3.8-1.05,5.23,5.23,0,0,1,2.33-.8,5.33,5.33,0,0,1,.57,0,5.19,5.19,0,0,1,2.92.8,7.49,7.49,0,0,0,7.6,0,5.22,5.22,0,0,1,2.92-.83,5.08,5.08,0,0,1,2.91.8,7.45,7.45,0,0,0,7.59,0,5.23,5.23,0,0,1,2.93-.83,5.16,5.16,0,0,1,2.91.8,7,7,0,0,0,3.81,1,6.9,6.9,0,0,0,3.78-1.05,5.22,5.22,0,0,1,2.92-.83,5.12,5.12,0,0,1,2.92.81,6.88,6.88,0,0,0,3.8,1,.93.93,0,1,0,0-1.85Zm-47.28-13.73v-.92l9.26,0,0,3.7h-.62L585.13,194a.91.91,0,0,0-.56-.18Zm11.13,2.74,0-3.7,9.27,0v3.7ZM611.42,191l-9.26,0v-3.71l9.26,0Zm-31.5-3.6,9.26,0,0,3.7-9.27,0Zm11.11,0,9.27,0V191l-9.26,0Zm-11.13-5.51,9.26,0,0,3.71-9.27,0Zm11.12,0,9.26,0v3.71l-9.26,0Zm20.38,3.63-9.26,0v-3.7l9.26,0Zm0,11.11-9.26,0v-3.7l9.26,0Zm12.8-2.82-5.4,0a.93.93,0,0,0-.65.27l-1.2,1.2,0-11.65,5.69,0Zm2,9L624,206.58l-.34-.17-.06,0-.3-.13-.14-.05-.26-.1-.17-.06-.28-.07-.19-.05-.31-.06-.21,0-.37,0-.2,0-.64,0a6.94,6.94,0,0,0-3.78,1,5.62,5.62,0,0,1-5.83,0,6.83,6.83,0,0,0-3.81-1,7,7,0,0,0-3.79,1.05,5.63,5.63,0,0,1-5.83,0,7.48,7.48,0,0,0-7.59,0,5.62,5.62,0,0,1-5.84,0,7,7,0,0,0-3.81-1h-.09L575,195.71l9.3,0,3.47,2.58a1,1,0,0,0,.56.19l27.78-.1a.9.9,0,0,0,.65-.28l2.5-2.51,7,0Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawingIsolated" d="M618.81,185.37a.93.93,0,0,0,.93.93h.93a.93.93,0,0,0,0-1.85h-.93A.93.93,0,0,0,618.81,185.37Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawingIsolated" d="M620.72,201.11a.93.93,0,0,0-.93-.92h-.93a.93.93,0,1,0,0,1.85h.93A.93.93,0,0,0,620.72,201.11Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawingIsolated" d="M616.09,201.13a.93.93,0,0,0-.93-.93h-.93a.93.93,0,1,0,0,1.85h.93A.93.93,0,0,0,616.09,201.13Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawingIsolated" d="M611.46,201.14a.93.93,0,0,0-.93-.92h-.93a.93.93,0,0,0,0,1.86h.93A.93.93,0,0,0,611.46,201.14Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawingIsolated" d="M606.83,201.16a.92.92,0,0,0-.93-.92H605a.93.93,0,1,0,0,1.85h.92A.93.93,0,0,0,606.83,201.16Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawingIsolated" d="M602.2,201.18a.93.93,0,0,0-.93-.93h-.93a.93.93,0,1,0,0,1.85h.92A.92.92,0,0,0,602.2,201.18Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawingIsolated" d="M597.57,201.19a.93.93,0,0,0-.93-.92h-.93a.93.93,0,1,0,0,1.85h.92A.93.93,0,0,0,597.57,201.19Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawingIsolated" d="M592.94,201.21a.93.93,0,0,0-.93-.92h-.93a.93.93,0,1,0,0,1.85H592A.93.93,0,0,0,592.94,201.21Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawingIsolated" d="M588.31,201.22a.93.93,0,0,0-.93-.92h-.93a.93.93,0,0,0-.92.93.92.92,0,0,0,.93.93h.92A.93.93,0,0,0,588.31,201.22Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawingIsolated" d="M583.67,201.24a.92.92,0,0,0-.92-.92h-.93a.93.93,0,1,0,0,1.85h.92A.92.92,0,0,0,583.67,201.24Z" transform="translate(17.96 -23.52)"/>
+              </g>
+            </g>
+            <!-- Warehouse Product Icon -->
+            <g id="A5-warehouse-product">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="middle" transform="translate(686.1 285.1)" x="0" y="0">
+                <tspan x="0" dy="1.1em">WAREHOUSE</tspan>
+                <tspan x="0" dy="1.1em">PRODUCT</tspan>
+              </text>
+              <!-- icon -->
+              <g id="warehouseicon">
+                <!-- icon background -->
+                <circle class="warehouseiconBkgndPulse" cx="692.51" cy="237.95" r="40.23"/>
+                <!-- icon -->
+                <g>
+                  <path class="cls-147" d="M699.23,267.15h-7.58V262h-18L673,251.06h-4.92L667.39,262h-.52l-1-11.82a6.63,6.63,0,0,0,4.22-2.74,5,5,0,0,0,3.42,1.35,5,5,0,0,0,2.78-.84,7.52,7.52,0,0,0,7.12,4c4.1,0,5.56-2,6.79-3.74a8.34,8.34,0,0,0,3.77.88c4,0,6.82-2.41,6.82-5.86a6.55,6.55,0,0,0-6.54-6.53,8.08,8.08,0,0,0-6.06,2.87,4.2,4.2,0,0,0-3.15-1.37,6.13,6.13,0,0,0-3.09.88,7.55,7.55,0,0,0-7.06-3.65,7,7,0,0,0-6.14,3.33,9.84,9.84,0,0,0-4.22-1.11c-3.57,0-6.37,2.45-6.37,5.58,0,.07,0,.14,0,.23v0c0,.07,0,.15,0,.23a6.76,6.76,0,0,0,.12,1.19h-1.63l-1.79,22.23h-4.26v12.94h-3v1.33h54.1v-1.33h-2.46Zm-45.38,12.94H652V268.48h2.82Zm15.46-27.7h2.42l.58,9.58h-3.58Zm-9.77-9c0-.05,0-.09,0-.13,0-2.09,1.89-4.25,5-4.25a8.4,8.4,0,0,1,4,1.22l.54.34.36-.52c1.33-1.88,2.49-3.21,5.43-3.26a6.41,6.41,0,0,1,6.27,3.61l.41.74.62-.57a4.53,4.53,0,0,1,2.83-1,3.13,3.13,0,0,1,2.68,1.56l.65.89.49-1c.79-1.63,3.21-3,5.39-3a5.22,5.22,0,0,1,5.21,5.2c0,2.67-2.26,4.53-5.49,4.53a6.67,6.67,0,0,1-3.6-1l-.54-.34-.63.9c-1.18,1.7-2.29,3.3-5.79,3.3-4,0-5.25-2.14-6.36-4l-.42-.71-.61.56a3.71,3.71,0,0,1-5.51-.55l-.65-.9-.48,1a5.22,5.22,0,0,1-3.61,2.81l-.32-3.89h-5.81a5.24,5.24,0,0,1-.15-1.19s0-.1,0-.14v-.23Zm1.29,36.73h-5.64l2.73-33.84h6.35L665.53,262h-4.7Zm29.49,0H662.16V263.3h28.16Zm7.57,0h-6.24V268.48h6.24Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M671.36,264.79h-8.09v3.53h8.09ZM670,267H664.6v-.87H670Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M680.29,264.79h-8.1v3.53h8.1ZM679,267h-5.43v-.87H679Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M689.22,264.79h-8.1v3.53h8.1Zm-1.33,2.2h-5.44v-.87h5.44Z" transform="translate(17.96 -23.52)"/>
+                </g>
+              </g>
+              <!-- hot spot -->
+              <circle id="warehouseiconHotspot" pointer-events="all" cx="692.51" cy="237.95" r="40.23"/>
+            </g>
+            <!-- path from Warehouse Product to Sell Product -->
+            <path id="A5-A6-path" class="pathGreyDashed" d="M715.07,267.82a556.72,556.72,0,0,1,70,17.46" transform="translate(17.96 -23.52)"/>
+            <!-- truck -->
+            <g id="transport-truck">
+              <g id="truck-icon">
+                <path class="iconDrawingIsolated" d="M790.55,218.39l-2.42-2.29v-7.22a4.11,4.11,0,0,0-3.17-4l-8.06-1.9.3-1.28a1,1,0,0,0-.74-1.2l-29.82-7a1,1,0,0,0-1.2.73L740,217.27a1,1,0,0,0,.74,1.2l3.11.73a5,5,0,0,0,9.51,2.24l19.6,4.63h0a5,5,0,0,0,9.51,2.24l4.95,1.17a1,1,0,0,0,1.19-.74l2.22-9.39A1,1,0,0,0,790.55,218.39Zm-42.4,3.88a3,3,0,1,1,3.6-2.23A3,3,0,0,1,748.15,222.27Zm22.72-2.4-8.73-2.07a1,1,0,0,0-.46,1.94l8.74,2.06-.37,1.54-16.24-3.83a5,5,0,0,0-9.5-2.25l-2.14-.5,1.18-5,27.89,6.58-.37,1.54Zm3.87-16.4-3,12.92-27.88-6.58,3.35-14.2L775,202.19Zm7.33,2.75,2.44.58a2.12,2.12,0,0,1,1.64,2.08v6.39l-5.88-1.38,1.81-7.67Zm-4.81,22.92a3,3,0,0,1-2.27-3.41,1.07,1.07,0,0,0,.07-.19,1.23,1.23,0,0,0,0-.2,3,3,0,1,1,2.18,3.8ZM788,222.72l-1.84-.43.24-1,1.84.44Zm.7-3-2.81-.66a1,1,0,0,0-1.2.74l-.7,3a1,1,0,0,0,.74,1.19l2.81.67-.62,2.66-4-.94a5,5,0,0,0-9.5-2.25L772,223.8l4.46-18.9,3.68.87-2,8.63a1,1,0,0,0,.74,1.2l7.81,1.84,2.12,2-.07.31Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawingIsolated" d="M758.87,217l-.82-.19a1,1,0,0,0-.45,1.94l.81.19a1,1,0,0,0,1.2-.74A1,1,0,0,0,758.87,217Z" transform="translate(17.96 -23.52)"/>
+              </g>
+            </g>
+            <!-- Sell Product in Market Icon -->
+            <g id="A6-sell-product-in-market">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="start" transform="translate(894.1 243.5)" x="0" y="0">
+                <tspan x="0" dy="1.1em">SELL PRODUCT</tspan>
+                <tspan x="0" dy="1.1em">IN MARKET</tspan>
+              </text>
+              <!-- icon -->
+              <circle id="sell-bkgnd" class="iconRed" cx="841.6" cy="272.14" r="40.23"/>
+              <g id="sell-icon">
+                <g>
+                  <polygon class="iconDrawing" points="849.87 264.86 840.7 259.65 832.85 264.25 831.58 262.09 840.68 256.76 851.11 262.69 849.87 264.86"/>
+                  <path class="iconDrawing" d="M823,283a1.25,1.25,0,0,1-1.25-1.25l0-4.47a1.25,1.25,0,0,1,1.25-1.25,2.92,2.92,0,1,0-2.91-2.93,1.24,1.24,0,0,1-1.25,1.24,1.25,1.25,0,0,1-1.25-1.25,5.43,5.43,0,1,1,6.65,5.3v3.37A1.24,1.24,0,0,1,823,283Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M823.06,319.94l-12-.19a1.25,1.25,0,0,1-1.22-1.29l.56-18.8-3.35,1.88a1.27,1.27,0,0,1-1.64-.37l-5.24-7.48a1.23,1.23,0,0,1,.35-1.77l11.69-7.41a1.26,1.26,0,0,1,1.66.3c0,.05,3.59,4.59,9,4.61a1.33,1.33,0,0,0,.82,0c5.39,0,9-4.5,9-4.55a1.25,1.25,0,0,1,1.66-.28L846,292.09a1.24,1.24,0,0,1,.55.82,1.26,1.26,0,0,1-.21,1l-5.3,7.43a1.25,1.25,0,0,1-1.64.36l-3.34-1.9.42,18.8a1.25,1.25,0,0,1-1.24,1.28Zm-10.65-2.67,10.91.17,10.65-.09-.44-19.75a1.24,1.24,0,0,1,.61-1.1,1.26,1.26,0,0,1,1.26,0l4.28,2.44,3.88-5.44-9.62-6.21a14.59,14.59,0,0,1-10.24,4.65,1.33,1.33,0,0,0-.82,0,14.59,14.59,0,0,1-10.2-4.72L803,293.33l3.84,5.48,4.3-2.41a1.25,1.25,0,0,1,1.86,1.13Z" transform="translate(17.96 -23.52)"/>
+                </g>
+                <path class="iconDrawing" d="M844,318.83a2.45,2.45,0,0,1-2.32-1.69l-2.3-6.95a2.48,2.48,0,0,1,.14-1.87,2.43,2.43,0,0,1,1.42-1.23l3.28-1.08a2.44,2.44,0,0,1,3.09,1.56l2.3,7a2.48,2.48,0,0,1-.14,1.87,2.44,2.44,0,0,1-1.42,1.22l-.14-.43.14.43-3.28,1.08A2.35,2.35,0,0,1,844,318.83Zm1-12a1.36,1.36,0,0,0-.49.08L841.25,308a1.55,1.55,0,0,0-1,1.95l2.29,7a1.56,1.56,0,0,0,2,1l3.28-1.09a1.48,1.48,0,0,0,.89-.77,1.52,1.52,0,0,0,.09-1.18l-2.29-7a1.57,1.57,0,0,0-.78-.9A1.52,1.52,0,0,0,845,306.79Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M843.27,307.23l-.73-.53a12.92,12.92,0,0,0,2-5.16c.25-1.75-2.13-3.11-2.15-3.12l.44-.79c.12.07,2.95,1.68,2.6,4.05A13.59,13.59,0,0,1,843.27,307.23Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M843.57,314.16l.67-.36a.09.09,0,0,1,.13.06c.2.58.41.79.76.74l-.67-2.09-.3,0c-.91-.06-1.3-.45-1.62-1.45s-.15-1.79.75-2.14l-.13-.38a.1.1,0,0,1,.06-.13l.16-.05a.1.1,0,0,1,.13.06l.12.39c.89-.2,1.41.24,1.77,1.1,0,.06,0,.1,0,.13l-.66.33a.09.09,0,0,1-.13,0c-.18-.45-.35-.64-.63-.62l.58,1.79.27,0c.89.05,1.33.41,1.69,1.52.41,1.26.18,2-.7,2.34l.17.52a.11.11,0,0,1-.07.13l-.16.05a.09.09,0,0,1-.12-.06l-.17-.52c-.95.24-1.52-.17-1.89-1.19C843.51,314.23,843.52,314.18,843.57,314.16Zm0-4.37c-.25.15-.28.43-.12.91s.28.68.66.74Zm2,3.66c-.19-.58-.38-.82-.74-.9l.63,1.93C845.73,314.33,845.78,314.06,845.59,313.45Z" transform="translate(17.96 -23.52)"/>
+              </g>
+            </g>
+            <!-- path from Sell Product to Consumer Purchase -->
+            <path id="A6-A7-path" class="cls-67" d="M858.8,316.25a351.56,351.56,0,0,1,40.7,25.39" transform="translate(17.96 -23.52)"/>
+            <!-- Consumer Purchase Icon -->
+            <g id="A7-consumer-purchase">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="start" transform="translate(1000.5 326.1)" x="0" y="0">
+                <tspan x="0" dy="1.1em">CONSUMER</tspan>
+                <tspan x="0" dy="1.1em">PURCHASE</tspan>
+              </text>
+              <!-- icon -->
+              <circle id="purchase-bkgnd" class="iconRed" cx="947.87" cy="343.42" r="40.23"/>
+              <g id="purchase-icon">
+                <path class="iconDrawing" d="M942.42,387,911,386.45V355.4h31.43Zm-29.12-2.82,26.81.47V357.71H913.3Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M942.07,386.71a1.16,1.16,0,0,1-.78-2l5.73-5.25V354.89l-5.23,2.69a1.15,1.15,0,0,1-1.55-.49,1.16,1.16,0,0,1,.5-1.56l6.91-3.56a1.14,1.14,0,0,1,1.13,0,1.15,1.15,0,0,1,.55,1v27a1.15,1.15,0,0,1-.37.85l-6.11,5.59A1.12,1.12,0,0,1,942.07,386.71Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M935,362.19a1,1,0,0,1-1-1v-8.42c0-4.75-3.18-8.62-7.1-8.62s-7.1,3.87-7.1,8.62v8.42a1,1,0,0,1-2.08,0v-8.42c0-5.9,4.12-10.7,9.18-10.7s9.18,4.8,9.18,10.7v8.42A1,1,0,0,1,935,362.19Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M912.31,357a1.15,1.15,0,0,1-.67-2.09l4.57-3.31a1.12,1.12,0,0,1,.7-.22l31.29.51a1.16,1.16,0,0,1,1.13,1.17,1.17,1.17,0,0,1-1.17,1.14l-30.9-.5L913,356.73A1.15,1.15,0,0,1,912.31,357Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M941.06,353.88a1,1,0,0,1-1-1c0-6.61-4.77-8.66-6.51-8.66-3.58,0-6.5,3.89-6.5,8.66a1,1,0,0,1-2,0c0-5.88,3.81-10.66,8.5-10.66,3,0,8.51,3.13,8.51,10.66A1,1,0,0,1,941.06,353.88Z" transform="translate(17.96 -23.52)"/>
+              </g>
+            </g>
+            <!-- double arrow between Consumer Purchase and Refurbish Product -->
+            <g id="B16-A7-arrow">
+              <g>
+                <path class="pathBlue" d="M808.31,486.29c12.54-37.58,51.55-74.59,79.8-86.61" transform="translate(17.96 -23.52)"/>
+                <polygon class="arrowBlue" points="839.1 458.38 837.93 456.1 826.71 461.88 821.76 450.26 819.41 451.27 825.43 465.42 839.1 458.38"/>
+                <polygon class="arrowBlue" points="902.78 389.34 900.41 388.36 905.23 376.7 893.25 372.74 894.05 370.31 908.65 375.13 902.78 389.34"/>
+              </g>
+            </g>
+            <!-- path from Consumer Purchase to Consumer N Uses -->
+            <path id="A7-B11-path" class="cls-66" d="M956.31,397.74a164.86,164.86,0,0,1,24.05,48.77" transform="translate(17.96 -23.52)"/>
+            <!-- Corporate HQ Icon-->
+            <g id="C19-corporate-hq">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="middle" transform="translate(622.7 456.02)" x="0" y="0">
+                <tspan x="0" dy="1.1em">CORPORATE</tspan>
+                <tspan x="0" dy="1.1em">HQ</tspan>
+              </text>
+              <!-- icon -->
+              <g id="headquartersicon">
+                <!-- icon background -->
+                <circle class="headquartersiconBkgndPulse" cx="626.91" cy="398.3" r="45.47"/>
+                <!-- icon -->
+                <g>
+                  <g>
+                    <polygon class="cls-77" points="617.36 422.3 600.42 422.3 600.42 380.82 617.36 371.87 617.36 422.3"/>
+                    <rect class="cls-78" x="603.89" y="390.46" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="610.65" y="390.46" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="603.89" y="396.72" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="610.65" y="396.72" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="603.89" y="402.98" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="610.65" y="402.98" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="603.89" y="409.25" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="610.65" y="409.25" width="3.69" height="3.69"/>
+                  </g>
+                  <g>
+                    <polygon class="cls-77" points="634.35 422.3 617.41 422.3 617.41 380.82 634.35 371.87 634.35 422.3"/>
+                    <rect class="cls-78" x="620.88" y="390.46" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="627.65" y="390.46" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="620.88" y="396.72" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="627.65" y="396.72" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="620.88" y="402.98" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="627.65" y="402.98" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="620.88" y="409.25" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="627.65" y="409.25" width="3.69" height="3.69"/>
+                  </g>
+                  <g>
+                    <polygon class="cls-77" points="651.35 422.3 634.41 422.3 634.41 380.82 651.35 371.87 651.35 422.3"/>
+                    <rect class="cls-78" x="637.88" y="390.46" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="644.64" y="390.46" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="637.88" y="396.72" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="644.64" y="396.72" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="637.88" y="402.98" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="644.64" y="402.98" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="637.88" y="409.25" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="644.64" y="409.25" width="3.69" height="3.69"/>
+                  </g>
+                </g>
+              </g>
+              <!-- hot spot -->
+              <circle id="headquartersiconHotspot" pointer-events="all" cx="626.91" cy="398.3" r="45.47"/>
+            </g>
+            <!-- Consumer N Uses icon -->
+            <g id="B11-n-uses">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="start" transform="translate(1050.3 461.4)" x="0" y="0">
+                <tspan x="0" dy="1.1em">CONSUMER</tspan>
+                <tspan x="0" dy="1.1em">N USES</tspan>
+              </text>
+              <!-- icon -->
+              <circle id="n-uses-bkgnd" class="iconBlue" cx="997.55" cy="463.47" r="40.23"/>
+              <g id="n-uses-icon">
+                <path class="iconDrawing" d="M964.84,490l-6.67-.09a.92.92,0,0,1-.68-.29,1,1,0,0,1-.26-.68l.26-10-1.47.83a1,1,0,0,1-1.25-.27l-2.94-4.16a1,1,0,0,1-.16-.73,1,1,0,0,1,.42-.62l6.51-4.15a.94.94,0,0,1,1.26.22,6.81,6.81,0,0,0,4.82,2.45.91.91,0,0,1,.23,0,.78.78,0,0,1,.22,0A6.73,6.73,0,0,0,970,470a1,1,0,0,1,1.27-.22l6.5,4.15a.94.94,0,0,1,.42.62,1,1,0,0,1-.16.73L975,479.45a1,1,0,0,1-1.24.27l-1.48-.83.26,10a.94.94,0,0,1-.93,1Zm-5.69-2,5.83.07,5.68-.07-.28-10.76a.94.94,0,0,1,1.41-.85l2.2,1.24,1.87-2.64-5-3.19a8.3,8.3,0,0,1-5.74,2.54l-.22,0-.23,0a8.35,8.35,0,0,1-5.74-2.54L954,475l1.87,2.64,2.19-1.24a.95.95,0,0,1,1.42.85Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M987.31,479.35l-6.66-.08A1,1,0,0,1,980,479a1,1,0,0,1-.26-.68l.26-10-1.48.83a1,1,0,0,1-1.24-.28l-2.94-4.15a1,1,0,0,1-.16-.73.94.94,0,0,1,.42-.62l6.5-4.16a1,1,0,0,1,1.27.23,6.81,6.81,0,0,0,4.82,2.45.78.78,0,0,1,.22,0,.91.91,0,0,1,.23,0,6.73,6.73,0,0,0,4.82-2.45,1,1,0,0,1,1.27-.23l6.5,4.16a.94.94,0,0,1,.42.62,1,1,0,0,1-.16.73l-2.94,4.15a1,1,0,0,1-1.24.28l-1.48-.83.26,10a1,1,0,0,1-.26.68,1,1,0,0,1-.68.29Zm-5.68-2,5.83.07,5.68-.07-.29-10.75a1,1,0,0,1,.46-.84.94.94,0,0,1,1,0l2.2,1.24,1.86-2.65-5-3.18a8.35,8.35,0,0,1-5.74,2.54.91.91,0,0,1-.23,0,.78.78,0,0,1-.22,0,8.37,8.37,0,0,1-5.74-2.54l-5,3.18,1.87,2.65,2.19-1.24a.94.94,0,0,1,1,0,1,1,0,0,1,.46.84Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M972.31,513.4l-6.67-.08A1,1,0,0,1,965,513a1,1,0,0,1-.26-.69l.26-10-1.48.84a1,1,0,0,1-1.24-.28l-2.94-4.16a.94.94,0,0,1-.16-.73,1,1,0,0,1,.42-.62l6.5-4.15a1,1,0,0,1,1.27.22,6.8,6.8,0,0,0,4.82,2.46l.22,0,.23,0a6.8,6.8,0,0,0,4.82-2.46.94.94,0,0,1,1.26-.22l6.51,4.15a1,1,0,0,1,.42.62.94.94,0,0,1-.16.73l-2.94,4.16a1,1,0,0,1-1.25.28l-1.47-.84.26,10a1,1,0,0,1-.26.69,1,1,0,0,1-.68.29Zm-5.68-2,5.82.07,5.69-.07-.29-10.76a.95.95,0,0,1,1.42-.85l2.19,1.24,1.87-2.64-5-3.19a8.35,8.35,0,0,1-5.74,2.55.91.91,0,0,1-.23,0,.78.78,0,0,1-.22,0,8.31,8.31,0,0,1-5.74-2.55l-5,3.19,1.87,2.64,2.2-1.24a.95.95,0,0,1,1.42.85Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M995.94,503.6l-6.67-.09a.9.9,0,0,1-.67-.29,1,1,0,0,1-.27-.68l.27-10-1.48.84a1,1,0,0,1-1.24-.28l-3-4.16a.94.94,0,0,1-.15-.73,1,1,0,0,1,.42-.62l6.5-4.15a1,1,0,0,1,1.27.22,6.75,6.75,0,0,0,4.81,2.45.9.9,0,0,0,.46,0,6.7,6.7,0,0,0,4.81-2.45,1,1,0,0,1,1.27-.22l6.5,4.15a1,1,0,0,1,.42.62.94.94,0,0,1-.15.73l-3,4.16a1,1,0,0,1-1.24.28l-1.48-.84.27,10a1,1,0,0,1-.27.68.9.9,0,0,1-.67.29Zm-5.68-2,5.82.07,5.68-.07-.28-10.76a.94.94,0,0,1,.46-.84,1,1,0,0,1,1,0l2.19,1.24,1.87-2.64-5-3.19a8.3,8.3,0,0,1-5.73,2.54l-.23,0-.23,0a8.3,8.3,0,0,1-5.73-2.54l-5,3.19,1.87,2.64,2.2-1.24a.94.94,0,0,1,1.41.85Z" transform="translate(17.96 -23.52)"/>
+              </g>
+            </g>
+            <!-- double arrow between Consumer N Uses and Refurbish Product -->
+            <g id="B16-B11-arrow">
+              <g>
+                <path class="pathBlue" d="M825.19,512.18c27.17-17.94,63.08-26.62,95.77-23.54" transform="translate(17.96 -23.52)"/>
+                <polygon class="arrowBlue" points="855.97 493.03 856.44 490.51 844.03 488.21 847.24 476 844.76 475.35 840.86 490.22 855.97 493.03"/>
+                <polygon class="arrowBlue" points="929.66 475 928.07 472.99 937.94 465.13 929.38 455.86 931.26 454.12 941.69 465.42 929.66 475"/>
+              </g>
+            </g>
+            <!-- path from Consumer N Uses to Consumer End-of-Use -->
+            <path id="B11-B12-path" class="pathBlue" d="M977.69,526.93c-9.47,30.5-29.17,58.88-56.93,83.87" transform="translate(17.96 -23.52)"/>
+            <!-- Refurbish Product Icon -->
+            <g id="B16-refurbish-product">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="end" transform="translate(746.0 487.0)" x="0" y="0">
+                <tspan x="0.2em" dy="1.1em">REFURBISH</tspan>
+                <tspan x="0" dy="1.1em">PRODUCT</tspan>
+              </text>
+              <!-- icon -->
+              <circle id="refurbish-bkgnd" class="iconBlue" cx="795.38" cy="510" r="40.23"/>
+              <g id="refurbish-icon">
+                <path class="iconDrawing" d="M787.74,535.44a2.56,2.56,0,0,0-.15,1.1v.05a2.54,2.54,0,1,0,.15-1.15Zm2.71.12a.85.85,0,1,1-.31-.06A.81.81,0,0,1,790.45,535.56Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M799.19,529.88a2.57,2.57,0,1,0-2.55-2.33A2.59,2.59,0,0,0,799.19,529.88Zm-.31-3.36a.81.81,0,0,1,.31-.06.84.84,0,0,1,.35.07.86.86,0,1,1-1.19.93A.84.84,0,0,1,798.88,526.52Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M804.77,525.15a6,6,0,0,0-7.75-3.43,6.61,6.61,0,0,0-3.64,4.16,5,5,0,0,1-.94-.18c-1.16-2.69-2.42-5.39-3.7-7.91a11,11,0,0,1,4.39-1.2,16,16,0,0,1,2,0,.86.86,0,1,0,.11-1.71,17.47,17.47,0,0,0-2.17,0,12.72,12.72,0,0,0-5.08,1.39c-2.56-4.91-5.09-8.94-6.72-10.58a.85.85,0,0,0-1.05-.12.86.86,0,0,0-.38,1c0,.07,1.89,5.9,4.6,12.7a13.3,13.3,0,0,0-1.5,2.65c-7.14-2.9-13.44-4.91-13.52-4.93a.85.85,0,0,0-.86,1.42c1.93,1.93,7.24,5.12,13.37,8.15a8.61,8.61,0,0,0,.49,3.1,12.88,12.88,0,0,0,2.51,3.84,5.12,5.12,0,0,0-.34.71A6,6,0,0,0,788,542a5.69,5.69,0,0,0,2.08.39l.34,0a6.05,6.05,0,0,1-.13,2.71.82.82,0,0,0,0,.38,8,8,0,0,1-1.23,2.21c-1.22,1.6-4.25,2.37-6.45,2.15a9.43,9.43,0,0,1-5-2.64l-.17-.11V532h.43a2.57,2.57,0,0,0,2.56-2.57v-1.71a.86.86,0,0,0-.85-.86H754.68a.86.86,0,0,0-.85.86v1.71A2.57,2.57,0,0,0,756.4,532h.42v19.68h-.42a2.57,2.57,0,0,0-2.57,2.57v1.71a.85.85,0,0,0,.85.85H779.5a.85.85,0,0,0,.85-.85v-1.71a2.57,2.57,0,0,0-2.56-2.57h-.43v-2.41a10.79,10.79,0,0,0,4.46,2.13v0l.42.06.5.08h.1a.85.85,0,0,0,.23,0h.22c2.36,0,5.52-.78,7.1-2.85a7.39,7.39,0,0,0,1.78-4.13h0a7.79,7.79,0,0,0,0-2.55,5.9,5.9,0,0,0,2.71-1.93c1.4-1.78,1.6-4.5.55-7.28l-.16-.42.41.16a10.21,10.21,0,0,0,3.49.68,5.91,5.91,0,0,0,5.7-8Zm-22.71-.43c-3-1.49-5.64-3-7.75-4.25,2.28.82,5.08,1.86,8,3C782.22,523.93,782.14,524.33,782.06,524.72Zm-4.27,28.64a.85.85,0,0,1,.85.86v.85h-23.1v-.85a.85.85,0,0,1,.86-.86Zm-14.36-1.71h-4.07l8.94-5.29,0,0,4.1-2.42a.81.81,0,0,0,.39-.23l2.82-1.67v2.3Zm12.22-5.34v5.34h-8.89Zm-3.51-4.2-3.17-1.5,6.68-3V540Zm-5.21-2.45-2-.95,10.72-5.36v2.35Zm-4-1.87-1.75-.83,7.84-5h5.54Zm-3.59-1.69-.84-.4V532h7.33Zm-.57,1.62a.85.85,0,0,0,.48.22l11.08,5.22-2.52,1.49L758.53,540v-2.41Zm7.29,8-2.59,1.53-5-2.13v-3.18Zm-4.42,2.61-3.14,1.85V547Zm-5.27-18a.86.86,0,0,1-.86-.86v-.85h23.1v.85a.86.86,0,0,1-.85.86Zm27.53-6.08c1,.4,1.92.81,2.88,1.24l.24.1c.27.63.53,1.27.77,1.91q-2.15-.95-4.15-1.91A12.19,12.19,0,0,1,783.93,524.18Zm.56-1.62a10.4,10.4,0,0,1,.7-1.37c.27.67.56,1.35.85,2Zm-.5,6.49a6.24,6.24,0,0,1-.36-1.65c1.61.77,3.25,1.51,4.89,2.21a4.44,4.44,0,0,1,.19.95,8.73,8.73,0,0,0-2.72,1.58A10.65,10.65,0,0,1,784,529.05Zm9.45,9.94a4.24,4.24,0,0,1-7.29-4.17c.55-1.41,1.73-2.11,3.33-2.72a1.43,1.43,0,0,0,.56-.35c.65-.69.39-2-.3-4l-.08-.25a31.56,31.56,0,0,0-1.17-3v0c-.09-.19-.16-.38-.24-.56-.73-1.64-1.43-3.3-2.07-4.91v0c-1.12-2.76-2.09-5.39-2.86-7.54a120.34,120.34,0,0,1,7.63,15c1,2.42,2,4.6,2.81,6.86C794.05,534.2,795,537.06,793.44,539Zm8.38-8.37c-1.93,1.52-4.8.61-5.62.29l-1.89-.73-1.07-2.6a1.65,1.65,0,0,0,1.3-.33,1.42,1.42,0,0,0,.39-.6,5.08,5.08,0,0,1,2.72-3.33,4.25,4.25,0,0,1,4.17,7.3Z" transform="translate(17.96 -23.52)"/>
+              </g>
+            </g>
+            <!-- Consumer End-of-Use Icon-->
+            <g id="B12-consumer-end-of-use">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="middle" transform="translate(910.2 660.3)" x="0" y="0">
+                <tspan x="0" dy="1.1em">CONSUMER</tspan>
+                <tspan x="0" dy="1.1em">END-OF-USE</tspan>
+              </text>
+              <!-- icon -->
+              <circle id="end-of-use-bkgnd" class="iconBlue" cx="909.25" cy="612.11" r="40.23"/>
+              <g id="end-of-use-icon">
+                <path class="iconDrawing" d="M878.84,653.49a.64.64,0,0,1-.48-.22l-2.49-2.8-2.25.58a.67.67,0,0,1-.56-.12.62.62,0,0,1-.25-.5l0-1.73-.8-.45-1.41.84a.66.66,0,0,1-.89-.22l-1.91-3.07a.65.65,0,0,1,0-.73l5.54-7.58-2.88-.26a.67.67,0,0,1-.59-.58l-.52-4.44a.64.64,0,0,1,.18-.53.66.66,0,0,1,.53-.2l8.85.78a.62.62,0,0,1,.48.28.63.63,0,0,1,.09.55c0,.12-.83,2.93,1.3,4.09h0c2.18,1.19,4.46-1.08,4.48-1.1a.68.68,0,0,1,.56-.19.66.66,0,0,1,.48.33l3.27,5.95a.65.65,0,0,1,.05.51.65.65,0,0,1-.34.39l-4,2a.66.66,0,0,1-.84-.24l-.9-1.45-4.06,9.74a.67.67,0,0,1-.5.39Zm-2.74-4.41a.68.68,0,0,1,.49.22l2,2.33,4.15-10a.68.68,0,0,1,.55-.4.65.65,0,0,1,.61.31l1.26,2,2.88-1.41-2.56-4.65c-1,.78-3.17,2-5.38.78h0a4.57,4.57,0,0,1-2.09-4.84l-7.33-.64.37,3.13,3.49.32a.65.65,0,0,1,.47,1l-6,8.15,1.34,2.16,1.19-.7a.66.66,0,0,1,.65,0l1.46.82a.63.63,0,0,1,.33.55l0,1.28,1.85-.48Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M896.62,620.34a6.08,6.08,0,1,1,6.08-6.08A6.09,6.09,0,0,1,896.62,620.34Zm0-9.9a3.82,3.82,0,1,0,3.83,3.82A3.82,3.82,0,0,0,896.62,610.44Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M907.3,641.05h-3.85a1.13,1.13,0,1,1,0-2.26h2.72v-8.58a7,7,0,0,0-6.95-7h-4.3a6.88,6.88,0,0,0-4.91,2,7.16,7.16,0,0,0-2,4.91,1.94,1.94,0,0,1,0,.24,46.68,46.68,0,0,0-.31,8h2.76a1.13,1.13,0,0,1,0,2.26h-3.85a1.13,1.13,0,0,1-1.13-1.09c0-.27-.28-6.75.29-9.59a9.38,9.38,0,0,1,2.71-6.38,9.16,9.16,0,0,1,6.51-2.71h4.3a9.23,9.23,0,0,1,9.21,9.22v9.71A1.12,1.12,0,0,1,907.3,641.05Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M891.58,660.34a1.14,1.14,0,0,1-1.13-1.13V632.58a1.13,1.13,0,0,1,2.26,0v26.63A1.14,1.14,0,0,1,891.58,660.34Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M902.64,660.34a1.14,1.14,0,0,1-1.13-1.13V632.58a1.13,1.13,0,0,1,2.26,0v26.63A1.13,1.13,0,0,1,902.64,660.34Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M897.11,660.34a1.14,1.14,0,0,1-1.13-1.13v-14.6a1.13,1.13,0,0,1,2.26,0v14.6A1.14,1.14,0,0,1,897.11,660.34Z" transform="translate(17.96 -23.52)"/>
+                <rect class="iconDrawing" x="895.76" y="618.63" width="2.45" height="3.77" transform="translate(-10.58 19.91) rotate(-2.73)"/>
+              </g>
+            </g>
+            <!-- path from Consumer End-of-Use to End-of-Use Collection -->
+            <path id="B12-B13-path" class="pathGreyDashed" d="M855.65,655.58c-34,18.07-73.42,32.65-116.67,42.77" transform="translate(17.96 -23.52)"/>
+            <!-- Consumer Return Label and Arrow-->
+            <g id="consumer-return">
+              <!-- arrow -->
+              <g id="return-arrow">
+                <g>
+                  <line class="cls-131" x1="840.95" y1="705.33" x2="824.19" y2="667.14"/>
+                  <polygon class="cls-65" points="836.64 670.55 835.67 672.81 824.57 668 820.59 679.43 818.27 678.62 823.12 664.71 836.64 670.55"/>
+                </g>
+              </g>
+              <!-- label -->
+              <text class="iconlabel returnlabel" text-anchor="middle" transform="translate(853.8 710.0)" x="0" y="0">
+                <tspan x="0" dy="1.1em">CONSUMER</tspan>
+                <tspan x="0" dy="1.1em">RETURN</tspan>
+              </text>
+            </g>
+            <!-- End-of-Use Product Collection Icon -->
+            <g id="B13-product-collection">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="middle" transform="translate(723.5 733.7)" x="0" y="0">
+                <tspan x="0" dy="1.1em">END-OF-USE</tspan>
+                <tspan x="0" dy="1.1em">PRODUCT COLLECTION</tspan>
+              </text>
+              <!-- icon -->
+              <circle id="collection-bkgnd" class="iconBlue" cx="719.4" cy="682.05" r="40.23"/>
+              <g id="collection-icon">
+                <polyline class="cls-130" points="701.34 700.88 701.34 662.12 737.01 662.12 737.01 700.88"/>
+                <path class="iconDrawing" d="M694.54,697.37h-8.23v-7.44h8.23Zm-6.5-1.72h4.77v-4H688Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M705.06,697.37h-8.23v-7.44h8.23Zm-6.51-1.72h4.78v-4h-4.78Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M715.57,697.37h-8.22v-7.44h8.22Zm-6.5-1.72h4.78v-4h-4.78Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M694.54,706.56h-8.23v-7.44h8.23Zm-6.5-1.72h4.77v-4H688Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M705.06,706.56h-8.23v-7.44h8.23Zm-6.51-1.72h4.78v-4h-4.78Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M715.57,706.56h-8.22v-7.44h8.22Zm-6.5-1.72h4.78v-4h-4.78Z" transform="translate(17.96 -23.52)"/>
+                <polygon class="iconDrawing" points="726.37 700.75 724.19 700.75 724.19 690.84 714.23 690.84 714.23 700.75 712.05 700.75 712.05 688.65 726.37 688.65 726.37 700.75"/>
+                <rect class="iconDrawing" x="718.21" y="690.08" width="2.18" height="10.46"/>
+                <path class="iconDrawing" d="M710.48,711.18H692.3a.87.87,0,0,1,0-1.73h18.18a.87.87,0,0,1,0,1.73Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M724.79,725.65H678.17a1.09,1.09,0,1,1,0-2.18h46.62a1.09,1.09,0,1,1,0,2.18Z" transform="translate(17.96 -23.52)"/>
+              </g>
+            </g>
+            <!-- path from End-of-Use Product Collection to Product Use -->
+            <path id="B13-B14-path" class="pathGreyDashed" d="M660.79,711.23c-21.11,2.09-42.79,3.18-64.91,3.18-19.7,0-39.06-.86-58-2.53" transform="translate(17.96 -23.52)"/>
+            <!-- arrow from End-of-Use to Refurbish Product -->
+            <g id="B13-B16-arrow">
+              <g>
+                <path class="pathBlue" d="M723.5,673.36c20.28-22.81,33.9-52.78,41.44-85.67" transform="translate(17.96 -23.52)"/>
+                <polygon class="arrowBlue" points="791 574.88 788.77 576.13 782.62 565.11 772.07 572.05 770.67 569.91 783.51 561.46 791 574.88"/>
+              </g>
+            </g>
+            <!-- Plane 2 -->
+            <g id="transport-airplane-2">
+              <!-- icon -->
+              <g id="plane2iconPulse">
+                <path d="M562.07,774.27c-.18,2.46,2.59,4.7,6.88,5.57h0c1.85.37,2.55.29,10,.86l1.68,2.73-2.05-.15a2.61,2.61,0,0,0-.37,5.2l5.79.41,7.63,12.38a2.93,2.93,0,0,0,5.41-1.79l-1.54-17.59,3.78.27a22.06,22.06,0,0,0,4.72-.29l2.89,6.33a2.81,2.81,0,0,0,5.34-1.47l-.72-6.61c2.21-.66,3.74-1.22,3.81-1.24a.87.87,0,0,0,.11-1.58c-.06,0-1.49-.81-3.59-1.77l1.65-6.44a2.8,2.8,0,0,0-5.07-2.22l-3.76,5.85a21.64,21.64,0,0,0-4.63-1l-3.78-.27,4-17.2a2.93,2.93,0,0,0-2.64-3.59,3,3,0,0,0-2.46,1l-9.32,11.16-5.79-.41a2.6,2.6,0,0,0-.37,5.19l2.05.15-2.06,2.46c-7.41-.49-8.11-.68-10-.57C565.3,770,562.25,771.81,562.07,774.27Zm22.4-9.71-1.37,1.65-3.3-.24a.87.87,0,1,1,.13-1.73Zm10,6.81-12.67-.91,14.68-17.59a1.2,1.2,0,0,1,2.08,1Zm17.31-2.71-1.58,6.15q-2-.88-3.87-1.53l3.52-5.47a1.07,1.07,0,0,1,1.93.85Zm-3.34,18.82-2.7-5.92c1.26-.25,2.62-.57,4-1l.68,6.32a1.06,1.06,0,0,1-1.13,1.18A1.07,1.07,0,0,1,608.45,787.48Zm-26.72-2.23,1.13,1.82-4.55-.32a.87.87,0,0,1,.13-1.74Zm-.67-4.4,12.67.91,1.56,17.87a1.18,1.18,0,0,1-1.27,1.29,1.16,1.16,0,0,1-.93-.56Zm-11.51-2.67a4.46,4.46,0,0,1-1.42-3.48,4.52,4.52,0,0,1,1.9-3.24c1.64-.06,0-.07,29.85,2a21.42,21.42,0,0,1,4.88,1.08,63.45,63.45,0,0,1,8,3.32,62.63,62.63,0,0,1-8.24,2.12,21.29,21.29,0,0,1-5.14.4C569.54,778.25,571.17,778.48,569.55,778.18Zm-5.75-3.79c.1-1.37,2.16-2.22,3.53-2.56a5.82,5.82,0,0,0-.93,2.75,5.74,5.74,0,0,0,.53,2.85C565,776.64,563.72,775.48,563.8,774.39Z" transform="translate(17.96 -23.52)"/>
+              </g>
+              <!-- hot spot -->
+              <circle id="plane2iconHotspot" pointer-events="all"  cx="610.7" cy="751.14" r="40.23"/>
+            </g>   
+            <!-- Product Use icon -->
+            <g id="B14-product-use">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="start" transform="translate(476.5 746.7)" x="0" y="0">
+                <tspan x="0" y="0">PRODUCT USE</tspan>
+              </text>
+              <!-- icon -->
+              <circle id="use-bkgnd" class="iconBlue" cx="516.71" cy="682.05" r="40.23"/>
+              <g id="use-icon">
+                <g>
+                  <g>
+                    <path class="iconDrawing" d="M499.23,728.36l-1.48-.72c2.55-5.26,6.38-11.5,15.5-17.92l1,1.34C505.41,717.26,501.81,723,499.23,728.36Z" transform="translate(17.96 -23.52)"/>
+                    <polygon class="iconDrawing" points="531.37 695.58 529.75 695.28 531.22 687.3 523.16 686.42 523.34 684.79 533.16 685.86 531.37 695.58"/>
+                  </g>
+                  <g>
+                    <path class="iconDrawing" d="M498.3,728.36c-2.58-5.32-6.18-11.1-15-17.3l.95-1.34c9.12,6.42,13,12.66,15.5,17.92Z" transform="translate(17.96 -23.52)"/>
+                    <polygon class="iconDrawing" points="510.12 684.78 510.3 686.42 502.23 687.3 503.7 695.28 502.08 695.58 500.3 685.86 510.12 684.78"/>
+                  </g>
+                  <path class="iconDrawing" d="M498.6,739.44a1,1,0,0,1-1-1v-11.5a1,1,0,0,1,2,0v11.5A1,1,0,0,1,498.6,739.44Z" transform="translate(17.96 -23.52)"/>
+                </g>
+                <path class="iconDrawing" d="M515.58,702.55l-6.57-.08a1,1,0,0,1-.67-.29,1,1,0,0,1-.26-.68l.26-9.89-1.45.82a.94.94,0,0,1-1.23-.27l-2.9-4.1a.92.92,0,0,1-.15-.72,1,1,0,0,1,.41-.61l6.41-4.09a.93.93,0,0,1,1.25.22,6.71,6.71,0,0,0,4.75,2.41.82.82,0,0,0,.44,0,6.63,6.63,0,0,0,4.75-2.41.93.93,0,0,1,1.25-.22l6.41,4.09a1,1,0,0,1,.41.61.92.92,0,0,1-.15.72l-2.9,4.1a.94.94,0,0,1-1.23.27l-1.45-.82.26,9.89a1,1,0,0,1-.26.68,1,1,0,0,1-.67.29ZM510,700.6l5.74.07,5.6-.07L521,690a.92.92,0,0,1,.45-.82,1,1,0,0,1,1,0l2.16,1.23,1.84-2.61-4.91-3.14a8.23,8.23,0,0,1-5.66,2.51.82.82,0,0,0-.44,0,8.23,8.23,0,0,1-5.66-2.51l-4.91,3.14,1.84,2.61,2.16-1.23a1,1,0,0,1,.95,0,.92.92,0,0,1,.45.82Z" transform="translate(17.96 -23.52)"/>
+                <g>
+                  <path class="iconDrawing" d="M492.92,691.82a.89.89,0,0,0-.7-.7l-1.92-.4,2.25-1.56a.89.89,0,0,0-.33-1.61l-3.81-.8a.38.38,0,0,0-.44.29.37.37,0,0,0,.28.44l3.82.8a.14.14,0,0,1,.12.12.14.14,0,0,1-.06.15l-3.44,2.38-4.27-2.56a.9.9,0,0,0-.91,0l-7.4,4.27-7.61-1.59c-.09,0-.12-.08-.12-.12a.15.15,0,0,1,.06-.16l8.19-5.67a.16.16,0,0,1,.12,0l11.78,2.45a.36.36,0,0,0,.44-.28.36.36,0,0,0-.28-.44l-11.79-2.46a.89.89,0,0,0-.69.14L468,690.16a.9.9,0,0,0,.32,1.62l1.93.4L468,693.73a.9.9,0,0,0,.32,1.62l1.93.4L468,697.31a.89.89,0,0,0,.32,1.61l15.33,3.2h.18a.92.92,0,0,0,.51-.15l6.55-4.59c.17-.12.09-.14,0-.3a.36.36,0,0,0-.51-.1l-6.43,4.38a.17.17,0,0,1-.12,0l-15.32-3.2a.13.13,0,0,1-.12-.12.14.14,0,0,1,.06-.15l2.83-2,7,1.48h.07a.38.38,0,0,0,.37-.29.38.38,0,0,0-.29-.44l-9.91-2.09c-.09,0-.12-.08-.12-.12a.15.15,0,0,1,.06-.16l2.83-2,4.83,1h.12l5.73-.72v0s5.53-.7,5.53-.68a3.32,3.32,0,0,0,.71-.15l.57-.07a.44.44,0,0,0,.16-.06l.54-.38,2.61.55a.15.15,0,0,1,.12.12.15.15,0,0,1-.06.16l-8.19,5.66a.14.14,0,0,1-.12,0L478,696.61a.36.36,0,0,0-.43.29.36.36,0,0,0,.28.44l5.78,1.2a.55.55,0,0,0,.18,0,.86.86,0,0,0,.51-.16l5.1-3.52,2.61.54a.15.15,0,0,1,.12.12.15.15,0,0,1-.06.16l-2,1.39a.37.37,0,0,0-.09.51.36.36,0,0,0,.31.16.42.42,0,0,0,.21-.06l2-1.39a.9.9,0,0,0-.33-1.62l-1.92-.4,2.25-1.55A.9.9,0,0,0,492.92,691.82Zm-9-2.81a.15.15,0,0,1,.16,0l3.57,2.13L478,692.42Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M483.85,702.39a.85.85,0,0,1-.23,0l-15.33-3.19a1.15,1.15,0,0,1-.42-2.07l1.77-1.22-1.35-.28a1.15,1.15,0,0,1-.42-2.07l1.77-1.23-1.35-.28a1.12,1.12,0,0,1-.89-.89,1.16,1.16,0,0,1,.47-1.18l8.19-5.66a1.13,1.13,0,0,1,.89-.18l11.79,2.45h.05l3.49.73a1.16,1.16,0,0,1,.89.9,1.12,1.12,0,0,1-.48,1.17l-1.76,1.22,1.34.29a1.11,1.11,0,0,1,.89.89h0a1.1,1.1,0,0,1-.47,1.17l-1.76,1.23,1.34.28a1.15,1.15,0,0,1,.42,2.07l-2,1.38a.51.51,0,0,1-.21.1l-6,4.18A1.15,1.15,0,0,1,483.85,702.39Zm-7.13-17.8a.7.7,0,0,0-.37.11l-8.19,5.67a.65.65,0,0,0,.24,1.16l2.49.52-2.73,1.89a.63.63,0,0,0-.26.66.62.62,0,0,0,.5.5l2.49.52-2.73,1.89a.65.65,0,0,0,.24,1.16l15.32,3.2a.68.68,0,0,0,.5-.1l5.65-4-.05-.07,0,0-5.71,3.88a.38.38,0,0,1-.31.07l-15.33-3.2a.38.38,0,0,1-.31-.32.4.4,0,0,1,.16-.41l2.92-2,6.14,1.3a.61.61,0,0,1,0-.14l0-.1-8.95-1.88a.41.41,0,0,1-.31-.32.39.39,0,0,1,.16-.41l2.92-2,4.94,1,5.54-.69v0l.24-.05c4-.5,5.16-.65,5.53-.66v0c.14,0,.28,0,.4-.06v0l.89-.12.68-.46,2.72.57a.4.4,0,0,1,.15.73L484.08,698a.37.37,0,0,1-.32.06l-4.8-1a.68.68,0,0,1,0,.14.29.29,0,0,1,0,.09l4.8,1a.7.7,0,0,0,.5-.1l5.18-3.59,2.72.56a.41.41,0,0,1,.32.32.41.41,0,0,1-.17.42l-1.3.9.12.13,0,0,1.28-.89a.65.65,0,0,0-.24-1.16l-2.5-.52,2.74-1.89a.65.65,0,0,0,.26-.66h0a.62.62,0,0,0-.5-.5l-2.5-.52,2.74-1.89a.65.65,0,0,0,.26-.66.62.62,0,0,0-.5-.5l-2.94-.62a.49.49,0,0,1,0,.12l0,.11,2.93.62a.39.39,0,0,1,.32.31.4.4,0,0,1-.17.42l-3.56,2.47-4.42-2.64a.63.63,0,0,0-.65,0l-7.49,4.31-7.71-1.6a.42.42,0,0,1-.15-.74l8.2-5.66a.38.38,0,0,1,.31-.07l10.91,2.27a.45.45,0,0,1,0-.11.56.56,0,0,1,0-.12l-10.91-2.27Zm-8,13.4,15.06,3.15,6-4.07a.65.65,0,0,1,.18-.19l1.82-1.26-2.29-.48-5,3.47a1.19,1.19,0,0,1-.89.18l-5.24-1.09a.41.41,0,0,1-.16,0l-6.89-1.45Zm-.22,0Zm15.32-.38Zm-5.9-1.22.12,0,5.74,1.19,8-5.51-2.29-.48-.45.31a.64.64,0,0,1-.27.11l-.5.07a3.87,3.87,0,0,1-.77.15l-.12,0h0l-5.17.64h0l-.23.07-5.74.72a.69.69,0,0,1-.2,0l-4.73-1-2.55,1.77,9.17,1.93Zm12.25,1a.08.08,0,0,0,0,.06s0,0,.06,0l.38-.26h0a.11.11,0,0,0-.16,0Zm-12.29-.53a.11.11,0,0,0-.08.08.13.13,0,0,0,0,.09.1.1,0,0,0,.07.05l.43.09a.11.11,0,0,0,.08-.08.12.12,0,0,0-.09-.14Zm-9.16-6,7.3,1.52,7.31-4.22a1.14,1.14,0,0,1,1.17,0l4.13,2.47,3.12-2.15-3.6-.75-.05,0-11.41-2.37ZM492,692.09Zm-23.47-1.29Zm19.74-3.57.3.06a.13.13,0,0,0,.09,0,.14.14,0,0,0,.05-.07.13.13,0,0,0,0-.09l0-.05-.31-.06c-.05,0-.12,0-.14.09A.15.15,0,0,0,488.29,687.23Zm-11.59-1.9Zm.05,7.5,7-4a.43.43,0,0,1,.41,0l4.19,2.51Zm7.21-3.57L479.2,692l7.65-1Zm.05,0Z" transform="translate(17.96 -23.52)"/>
+                </g>
+                <g>
+                  <g>
+                    <path class="iconDrawing" d="M499.23,728.36l-1.48-.72c2.55-5.26,6.38-11.5,15.5-17.92l1,1.34C505.41,717.26,501.81,723,499.23,728.36Z" transform="translate(17.96 -23.52)"/>
+                    <polygon class="iconDrawing" points="531.37 695.58 529.75 695.28 531.22 687.3 523.16 686.42 523.34 684.79 533.16 685.86 531.37 695.58"/>
+                  </g>
+                  <g>
+                    <path class="iconDrawing" d="M498.3,728.36c-2.58-5.32-6.18-11.1-15-17.3l.95-1.34c9.12,6.42,13,12.66,15.5,17.92Z" transform="translate(17.96 -23.52)"/>
+                    <polygon class="iconDrawing" points="510.12 684.78 510.3 686.42 502.23 687.3 503.7 695.28 502.08 695.58 500.3 685.86 510.12 684.78"/>
+                  </g>
+                  <path class="iconDrawing" d="M498.6,739.44a1,1,0,0,1-1-1v-11.5a1,1,0,0,1,2,0v11.5A1,1,0,0,1,498.6,739.44Z" transform="translate(17.96 -23.52)"/>
+                </g>
+                <path class="iconDrawing" d="M515.58,702.55l-6.57-.08a1,1,0,0,1-.67-.29,1,1,0,0,1-.26-.68l.26-9.89-1.45.82a.94.94,0,0,1-1.23-.27l-2.9-4.1a.92.92,0,0,1-.15-.72,1,1,0,0,1,.41-.61l6.41-4.09a.93.93,0,0,1,1.25.22,6.71,6.71,0,0,0,4.75,2.41.82.82,0,0,0,.44,0,6.63,6.63,0,0,0,4.75-2.41.93.93,0,0,1,1.25-.22l6.41,4.09a1,1,0,0,1,.41.61.92.92,0,0,1-.15.72l-2.9,4.1a.94.94,0,0,1-1.23.27l-1.45-.82.26,9.89a1,1,0,0,1-.26.68,1,1,0,0,1-.67.29ZM510,700.6l5.74.07,5.6-.07L521,690a.92.92,0,0,1,.45-.82,1,1,0,0,1,1,0l2.16,1.23,1.84-2.61-4.91-3.14a8.23,8.23,0,0,1-5.66,2.51.82.82,0,0,0-.44,0,8.23,8.23,0,0,1-5.66-2.51l-4.91,3.14,1.84,2.61,2.16-1.23a1,1,0,0,1,.95,0,.92.92,0,0,1,.45.82Z" transform="translate(17.96 -23.52)"/>
+                <g>
+                  <path class="iconDrawing" d="M492.92,691.82a.89.89,0,0,0-.7-.7l-1.92-.4,2.25-1.56a.89.89,0,0,0-.33-1.61l-3.81-.8a.38.38,0,0,0-.44.29.37.37,0,0,0,.28.44l3.82.8a.14.14,0,0,1,.12.12.14.14,0,0,1-.06.15l-3.44,2.38-4.27-2.56a.9.9,0,0,0-.91,0l-7.4,4.27-7.61-1.59c-.09,0-.12-.08-.12-.12a.15.15,0,0,1,.06-.16l8.19-5.67a.16.16,0,0,1,.12,0l11.78,2.45a.36.36,0,0,0,.44-.28.36.36,0,0,0-.28-.44l-11.79-2.46a.89.89,0,0,0-.69.14L468,690.16a.9.9,0,0,0,.32,1.62l1.93.4L468,693.73a.9.9,0,0,0,.32,1.62l1.93.4L468,697.31a.89.89,0,0,0,.32,1.61l15.33,3.2h.18a.92.92,0,0,0,.51-.15l6.55-4.59c.17-.12.09-.14,0-.3a.36.36,0,0,0-.51-.1l-6.43,4.38a.17.17,0,0,1-.12,0l-15.32-3.2a.13.13,0,0,1-.12-.12.14.14,0,0,1,.06-.15l2.83-2,7,1.48h.07a.38.38,0,0,0,.37-.29.38.38,0,0,0-.29-.44l-9.91-2.09c-.09,0-.12-.08-.12-.12a.15.15,0,0,1,.06-.16l2.83-2,4.83,1h.12l5.73-.72v0s5.53-.7,5.53-.68a3.32,3.32,0,0,0,.71-.15l.57-.07a.44.44,0,0,0,.16-.06l.54-.38,2.61.55a.15.15,0,0,1,.12.12.15.15,0,0,1-.06.16l-8.19,5.66a.14.14,0,0,1-.12,0L478,696.61a.36.36,0,0,0-.43.29.36.36,0,0,0,.28.44l5.78,1.2a.55.55,0,0,0,.18,0,.86.86,0,0,0,.51-.16l5.1-3.52,2.61.54a.15.15,0,0,1,.12.12.15.15,0,0,1-.06.16l-2,1.39a.37.37,0,0,0-.09.51.36.36,0,0,0,.31.16.42.42,0,0,0,.21-.06l2-1.39a.9.9,0,0,0-.33-1.62l-1.92-.4,2.25-1.55A.9.9,0,0,0,492.92,691.82Zm-9-2.81a.15.15,0,0,1,.16,0l3.57,2.13L478,692.42Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M483.85,702.39a.85.85,0,0,1-.23,0l-15.33-3.19a1.15,1.15,0,0,1-.42-2.07l1.77-1.22-1.35-.28a1.15,1.15,0,0,1-.42-2.07l1.77-1.23-1.35-.28a1.12,1.12,0,0,1-.89-.89,1.16,1.16,0,0,1,.47-1.18l8.19-5.66a1.13,1.13,0,0,1,.89-.18l11.79,2.45h.05l3.49.73a1.16,1.16,0,0,1,.89.9,1.12,1.12,0,0,1-.48,1.17l-1.76,1.22,1.34.29a1.11,1.11,0,0,1,.89.89h0a1.1,1.1,0,0,1-.47,1.17l-1.76,1.23,1.34.28a1.15,1.15,0,0,1,.42,2.07l-2,1.38a.51.51,0,0,1-.21.1l-6,4.18A1.15,1.15,0,0,1,483.85,702.39Zm-7.13-17.8a.7.7,0,0,0-.37.11l-8.19,5.67a.65.65,0,0,0,.24,1.16l2.49.52-2.73,1.89a.63.63,0,0,0-.26.66.62.62,0,0,0,.5.5l2.49.52-2.73,1.89a.65.65,0,0,0,.24,1.16l15.32,3.2a.68.68,0,0,0,.5-.1l5.65-4-.05-.07,0,0-5.71,3.88a.38.38,0,0,1-.31.07l-15.33-3.2a.38.38,0,0,1-.31-.32.4.4,0,0,1,.16-.41l2.92-2,6.14,1.3a.61.61,0,0,1,0-.14l0-.1-8.95-1.88a.41.41,0,0,1-.31-.32.39.39,0,0,1,.16-.41l2.92-2,4.94,1,5.54-.69v0l.24-.05c4-.5,5.16-.65,5.53-.66v0c.14,0,.28,0,.4-.06v0l.89-.12.68-.46,2.72.57a.4.4,0,0,1,.15.73L484.08,698a.37.37,0,0,1-.32.06l-4.8-1a.68.68,0,0,1,0,.14.29.29,0,0,1,0,.09l4.8,1a.7.7,0,0,0,.5-.1l5.18-3.59,2.72.56a.41.41,0,0,1,.32.32.41.41,0,0,1-.17.42l-1.3.9.12.13,0,0,1.28-.89a.65.65,0,0,0-.24-1.16l-2.5-.52,2.74-1.89a.65.65,0,0,0,.26-.66h0a.62.62,0,0,0-.5-.5l-2.5-.52,2.74-1.89a.65.65,0,0,0,.26-.66.62.62,0,0,0-.5-.5l-2.94-.62a.49.49,0,0,1,0,.12l0,.11,2.93.62a.39.39,0,0,1,.32.31.4.4,0,0,1-.17.42l-3.56,2.47-4.42-2.64a.63.63,0,0,0-.65,0l-7.49,4.31-7.71-1.6a.42.42,0,0,1-.15-.74l8.2-5.66a.38.38,0,0,1,.31-.07l10.91,2.27a.45.45,0,0,1,0-.11.56.56,0,0,1,0-.12l-10.91-2.27Zm-8,13.4,15.06,3.15,6-4.07a.65.65,0,0,1,.18-.19l1.82-1.26-2.29-.48-5,3.47a1.19,1.19,0,0,1-.89.18l-5.24-1.09a.41.41,0,0,1-.16,0l-6.89-1.45Zm-.22,0Zm15.32-.38Zm-5.9-1.22.12,0,5.74,1.19,8-5.51-2.29-.48-.45.31a.64.64,0,0,1-.27.11l-.5.07a3.87,3.87,0,0,1-.77.15l-.12,0h0l-5.17.64h0l-.23.07-5.74.72a.69.69,0,0,1-.2,0l-4.73-1-2.55,1.77,9.17,1.93Zm12.25,1a.08.08,0,0,0,0,.06s0,0,.06,0l.38-.26h0a.11.11,0,0,0-.16,0Zm-12.29-.53a.11.11,0,0,0-.08.08.13.13,0,0,0,0,.09.1.1,0,0,0,.07.05l.43.09a.11.11,0,0,0,.08-.08.12.12,0,0,0-.09-.14Zm-9.16-6,7.3,1.52,7.31-4.22a1.14,1.14,0,0,1,1.17,0l4.13,2.47,3.12-2.15-3.6-.75-.05,0-11.41-2.37ZM492,692.09Zm-23.47-1.29Zm19.74-3.57.3.06a.13.13,0,0,0,.09,0,.14.14,0,0,0,.05-.07.13.13,0,0,0,0-.09l0-.05-.31-.06c-.05,0-.12,0-.14.09A.15.15,0,0,0,488.29,687.23Zm-11.59-1.9Zm.05,7.5,7-4a.43.43,0,0,1,.41,0l4.19,2.51Zm7.21-3.57L479.2,692l7.65-1Zm.05,0Z" transform="translate(17.96 -23.52)"/>
+                </g>
+              </g>
+            </g>
+            <!-- path from Product Use to Dispose of Product -->
+            <path id="B14-B18-path" class="cls-63" d="M465.09,729.81c-1.79,2.14-5,4.55-11.35,7.49-11.52,5.37-21.12,8.78-80.52,11.36" transform="translate(17.96 -23.52)"/>
+            <!-- path from Product Use to Downcycle -->
+            <path id="B14-B15-path" class="pathGreyDashed" d="M456.94,699.31c-41.39-9.37-79.37-22.79-112.54-39.45" transform="translate(17.96 -23.52)"/>
+            <!-- arrow from Product Use to Upcycle -->
+            <g id="B14-B17-arrow">
+              <g>
+                <path class="cls-63" d="M471.18,674.65a137.87,137.87,0,0,1-10.25-13.75c-14.46-22.16-22-47.61-23.18-75.06" transform="translate(17.96 -23.52)"/>
+                <polygon class="cls-65" points="467.95 571.08 465.97 573.14 455.84 563.41 446.87 574.23 444.68 572.4 455.61 559.23 467.95 571.08"/>
+              </g>
+            </g>
+            <!-- arrow from Product Use to Refurbish Product -->
+            <g id="B14-B16-arrow">
+              <g>
+                <path class="pathBlue" d="M530.4,681.85C632.21,656.57,710.72,597,731.72,565.74" transform="translate(17.96 -23.52)"/>
+                <polygon class="arrowBlue" points="753.14 555.13 750.6 555.46 748.99 542.94 736.62 545.46 736.11 542.95 751.18 539.89 753.14 555.13"/>
+              </g>
+            </g>
+            <!-- Upcycle Symbol, Icon and Revalorize label -->
+            <g id="B17-product-upcycle">
+              <!-- Upcycle label -->
+              <text class="iconlabel" text-anchor="middle" transform="translate(515.9 505.7)" x="0" y="0">
+                <tspan x="0" y="0">UPCYCLE</tspan>
+              </text>
+              <!-- Upcycle icon -->
+              <g id="upcycle-symbol">
+                <g>
+                  <path class="cls-100" d="M512,491c3.59,5.47,8.21,10.72,4.83,12.89-2,1.31-9.38,1.19-13.06,1" transform="translate(17.96 -23.52)"/>
+                  <polygon class="cls-101" points="528.43 473.52 529.73 474.99 522.49 481.4 529.42 488.16 528.05 489.56 519.61 481.33 528.43 473.52"/>
+                </g>
+                <g>
+                  <path class="cls-100" d="M495.87,504.94c-7.59.95-13.15-1.86-12.09-5.74.72-2.61,11.83-19.45,15.51-25" transform="translate(17.96 -23.52)"/>
+                  <polygon class="cls-101" points="520.4 460.54 518.46 460.87 516.85 451.33 507.45 453.63 506.99 451.72 518.44 448.92 520.4 460.54"/>
+                </g>
+              </g>
+              <!-- Revalorize label -->
+              <text class="iconlabel revalorizelabel" text-anchor="middle" transform="translate(388.9 547.4)" x="0" y="0">
+                <tspan x="0" dy="1.1em">REVALORIZE</tspan>
+                <tspan x="0" dy="1.1em">PRODUCT</tspan>
+              </text>
+              <!-- unknown - icon next to Upcycle? -->
+              <circle class="iconBlue" cx="442.31" cy="510" r="40.23"/>
+              <g>
+                <path class="iconDrawing" d="M446.69,512.44H418a1,1,0,1,0,0,1.95h27.73v38.16H414.41a2.93,2.93,0,0,0,.17-1v-5.45a1,1,0,0,0,0-2v-5.84a1,1,0,1,0,0-1.94v-5.84a1,1,0,0,0,0-1.95v-5.84a1,1,0,1,0,0-1.94v-5.45a2.93,2.93,0,0,0-.17-1h4.06a1,1,0,0,0,0-1.95h-5.88l0-2.89a.93.93,0,0,0-.28-.7.94.94,0,0,0-.69-.29h-5.84a1,1,0,0,0-1,1l-.05,3.12a2.91,2.91,0,0,0-1.9,2.73v36.2a2.93,2.93,0,0,0,2,2.75v3.09a1,1,0,0,0,1,1h5.84a1,1,0,0,0,1-1v-2.92h34.06a1,1,0,0,0,1-1v-40.1A1,1,0,0,0,446.69,512.44ZM411.6,552.55h-5.78a1,1,0,0,1-1-1v-36.2a1,1,0,0,1,1-1h5.84a1,1,0,0,1,1,1v36.2a1,1,0,0,1-1,1Zm-.93-42,0,1.94h-3.89l0-1.94Zm-3.88,45.93v-2h3.9v2Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M441.83,518.87a1,1,0,0,0,0-2,1,1,0,0,0-1,1h0A1,1,0,0,0,441.83,518.87Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M440.85,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M440.85,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M440.85,541.25a1,1,0,1,0,1.95,0,1,1,0,0,0-1.95,0Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M440.85,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M437.93,522.76a1,1,0,1,0-1-1h0A1,1,0,0,0,437.93,522.76Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M437,529.58a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M437,537.36a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M437,545.15a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M434,518.87a1,1,0,1,0-1-1h0A1,1,0,0,0,434,518.87Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M433.07,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M433.07,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M433.07,541.25a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M433.07,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M430.15,522.76a1,1,0,1,0-1-1h0A1,1,0,0,0,430.15,522.76Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M429.18,529.58a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M429.18,537.36a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M429.18,545.15a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M426.26,518.87a1,1,0,0,0,0-2,1,1,0,0,0-1,1h0A1,1,0,0,0,426.26,518.87Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M425.28,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M425.28,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M425.28,541.25a1,1,0,1,0,2,0,1,1,0,0,0-2,0Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M425.28,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M422.36,520.82a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M422.36,528.6a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M422.36,536.39a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M422.36,544.17a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M418.47,516.92a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M418.47,524.71a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M418.47,532.49a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M418.47,540.28a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M418.47,548.06a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M410.69,516.92a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M410.69,524.71a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M410.69,532.49a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M410.69,540.28a1,1,0,0,0-1,1h0a1,1,0,1,0,2,0A1,1,0,0,0,410.69,540.28Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M410.69,548.06a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M406.79,520.82a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M406.79,528.6a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M406.79,536.39a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M406.79,544.17a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M446.69,512.44H418a1,1,0,1,0,0,1.95h27.73v38.16H414.41a2.93,2.93,0,0,0,.17-1v-5.45a1,1,0,0,0,0-2v-5.84a1,1,0,1,0,0-1.94v-5.84a1,1,0,0,0,0-1.95v-5.84a1,1,0,1,0,0-1.94v-5.45a2.93,2.93,0,0,0-.17-1h4.06a1,1,0,0,0,0-1.95h-5.88l0-2.89a.93.93,0,0,0-.28-.7.94.94,0,0,0-.69-.29h-5.84a1,1,0,0,0-1,1l-.05,3.12a2.91,2.91,0,0,0-1.9,2.73v36.2a2.93,2.93,0,0,0,2,2.75v3.09a1,1,0,0,0,1,1h5.84a1,1,0,0,0,1-1v-2.92h34.06a1,1,0,0,0,1-1v-40.1A1,1,0,0,0,446.69,512.44ZM411.6,552.55h-5.78a1,1,0,0,1-1-1v-36.2a1,1,0,0,1,1-1h5.84a1,1,0,0,1,1,1v36.2a1,1,0,0,1-1,1Zm-.93-42,0,1.94h-3.89l0-1.94Zm-3.88,45.93v-2h3.9v2Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M441.83,518.87a1,1,0,0,0,0-2,1,1,0,0,0-1,1h0A1,1,0,0,0,441.83,518.87Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M440.85,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M440.85,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M440.85,541.25a1,1,0,1,0,1.95,0,1,1,0,0,0-1.95,0Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M440.85,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M437.93,522.76a1,1,0,1,0-1-1h0A1,1,0,0,0,437.93,522.76Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M437,529.58a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M437,537.36a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M437,545.15a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M434,518.87a1,1,0,1,0-1-1h0A1,1,0,0,0,434,518.87Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M433.07,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M433.07,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M433.07,541.25a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M433.07,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M430.15,522.76a1,1,0,1,0-1-1h0A1,1,0,0,0,430.15,522.76Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M429.18,529.58a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M429.18,537.36a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M429.18,545.15a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M426.26,518.87a1,1,0,0,0,0-2,1,1,0,0,0-1,1h0A1,1,0,0,0,426.26,518.87Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M425.28,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M425.28,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M425.28,541.25a1,1,0,1,0,2,0,1,1,0,0,0-2,0Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M425.28,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M422.36,520.82a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M422.36,528.6a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M422.36,536.39a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M422.36,544.17a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M418.47,516.92a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M418.47,524.71a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M418.47,532.49a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M418.47,540.28a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M418.47,548.06a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M410.69,516.92a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M410.69,524.71a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M410.69,532.49a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M410.69,540.28a1,1,0,0,0-1,1h0a1,1,0,1,0,2,0A1,1,0,0,0,410.69,540.28Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M410.69,548.06a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M406.79,520.82a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M406.79,528.6a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M406.79,536.39a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+                <path class="iconDrawing" d="M406.79,544.17a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z" transform="translate(17.96 -23.52)"/>
+              </g>
+            </g>
+            <!-- arrow from Upcycle to Materials -->
+            <g id="B17-A2-arrow">
+              <g>
+                <path class="cls-63" d="M396.29,517c-55.61-19.1-88.28-67.71-99.21-102.51" transform="translate(17.96 -23.52)"/>
+                <polygon class="cls-65" points="329.2 396.19 327.85 398.7 315.49 392.01 309.72 404.83 307.12 403.65 314.15 388.05 329.2 396.19"/>
+              </g>
+            </g>
+            <!-- Downcycle Symbol and Icon -->
+            <g id="B15-product-downcycle">
+              <g id="downcycle-symbol">
+                <!-- Downcycle symbol -->
+                <g>
+                  <path class="cls-100" d="M220.47,626.24c-6.53.34-13.4,1.68-13.57-2.34-.1-2.41,3.72-8.7,5.71-11.79" transform="translate(17.96 -23.52)"/>
+                  <polygon class="cls-101" points="234.03 598.37 232.1 598.75 230.22 589.26 220.89 591.83 220.37 589.94 231.74 586.81 234.03 598.37"/>
+                </g>
+                <g>
+                  <path class="cls-100" d="M216.62,605.3c3-7,8.24-10.41,11.06-7.54,1.89,1.94,10.81,20,13.74,26" transform="translate(17.96 -23.52)"/>
+                  <polygon class="cls-101" points="249.28 597.99 249.98 596.15 259.03 599.58 261.79 590.3 263.67 590.87 260.31 602.16 249.28 597.99"/>
+                </g>
+              </g>
+              <!-- Downcycle label -->
+              <text class="iconlabel" text-anchor="start" transform="translate(205.0 622.9)" x="0" y="0">
+                <tspan x="0" y="0">DOWNCYCLE</tspan>
+              </text>
+              <!-- Downcycle icon -->
+              <circle id="downcycle-bkgnd" class="iconBlue" cx="330.02" cy="612.11" r="40.23"/>
+              <path id="downcycle-icon" class="iconDrawing" d="M327.58,624h0a1,1,0,0,0-.31-.74L323,619a1.07,1.07,0,0,0-.76-.31,1.08,1.08,0,0,0-.74.33l-2,2.14-2-2.14a1,1,0,0,0-.76-.33,1.07,1.07,0,0,0-.77.33l-2,2.14-2-2.14a1.07,1.07,0,0,0-.77-.33,1,1,0,0,0-.76.33l-2,2.14-2-2.14a1,1,0,0,0-.76-.33h0a1,1,0,0,0-.74.31l-4.24,4.24a1,1,0,0,0-.3.76,1,1,0,0,0,.33.74l2.13,2-2.91,2.92-2-2.14a1.06,1.06,0,0,0-.76-.33h0a1.1,1.1,0,0,0-.74.31l-4.23,4.25a1,1,0,0,0-.3.75,1.07,1.07,0,0,0,.32.75l2.14,2-2.14,2a1,1,0,0,0,0,1.52l2.14,2-2.14,2a1,1,0,0,0-.33.76,1.07,1.07,0,0,0,.33.77l2.14,2-2.14,2a1,1,0,0,0-.33.76h0a1.08,1.08,0,0,0,.31.74l4.25,4.23a1,1,0,0,0,.74.31h0a1.08,1.08,0,0,0,.75-.33l2-2.14,2,2.14a1,1,0,0,0,1.52,0l2-2.14,2,2.14a1,1,0,0,0,.76.33,1.07,1.07,0,0,0,.77-.33l2-2.14,2,2.14a1,1,0,0,0,.76.33h0a1,1,0,0,0,.74-.31l4.23-4.24a1.08,1.08,0,0,0,.31-.76,1,1,0,0,0-.33-.74l-2.14-2,2.92-2.92,2,2.14a1,1,0,0,0,.76.33h0a1.06,1.06,0,0,0,.74-.31l4.24-4.25a1,1,0,0,0,.3-.75,1,1,0,0,0-.33-.75l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1.07,1.07,0,0,0-.33-.77l-2.13-2,2.13-2a1,1,0,0,0,.33-.76ZM313.8,651.91l-2-2.16a1.05,1.05,0,0,0-1.53,0l-2,2.13-2-2.13a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-2,2.13-2-2.13a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-2,2.16-2.72-2.72,2.16-2a1.05,1.05,0,0,0,0-1.53l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.16-2,2.72-2.72,2,2.16a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1.05,1.05,0,0,0,1.53,0l2-2.16,2.72,2.72-2.16,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.13,2-2.13,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.13,2-2.13,2a1.05,1.05,0,0,0,0,1.53l2.16,2Zm9.07-24.35,2.14,2-2.14,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.14,2-2.14,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.16,2-2.71,2.72-2-2.16a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-.82.87-1.34-1.26,2.14-2a1,1,0,0,0,0-1.52l-2.14-2,2.14-2a1.06,1.06,0,0,0,.33-.76v0a1.05,1.05,0,0,0-.31-.74l-4.24-4.23a1.06,1.06,0,0,0-1.5,0l-2,2.14-2-2.14a1.05,1.05,0,0,0-1.53,0l-2,2.14-1.25-1.33.87-.82a1.05,1.05,0,0,0,0-1.53l-2.16-2,2.71-2.72,2,2.16a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1.05,1.05,0,0,0,1.53,0l2-2.13,2,2.13a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.16L325,624l-2.17,2a1.05,1.05,0,0,0,0,1.53Z" transform="translate(17.96 -23.52)"/>
+            </g>
+            <!-- path from Downcycle to Design Product -->
+            <path id="B15-A1-path" class="pathGreyDashed" d="M276.07,615.24c-30.37-26-51.87-55.85-61.93-88.09" transform="translate(17.96 -23.52)"/>
+            <!-- Dispose of Product Icon -->
+            <g id="B18-dispose-of-product">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="middle" transform="translate(354.52 774.66)" x="0" y="0">
+                <tspan x="0" dy="1.1em">DISPOSE OF</tspan>
+                <tspan x="0" dy="1.1em">PRODUCT</tspan>
+              </text>
+              <!-- icon -->
+              <circle id="dispose-bkgnd" class="iconBlue" cx="353.14" cy="724.41" r="40.23"/>
+              <path id="dispose-icon" class="iconDrawing" d="M310.11,761.92a.95.95,0,1,0,0,1.9h53.16a1,1,0,0,0,0-1.9h-7.38a5.85,5.85,0,0,0,1.47-3h5.48a1,1,0,0,0,1-.95v-3.74a1,1,0,0,0-1-1H362V736.83a.94.94,0,0,0-.95-1h-2.68a4.81,4.81,0,0,0-4-3.94,5.76,5.76,0,0,0-10.86-.89,4.74,4.74,0,0,0-3.49,2l-.17-.07a4.81,4.81,0,0,0-6.17,2.86h-1.42l-3.83-1.81a.9.9,0,0,0-.4-.09h-8a1,1,0,0,0-.95.95v2.12a.94.94,0,0,0,.68.91l1.6.47h-2.88a1,1,0,0,0-.72.32l-6.42,7.42a1,1,0,0,0-.23.62v6.48h-.66a1,1,0,0,0-1,1V758a1,1,0,0,0,1,.95h3.8a5.93,5.93,0,0,0,1.47,3Zm24.05-18.62a1.25,1.25,0,0,1,2.49,0v10h-2.49Zm12.28,11.87a5.9,5.9,0,0,0-.63,1.84H325.89a5.9,5.9,0,0,0-.63-1.84Zm-19.31-14.85v5.53H319l4.78-5.53Zm16.25,3a1.25,1.25,0,0,1,2.49,0v10h-2.49Zm2.43,15.61a5.93,5.93,0,0,0,1.47,3H324.42a5.93,5.93,0,0,0,1.47-3ZM324.07,758a4,4,0,1,1-7.92,0h0a4,4,0,0,1,7.92,0Zm-12.58-2.79H315a5.9,5.9,0,0,0-.63,1.84h-2.85ZM319,740.32h2.24l-5.06,5.86a.93.93,0,0,0-.23.62,1,1,0,0,0,.94,1h10.23v5.52h-3.52a5.81,5.81,0,0,0-7,0H313.1v-6.12Zm34.66-6.54a2.9,2.9,0,0,1,2.76,2.1H335.85v0a2.9,2.9,0,0,1,4-.71.51.51,0,0,0,.18.09,1,1,0,0,0,1.24-.51,2.89,2.89,0,0,1,2.69-1.81h.16a1,1,0,0,0,1-.67,3.86,3.86,0,0,1,7.54.67,1,1,0,0,0,.94.85Zm6.45,19.49H357v-10a3.14,3.14,0,1,0-6.28,0v8.87a5.86,5.86,0,0,0-2.62,1.1h-.32v-10a3.15,3.15,0,0,0-6.29,0v10h-2.93v-10a3.15,3.15,0,0,0-6.29,0v10H329v-13.9a1,1,0,0,0-.68-.91l-7.28-2.13v-.45h6.8l3.83,1.81a.9.9,0,0,0,.4.09h28Zm-5,0a5.81,5.81,0,0,0-2.48-1.08V743.3a1.24,1.24,0,1,1,2.48,0v10Zm6.8,3.74h-4.53a5.64,5.64,0,0,0-.62-1.84h5.15Zm-6.34,1a4,4,0,1,1-4-4,4,4,0,0,1,4,4Z" transform="translate(17.96 -23.52)"/>
+            </g>
+            <!-- line from Dispose to Waste-to-Energy -->
+            <line id="B18-B19-path" class="pathBlue" x1="228.72" y1="725.73" x2="311.47" y2="725.73"/>
+            <!-- Waste-to-Energy icon -->
+            <g id="B19-waste-to-energy">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="middle" transform="translate(185.73 774.66)" x="0" y="0">
+                <tspan x="0" dy="1.1em">WASTE-TO-</tspan>
+                <tspan x="0" dy="1.1em">ENERGY</tspan>
+              </text>
+              <!-- icon -->
+              <circle id="w-to-e-bkgnd" class="iconBlue" cx="189.32" cy="724.41" r="40.23"/>
+              <g id="w-to-e-icon">
+                <g>
+                  <path class="iconDrawing" d="M162.27,746.87l0-.29c-.34-4.47-2.43-7.27-4.26-9.74-1.7-2.29-3.17-4.27-3.17-7.18a.63.63,0,0,0-.34-.56.61.61,0,0,0-.65,0,16,16,0,0,0-5.86,8.47,27.49,27.49,0,0,0-.64,6.33c-2.55-.54-3.12-4.35-3.13-4.39a.62.62,0,0,0-.32-.46.61.61,0,0,0-.57,0c-.13.06-3.28,1.66-3.46,8,0,.21,0,.42,0,.63a11.24,11.24,0,1,0,22.47,0C162.31,747.45,162.29,747.16,162.27,746.87Zm-11.2,10.88a3.88,3.88,0,0,1-3.74-4v-.24a5,5,0,0,1,.4-2,2.29,2.29,0,0,0,2.06,1.49.62.62,0,0,0,.62-.62,12.67,12.67,0,0,1,.24-2.85,6,6,0,0,1,1.27-2.39,7.9,7.9,0,0,0,1.28,2.36,7.07,7.07,0,0,1,1.6,3.9c0,.11,0,.22,0,.33A3.88,3.88,0,0,1,151.07,757.75Zm4-.81a5.36,5.36,0,0,0,1-3.18c0-.14,0-.28,0-.54a8.26,8.26,0,0,0-1.81-4.41,4.92,4.92,0,0,1-1.25-2.92.63.63,0,0,0-.34-.56.65.65,0,0,0-.66.06,7.37,7.37,0,0,0-2.54,3.88,11.23,11.23,0,0,0-.26,2.22,2.9,2.9,0,0,1-.57-1.34.63.63,0,0,0-.33-.47.66.66,0,0,0-.58,0c-.15.08-1.53.87-1.61,3.79a2.81,2.81,0,0,0,0,.29,5.36,5.36,0,0,0,1,3.18,10,10,0,0,1-6-9.18,5.75,5.75,0,0,1,0-.58c.1-3.74,1.3-5.6,2.08-6.42.55,2,2,4.51,4.77,4.51a.63.63,0,0,0,.63-.63,27.74,27.74,0,0,1,.6-6.71,14.81,14.81,0,0,1,4.47-7c.35,2.67,1.81,4.63,3.34,6.69,1.82,2.45,3.7,5,4,9.09l0,.3c0,.26,0,.51,0,.79A10,10,0,0,1,155,756.94Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M151.07,759.36a11.61,11.61,0,0,1-11.59-11.6c0-.22,0-.44,0-.66.19-6.58,3.52-8.27,3.66-8.33a1,1,0,0,1,1.4.74s.49,3.16,2.43,4a26.07,26.07,0,0,1,.65-5.94,16.19,16.19,0,0,1,6-8.67.94.94,0,0,1,1-.07,1,1,0,0,1,.53.87c0,2.79,1.43,4.73,3.09,7,1.87,2.51,4,5.36,4.33,9.93l0,.3-.36,0h.36c0,.29,0,.58,0,.88A11.61,11.61,0,0,1,151.07,759.36Zm-7.49-20-.11,0c-.13.07-3.09,1.57-3.26,7.74,0,.21,0,.42,0,.62a10.89,10.89,0,1,0,21.77,0c0-.29,0-.56,0-.83l.35-.06-.35,0,0-.29c-.33-4.37-2.38-7.13-4.19-9.56s-3.24-4.36-3.24-7.39a.27.27,0,0,0-.14-.24.26.26,0,0,0-.28,0,15.49,15.49,0,0,0-5.72,8.27,27,27,0,0,0-.63,6.25v.43l-.42-.09c-2.8-.59-3.41-4.65-3.41-4.69a.29.29,0,0,0-.14-.2A.28.28,0,0,0,143.58,739.38Zm7.49,18.73a4.23,4.23,0,0,1-4.1-4.35,2.44,2.44,0,0,1,0-.26,5.38,5.38,0,0,1,.42-2.11l.33-.7.32.7a2,2,0,0,0,1.74,1.28.27.27,0,0,0,.27-.27,12.77,12.77,0,0,1,.25-2.92,6.26,6.26,0,0,1,1.34-2.54l.42-.5.19.63a7.76,7.76,0,0,0,1.24,2.26,7.41,7.41,0,0,1,1.66,4.08c0,.11,0,.23,0,.35A4.24,4.24,0,0,1,151.07,758.11Zm-3.25-5.73a6.4,6.4,0,0,0-.13,1.15,1.93,1.93,0,0,0,0,.23,3.4,3.4,0,1,0,6.78,0,2.91,2.91,0,0,0,0-.3,6.65,6.65,0,0,0-1.54-3.72,10.83,10.83,0,0,1-1.11-1.84,5.48,5.48,0,0,0-.8,1.75,12.22,12.22,0,0,0-.23,2.75,1,1,0,0,1-1,1A2.45,2.45,0,0,1,147.82,752.38Zm.37,5.4-1.2-.52a10.35,10.35,0,0,1-6.26-9.5c0-.19,0-.38,0-.6.11-3.9,1.42-5.84,2.19-6.64l.43-.46.17.61c.27,1,1.42,4.24,4.42,4.24a.27.27,0,0,0,.27-.27,28.1,28.1,0,0,1,.62-6.8,15.08,15.08,0,0,1,4.58-7.22l.5-.44.08.66c.34,2.59,1.76,4.5,3.27,6.53,1.85,2.49,3.77,5.07,4.09,9.27l0,.3c0,.29,0,.55,0,.82a10.35,10.35,0,0,1-6.26,9.5l-1.2.52.77-1a5,5,0,0,0,1-3c0-.14,0-.27,0-.51a7.9,7.9,0,0,0-1.76-4.23,5.33,5.33,0,0,1-1.3-3.13.28.28,0,0,0-.15-.24.26.26,0,0,0-.28,0,6.84,6.84,0,0,0-2.41,3.68,10.34,10.34,0,0,0-.26,2.14l0,.87-.58-.64a3.25,3.25,0,0,1-.67-1.55.25.25,0,0,0-.14-.18.25.25,0,0,0-.24,0c-.06,0-1.35.72-1.43,3.49v.28a5,5,0,0,0,1,3Zm4.17-12.87a1,1,0,0,1,.44.1,1,1,0,0,1,.54.88,4.6,4.6,0,0,0,1.18,2.72,8.5,8.5,0,0,1,1.88,4.59c0,.27,0,.41,0,.56a5.59,5.59,0,0,1-.5,2.32,9.64,9.64,0,0,0,4.78-8.32c0-.25,0-.49,0-.73l0-.34c-.31-4-2.16-6.49-4-8.9-1.44-1.93-2.8-3.76-3.29-6.2a14.32,14.32,0,0,0-3.88,6.42,27.56,27.56,0,0,0-.6,6.63,1,1,0,0,1-1,1c-3,0-4.37-2.66-4.91-4.13a10,10,0,0,0-1.59,5.7c0,.21,0,.39,0,.57a9.64,9.64,0,0,0,4.78,8.32,5.59,5.59,0,0,1-.5-2.32c0-.1,0-.21,0-.31.08-3.12,1.64-4,1.81-4.09a1,1,0,0,1,1.4.64q.06-.43.15-.81a7.68,7.68,0,0,1,2.68-4.08A1,1,0,0,1,152.36,744.91Z" transform="translate(17.96 -23.52)"/>
+                </g>
+                <g>
+                  <path class="iconDrawing" d="M194.54,758.66a6.66,6.66,0,0,1-6.62-6.39l0-1.16a.84.84,0,0,1,.22-.61.88.88,0,0,1,.59-.27l11.56-.42a.83.83,0,0,1,.88.81l.05,1.16a6.64,6.64,0,0,1-6.39,6.87h-.25Zm.22-.85h0Zm-5.16-5.92v.32a4.91,4.91,0,0,0,1.58,3.43,5,5,0,0,0,3.54,1.32,5,5,0,0,0,4.75-5.12v-.31Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M191,751.84h0a.76.76,0,0,1-.75-.78l0-2.07-1.45.38a3.31,3.31,0,0,1-2.18-.15,2.47,2.47,0,0,1-1.39-1.58,2.84,2.84,0,0,1,2.24-3.28l10.1-2.68a2.82,2.82,0,0,1,3.57,1.73,2.42,2.42,0,0,1-.42,2.06,3.28,3.28,0,0,1-1.82,1.22l-3.45.86-.22,2.88a.78.78,0,0,1-.82.7.76.76,0,0,1-.71-.82l.27-3.42a.76.76,0,0,1,.57-.69l4-1a1.74,1.74,0,0,0,1-.63.91.91,0,0,0,.18-.77c-.14-.55-.92-.85-1.69-.64l-10.11,2.68c-.77.21-1.3.85-1.15,1.4a.94.94,0,0,0,.54.58,1.76,1.76,0,0,0,1.16.07l2.42-.64a.77.77,0,0,1,.67.14.72.72,0,0,1,.29.61l0,3.08A.77.77,0,0,1,191,751.84Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M187.62,745.41a2.4,2.4,0,0,1-2.31-1.77l-.1-.41a2.37,2.37,0,0,1,1.69-2.91l11.31-3a2.4,2.4,0,0,1,2.91,1.69l.11.41a2.38,2.38,0,0,1-1.69,2.91h0l-11.31,3A2.62,2.62,0,0,1,187.62,745.41Zm11.2-6.64a.78.78,0,0,0-.22,0l-11.31,3a.85.85,0,0,0-.6,1l.1.4a.86.86,0,0,0,1,.61l11.31-3a.82.82,0,0,0,.52-.39.9.9,0,0,0,.09-.64l-.11-.41a.87.87,0,0,0-.4-.52A.91.91,0,0,0,198.82,738.77Zm.52,2.81h0Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M187.66,741.71a2.42,2.42,0,0,1-1.2-.32,2.36,2.36,0,0,1-1.1-1.45l-.11-.41a2.38,2.38,0,0,1,1.69-2.91l11.31-3a2.38,2.38,0,0,1,2.91,1.69l.11.4a2.39,2.39,0,0,1-1.69,2.92h0l-11.31,3A2.55,2.55,0,0,1,187.66,741.71Zm11.2-6.64a.83.83,0,0,0-.22,0l-11.31,3a.85.85,0,0,0-.51.4.8.8,0,0,0-.09.64l.11.41a.84.84,0,0,0,.39.51.83.83,0,0,0,.65.09l11.31-3a.85.85,0,0,0,.6-1l-.11-.41A.85.85,0,0,0,198.86,735.07Zm.52,2.82h0Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M188,737.71a3.13,3.13,0,0,1-1.18-.22,2.11,2.11,0,0,1-.9-3.41,3.32,3.32,0,0,1,1.79-1.13l5.47-1.46a3.29,3.29,0,0,1,1.08-2,2.63,2.63,0,0,1,3.18,0c.56.44,1.72,1.82.35,5.07l0,.1a.74.74,0,0,1-.24.72.73.73,0,0,1-.6.16l-.37.08-7.6,2.06A3.79,3.79,0,0,1,188,737.71Zm7.92-7.36a1.32,1.32,0,0,0-.79.27,2.44,2.44,0,0,0-.56,1.49.71.71,0,0,1-.54.67l-5.95,1.58a1.87,1.87,0,0,0-1,.63.75.75,0,0,0-.2.66.8.8,0,0,0,.5.49,2,2,0,0,0,1.19,0l7.6-2.07h0l.2-.05.07-.16c.8-1.9.57-3,.09-3.35A.93.93,0,0,0,195.89,730.35Z" transform="translate(17.96 -23.52)"/>
+                  <path class="cls-91" d="M197.19,750.64" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M194.42,761.63a3,3,0,0,1-3-2.88.86.86,0,0,1,.82-.88.84.84,0,0,1,.88.82,1.29,1.29,0,0,0,1.3,1.25h0l.56,0a1.3,1.3,0,0,0,1.25-1.35.86.86,0,0,1,.82-.88.84.84,0,0,1,.88.82,3,3,0,0,1-2.88,3.1l-.56,0Z" transform="translate(17.96 -23.52)"/>
+                  <path class="iconDrawing" d="M197.8,751.46a.85.85,0,0,1-.85-.82l0-1.44a.84.84,0,0,1,.22-.61.86.86,0,0,1,.59-.27,5.52,5.52,0,0,0,1.29-.56c.25-.14.26-.25.27-.31a1.2,1.2,0,0,0-.41-.87.85.85,0,0,1,1.16-1.24,2.88,2.88,0,0,1,.93,2.32,2.08,2.08,0,0,1-1.13,1.58,9.5,9.5,0,0,1-1.2.56l0,.78a.84.84,0,0,1-.81.88Z" transform="translate(17.96 -23.52)"/>
+                </g>
+                <g>
+                  <line class="cls-92" x1="184.9" y1="722.99" x2="196.08" y2="722.99"/>
+                  <polygon class="iconDrawing" points="189.78 730.76 188.49 729.37 195.35 722.99 188.49 716.61 189.78 715.22 198.14 722.99 189.78 730.76"/>
+                </g>
+              </g>
+            </g>
+          </g> <!-- end of icon group -->
+        </svg>
+
+        <!-- Tooltips -->
+        <div id="designtooltip">
+          <ul class="tooltipList">
+            <li class="tooltipItem">Design Optimization</li>
+            <li class="tooltipItem">Waste Reduction</li>
+            <li class="tooltipItem">3D (Additive) Manufacturing</li>
+          </ul>
+        </div>
+        <div id="packagingtooltip">
+          <ul class="tooltipList">
+            <li class="tooltipItem">Optimize weight & volume requirements</li>
+          </ul>
+        </div>
+        <div id="plane1tooltip">
+          <h2 style="text-align: center;">Transport Plane</h2>
+          <ul class="tooltipList">
+            <li class="tooltipItem">Employ optimized freight routing</li>
+            <li class="tooltipItem">Improve aerodynamics of transport tractors & trailers</li>
+            <li class="tooltipItem">Maximize truckload volumes</li>
+            <li class="tooltipItem">Use predictive data on real-time traffic patterns</li>
+            <li class="tooltipItem">Switch to hybrid & electric trucking fleets</li>
+            <li class="tooltipItem">Execute "customer pick-up" models</li>
+            <li class="tooltipItem">Seek out "collaborative logistics" opportunities to maximize freight backfilling</li>
+          </ul>
+        </div>
+        <div id="plane2tooltip">
+          <h2 style="text-align: center;">Transport Plane</h2>
+          <ul class="tooltipList">
+            <li class="tooltipItem">Employ optimized freight routing</li>
+            <li class="tooltipItem">Improve aerodynamics of transport tractors & trailers</li>
+            <li class="tooltipItem">Maximize truckload volumes</li>
+            <li class="tooltipItem">Use predictive data on real-time traffic patterns</li>
+            <li class="tooltipItem">Switch to hybrid & electric trucking fleets</li>
+            <li class="tooltipItem">Execute "customer pick-up" models</li>
+            <li class="tooltipItem">Seek out "collaborative logistics" opportunities to maximize freight backfilling</li>
+          </ul>
+        </div>
+        <div id="manufacturetooltip">
+          <ul class="tooltipList">
+            <li class="tooltipItem">Reduce water use
+              <ul class="tooltipSublist">
+                <li class="tooltipSublistItem">Recycle process water</li>
+                <li class="tooltipSublistItem">Water desalination</li>
+                <li class="tooltipSublistItem">High efficiency appliances</li>
+                <li class="tooltipSublistItem">Compost toilets</li>
+              </ul>
+            </li>
+            <li class="tooltipItem">Reduce energy use
+              <ul class="tooltipSublist">
+                <li class="tooltipSublistItem">Solar microgrids</li>
+                <li class="tooltipSublistItem">On-site RE generation</li>
+                <li class="tooltipSublistItem">Wast-to-energy</li>
+              </ul>
+            </li>   
+          </ul>
+        </div>
+        <div id="warehousetooltip">
+          <ul class="tooltipList">
+            <li class="tooltipItem">Reduce water use
+              <ul class="tooltipSublist">
+                <li class="tooltipSublistItem">HE appliances</li>
+                <li class="tooltipSublistItem">Greywater use for HVAC systems and toilets</li>
+              </ul>
+            </li>
+            <li class="tooltipItem">Reduce energy use
+              <ul class="tooltipSublist">
+                <li class="tooltipSublistItem">LED lighting</li>
+                <li class="tooltipSublistItem">Smart lighting systems</li>
+                <li class="tooltipSublistItem">Programmable thermostats</li>
+                <li class="tooltipSublistItem">Solar microgrids</li>
+                <li class="tooltipSublistItem">On-site renewable energy generation</li>
+                <li class="tooltipSublistItem">Waste-to-energy</li>
+              </ul>
+            </li>
+            <li class="tooltipItem">Automatize / Robotize fulfillment processes</li>
+          </ul>
+        </div>
+        <div id="headquarterstooltipR">
+          <ul class="tooltipList">
+            <li class="tooltipItem">Reduce water use
+              <ul class="tooltipSublist">
+                <li class="tooltipSublistItem">Refillable water stations</li>
+                <li class="tooltipSublistItem">Watersense faucets & toilets</li>
+                <li class="tooltipSublistItem">High efficiency appliances</li>
+                <li class="tooltipSublistItem">Drip irrigation system</li>
+                <li class="tooltipSublistItem">Xeriscape landscape</li>
+                <li class="tooltipSublistItem">Bioswales & rain gardens</li>
+                <li class="tooltipSublistItem">Roof gardens</li>
+                <li class="tooltipSublistItem">Water cistern capture</li>
+                <li class="tooltipSublistItem">Graywater reuse for HVAC systems & toilets</li>
+              </ul>
+            </li>
+            <li class="tooltipItem">Reduce energy use
+              <ul class="tooltipSublist">
+                <li class="tooltipSublistItem">LED lighting</li>
+                <li class="tooltipSublistItem">Dimmables</li>
+                <li class="tooltipSublistItem">Smart lighting systems</li>
+                <li class="tooltipSublistItem">Daylighting</li>
+                <li class="tooltipSublistItem">Programmable thermostats</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="headquarterstooltipL">
+          <ul class="tooltipList">
+            <li class="tooltipItem">Reduce waste
+              <ul class="tooltipSublist">
+                <li class="tooltipSublistItem">Buy reusables</li>
+                <li class="tooltipSublistItem">Use durables</li>
+                <li class="tooltipSublistItem">Recycle plastic, glass, paper & metals</li>
+                <li class="tooltipSublistItem">Compost food waste</li>
+              </ul>
+            </li>
+            <li class="tooltipItem">Reduce fossil fuel use
+              <ul class="tooltipSublist">
+                <li class="tooltipSublistItem">Renewable energy certificates (RECs)</li>
+                <li class="tooltipSublistItem">Carbon offsets</li>
+                <li class="tooltipSublistItem">Green tariffs</li>
+                <li class="tooltipSublistItem">On-site generation</li>
+                <li class="tooltipSublistItem">PPAs & vPPAs</li>
+                <li class="tooltipSublistItem">Waste-to-Energy</li>
+                <li class="tooltipSublistItem">Deregulated energy markets</li>
+                <li class="tooltipSublistItem">Community solar</li>
+                <li class="tooltipSublistItem">Direct financial investments</li>
+              </ul>
+            </li>
+            <li class="tooltipItem">Source renewable energy</li>        
+          </ul>
+        </div> <!-- end of tooltips, each tooltip is an individual div -->
+
+      </div> <!-- entire efficiencies animation in this div -->
+    </main>
+  </body>
+
+  <!-- <script src="../src/buttons.js"></script> -->
+  <script src="../src/tooltips.js"></script>
+
+</html>

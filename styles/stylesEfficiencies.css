@@ -1,0 +1,282 @@
+/* title and subtitle */
+.title {
+  fill: #8db845;
+}
+.titleUnderline {
+  stroke: #8db845;
+}
+
+/* Button Group */
+#typicalbtnOutline {
+  opacity: 0%;
+}
+#circularbtnOutline {
+  opacity: 0%;
+}
+#efficiencybtnOutline {
+  opacity: 100%;
+}
+#ecologybtnOutline {
+  opacity: 0%;
+}
+
+/* VALUE CHAIN EFFICIENCIES */
+/* show icon group after title animation is done */
+.efficienciesIcongroup {
+  opacity: 0%;
+  animation: showEfficiencies 0.6s ease-in 2.5s 1 normal forwards;
+}
+@keyframes showEfficiencies {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* pointer from tooltip to designicon */
+#designtooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
+
+/* Procure Packaging */
+.packagingiconBkgnd {
+  fill: #ee5f24;
+  animation: pulse 2.25s infinite;
+  transform-origin: 33% 35%;
+}
+#packagingiconHotspot {
+  fill: none;
+  transform-origin: 33% 35%;
+}
+#packagingtooltip {
+  width: 300px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#packagingtooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
+
+/* Manufacture Product */
+.manufactureiconBkgnd {
+  fill: #ee5f24;
+  animation: pulse 2.25s infinite;
+  transform-origin: 46% 31%;
+}
+#manufactureiconHotspot {
+  fill: none;
+  transform-origin: 46% 31%;
+}
+#manufacturetooltip {
+  width: 220px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#manufacturetooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
+
+/* Warehouse Product */
+.warehouseiconBkgnd {
+  fill: #ee5f24;
+  animation: pulse 2.25s infinite;
+  transform-origin: 59% 25%;
+}
+#warehouseiconHotspot {
+  fill: none;
+  transform-origin: 59% 25%;
+}
+#warehousetooltip {
+  width: 260px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#warehousetooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
+
+/* Corporate HQ */
+.headquartersiconBkgnd {
+  fill: #ee5f24;
+  animation: pulse 2.25s infinite;
+  transform-origin: 53% 48%;
+}
+#headquartersiconHotspot {
+  fill: none;
+  transform-origin: 53% 48%;
+}
+#headquarterstooltipR {
+  width: 230px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#headquarterstooltipR::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: -6px;
+  top: 125px;
+}
+#headquarterstooltipL {
+  width: 220px;
+  padding: 20px 25px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#headquarterstooltipL::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: 246px;
+  top: 138px;
+}
+@keyframes pulse {
+  0% {
+    fill: #ee5f24;
+    transform: scale(1, 1);
+    transition-timing-function: ease-in;
+  }
+  50% {
+    fill: #8db845;
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    fill: #ee5f24;
+    transform: scale(1, 1);
+  }
+}
+
+/* Airplanes */
+#plane1icon {
+  fill: #808285;
+  animation: pulseicon 2.25s infinite;
+  transform-origin: 39% 23%;
+}
+#plane1iconHotspot {
+  fill: none;
+  transform-origin: 39% 23%;
+}
+#plane1tooltip {
+  width: 300px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#plane1tooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
+#plane2icon {
+  fill: #808285;
+  animation: pulseicon 2.25s infinite;
+  transform-origin: 50% 90%;
+}
+#plane2iconHotspot {
+  fill: none;
+  transform-origin: 50% 90%;
+}
+#plane2tooltip {
+  width: 300px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#plane2tooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: -6px;
+  top: 265px;
+}
+@keyframes pulseicon {
+  0% {
+    fill: #808285;
+    transform: scale(1, 1);
+    transition-timing-function: ease-in;
+  }
+  50% {
+    fill: #8db845;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    fill: #808285;
+    transform: scale(1, 1);
+  }
+}
+
+/* Revalorize Product */
+.revalorize {
+  fill: #808285;
+  animation: pulse 2.25s infinite;
+  transform-origin: 45% 23%;
+}

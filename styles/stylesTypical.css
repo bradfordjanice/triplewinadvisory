@@ -1,0 +1,36 @@
+/* title and subtitle */
+.title {
+  fill: #ee5f24;
+}
+.titleUnderline {
+  stroke: #ee5f24;
+}
+
+/* Button Group */
+#typicalbtnOutline {
+  opacity: 100%;
+}
+#circularbtnOutline {
+  opacity: 0%;
+}
+#efficiencybtnOutline {
+  opacity: 0%;
+}
+#ecologybtnOutline {
+  opacity: 0%;
+}
+
+/* TYPICAL VALUE CHAIN */
+/* show icon group after title animation is done */
+.typicalIcongroup {
+  opacity: 0%;
+  animation: showTypical 0.6s ease-in 2.5s 1 normal forwards;
+}
+@keyframes showTypical {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
