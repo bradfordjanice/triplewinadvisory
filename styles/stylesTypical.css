@@ -20,24 +20,6 @@
   opacity: 0%;
 }
 
-/* TYPICAL VALUE CHAIN */
-/* show icon group after title animation is done */
-
-/* This version shows the chain all at once 
-.typicalIcongroup {
-  opacity: 0%;
-  animation: showTypical 0.6s ease-in 2.5s 1 normal forwards;
-}
-@keyframes showTypical {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-*/
-
 /* show icons one at a time - left to right */
 @keyframes loadChain {
   0% {
@@ -74,67 +56,67 @@
   opacity: 0%;
   animation: loadChain 1s ease-in 3.75s 1 normal forwards;
 }
+#plane1IconGrp {
+  opacity: 0%;
+  animation: loadChain 1s ease-in 3.75s 1 normal forwards;
+}
 #manufactureIconGrp {
   opacity: 0%;
   animation: loadChain 1s ease-in 4s 1 normal forwards;
 }
-#plane1IconGrp {
+#manufacture-warehouse-path {
   opacity: 0%;
   animation: loadChain 1s ease-in 4.25s 1 normal forwards;
 }
-#manufacture-warehouse-path {
+#shipIconGrp {
   opacity: 0%;
-  animation: loadChain 1s ease-in 4.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 4.25s 1 normal forwards;
 }
 #warehouseIconGrp {
   opacity: 0%;
-  animation: loadChain 1s ease-in 4.75s 1 normal forwards;
-}
-#shipIconGrp {
-  opacity: 0%;
-  animation: loadChain 1s ease-in 5s 1 normal forwards;
+  animation: loadChain 1s ease-in 4.5s 1 normal forwards;
 }
 #warehouse-sell-path {
   opacity: 0%;
-  animation: loadChain 1s ease-in 5.25s 1 normal forwards;
-}
-#sellIconGrp {
-  opacity: 0%;
-  animation: loadChain 1s ease-in 5.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 4.75s 1 normal forwards;
 }
 #truckIconGrp {
   opacity: 0%;
-  animation: loadChain 1s ease-in 5.75s 1 normal forwards;
+  animation: loadChain 1s ease-in 4.75s 1 normal forwards;
+}
+#sellIconGrp {
+  opacity: 0%;
+  animation: loadChain 1s ease-in 5s 1 normal forwards;
 }
 #sell-purchase-path {
   opacity: 0%;
-  animation: loadChain 1s ease-in 6s 1 normal forwards;
+  animation: loadChain 1s ease-in 5.25s 1 normal forwards;
 }
 #purchaseIconGrp {
   opacity: 0%;
-  animation: loadChain 1s ease-in 6.25s 1 normal forwards;
+  animation: loadChain 1s ease-in 5.5s 1 normal forwards;
 }
 #purchase-dispose-path {
   opacity: 0%;
-  animation: loadChain 1s ease-in 6.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 5.75s 1 normal forwards;
 }
 #disposeIconGrp {
   opacity: 0%;
-  animation: loadChain 1s ease-in 6.75s 1 normal forwards;
+  animation: loadChain 1s ease-in 6s 1 normal forwards;
 }
 #dispose-incineration-arrow {
   opacity: 0%;
-  animation: loadChain 1s ease-in 7s 1 normal forwards;
+  animation: loadChain 1s ease-in 6.25s 1 normal forwards;
 }
 #incinerationIconGrp {
   opacity: 0%;
-  animation: loadChain 1s ease-in 7.25s 1 normal forwards;
+  animation: loadChain 1s ease-in 6.5s 1 normal forwards;
 }
 #dispose-landfill-arrow {
   opacity: 0%;
-  animation: loadChain 1s ease-in 7.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 6.75s 1 normal forwards;
 }
 #landfillIconGrp {
   opacity: 0%;
-  animation: loadChain 1s ease-in 7.75s 1 normal forwards;
+  animation: loadChain 1s ease-in 7s 1 normal forwards;
 }

@@ -17,7 +17,6 @@ p {
 }
 
 /* size and center animation on web page */
-/* make this responsive to window size */
 #efficienciesAnimation,
 #typicalAnimation {
   display: block;
@@ -650,4 +649,16 @@ li.tooltipSublistItem {
 
 .cls-208 {
   font-size: 30px;
+}
+
+/* size and center animation on web page */
+/* responsive to screen size */
+@media only screen and (max-width: 600px) {
+  #efficienciesAnimation,
+  #typicalAnimation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
 }
