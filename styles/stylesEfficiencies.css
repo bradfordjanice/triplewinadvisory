@@ -167,7 +167,7 @@
   top: 125px;
 }
 #headquarterstooltipL {
-  width: 220px;
+  width: 230px;
   padding: 20px 25px 20px 8px;
   font-size: 1em;
   background-color: #8db845;
@@ -182,8 +182,8 @@
   transform: rotate(45deg);
   background-color: #8db845;
   position: absolute;
-  left: 246px;
-  top: 138px;
+  left: 256px;
+  top: 125px;
 }
 @keyframes pulse {
   0% {

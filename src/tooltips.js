@@ -103,13 +103,13 @@ headquartersicon.addEventListener("mouseout", stopHeadquartersTooltip);
 function showHeadquartersTooltip(event) {
   headquartersTimeoutFunction = setTimeout(function() {
     headquartersiconPos = headquartersicon.getBoundingClientRect();
-    headquarterstooltipR.style.left = headquartersiconPos.right + 13 + "px";
+    headquarterstooltipR.style.left = headquartersiconPos.right + 19 + "px";
     headquarterstooltipR.style.top =
       window.scrollY + headquartersiconPos.top - 100 + "px";
     headquarterstooltipR.style.display = "block";
-    headquarterstooltipL.style.left = headquartersiconPos.right - 330 + "px";
+    headquarterstooltipL.style.left = headquartersiconPos.left - 280 + "px";
     headquarterstooltipL.style.top =
-      window.scrollY + headquartersiconPos.top - 115 + "px";
+      window.scrollY + headquartersiconPos.top - 100 + "px";
     headquarterstooltipL.style.display = "block";
   }, 500);
 }
