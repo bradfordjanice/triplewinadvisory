@@ -22,9 +22,14 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 65%;
+  width: 85%;
 }
 
+/* NOTE:  THE TITLE ANIMATION IS WORKING IN EDGE
+   BUT THE OTHER ANIMATIONS ARE NOT
+   TRY NOT USING THE SHORT HAND VERSION OF THE
+   ANIMATION PROPERTY!
+*/
 /* title and subtitle */
 .title {
   font-size: 30px;
@@ -193,7 +198,7 @@ li.tooltipItem {
   padding-left: 1em;
 }
 /*
-li.tooltipItem:before {
+li.tooltipItem:before{
   content: "\2756\0020\0020";
 }
 */
@@ -203,7 +208,7 @@ ul.tooltipSublist {
   /* margin-left: 1em; */
   margin-left: 0.5em;
   padding-left: 1em;
-  text-indent: -1.1em;
+  text-indent: -1.3em;
 }
 li.tooltipSublistItem {
   font-size: 0.9em;
