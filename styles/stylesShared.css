@@ -127,6 +127,11 @@ p {
 .ecologybtnBkgnd {
   fill: #193e4f;
 }
+.note {
+  fill: #231f20;
+  font-size: 1.2em;
+  font-family: "Roboto Condensed", sans-serif;
+}
 
 /* icons */
 .iconDrawing {
