@@ -163,3 +163,25 @@ function stopPlane2Tooltip(event) {
   clearTimeout(plane2TimeoutFunction);
   plane2tooltip.style.display = "none";
 }
+
+// Truck
+const truckicon = document.getElementById("truckiconHotspot");
+const trucktooltip = document.getElementById("trucktooltip");
+let truckTimeoutFunction;
+
+truckicon.addEventListener("mouseover", showtruckTooltip);
+truckicon.addEventListener("mouseout", stoptruckTooltip);
+
+function showtruckTooltip(event) {
+  truckTimeoutFunction = setTimeout(function() {
+    truckiconPos = truckicon.getBoundingClientRect();
+    trucktooltip.style.left = truckiconPos.right + 10 + "px";
+    trucktooltip.style.top = window.scrollY + truckiconPos.top - 30 + "px";
+    trucktooltip.style.display = "block";
+  }, 500);
+}
+
+function stoptruckTooltip(event) {
+  clearTimeout(truckTimeoutFunction);
+  trucktooltip.style.display = "none";
+}

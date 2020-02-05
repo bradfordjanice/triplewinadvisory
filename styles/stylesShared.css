@@ -228,68 +228,11 @@ li.tooltipSublistItem {
   fill: #ee5f24;
   transform-origin: 21% 53%;
 }
-.designiconBkgndPulse {
-  fill: #ee5f24;
-  animation: pulse 2.25s infinite;
-  transform-origin: 21% 53%;
-}
-#designiconHotspot {
-  fill: none;
-  transform-origin: 21% 53%;
-}
-#designtooltip {
-  width: 230px;
-  padding: 20px 10px 20px 8px;
-  font-size: 1em;
-  background-color: #8db845;
-  border-radius: 6px;
-  position: absolute;
-  display: none;
-}
-/* pointer from tooltip to designicon */
-#designtooltip::before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  transform: rotate(45deg);
-  background-color: #8db845;
-  position: absolute;
-  left: -6px;
-  top: 40px;
-}
 
 /* Procure Packaging */
 .packagingiconBkgnd {
   fill: #ee5f24;
   transform-origin: 33% 35%;
-}
-.packagingiconBkgndPulse {
-  fill: #ee5f24;
-  animation: pulse 2.25s infinite;
-  transform-origin: 33% 35%;
-}
-#packagingiconHotspot {
-  fill: none;
-  transform-origin: 33% 35%;
-}
-#packagingtooltip {
-  width: 300px;
-  padding: 20px 10px 20px 8px;
-  font-size: 1em;
-  background-color: #8db845;
-  border-radius: 6px;
-  position: absolute;
-  display: none;
-}
-#packagingtooltip::before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  transform: rotate(45deg);
-  background-color: #8db845;
-  position: absolute;
-  left: -6px;
-  top: 40px;
 }
 
 /* Manufacture Product */
@@ -297,67 +240,11 @@ li.tooltipSublistItem {
   fill: #ee5f24;
   transform-origin: 46% 31%;
 }
-.manufactureiconBkgndPulse {
-  fill: #ee5f24;
-  animation: pulse 2.25s infinite;
-  transform-origin: 46% 31%;
-}
-#manufactureiconHotspot {
-  fill: none;
-  transform-origin: 46% 31%;
-}
-#manufacturetooltip {
-  width: 220px;
-  padding: 20px 10px 20px 8px;
-  font-size: 1em;
-  background-color: #8db845;
-  border-radius: 6px;
-  position: absolute;
-  display: none;
-}
-#manufacturetooltip::before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  transform: rotate(45deg);
-  background-color: #8db845;
-  position: absolute;
-  left: -6px;
-  top: 40px;
-}
 
 /* Warehouse Product */
 .warehouseiconBkgnd {
   fill: #ee5f24;
   transform-origin: 59% 25%;
-}
-.warehouseiconBkgndPulse {
-  fill: #ee5f24;
-  animation: pulse 2.25s infinite;
-  transform-origin: 59% 25%;
-}
-#warehouseiconHotspot {
-  fill: none;
-  transform-origin: 59% 25%;
-}
-#warehousetooltip {
-  width: 260px;
-  padding: 20px 10px 20px 8px;
-  font-size: 1em;
-  background-color: #8db845;
-  border-radius: 6px;
-  position: absolute;
-  display: none;
-}
-#warehousetooltip::before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  transform: rotate(45deg);
-  background-color: #8db845;
-  position: absolute;
-  left: -6px;
-  top: 40px;
 }
 
 /* Corporate HQ */
@@ -365,149 +252,20 @@ li.tooltipSublistItem {
   fill: #ee5f24;
   transform-origin: 53% 48%;
 }
-.headquartersiconBkgndPulse {
-  fill: #ee5f24;
-  animation: pulse 2.25s infinite;
-  transform-origin: 53% 48%;
-}
-#headquartersiconHotspot {
-  fill: none;
-  transform-origin: 53% 48%;
-}
-#headquarterstooltipR {
-  width: 230px;
-  padding: 20px 10px 20px 8px;
-  font-size: 1em;
-  background-color: #8db845;
-  border-radius: 6px;
-  position: absolute;
-  display: none;
-}
-#headquarterstooltipR::before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  transform: rotate(45deg);
-  background-color: #8db845;
-  position: absolute;
-  left: -6px;
-  top: 125px;
-}
-#headquarterstooltipL {
-  width: 220px;
-  padding: 20px 25px 20px 8px;
-  font-size: 1em;
-  background-color: #8db845;
-  border-radius: 6px;
-  position: absolute;
-  display: none;
-}
-#headquarterstooltipL::before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  transform: rotate(45deg);
-  background-color: #8db845;
-  position: absolute;
-  left: 246px;
-  top: 138px;
-}
-@keyframes pulse {
-  0% {
-    fill: #ee5f24;
-    transform: scale(1, 1);
-    transition-timing-function: ease-in;
-  }
-  50% {
-    fill: #8db845;
-    transform: scale(1.05, 1.05);
-  }
-  100% {
-    fill: #ee5f24;
-    transform: scale(1, 1);
-  }
-}
 
-/* Airplanes */
+/* Airplanes and Truck */
 #plane1icon {
   fill: #808285;
   transform-origin: 39% 23%;
-}
-#plane1iconPulse {
-  fill: #808285;
-  animation: pulseicon 2.25s infinite;
-  transform-origin: 39% 23%;
-}
-#plane1iconHotspot {
-  fill: none;
-  transform-origin: 39% 23%;
-}
-#plane1tooltip {
-  width: 300px;
-  padding: 20px 10px 20px 8px;
-  font-size: 1em;
-  background-color: #8db845;
-  border-radius: 6px;
-  position: absolute;
-  display: none;
-}
-#plane1tooltip::before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  transform: rotate(45deg);
-  background-color: #8db845;
-  position: absolute;
-  left: -6px;
-  top: 40px;
 }
 #plane2icon {
   fill: #808285;
   animation: pulseicon 2.25s infinite;
   transform-origin: 50% 90%;
 }
-#plane2iconPulse {
+#truckicon {
   fill: #808285;
-  animation: pulseicon 2.25s infinite;
-  transform-origin: 50% 90%;
-}
-#plane2iconHotspot {
-  fill: none;
-  transform-origin: 50% 90%;
-}
-#plane2tooltip {
-  width: 300px;
-  padding: 20px 10px 20px 8px;
-  font-size: 1em;
-  background-color: #8db845;
-  border-radius: 6px;
-  position: absolute;
-  display: none;
-}
-#plane2tooltip::before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  transform: rotate(45deg);
-  background-color: #8db845;
-  position: absolute;
-  left: -6px;
-  top: 265px;
-}
-@keyframes pulseicon {
-  0% {
-    fill: #808285;
-    transform: scale(1, 1);
-    transition-timing-function: ease-in;
-  }
-  50% {
-    fill: #8db845;
-    transform: scale(1.1, 1.1);
-  }
-  100% {
-    fill: #808285;
-    transform: scale(1, 1);
-  }
+  transform-origin: 39% 23%;
 }
 
 /* Revalorize Product */

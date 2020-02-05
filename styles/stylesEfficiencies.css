@@ -34,8 +34,24 @@
     opacity: 100%;
   }
 }
-
-/* pointer from tooltip to designicon */
+.designiconBkgndPulse {
+  fill: #ee5f24;
+  animation: pulse 2.25s infinite;
+  transform-origin: 21% 55%;
+}
+#designiconHotspot {
+  fill: none;
+  transform-origin: 21% 53%;
+}
+#designtooltip {
+  width: 230px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
 #designtooltip::before {
   content: "";
   width: 12px;
@@ -48,7 +64,7 @@
 }
 
 /* Procure Packaging */
-.packagingiconBkgnd {
+.packagingiconBkgndPulse {
   fill: #ee5f24;
   animation: pulse 2.25s infinite;
   transform-origin: 33% 35%;
@@ -78,7 +94,7 @@
 }
 
 /* Manufacture Product */
-.manufactureiconBkgnd {
+.manufactureiconBkgndPulse {
   fill: #ee5f24;
   animation: pulse 2.25s infinite;
   transform-origin: 46% 31%;
@@ -108,14 +124,14 @@
 }
 
 /* Warehouse Product */
-.warehouseiconBkgnd {
+.warehouseiconBkgndPulse {
   fill: #ee5f24;
   animation: pulse 2.25s infinite;
-  transform-origin: 59% 25%;
+  transform-origin: 59% 30%;
 }
 #warehouseiconHotspot {
   fill: none;
-  transform-origin: 59% 25%;
+  transform-origin: 59% 30%;
 }
 #warehousetooltip {
   width: 280px;
@@ -138,7 +154,7 @@
 }
 
 /* Corporate HQ */
-.headquartersiconBkgnd {
+.headquartersiconBkgndPulse {
   fill: #ee5f24;
   animation: pulse 2.25s infinite;
   transform-origin: 53% 48%;
@@ -193,7 +209,7 @@
   }
   50% {
     fill: #8db845;
-    transform: scale(1.05, 1.05);
+    transform: scale(1.15, 1.15);
   }
   100% {
     fill: #ee5f24;
@@ -201,8 +217,8 @@
   }
 }
 
-/* Airplanes */
-#plane1icon {
+/* Airplanes and Truck */
+#plane1iconPulse {
   fill: #808285;
   animation: pulseicon 2.25s infinite;
   transform-origin: 39% 23%;
@@ -230,7 +246,7 @@
   left: -6px;
   top: 40px;
 }
-#plane2icon {
+#plane2iconPulse {
   fill: #808285;
   animation: pulseicon 2.25s infinite;
   transform-origin: 50% 90%;
@@ -258,15 +274,44 @@
   left: -6px;
   top: 265px;
 }
+#truckiconPulse {
+  fill: #808285;
+  animation: pulseicon 2.25s infinite;
+  transform-origin: 67% 23%;
+}
+#truckiconHotspot {
+  fill: none;
+  transform-origin: 67% 23%;
+}
+#trucktooltip {
+  width: 230px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #8db845;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#trucktooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: #8db845;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
 @keyframes pulseicon {
   0% {
     fill: #808285;
     transform: scale(1, 1);
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-in-out;
   }
   50% {
     fill: #8db845;
-    transform: scale(1.1, 1.1);
+    transform: scale(1.3, 1.3);
+    transition-timing-function: ease-in-out;
   }
   100% {
     fill: #808285;
