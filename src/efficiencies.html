@@ -156,15 +156,15 @@ Animator: Janice Bradford
               <!-- hot spot -->
               <circle id="designiconHotspot" pointer-events="all" cx="233.29" cy="463.35" r="40.23"/>
             </g>
-            <!-- Arrow from Design Product icon to Source Raw Materials icon-->
-            <g id="design-materials-arrow">
-              <g>
-                <path class="pathRed" d="M215.36,446.66A158.91,158.91,0,0,1,231.49,410" transform="translate(17.96 -23.52)"/>
-                <polygon class="arrowRed" points="254.36 399.07 251.87 399.65 249.02 387.36 236.96 391.1 236.2 388.65 250.89 384.1 254.36 399.07"/>
-              </g>
-            </g>
             <!-- Source Raw Materials Icon -->
             <g id="materialsIconGrp">
+              <!-- Arrow from Design Product icon to Source Raw Materials icon-->
+              <g id="design-materials-arrow">
+                <g>
+                  <path class="pathRed" d="M215.36,446.66A158.91,158.91,0,0,1,231.49,410" transform="translate(17.96 -23.52)"/>
+                  <polygon class="arrowRed" points="254.36 399.07 251.87 399.65 249.02 387.36 236.96 391.1 236.2 388.65 250.89 384.1 254.36 399.07"/>
+                </g>
+              </g>
               <!-- label -->
               <text class="iconlabel" text-anchor="end" transform="translate(230.3 319.0)" x="0" y="0">
                 <tspan x="0.2em" dy="1.1em">SOURCE RAW</tspan>
@@ -181,10 +181,10 @@ Animator: Janice Bradford
                 <path class="iconDrawing" d="M267.77,377.79c-4.31,0-7.89-5.16-8.21-11.91,0-.58,0-1.17,0-1.75h0a4.05,4.05,0,0,1-.08-8.1,4.06,4.06,0,0,1,3.83-2.76,3.93,3.93,0,0,1,.84.09,4.05,4.05,0,0,1,3.27-1.67,4,4,0,0,1,3.3,1.72,4,4,0,0,1,4.88,2.62,4.05,4.05,0,0,1-.14,8.1h-.2c0,.33.06.67.07,1,.33,6.88-2.87,12.45-7.29,12.66Zm-6.95-16.24a1.16,1.16,0,0,1,.66.22,1.11,1.11,0,0,1,.46,1.06,17,17,0,0,0-.11,2.94c.25,5.34,3,9.75,5.94,9.75h.15c3-.15,5.39-4.86,5.13-10.28a16.77,16.77,0,0,0-.32-2.5,1.14,1.14,0,0,1,1.74-1.17,1.79,1.79,0,1,0,.5-3.2,1.13,1.13,0,0,1-1-.18,1.16,1.16,0,0,1-.46-.89,1.78,1.78,0,0,0-1.77-1.75,1.73,1.73,0,0,0-1,.28,1.13,1.13,0,0,1-1,.12,1.12,1.12,0,0,1-.69-.73,1.77,1.77,0,0,0-3.36-.07,1.1,1.1,0,0,1-.66.67,1.17,1.17,0,0,1-.95-.05,1.78,1.78,0,0,0-2.61,1.54,1.1,1.1,0,0,1-.46.9,1.15,1.15,0,0,1-1,.18,1.48,1.48,0,0,0-.51-.09,1.78,1.78,0,1,0,.78,3.37A1.11,1.11,0,0,1,260.82,361.55Z" transform="translate(17.96 -23.52)"/>
               </g>
             </g>
-            <!-- path from Raw Materials to Procure Packaging -->
-            <path id="materials-packaging-path" class="pathGreyDashed" d="M297.31,340.88a361.92,361.92,0,0,1,49.3-29.63" transform="translate(17.96 -23.52)"/>
             <!-- Procure Packaging Icon -->
             <g id="packagingIconGrp">
+              <!-- path from Raw Materials to Procure Packaging -->
+              <path id="materials-packaging-path" class="pathGreyDashed" d="M297.31,340.88a361.92,361.92,0,0,1,49.3-29.63" transform="translate(17.96 -23.52)"/>
               <!-- label -->
               <text class="iconlabel" text-anchor="end" transform="translate(350.4 251.6)" x="0" y="0">
                 <tspan x="0.2em" dy="1.1em">PROCURE</tspan>
@@ -207,8 +207,6 @@ Animator: Janice Bradford
               <!-- hot spot -->
               <circle id="packagingiconHotspot" pointer-events="all" cx="400.7" cy="271.14" r="40.23"/>
             </g>
-            <!-- path from Procure Packaging to Manufacture Product -->
-            <path id="packaging-manufacture-path" class="pathGreyDashed" d="M422.07,281.58A566.64,566.64,0,0,1,482.92,267" transform="translate(17.96 -23.52)"/>
             <!-- Plane 1 -->
             <g id="plane1IconGrp">
               <!-- icon -->
@@ -220,6 +218,8 @@ Animator: Janice Bradford
             </g>
             <!-- Manufacture Product Icon -->
             <g id="manufactureIconGrp" >
+              <!-- path from Procure Packaging to Manufacture Product -->
+              <path id="packaging-manufacture-path" class="pathGreyDashed" d="M422.07,281.58A566.64,566.64,0,0,1,482.92,267" transform="translate(17.96 -23.52)"/>
               <!-- label -->
               <text class="iconlabel" text-anchor="middle" transform="translate(537.4 285.1)" x="0" y="0">
                 <tspan x="0" dy="1.1em">MANUFACTURE</tspan>
@@ -239,8 +239,6 @@ Animator: Janice Bradford
               <!-- hot spot -->
               <circle id="manufactureiconHotspot" pointer-events="all" cx="542.07" cy="236.79" r="40.23"/>
             </g>
-            <!-- path from Manufacture Product to Warehouse Product -->
-            <path id="manufacture-warehouse-path" class="pathGreyDashed" d="M565.64,257.58q15.95-.76,32.24-.78,18.45,0,36.47,1" transform="translate(17.96 -23.52)"/>
             <!-- Ship -->
             <g id="shipIconGrp">
               <g id="ship-icon">
@@ -259,6 +257,8 @@ Animator: Janice Bradford
             </g>
             <!-- Warehouse Product Icon -->
             <g id="warehouseIconGrp">
+              <!-- path from Manufacture Product to Warehouse Product -->
+              <path id="manufacture-warehouse-path" class="pathGreyDashed" d="M565.64,257.58q15.95-.76,32.24-.78,18.45,0,36.47,1" transform="translate(17.96 -23.52)"/>
               <!-- label -->
               <text class="iconlabel" text-anchor="middle" transform="translate(686.1 285.1)" x="0" y="0">
                 <tspan x="0" dy="1.1em">WAREHOUSE</tspan>
@@ -279,8 +279,6 @@ Animator: Janice Bradford
               <!-- hot spot -->
               <circle id="warehouseiconHotspot" pointer-events="all" cx="692.51" cy="237.95" r="40.23"/>
             </g>
-            <!-- path from Warehouse Product to Sell Product -->
-            <path id="warehouse-sell-path" class="pathGreyDashed" d="M715.07,267.82a556.72,556.72,0,0,1,70,17.46" transform="translate(17.96 -23.52)"/>
             <!-- truck -->
             <g id="truckIconGrp">
               <!-- icon -->
@@ -293,6 +291,8 @@ Animator: Janice Bradford
             </g>
             <!-- Sell Product in Market Icon -->
             <g id="sellIconGrp">
+              <!-- path from Warehouse Product to Sell Product -->
+              <path id="warehouse-sell-path" class="pathGreyDashed" d="M715.07,267.82a556.72,556.72,0,0,1,70,17.46" transform="translate(17.96 -23.52)"/>
               <!-- label -->
               <text class="iconlabel" text-anchor="start" transform="translate(894.1 243.5)" x="0" y="0">
                 <tspan x="0" dy="1.1em">SELL PRODUCT</tspan>
@@ -311,10 +311,10 @@ Animator: Janice Bradford
                 <path class="iconDrawing" d="M843.57,314.16l.67-.36a.09.09,0,0,1,.13.06c.2.58.41.79.76.74l-.67-2.09-.3,0c-.91-.06-1.3-.45-1.62-1.45s-.15-1.79.75-2.14l-.13-.38a.1.1,0,0,1,.06-.13l.16-.05a.1.1,0,0,1,.13.06l.12.39c.89-.2,1.41.24,1.77,1.1,0,.06,0,.1,0,.13l-.66.33a.09.09,0,0,1-.13,0c-.18-.45-.35-.64-.63-.62l.58,1.79.27,0c.89.05,1.33.41,1.69,1.52.41,1.26.18,2-.7,2.34l.17.52a.11.11,0,0,1-.07.13l-.16.05a.09.09,0,0,1-.12-.06l-.17-.52c-.95.24-1.52-.17-1.89-1.19C843.51,314.23,843.52,314.18,843.57,314.16Zm0-4.37c-.25.15-.28.43-.12.91s.28.68.66.74Zm2,3.66c-.19-.58-.38-.82-.74-.9l.63,1.93C845.73,314.33,845.78,314.06,845.59,313.45Z" transform="translate(17.96 -23.52)"/>
               </g>
             </g>
-            <!-- path from Sell Product to Consumer Purchase -->
-            <path id="sell-purchase-path" class="cls-67" d="M858.8,316.25a351.56,351.56,0,0,1,40.7,25.39" transform="translate(17.96 -23.52)"/>
             <!-- Consumer Purchase Icon -->
             <g id="purchaseIconGrp">
+              <!-- path from Sell Product to Consumer Purchase -->
+              <path id="sell-purchase-path" class="cls-67" d="M858.8,316.25a351.56,351.56,0,0,1,40.7,25.39" transform="translate(17.96 -23.52)"/>
               <!-- label -->
               <text class="iconlabel" text-anchor="start" transform="translate(1000.5 326.1)" x="0" y="0">
                 <tspan x="0" dy="1.1em">CONSUMER</tspan>
@@ -330,69 +330,12 @@ Animator: Janice Bradford
                 <path class="iconDrawing" d="M941.06,353.88a1,1,0,0,1-1-1c0-6.61-4.77-8.66-6.51-8.66-3.58,0-6.5,3.89-6.5,8.66a1,1,0,0,1-2,0c0-5.88,3.81-10.66,8.5-10.66,3,0,8.51,3.13,8.51,10.66A1,1,0,0,1,941.06,353.88Z" transform="translate(17.96 -23.52)"/>
               </g>
             </g>
-            <!-- double arrow between Consumer Purchase and Refurbish Product -->
-            <g id="purchase-refurbish-arrow">
-              <g>
-                <path class="pathBlue" d="M808.31,486.29c12.54-37.58,51.55-74.59,79.8-86.61" transform="translate(17.96 -23.52)"/>
-                <polygon class="arrowBlue" points="839.1 458.38 837.93 456.1 826.71 461.88 821.76 450.26 819.41 451.27 825.43 465.42 839.1 458.38"/>
-                <polygon class="arrowBlue" points="902.78 389.34 900.41 388.36 905.23 376.7 893.25 372.74 894.05 370.31 908.65 375.13 902.78 389.34"/>
-              </g>
-            </g>
-            <!-- path from Consumer Purchase to Consumer N Uses -->
-            <path id="consumer-nuses-path" class="cls-66" d="M956.31,397.74a164.86,164.86,0,0,1,24.05,48.77" transform="translate(17.96 -23.52)"/>
-            <!-- Corporate HQ Icon-->
-            <g id="corporateIconGrp">
-              <!-- label -->
-              <text class="iconlabel" text-anchor="middle" transform="translate(622.7 456.02)" x="0" y="0">
-                <tspan x="0" dy="1.1em">CORPORATE</tspan>
-                <tspan x="0" dy="1.1em">HQ</tspan>
-              </text>
-              <!-- icon -->
-              <g id="headquartersicon">
-                <!-- icon background -->
-                <circle class="headquartersiconBkgndPulse" cx="626.91" cy="398.3" r="45.47"/>
-                <!-- icon -->
-                <g>
-                  <g>
-                    <polygon class="cls-77" points="617.36 422.3 600.42 422.3 600.42 380.82 617.36 371.87 617.36 422.3"/>
-                    <rect class="cls-78" x="603.89" y="390.46" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="610.65" y="390.46" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="603.89" y="396.72" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="610.65" y="396.72" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="603.89" y="402.98" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="610.65" y="402.98" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="603.89" y="409.25" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="610.65" y="409.25" width="3.69" height="3.69"/>
-                  </g>
-                  <g>
-                    <polygon class="cls-77" points="634.35 422.3 617.41 422.3 617.41 380.82 634.35 371.87 634.35 422.3"/>
-                    <rect class="cls-78" x="620.88" y="390.46" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="627.65" y="390.46" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="620.88" y="396.72" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="627.65" y="396.72" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="620.88" y="402.98" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="627.65" y="402.98" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="620.88" y="409.25" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="627.65" y="409.25" width="3.69" height="3.69"/>
-                  </g>
-                  <g>
-                    <polygon class="cls-77" points="651.35 422.3 634.41 422.3 634.41 380.82 651.35 371.87 651.35 422.3"/>
-                    <rect class="cls-78" x="637.88" y="390.46" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="644.64" y="390.46" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="637.88" y="396.72" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="644.64" y="396.72" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="637.88" y="402.98" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="644.64" y="402.98" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="637.88" y="409.25" width="3.69" height="3.69"/>
-                    <rect class="cls-78" x="644.64" y="409.25" width="3.69" height="3.69"/>
-                  </g>
-                </g>
-              </g>
-              <!-- hot spot -->
-              <circle id="headquartersiconHotspot" pointer-events="all" cx="626.91" cy="398.3" r="45.47"/>
-            </g>
+            <!-- Same as Typical Value Chain up to here -->
+
             <!-- Consumer N Uses icon -->
             <g id="nusesIconGrp">
+              <!-- path from Consumer Purchase to Consumer N Uses -->
+              <path id="consumer-nuses-path" class="cls-66" d="M956.31,397.74a164.86,164.86,0,0,1,24.05,48.77" transform="translate(17.96 -23.52)"/>
               <!-- label -->
               <text class="iconlabel" text-anchor="start" transform="translate(1050.3 461.4)" x="0" y="0">
                 <tspan x="0" dy="1.1em">CONSUMER</tspan>
@@ -407,16 +350,6 @@ Animator: Janice Bradford
                 <path class="iconDrawing" d="M995.94,503.6l-6.67-.09a.9.9,0,0,1-.67-.29,1,1,0,0,1-.27-.68l.27-10-1.48.84a1,1,0,0,1-1.24-.28l-3-4.16a.94.94,0,0,1-.15-.73,1,1,0,0,1,.42-.62l6.5-4.15a1,1,0,0,1,1.27.22,6.75,6.75,0,0,0,4.81,2.45.9.9,0,0,0,.46,0,6.7,6.7,0,0,0,4.81-2.45,1,1,0,0,1,1.27-.22l6.5,4.15a1,1,0,0,1,.42.62.94.94,0,0,1-.15.73l-3,4.16a1,1,0,0,1-1.24.28l-1.48-.84.27,10a1,1,0,0,1-.27.68.9.9,0,0,1-.67.29Zm-5.68-2,5.82.07,5.68-.07-.28-10.76a.94.94,0,0,1,.46-.84,1,1,0,0,1,1,0l2.19,1.24,1.87-2.64-5-3.19a8.3,8.3,0,0,1-5.73,2.54l-.23,0-.23,0a8.3,8.3,0,0,1-5.73-2.54l-5,3.19,1.87,2.64,2.2-1.24a.94.94,0,0,1,1.41.85Z" transform="translate(17.96 -23.52)"/>
               </g>
             </g>
-            <!-- double arrow between Consumer N Uses and Refurbish Product -->
-            <g id="nuses-refurbish-arrow">
-              <g>
-                <path class="pathBlue" d="M825.19,512.18c27.17-17.94,63.08-26.62,95.77-23.54" transform="translate(17.96 -23.52)"/>
-                <polygon class="arrowBlue" points="855.97 493.03 856.44 490.51 844.03 488.21 847.24 476 844.76 475.35 840.86 490.22 855.97 493.03"/>
-                <polygon class="arrowBlue" points="929.66 475 928.07 472.99 937.94 465.13 929.38 455.86 931.26 454.12 941.69 465.42 929.66 475"/>
-              </g>
-            </g>
-            <!-- path from Consumer N Uses to Consumer End-of-Use -->
-            <path id="nuses-endofuse-path" class="pathBlue" d="M977.69,526.93c-9.47,30.5-29.17,58.88-56.93,83.87" transform="translate(17.96 -23.52)"/>
             <!-- Refurbish Product Icon -->
             <g id="refurbishIconGrp">
               <!-- label -->
@@ -432,8 +365,26 @@ Animator: Janice Bradford
                 <path class="iconDrawing" d="M804.77,525.15a6,6,0,0,0-7.75-3.43,6.61,6.61,0,0,0-3.64,4.16,5,5,0,0,1-.94-.18c-1.16-2.69-2.42-5.39-3.7-7.91a11,11,0,0,1,4.39-1.2,16,16,0,0,1,2,0,.86.86,0,1,0,.11-1.71,17.47,17.47,0,0,0-2.17,0,12.72,12.72,0,0,0-5.08,1.39c-2.56-4.91-5.09-8.94-6.72-10.58a.85.85,0,0,0-1.05-.12.86.86,0,0,0-.38,1c0,.07,1.89,5.9,4.6,12.7a13.3,13.3,0,0,0-1.5,2.65c-7.14-2.9-13.44-4.91-13.52-4.93a.85.85,0,0,0-.86,1.42c1.93,1.93,7.24,5.12,13.37,8.15a8.61,8.61,0,0,0,.49,3.1,12.88,12.88,0,0,0,2.51,3.84,5.12,5.12,0,0,0-.34.71A6,6,0,0,0,788,542a5.69,5.69,0,0,0,2.08.39l.34,0a6.05,6.05,0,0,1-.13,2.71.82.82,0,0,0,0,.38,8,8,0,0,1-1.23,2.21c-1.22,1.6-4.25,2.37-6.45,2.15a9.43,9.43,0,0,1-5-2.64l-.17-.11V532h.43a2.57,2.57,0,0,0,2.56-2.57v-1.71a.86.86,0,0,0-.85-.86H754.68a.86.86,0,0,0-.85.86v1.71A2.57,2.57,0,0,0,756.4,532h.42v19.68h-.42a2.57,2.57,0,0,0-2.57,2.57v1.71a.85.85,0,0,0,.85.85H779.5a.85.85,0,0,0,.85-.85v-1.71a2.57,2.57,0,0,0-2.56-2.57h-.43v-2.41a10.79,10.79,0,0,0,4.46,2.13v0l.42.06.5.08h.1a.85.85,0,0,0,.23,0h.22c2.36,0,5.52-.78,7.1-2.85a7.39,7.39,0,0,0,1.78-4.13h0a7.79,7.79,0,0,0,0-2.55,5.9,5.9,0,0,0,2.71-1.93c1.4-1.78,1.6-4.5.55-7.28l-.16-.42.41.16a10.21,10.21,0,0,0,3.49.68,5.91,5.91,0,0,0,5.7-8Zm-22.71-.43c-3-1.49-5.64-3-7.75-4.25,2.28.82,5.08,1.86,8,3C782.22,523.93,782.14,524.33,782.06,524.72Zm-4.27,28.64a.85.85,0,0,1,.85.86v.85h-23.1v-.85a.85.85,0,0,1,.86-.86Zm-14.36-1.71h-4.07l8.94-5.29,0,0,4.1-2.42a.81.81,0,0,0,.39-.23l2.82-1.67v2.3Zm12.22-5.34v5.34h-8.89Zm-3.51-4.2-3.17-1.5,6.68-3V540Zm-5.21-2.45-2-.95,10.72-5.36v2.35Zm-4-1.87-1.75-.83,7.84-5h5.54Zm-3.59-1.69-.84-.4V532h7.33Zm-.57,1.62a.85.85,0,0,0,.48.22l11.08,5.22-2.52,1.49L758.53,540v-2.41Zm7.29,8-2.59,1.53-5-2.13v-3.18Zm-4.42,2.61-3.14,1.85V547Zm-5.27-18a.86.86,0,0,1-.86-.86v-.85h23.1v.85a.86.86,0,0,1-.85.86Zm27.53-6.08c1,.4,1.92.81,2.88,1.24l.24.1c.27.63.53,1.27.77,1.91q-2.15-.95-4.15-1.91A12.19,12.19,0,0,1,783.93,524.18Zm.56-1.62a10.4,10.4,0,0,1,.7-1.37c.27.67.56,1.35.85,2Zm-.5,6.49a6.24,6.24,0,0,1-.36-1.65c1.61.77,3.25,1.51,4.89,2.21a4.44,4.44,0,0,1,.19.95,8.73,8.73,0,0,0-2.72,1.58A10.65,10.65,0,0,1,784,529.05Zm9.45,9.94a4.24,4.24,0,0,1-7.29-4.17c.55-1.41,1.73-2.11,3.33-2.72a1.43,1.43,0,0,0,.56-.35c.65-.69.39-2-.3-4l-.08-.25a31.56,31.56,0,0,0-1.17-3v0c-.09-.19-.16-.38-.24-.56-.73-1.64-1.43-3.3-2.07-4.91v0c-1.12-2.76-2.09-5.39-2.86-7.54a120.34,120.34,0,0,1,7.63,15c1,2.42,2,4.6,2.81,6.86C794.05,534.2,795,537.06,793.44,539Zm8.38-8.37c-1.93,1.52-4.8.61-5.62.29l-1.89-.73-1.07-2.6a1.65,1.65,0,0,0,1.3-.33,1.42,1.42,0,0,0,.39-.6,5.08,5.08,0,0,1,2.72-3.33,4.25,4.25,0,0,1,4.17,7.3Z" transform="translate(17.96 -23.52)"/>
               </g>
             </g>
+            <!-- double arrow between Consumer Purchase and Refurbish Product -->
+            <g id="purchase-refurbish-arrow">
+              <g>
+                <path class="pathBlue" d="M808.31,486.29c12.54-37.58,51.55-74.59,79.8-86.61" transform="translate(17.96 -23.52)"/>
+                <polygon class="arrowBlue" points="839.1 458.38 837.93 456.1 826.71 461.88 821.76 450.26 819.41 451.27 825.43 465.42 839.1 458.38"/>
+                <polygon class="arrowBlue" points="902.78 389.34 900.41 388.36 905.23 376.7 893.25 372.74 894.05 370.31 908.65 375.13 902.78 389.34"/>
+              </g>
+            </g>
+            <!-- double arrow between Consumer N Uses and Refurbish Product -->
+            <g id="nuses-refurbish-arrow">
+              <g>
+                <path class="pathBlue" d="M825.19,512.18c27.17-17.94,63.08-26.62,95.77-23.54" transform="translate(17.96 -23.52)"/>
+                <polygon class="arrowBlue" points="855.97 493.03 856.44 490.51 844.03 488.21 847.24 476 844.76 475.35 840.86 490.22 855.97 493.03"/>
+                <polygon class="arrowBlue" points="929.66 475 928.07 472.99 937.94 465.13 929.38 455.86 931.26 454.12 941.69 465.42 929.66 475"/>
+              </g>
+            </g>
             <!-- Consumer End-of-Use Icon-->
             <g id="endofuseIconGrp">
+              <!-- path from Consumer N Uses to Consumer End-of-Use -->
+              <path id="nuses-endofuse-path" class="pathBlue" d="M977.69,526.93c-9.47,30.5-29.17,58.88-56.93,83.87" transform="translate(17.96 -23.52)"/>
               <!-- label -->
               <text class="iconlabel" text-anchor="middle" transform="translate(910.2 660.3)" x="0" y="0">
                 <tspan x="0" dy="1.1em">CONSUMER</tspan>
@@ -451,25 +402,25 @@ Animator: Janice Bradford
                 <rect class="iconDrawing" x="895.76" y="618.63" width="2.45" height="3.77" transform="translate(-10.58 19.91) rotate(-2.73)"/>
               </g>
             </g>
-            <!-- path from Consumer End-of-Use to End-of-Use Collection -->
-            <path id="endofuse-collection-path" class="pathGreyDashed" d="M855.65,655.58c-34,18.07-73.42,32.65-116.67,42.77" transform="translate(17.96 -23.52)"/>
-            <!-- Consumer Return Label and Arrow-->
-            <g id="returnIconGrp">
-              <!-- arrow -->
-              <g id="return-arrow">
-                <g>
-                  <line class="cls-131" x1="840.95" y1="705.33" x2="824.19" y2="667.14"/>
-                  <polygon class="cls-65" points="836.64 670.55 835.67 672.81 824.57 668 820.59 679.43 818.27 678.62 823.12 664.71 836.64 670.55"/>
-                </g>
-              </g>
-              <!-- label -->
-              <text class="iconlabel returnlabel" text-anchor="middle" transform="translate(853.8 710.0)" x="0" y="0">
-                <tspan x="0" dy="1.1em">CONSUMER</tspan>
-                <tspan x="0" dy="1.1em">RETURN</tspan>
-              </text>
-            </g>
             <!-- End-of-Use Product Collection Icon -->
             <g id="collectionIconGrp">
+              <!-- path from Consumer End-of-Use to End-of-Use Collection -->
+              <path id="endofuse-collection-path" class="pathGreyDashed" d="M855.65,655.58c-34,18.07-73.42,32.65-116.67,42.77" transform="translate(17.96 -23.52)"/>
+              <!-- Consumer Return Label and Arrow-->
+              <g id="returnIconGrp">
+                <!-- arrow -->
+                <g id="return-arrow">
+                  <g>
+                    <line class="cls-131" x1="840.95" y1="705.33" x2="824.19" y2="667.14"/>
+                    <polygon class="cls-65" points="836.64 670.55 835.67 672.81 824.57 668 820.59 679.43 818.27 678.62 823.12 664.71 836.64 670.55"/>
+                  </g>
+                </g>
+                <!-- label -->
+                <text class="iconlabel returnlabel" text-anchor="middle" transform="translate(853.8 710.0)" x="0" y="0">
+                  <tspan x="0" dy="1.1em">CONSUMER</tspan>
+                  <tspan x="0" dy="1.1em">RETURN</tspan>
+                </text>
+              </g>
               <!-- label -->
               <text class="iconlabel" text-anchor="middle" transform="translate(723.5 733.7)" x="0" y="0">
                 <tspan x="0" dy="1.1em">END-OF-USE</tspan>
@@ -491,15 +442,6 @@ Animator: Janice Bradford
                 <path class="iconDrawing" d="M724.79,725.65H678.17a1.09,1.09,0,1,1,0-2.18h46.62a1.09,1.09,0,1,1,0,2.18Z" transform="translate(17.96 -23.52)"/>
               </g>
             </g>
-            <!-- path from End-of-Use Product Collection to Product Use -->
-            <path id="collection-use-path" class="pathGreyDashed" d="M660.79,711.23c-21.11,2.09-42.79,3.18-64.91,3.18-19.7,0-39.06-.86-58-2.53" transform="translate(17.96 -23.52)"/>
-            <!-- arrow from End-of-Use to Refurbish Product -->
-            <g id="collection-refurbish-arrow">
-              <g>
-                <path class="pathBlue" d="M723.5,673.36c20.28-22.81,33.9-52.78,41.44-85.67" transform="translate(17.96 -23.52)"/>
-                <polygon class="arrowBlue" points="791 574.88 788.77 576.13 782.62 565.11 772.07 572.05 770.67 569.91 783.51 561.46 791 574.88"/>
-              </g>
-            </g>
             <!-- Plane 2 -->
             <g id="plane2IconGrp">
               <!-- icon -->
@@ -511,6 +453,8 @@ Animator: Janice Bradford
             </g>   
             <!-- Product Use icon -->
             <g id="useIconGrp">
+              <!-- path from End-of-Use Product Collection to Product Use -->
+              <path id="collection-use-path" class="pathGreyDashed" d="M660.79,711.23c-21.11,2.09-42.79,3.18-64.91,3.18-19.7,0-39.06-.86-58-2.53" transform="translate(17.96 -23.52)"/>
               <!-- label -->
               <text class="iconlabel" text-anchor="start" transform="translate(476.5 746.7)" x="0" y="0">
                 <tspan x="0" y="0">PRODUCT USE</tspan>
@@ -551,16 +495,12 @@ Animator: Janice Bradford
                   <path class="iconDrawing" d="M483.85,702.39a.85.85,0,0,1-.23,0l-15.33-3.19a1.15,1.15,0,0,1-.42-2.07l1.77-1.22-1.35-.28a1.15,1.15,0,0,1-.42-2.07l1.77-1.23-1.35-.28a1.12,1.12,0,0,1-.89-.89,1.16,1.16,0,0,1,.47-1.18l8.19-5.66a1.13,1.13,0,0,1,.89-.18l11.79,2.45h.05l3.49.73a1.16,1.16,0,0,1,.89.9,1.12,1.12,0,0,1-.48,1.17l-1.76,1.22,1.34.29a1.11,1.11,0,0,1,.89.89h0a1.1,1.1,0,0,1-.47,1.17l-1.76,1.23,1.34.28a1.15,1.15,0,0,1,.42,2.07l-2,1.38a.51.51,0,0,1-.21.1l-6,4.18A1.15,1.15,0,0,1,483.85,702.39Zm-7.13-17.8a.7.7,0,0,0-.37.11l-8.19,5.67a.65.65,0,0,0,.24,1.16l2.49.52-2.73,1.89a.63.63,0,0,0-.26.66.62.62,0,0,0,.5.5l2.49.52-2.73,1.89a.65.65,0,0,0,.24,1.16l15.32,3.2a.68.68,0,0,0,.5-.1l5.65-4-.05-.07,0,0-5.71,3.88a.38.38,0,0,1-.31.07l-15.33-3.2a.38.38,0,0,1-.31-.32.4.4,0,0,1,.16-.41l2.92-2,6.14,1.3a.61.61,0,0,1,0-.14l0-.1-8.95-1.88a.41.41,0,0,1-.31-.32.39.39,0,0,1,.16-.41l2.92-2,4.94,1,5.54-.69v0l.24-.05c4-.5,5.16-.65,5.53-.66v0c.14,0,.28,0,.4-.06v0l.89-.12.68-.46,2.72.57a.4.4,0,0,1,.15.73L484.08,698a.37.37,0,0,1-.32.06l-4.8-1a.68.68,0,0,1,0,.14.29.29,0,0,1,0,.09l4.8,1a.7.7,0,0,0,.5-.1l5.18-3.59,2.72.56a.41.41,0,0,1,.32.32.41.41,0,0,1-.17.42l-1.3.9.12.13,0,0,1.28-.89a.65.65,0,0,0-.24-1.16l-2.5-.52,2.74-1.89a.65.65,0,0,0,.26-.66h0a.62.62,0,0,0-.5-.5l-2.5-.52,2.74-1.89a.65.65,0,0,0,.26-.66.62.62,0,0,0-.5-.5l-2.94-.62a.49.49,0,0,1,0,.12l0,.11,2.93.62a.39.39,0,0,1,.32.31.4.4,0,0,1-.17.42l-3.56,2.47-4.42-2.64a.63.63,0,0,0-.65,0l-7.49,4.31-7.71-1.6a.42.42,0,0,1-.15-.74l8.2-5.66a.38.38,0,0,1,.31-.07l10.91,2.27a.45.45,0,0,1,0-.11.56.56,0,0,1,0-.12l-10.91-2.27Zm-8,13.4,15.06,3.15,6-4.07a.65.65,0,0,1,.18-.19l1.82-1.26-2.29-.48-5,3.47a1.19,1.19,0,0,1-.89.18l-5.24-1.09a.41.41,0,0,1-.16,0l-6.89-1.45Zm-.22,0Zm15.32-.38Zm-5.9-1.22.12,0,5.74,1.19,8-5.51-2.29-.48-.45.31a.64.64,0,0,1-.27.11l-.5.07a3.87,3.87,0,0,1-.77.15l-.12,0h0l-5.17.64h0l-.23.07-5.74.72a.69.69,0,0,1-.2,0l-4.73-1-2.55,1.77,9.17,1.93Zm12.25,1a.08.08,0,0,0,0,.06s0,0,.06,0l.38-.26h0a.11.11,0,0,0-.16,0Zm-12.29-.53a.11.11,0,0,0-.08.08.13.13,0,0,0,0,.09.1.1,0,0,0,.07.05l.43.09a.11.11,0,0,0,.08-.08.12.12,0,0,0-.09-.14Zm-9.16-6,7.3,1.52,7.31-4.22a1.14,1.14,0,0,1,1.17,0l4.13,2.47,3.12-2.15-3.6-.75-.05,0-11.41-2.37ZM492,692.09Zm-23.47-1.29Zm19.74-3.57.3.06a.13.13,0,0,0,.09,0,.14.14,0,0,0,.05-.07.13.13,0,0,0,0-.09l0-.05-.31-.06c-.05,0-.12,0-.14.09A.15.15,0,0,0,488.29,687.23Zm-11.59-1.9Zm.05,7.5,7-4a.43.43,0,0,1,.41,0l4.19,2.51Zm7.21-3.57L479.2,692l7.65-1Zm.05,0Z" transform="translate(17.96 -23.52)"/>
                 </g>
               </g>
-            </g>
-            <!-- path from Product Use to Dispose of Product -->
-            <path id="use-dispose-path" class="cls-63" d="M465.09,729.81c-1.79,2.14-5,4.55-11.35,7.49-11.52,5.37-21.12,8.78-80.52,11.36" transform="translate(17.96 -23.52)"/>
-            <!-- path from Product Use to Downcycle -->
-            <path id="use-downcycle-path" class="pathGreyDashed" d="M456.94,699.31c-41.39-9.37-79.37-22.79-112.54-39.45" transform="translate(17.96 -23.52)"/>
-            <!-- arrow from Product Use to Upcycle -->
-            <g id="use-upcycle-arrow">
+            </g>         
+            <!-- arrow from End-of-Use to Refurbish Product -->
+            <g id="collection-refurbish-arrow">
               <g>
-                <path class="cls-63" d="M471.18,674.65a137.87,137.87,0,0,1-10.25-13.75c-14.46-22.16-22-47.61-23.18-75.06" transform="translate(17.96 -23.52)"/>
-                <polygon class="cls-65" points="467.95 571.08 465.97 573.14 455.84 563.41 446.87 574.23 444.68 572.4 455.61 559.23 467.95 571.08"/>
+                <path class="pathBlue" d="M723.5,673.36c20.28-22.81,33.9-52.78,41.44-85.67" transform="translate(17.96 -23.52)"/>
+                <polygon class="arrowBlue" points="791 574.88 788.77 576.13 782.62 565.11 772.07 572.05 770.67 569.91 783.51 561.46 791 574.88"/>
               </g>
             </g>
             <!-- arrow from Product Use to Refurbish Product -->
@@ -570,13 +510,20 @@ Animator: Janice Bradford
                 <polygon class="arrowBlue" points="753.14 555.13 750.6 555.46 748.99 542.94 736.62 545.46 736.11 542.95 751.18 539.89 753.14 555.13"/>
               </g>
             </g>
-            <!-- Upcycle Symbol, Icon and Revalorize label -->
+            <!-- Upcycle Symbol and Icon -->
             <g id="upcycleIconGrp">
+              <!-- arrow from Product Use to Upcycle -->
+              <g id="use-upcycle-arrow">
+                <g>
+                  <path class="cls-63" d="M471.18,674.65a137.87,137.87,0,0,1-10.25-13.75c-14.46-22.16-22-47.61-23.18-75.06" transform="translate(17.96 -23.52)"/>
+                  <polygon class="cls-65" points="467.95 571.08 465.97 573.14 455.84 563.41 446.87 574.23 444.68 572.4 455.61 559.23 467.95 571.08"/>
+                </g>
+              </g>
               <!-- Upcycle label -->
               <text class="iconlabel" text-anchor="middle" transform="translate(515.9 505.7)" x="0" y="0">
                 <tspan x="0" y="0">UPCYCLE</tspan>
               </text>
-              <!-- Upcycle icon -->
+              <!-- Upcycle symbol -->
               <g id="upcycle-symbol">
                 <g>
                   <path class="cls-100" d="M512,491c3.59,5.47,8.21,10.72,4.83,12.89-2,1.31-9.38,1.19-13.06,1" transform="translate(17.96 -23.52)"/>
@@ -587,14 +534,9 @@ Animator: Janice Bradford
                   <polygon class="cls-101" points="520.4 460.54 518.46 460.87 516.85 451.33 507.45 453.63 506.99 451.72 518.44 448.92 520.4 460.54"/>
                 </g>
               </g>
-              <!-- Revalorize label -->
-              <text class="iconlabel revalorizelabel" text-anchor="middle" transform="translate(388.9 547.4)" x="0" y="0">
-                <tspan x="0" dy="1.1em">REVALORIZE</tspan>
-                <tspan x="0" dy="1.1em">PRODUCT</tspan>
-              </text>
-              <!-- unknown - icon next to Upcycle? -->
+              <!-- Upcycle icon -->
               <circle class="iconBlue" cx="442.31" cy="510" r="40.23"/>
-              <g>
+              <g id="upcycle-icon">
                 <path class="iconDrawing" d="M446.69,512.44H418a1,1,0,1,0,0,1.95h27.73v38.16H414.41a2.93,2.93,0,0,0,.17-1v-5.45a1,1,0,0,0,0-2v-5.84a1,1,0,1,0,0-1.94v-5.84a1,1,0,0,0,0-1.95v-5.84a1,1,0,1,0,0-1.94v-5.45a2.93,2.93,0,0,0-.17-1h4.06a1,1,0,0,0,0-1.95h-5.88l0-2.89a.93.93,0,0,0-.28-.7.94.94,0,0,0-.69-.29h-5.84a1,1,0,0,0-1,1l-.05,3.12a2.91,2.91,0,0,0-1.9,2.73v36.2a2.93,2.93,0,0,0,2,2.75v3.09a1,1,0,0,0,1,1h5.84a1,1,0,0,0,1-1v-2.92h34.06a1,1,0,0,0,1-1v-40.1A1,1,0,0,0,446.69,512.44ZM411.6,552.55h-5.78a1,1,0,0,1-1-1v-36.2a1,1,0,0,1,1-1h5.84a1,1,0,0,1,1,1v36.2a1,1,0,0,1-1,1Zm-.93-42,0,1.94h-3.89l0-1.94Zm-3.88,45.93v-2h3.9v2Z" transform="translate(17.96 -23.52)"/>
                 <path class="iconDrawing" d="M441.83,518.87a1,1,0,0,0,0-2,1,1,0,0,0-1,1h0A1,1,0,0,0,441.83,518.87Z" transform="translate(17.96 -23.52)"/>
                 <path class="iconDrawing" d="M440.85,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z" transform="translate(17.96 -23.52)"/>
@@ -690,8 +632,14 @@ Animator: Janice Bradford
             </g>
             <!-- Downcycle Symbol and Icon -->
             <g id="downcycleIconGrp">
+              <!-- path from Product Use to Downcycle -->
+              <path id="use-downcycle-path" class="pathGreyDashed" d="M456.94,699.31c-41.39-9.37-79.37-22.79-112.54-39.45" transform="translate(17.96 -23.52)"/>
+              <!-- Downcycle label -->
+              <text class="iconlabel" text-anchor="start" transform="translate(205.0 622.9)" x="0" y="0">
+                <tspan x="0" y="0">DOWNCYCLE</tspan>
+              </text>
+              <!-- Downcycle symbol -->
               <g id="downcycle-symbol">
-                <!-- Downcycle symbol -->
                 <g>
                   <path class="cls-100" d="M220.47,626.24c-6.53.34-13.4,1.68-13.57-2.34-.1-2.41,3.72-8.7,5.71-11.79" transform="translate(17.96 -23.52)"/>
                   <polygon class="cls-101" points="234.03 598.37 232.1 598.75 230.22 589.26 220.89 591.83 220.37 589.94 231.74 586.81 234.03 598.37"/>
@@ -701,18 +649,23 @@ Animator: Janice Bradford
                   <polygon class="cls-101" points="249.28 597.99 249.98 596.15 259.03 599.58 261.79 590.3 263.67 590.87 260.31 602.16 249.28 597.99"/>
                 </g>
               </g>
-              <!-- Downcycle label -->
-              <text class="iconlabel" text-anchor="start" transform="translate(205.0 622.9)" x="0" y="0">
-                <tspan x="0" y="0">DOWNCYCLE</tspan>
-              </text>
               <!-- Downcycle icon -->
               <circle id="downcycle-bkgnd" class="iconBlue" cx="330.02" cy="612.11" r="40.23"/>
-              <path id="downcycle-icon" class="iconDrawing" d="M327.58,624h0a1,1,0,0,0-.31-.74L323,619a1.07,1.07,0,0,0-.76-.31,1.08,1.08,0,0,0-.74.33l-2,2.14-2-2.14a1,1,0,0,0-.76-.33,1.07,1.07,0,0,0-.77.33l-2,2.14-2-2.14a1.07,1.07,0,0,0-.77-.33,1,1,0,0,0-.76.33l-2,2.14-2-2.14a1,1,0,0,0-.76-.33h0a1,1,0,0,0-.74.31l-4.24,4.24a1,1,0,0,0-.3.76,1,1,0,0,0,.33.74l2.13,2-2.91,2.92-2-2.14a1.06,1.06,0,0,0-.76-.33h0a1.1,1.1,0,0,0-.74.31l-4.23,4.25a1,1,0,0,0-.3.75,1.07,1.07,0,0,0,.32.75l2.14,2-2.14,2a1,1,0,0,0,0,1.52l2.14,2-2.14,2a1,1,0,0,0-.33.76,1.07,1.07,0,0,0,.33.77l2.14,2-2.14,2a1,1,0,0,0-.33.76h0a1.08,1.08,0,0,0,.31.74l4.25,4.23a1,1,0,0,0,.74.31h0a1.08,1.08,0,0,0,.75-.33l2-2.14,2,2.14a1,1,0,0,0,1.52,0l2-2.14,2,2.14a1,1,0,0,0,.76.33,1.07,1.07,0,0,0,.77-.33l2-2.14,2,2.14a1,1,0,0,0,.76.33h0a1,1,0,0,0,.74-.31l4.23-4.24a1.08,1.08,0,0,0,.31-.76,1,1,0,0,0-.33-.74l-2.14-2,2.92-2.92,2,2.14a1,1,0,0,0,.76.33h0a1.06,1.06,0,0,0,.74-.31l4.24-4.25a1,1,0,0,0,.3-.75,1,1,0,0,0-.33-.75l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1.07,1.07,0,0,0-.33-.77l-2.13-2,2.13-2a1,1,0,0,0,.33-.76ZM313.8,651.91l-2-2.16a1.05,1.05,0,0,0-1.53,0l-2,2.13-2-2.13a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-2,2.13-2-2.13a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-2,2.16-2.72-2.72,2.16-2a1.05,1.05,0,0,0,0-1.53l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.16-2,2.72-2.72,2,2.16a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1.05,1.05,0,0,0,1.53,0l2-2.16,2.72,2.72-2.16,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.13,2-2.13,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.13,2-2.13,2a1.05,1.05,0,0,0,0,1.53l2.16,2Zm9.07-24.35,2.14,2-2.14,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.14,2-2.14,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.16,2-2.71,2.72-2-2.16a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-.82.87-1.34-1.26,2.14-2a1,1,0,0,0,0-1.52l-2.14-2,2.14-2a1.06,1.06,0,0,0,.33-.76v0a1.05,1.05,0,0,0-.31-.74l-4.24-4.23a1.06,1.06,0,0,0-1.5,0l-2,2.14-2-2.14a1.05,1.05,0,0,0-1.53,0l-2,2.14-1.25-1.33.87-.82a1.05,1.05,0,0,0,0-1.53l-2.16-2,2.71-2.72,2,2.16a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1.05,1.05,0,0,0,1.53,0l2-2.13,2,2.13a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.16L325,624l-2.17,2a1.05,1.05,0,0,0,0,1.53Z" transform="translate(17.96 -23.52)"/>
+              <g id="downcycle-icon">
+                <path class="iconDrawing" d="M327.58,624h0a1,1,0,0,0-.31-.74L323,619a1.07,1.07,0,0,0-.76-.31,1.08,1.08,0,0,0-.74.33l-2,2.14-2-2.14a1,1,0,0,0-.76-.33,1.07,1.07,0,0,0-.77.33l-2,2.14-2-2.14a1.07,1.07,0,0,0-.77-.33,1,1,0,0,0-.76.33l-2,2.14-2-2.14a1,1,0,0,0-.76-.33h0a1,1,0,0,0-.74.31l-4.24,4.24a1,1,0,0,0-.3.76,1,1,0,0,0,.33.74l2.13,2-2.91,2.92-2-2.14a1.06,1.06,0,0,0-.76-.33h0a1.1,1.1,0,0,0-.74.31l-4.23,4.25a1,1,0,0,0-.3.75,1.07,1.07,0,0,0,.32.75l2.14,2-2.14,2a1,1,0,0,0,0,1.52l2.14,2-2.14,2a1,1,0,0,0-.33.76,1.07,1.07,0,0,0,.33.77l2.14,2-2.14,2a1,1,0,0,0-.33.76h0a1.08,1.08,0,0,0,.31.74l4.25,4.23a1,1,0,0,0,.74.31h0a1.08,1.08,0,0,0,.75-.33l2-2.14,2,2.14a1,1,0,0,0,1.52,0l2-2.14,2,2.14a1,1,0,0,0,.76.33,1.07,1.07,0,0,0,.77-.33l2-2.14,2,2.14a1,1,0,0,0,.76.33h0a1,1,0,0,0,.74-.31l4.23-4.24a1.08,1.08,0,0,0,.31-.76,1,1,0,0,0-.33-.74l-2.14-2,2.92-2.92,2,2.14a1,1,0,0,0,.76.33h0a1.06,1.06,0,0,0,.74-.31l4.24-4.25a1,1,0,0,0,.3-.75,1,1,0,0,0-.33-.75l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1.07,1.07,0,0,0-.33-.77l-2.13-2,2.13-2a1,1,0,0,0,.33-.76ZM313.8,651.91l-2-2.16a1.05,1.05,0,0,0-1.53,0l-2,2.13-2-2.13a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-2,2.13-2-2.13a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-2,2.16-2.72-2.72,2.16-2a1.05,1.05,0,0,0,0-1.53l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.16-2,2.72-2.72,2,2.16a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1.05,1.05,0,0,0,1.53,0l2-2.16,2.72,2.72-2.16,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.13,2-2.13,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.13,2-2.13,2a1.05,1.05,0,0,0,0,1.53l2.16,2Zm9.07-24.35,2.14,2-2.14,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.14,2-2.14,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.16,2-2.71,2.72-2-2.16a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-.82.87-1.34-1.26,2.14-2a1,1,0,0,0,0-1.52l-2.14-2,2.14-2a1.06,1.06,0,0,0,.33-.76v0a1.05,1.05,0,0,0-.31-.74l-4.24-4.23a1.06,1.06,0,0,0-1.5,0l-2,2.14-2-2.14a1.05,1.05,0,0,0-1.53,0l-2,2.14-1.25-1.33.87-.82a1.05,1.05,0,0,0,0-1.53l-2.16-2,2.71-2.72,2,2.16a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1.05,1.05,0,0,0,1.53,0l2-2.13,2,2.13a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.16L325,624l-2.17,2a1.05,1.05,0,0,0,0,1.53Z" transform="translate(17.96 -23.52)"/>
+              </g>
             </g>
             <!-- path from Downcycle to Design Product -->
             <path id="downcycle-design-path" class="pathGreyDashed" d="M276.07,615.24c-30.37-26-51.87-55.85-61.93-88.09" transform="translate(17.96 -23.52)"/>
+            <!-- Revalorize label -->
+            <text class="iconlabel" id="revalorizelabel" text-anchor="middle" transform="translate(388.9 547.4)" x="0" y="0">
+              <tspan x="0" dy="1.1em">REVALORIZE</tspan>
+              <tspan x="0" dy="1.1em">PRODUCT</tspan>
+            </text>
             <!-- Dispose of Product Icon -->
             <g id="disposeIconGrp">
+              <!-- path from Product Use to Dispose of Product -->
+              <path id="use-dispose-path" class="cls-63" d="M465.09,729.81c-1.79,2.14-5,4.55-11.35,7.49-11.52,5.37-21.12,8.78-80.52,11.36" transform="translate(17.96 -23.52)"/>
               <!-- label -->
               <text class="iconlabel" text-anchor="middle" transform="translate(354.52 774.66)" x="0" y="0">
                 <tspan x="0" dy="1.1em">DISPOSE OF</tspan>
@@ -722,10 +675,10 @@ Animator: Janice Bradford
               <circle id="dispose-bkgnd" class="iconBlue" cx="353.14" cy="724.41" r="40.23"/>
               <path id="dispose-icon" class="iconDrawing" d="M310.11,761.92a.95.95,0,1,0,0,1.9h53.16a1,1,0,0,0,0-1.9h-7.38a5.85,5.85,0,0,0,1.47-3h5.48a1,1,0,0,0,1-.95v-3.74a1,1,0,0,0-1-1H362V736.83a.94.94,0,0,0-.95-1h-2.68a4.81,4.81,0,0,0-4-3.94,5.76,5.76,0,0,0-10.86-.89,4.74,4.74,0,0,0-3.49,2l-.17-.07a4.81,4.81,0,0,0-6.17,2.86h-1.42l-3.83-1.81a.9.9,0,0,0-.4-.09h-8a1,1,0,0,0-.95.95v2.12a.94.94,0,0,0,.68.91l1.6.47h-2.88a1,1,0,0,0-.72.32l-6.42,7.42a1,1,0,0,0-.23.62v6.48h-.66a1,1,0,0,0-1,1V758a1,1,0,0,0,1,.95h3.8a5.93,5.93,0,0,0,1.47,3Zm24.05-18.62a1.25,1.25,0,0,1,2.49,0v10h-2.49Zm12.28,11.87a5.9,5.9,0,0,0-.63,1.84H325.89a5.9,5.9,0,0,0-.63-1.84Zm-19.31-14.85v5.53H319l4.78-5.53Zm16.25,3a1.25,1.25,0,0,1,2.49,0v10h-2.49Zm2.43,15.61a5.93,5.93,0,0,0,1.47,3H324.42a5.93,5.93,0,0,0,1.47-3ZM324.07,758a4,4,0,1,1-7.92,0h0a4,4,0,0,1,7.92,0Zm-12.58-2.79H315a5.9,5.9,0,0,0-.63,1.84h-2.85ZM319,740.32h2.24l-5.06,5.86a.93.93,0,0,0-.23.62,1,1,0,0,0,.94,1h10.23v5.52h-3.52a5.81,5.81,0,0,0-7,0H313.1v-6.12Zm34.66-6.54a2.9,2.9,0,0,1,2.76,2.1H335.85v0a2.9,2.9,0,0,1,4-.71.51.51,0,0,0,.18.09,1,1,0,0,0,1.24-.51,2.89,2.89,0,0,1,2.69-1.81h.16a1,1,0,0,0,1-.67,3.86,3.86,0,0,1,7.54.67,1,1,0,0,0,.94.85Zm6.45,19.49H357v-10a3.14,3.14,0,1,0-6.28,0v8.87a5.86,5.86,0,0,0-2.62,1.1h-.32v-10a3.15,3.15,0,0,0-6.29,0v10h-2.93v-10a3.15,3.15,0,0,0-6.29,0v10H329v-13.9a1,1,0,0,0-.68-.91l-7.28-2.13v-.45h6.8l3.83,1.81a.9.9,0,0,0,.4.09h28Zm-5,0a5.81,5.81,0,0,0-2.48-1.08V743.3a1.24,1.24,0,1,1,2.48,0v10Zm6.8,3.74h-4.53a5.64,5.64,0,0,0-.62-1.84h5.15Zm-6.34,1a4,4,0,1,1-4-4,4,4,0,0,1,4,4Z" transform="translate(17.96 -23.52)"/>
             </g>
-            <!-- path from Dispose to Waste-to-Energy -->
-            <line id="dispose-wastetoenergy-path" class="pathBlue" x1="228.72" y1="725.73" x2="311.47" y2="725.73"/>
             <!-- Waste-to-Energy icon -->
             <g id="wastetoenergyIconGrp">
+              <!-- path from Dispose to Waste-to-Energy -->
+              <line id="dispose-wastetoenergy-path" class="pathBlue" x1="228.72" y1="725.73" x2="311.47" y2="725.73"/>
               <!-- label -->
               <text class="iconlabel" text-anchor="middle" transform="translate(185.73 774.66)" x="0" y="0">
                 <tspan x="0" dy="1.1em">WASTE-TO-</tspan>
@@ -753,6 +706,57 @@ Animator: Janice Bradford
                   <polygon class="iconDrawing" points="189.78 730.76 188.49 729.37 195.35 722.99 188.49 716.61 189.78 715.22 198.14 722.99 189.78 730.76"/>
                 </g>
               </g>
+            </g>
+            <!-- Corporate HQ Icon-->
+            <g id="corporateIconGrp">
+              <!-- label -->
+              <text class="iconlabel" text-anchor="middle" transform="translate(622.7 456.02)" x="0" y="0">
+                <tspan x="0" dy="1.1em">CORPORATE</tspan>
+                <tspan x="0" dy="1.1em">HQ</tspan>
+              </text>
+              <!-- icon -->
+              <g id="headquartersicon">
+                <!-- icon background -->
+                <circle class="headquartersiconBkgndPulse" cx="626.91" cy="398.3" r="45.47"/>
+                <!-- icon -->
+                <g>
+                  <g>
+                    <polygon class="cls-77" points="617.36 422.3 600.42 422.3 600.42 380.82 617.36 371.87 617.36 422.3"/>
+                    <rect class="cls-78" x="603.89" y="390.46" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="610.65" y="390.46" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="603.89" y="396.72" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="610.65" y="396.72" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="603.89" y="402.98" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="610.65" y="402.98" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="603.89" y="409.25" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="610.65" y="409.25" width="3.69" height="3.69"/>
+                  </g>
+                  <g>
+                    <polygon class="cls-77" points="634.35 422.3 617.41 422.3 617.41 380.82 634.35 371.87 634.35 422.3"/>
+                    <rect class="cls-78" x="620.88" y="390.46" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="627.65" y="390.46" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="620.88" y="396.72" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="627.65" y="396.72" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="620.88" y="402.98" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="627.65" y="402.98" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="620.88" y="409.25" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="627.65" y="409.25" width="3.69" height="3.69"/>
+                  </g>
+                  <g>
+                    <polygon class="cls-77" points="651.35 422.3 634.41 422.3 634.41 380.82 651.35 371.87 651.35 422.3"/>
+                    <rect class="cls-78" x="637.88" y="390.46" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="644.64" y="390.46" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="637.88" y="396.72" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="644.64" y="396.72" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="637.88" y="402.98" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="644.64" y="402.98" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="637.88" y="409.25" width="3.69" height="3.69"/>
+                    <rect class="cls-78" x="644.64" y="409.25" width="3.69" height="3.69"/>
+                  </g>
+                </g>
+              </g>
+              <!-- hot spot -->
+              <circle id="headquartersiconHotspot" pointer-events="all" cx="626.91" cy="398.3" r="45.47"/>
             </g>
           </g> <!-- end of icon group -->
         </svg>
