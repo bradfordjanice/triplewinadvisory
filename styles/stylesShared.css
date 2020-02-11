@@ -182,6 +182,50 @@ p {
   stroke-dasharray: 3.61 2.71;
 }
 
+/* Design Product */
+.designiconBkgnd {
+  fill: #ee5f24;
+  transform-origin: 21% 53%;
+}
+
+/* Procure Packaging */
+.packagingiconBkgnd {
+  fill: #ee5f24;
+  transform-origin: 33% 35%;
+}
+
+/* Manufacture Product */
+.manufactureiconBkgnd {
+  fill: #ee5f24;
+  transform-origin: 46% 31%;
+}
+
+/* Warehouse Product */
+.warehouseiconBkgnd {
+  fill: #ee5f24;
+  transform-origin: 59% 25%;
+}
+
+/* Corporate HQ */
+.headquartersiconBkgnd {
+  fill: #ee5f24;
+  transform-origin: 53% 48%;
+}
+
+/* Airplanes and Truck */
+#plane1icon {
+  fill: #808285;
+  transform-origin: 39% 23%;
+}
+#plane2icon {
+  fill: #808285;
+  transform-origin: 50% 90%;
+}
+#truckicon {
+  fill: #808285;
+  transform-origin: 39% 23%;
+}
+
 /* styles from Illustrator export */
 .cls-1,
 .cls-100,
