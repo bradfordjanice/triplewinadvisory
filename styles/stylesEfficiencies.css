@@ -319,13 +319,6 @@
   }
 }
 
-/* Revalorize Product */
-.revalorize {
-  fill: #808285;
-  animation: pulse 2.25s infinite;
-  transform-origin: 45% 23%;
-}
-
 /* show icons one at a time - left to right */
 @keyframes loadChain {
   0% {
@@ -414,21 +407,21 @@
   opacity: 0%;
   animation: loadChain 1s ease-in 27s 1 normal forwards;
 }
-#downcycle-design-path {
+#revalorize {
   opacity: 0%;
   animation: loadChain 1s ease-in 28s 1 normal forwards;
 }
-#revalorizelabel {
+#downcycle-design-path {
   opacity: 0%;
-  animation: loadChain 1s ease-in 29s 1 normal forwards;
+  animation: loadChain 1s ease-in 28.5s 1 normal forwards;
 }
 #disposeIconGrp {
   opacity: 0%;
-  animation: loadChain 1s ease-in 31s 1 normal forwards;
+  animation: loadChain 1s ease-in 31.5s 1 normal forwards;
 }
 #wastetoenergyIconGrp {
   opacity: 0%;
-  animation: loadChain 1s ease-in 32s 1 normal forwards;
+  animation: loadChain 1s ease-in 32.5s 1 normal forwards;
 }
 #corporateIconGrp {
   opacity: 0%;
@@ -468,17 +461,33 @@
 }
 #collection-refurbish-arrow {
   opacity: 0%;
-  stroke-dasharray: 250;
+  stroke-dasharray: 100;
   stroke-dashoffset: 0;
-  animation: singleArrow 2s ease-in 23s infinite normal forwards;
+  animation: singleArrow1 2s ease-in 23s infinite normal forwards;
 }
 #use-refurbish-arrow {
   opacity: 0%;
   stroke-dasharray: 250;
   stroke-dashoffset: 0;
-  animation: singleArrow 2s ease-in 23s infinite normal forwards;
+  animation: singleArrow2 2s ease-in 23s infinite normal forwards;
 }
-@keyframes singleArrow {
+@keyframes singleArrow1 {
+  0% {
+    opacity: 0%;
+    stroke-dashoffset: 100;
+  }
+  50% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    stroke-dashoffset: -100;
+  }
+}
+@keyframes singleArrow2 {
   0% {
     opacity: 0%;
     stroke-dashoffset: 250;

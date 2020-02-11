@@ -27,8 +27,8 @@ p {
 
 /* NOTE:  THE TITLE ANIMATION IS WORKING IN EDGE
    BUT THE OTHER ANIMATIONS ARE NOT
-   TRY NOT USING THE SHORT HAND VERSION OF THE
-   ANIMATION PROPERTY!
+   IT COULD BE THAT SOME PROPERTIES CAN NOT BE
+   ANIMATED IN EDGE
 */
 /* title and subtitle */
 .title {
@@ -254,19 +254,11 @@ li.tooltipSublistItem {
 }
 #plane2icon {
   fill: #808285;
-  animation: pulseicon 2.25s infinite;
   transform-origin: 50% 90%;
 }
 #truckicon {
   fill: #808285;
   transform-origin: 39% 23%;
-}
-
-/* Revalorize Product */
-.revalorize {
-  fill: #808285;
-  animation: pulse 2.25s infinite;
-  transform-origin: 45% 23%;
 }
 
 /* styles from Illustrator export */
