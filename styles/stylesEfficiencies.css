@@ -34,6 +34,36 @@
     opacity: 100%;
   }
 }
+
+/* Tooltip list styling */
+ul.tooltipList {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+li.tooltipItem {
+  font-size: 1em;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0.5em 0;
+  padding-left: 1em;
+}
+ul.tooltipSublist {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 0.5em;
+  padding-left: 1em;
+  text-indent: -1.3em;
+}
+li.tooltipSublistItem {
+  font-size: 0.9em;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0.3em 0;
+  padding-left: 0;
+}
+
+/* Tooltips */
 .designiconBkgndPulse {
   fill: #ee5f24;
   animation: pulse 2.25s infinite;
