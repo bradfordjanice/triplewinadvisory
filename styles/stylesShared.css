@@ -133,6 +133,7 @@ p {
   stroke-miterlimit: 10;
   stroke-width: 3.26px;
 }
+
 .iconDrawingIsolated {
   fill: #808285;
 }
@@ -181,7 +182,26 @@ p {
   stroke-width: 2.71px;
   stroke-dasharray: 3.61 2.71;
 }
-
+.pathGrey {
+  fill: none;
+  stroke: #808285;
+  stroke-width: 2.56px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.arrowGrey {
+  fill: #808285;
+}
+.pathBlack {
+  fill: none;
+  stroke: #231f20;
+  stroke-width: 2.45px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.arrowBlack {
+  fill: #231f20;
+}
 /* Design Product */
 .designiconBkgnd {
   fill: #ee5f24;
@@ -224,150 +244,6 @@ p {
 #truckicon {
   fill: #808285;
   transform-origin: 39% 23%;
-}
-
-/* styles from Illustrator export */
-.cls-1,
-.cls-100,
-.cls-130,
-.cls-131,
-.cls-25,
-.cls-63,
-.cls-66,
-.cls-67,
-.cls-77,
-.cls-78,
-.cls-91,
-.cls-92 {
-  fill: none;
-}
-
-.cls-147 {
-  fill: #fff;
-}
-
-.cls-25 {
-  stroke: #8db845;
-}
-
-.cls-130,
-.cls-147,
-.cls-25,
-.cls-63,
-.cls-66,
-.cls-67,
-.cls-77,
-.cls-78 {
-  stroke-miterlimit: 10;
-}
-
-.cls-25 {
-  stroke-width: 2.02px;
-}
-
-.cls-208 {
-  fill: #8db845;
-}
-
-.cls-107 {
-  fill: #1b75bc;
-}
-
-.cls-66 {
-  stroke: #1b75bc;
-}
-
-.cls-131,
-.cls-63 {
-  stroke: #808285;
-}
-
-.cls-63 {
-  stroke-width: 2.85px;
-  stroke-dasharray: 3.8 2.85;
-}
-
-.cls-132 {
-  fill: #808285;
-}
-
-.cls-66,
-.cls-67 {
-  stroke-width: 3.26px;
-}
-
-.cls-67 {
-  stroke: #ee5f24;
-}
-
-.cls-107,
-.cls-132,
-.cls-68 {
-  font-size: 14px;
-}
-
-.cls-101,
-.cls-165,
-.cls-68 {
-  fill: #231f20;
-}
-
-.cls-130,
-.cls-147,
-.cls-77,
-.cls-78,
-.cls-91,
-.cls-92 {
-  stroke: #fff;
-}
-
-.cls-77 {
-  stroke-width: 1.79px;
-}
-
-.cls-78 {
-  stroke-width: 1.29px;
-}
-
-.cls-100,
-.cls-131,
-.cls-91,
-.cls-92 {
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.cls-91 {
-  stroke-width: 1.7px;
-}
-
-.cls-92 {
-  stroke-width: 1.9px;
-}
-
-.cls-100 {
-  stroke: #231f20;
-}
-
-.cls-100,
-.cls-131 {
-  stroke-width: 2.45px;
-}
-
-.cls-130 {
-  stroke-width: 2.18px;
-}
-
-.cls-147 {
-  stroke-width: 0.5px;
-}
-
-.cls-164 {
-  clip-path: url(#clip-path);
-}
-
-.cls-208 {
-  font-size: 30px;
 }
 
 /* size and center animation on web page */
