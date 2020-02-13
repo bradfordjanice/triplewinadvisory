@@ -459,77 +459,62 @@ li.tooltipSublistItem {
 }
 
 /* animated arrows */
+/*
+@keyframes appear {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+*/
+@keyframes singleArrow {
+  0% {
+    opacity: 100%;
+    stroke-dashoffset: 25;
+  }
+  100% {
+    opacity: 100%;
+    stroke-dashoffset: -25;
+  }
+}
+@keyframes doubleArrow {
+  0% {
+    opacity: 100%;
+    stroke-dashoffset: 25;
+  }
+  100% {
+    opacity: 100%;
+    stroke-dashoffset: -25;
+  }
+}
 #purchase-refurbish-arrow {
   opacity: 0%;
-  stroke-dasharray: 125;
+  stroke-dasharray: 10;
   stroke-dashoffset: 0;
   animation: doubleArrow 2s ease-in-out 15.5s infinite alternate-reverse
     forwards;
 }
 #nuses-refurbish-arrow {
   opacity: 0%;
-  stroke-dasharray: 125;
+  stroke-dasharray: 10;
   stroke-dashoffset: 0;
   animation: doubleArrow 2s ease-in-out 15.5s infinite alternate-reverse
     forwards;
 }
-@keyframes doubleArrow {
-  0% {
-    opacity: 0%;
-    stroke-dashoffset: 125;
-  }
-  50% {
-    opacity: 100%;
-  }
-  75% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
-    stroke-dashoffset: -125;
-  }
-}
 #collection-refurbish-arrow {
   opacity: 0%;
-  stroke-dasharray: 100;
+  stroke-dasharray: 12.5;
   stroke-dashoffset: 0;
-  animation: singleArrow1 2s ease-in 23s infinite normal forwards;
+  animation: singleArrow 2s linear 23s infinite normal forwards;
 }
 #use-refurbish-arrow {
   opacity: 0%;
-  stroke-dasharray: 250;
+  stroke-dasharray: 12.5;
   stroke-dashoffset: 0;
-  animation: singleArrow2 2s ease-in 23s infinite normal forwards;
-}
-@keyframes singleArrow1 {
-  0% {
-    opacity: 0%;
-    stroke-dashoffset: 100;
-  }
-  50% {
-    opacity: 100%;
-  }
-  75% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
-    stroke-dashoffset: -100;
-  }
-}
-@keyframes singleArrow2 {
-  0% {
-    opacity: 0%;
-    stroke-dashoffset: 250;
-  }
-  50% {
-    opacity: 100%;
-  }
-  75% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
-    stroke-dashoffset: -250;
-  }
+  animation: singleArrow 2s linear 23s infinite normal forwards;
 }
