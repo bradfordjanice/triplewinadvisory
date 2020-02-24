@@ -458,20 +458,6 @@ li.tooltipSublistItem {
   animation: loadChain 1s ease-in 33.5s 1 normal forwards;
 }
 
-/* animated arrows */
-/*
-@keyframes appear {
-  0% {
-    opacity: 0%;
-  }
-  50% {
-    opacity: 50%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-*/
 @keyframes singleArrow {
   0% {
     opacity: 100%;
