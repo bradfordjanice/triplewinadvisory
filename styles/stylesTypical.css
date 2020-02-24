@@ -76,11 +76,11 @@
   opacity: 0%;
   animation: loadChain 1s ease-in 13.5s 1 normal forwards;
 }
-#incinerationIconGrp {
+#landfillIconGrp {
   opacity: 0%;
   animation: loadChain 1s ease-in 14.5s 1 normal forwards;
 }
-#landfillIconGrp {
+#incinerationIconGrp {
   opacity: 0%;
   animation: loadChain 1s ease-in 15.5s 1 normal forwards;
 }
