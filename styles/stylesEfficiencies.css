@@ -5,6 +5,23 @@
 .titleUnderline {
   stroke: #8db845;
 }
+.titleAnimation {
+  animation: zoomout 2s ease-in-out 0s 1 normal forwards;
+}
+@keyframes zoomout {
+  0% {
+    transform: translate(250px, 400px);
+    font-size: 4em;
+  }
+  60% {
+    transform: translate(250px, 400px);
+    font-size: 4em;
+  }
+  100% {
+    transform: translate(447.4px, 32.9px);
+    font-size: 30px;
+  }
+}
 
 /* Button Group */
 #typicalbtnOutline {
