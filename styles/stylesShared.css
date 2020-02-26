@@ -27,11 +27,6 @@ p {
   width: 90%;
 }
 
-/* NOTE:  THE TITLE ANIMATION IS WORKING IN EDGE
-   BUT THE OTHER ANIMATIONS ARE NOT
-   IT COULD BE THAT SOME PROPERTIES CAN NOT BE
-   ANIMATED IN EDGE
-*/
 /* title and subtitle */
 .title {
   font-size: 30px;
