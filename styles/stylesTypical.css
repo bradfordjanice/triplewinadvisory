@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* title and subtitle */
 .title {
   fill: #ee5f24;
@@ -6,18 +8,39 @@
   stroke: #ee5f24;
 }
 .titleAnimation {
+  -webkit-animation: zoomout 2s ease-in-out 0s 1 normal forwards;
   animation: zoomout 2s ease-in-out 0s 1 normal forwards;
 }
-@keyframes zoomout {
+@-webkit-keyframes zoomout {
   0% {
+    -webkit-transform: translate(250px, 400px);
     transform: translate(250px, 400px);
     font-size: 4em;
   }
   60% {
+    -webkit-transform: translate(250px, 400px);
     transform: translate(250px, 400px);
     font-size: 4em;
   }
   100% {
+    -webkit-transform: translate(447.4px, 32.9px);
+    transform: translate(447.4px, 32.9px);
+    font-size: 30px;
+  }
+}
+@keyframes zoomout {
+  0% {
+    -webkit-transform: translate(250px, 400px);
+    transform: translate(250px, 400px);
+    font-size: 4em;
+  }
+  60% {
+    -webkit-transform: translate(250px, 400px);
+    transform: translate(250px, 400px);
+    font-size: 4em;
+  }
+  100% {
+    -webkit-transform: translate(447.4px, 32.9px);
     transform: translate(447.4px, 32.9px);
     font-size: 30px;
   }
@@ -38,6 +61,17 @@
 }
 
 /* show icons one at a time - left to right */
+@-webkit-keyframes loadChain {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 @keyframes loadChain {
   0% {
     opacity: 0%;
@@ -51,53 +85,66 @@
 }
 #designIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 3.5s 1 normal forwards;
   animation: loadChain 1s ease-in 3.5s 1 normal forwards;
 }
 #materialsIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 4.5s 1 normal forwards;
   animation: loadChain 1s ease-in 4.5s 1 normal forwards;
 }
 #packagingIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 5.5s 1 normal forwards;
   animation: loadChain 1s ease-in 5.5s 1 normal forwards;
 }
 #plane1IconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 6.5s 1 normal forwards;
   animation: loadChain 1s ease-in 6.5s 1 normal forwards;
 }
 #manufactureIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 7.5s 1 normal forwards;
   animation: loadChain 1s ease-in 7.5s 1 normal forwards;
 }
 #shipIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 8.5s 1 normal forwards;
   animation: loadChain 1s ease-in 8.5s 1 normal forwards;
 }
 #warehouseIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 9.5s 1 normal forwards;
   animation: loadChain 1s ease-in 9.5s 1 normal forwards;
 }
 #truckIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 10.5s 1 normal forwards;
   animation: loadChain 1s ease-in 10.5s 1 normal forwards;
 }
 #sellIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 11.5s 1 normal forwards;
   animation: loadChain 1s ease-in 11.5s 1 normal forwards;
 }
 #purchaseIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 12.5s 1 normal forwards;
   animation: loadChain 1s ease-in 12.5s 1 normal forwards;
 }
 #disposeIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 13.5s 1 normal forwards;
   animation: loadChain 1s ease-in 13.5s 1 normal forwards;
 }
 #landfillIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 14.5s 1 normal forwards;
   animation: loadChain 1s ease-in 14.5s 1 normal forwards;
 }
 #incinerationIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 15.5s 1 normal forwards;
   animation: loadChain 1s ease-in 15.5s 1 normal forwards;
 }

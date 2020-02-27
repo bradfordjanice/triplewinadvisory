@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* title and subtitle */
 .title {
   fill: #8db845;
@@ -6,18 +8,39 @@
   stroke: #8db845;
 }
 .titleAnimation {
+  -webkit-animation: zoomout 2s ease-in-out 0s 1 normal forwards;
   animation: zoomout 2s ease-in-out 0s 1 normal forwards;
 }
-@keyframes zoomout {
+@-webkit-keyframes zoomout {
   0% {
+    -webkit-transform: translate(250px, 400px);
     transform: translate(250px, 400px);
     font-size: 4em;
   }
   60% {
+    -webkit-transform: translate(250px, 400px);
     transform: translate(250px, 400px);
     font-size: 4em;
   }
   100% {
+    -webkit-transform: translate(447.4px, 32.9px);
+    transform: translate(447.4px, 32.9px);
+    font-size: 30px;
+  }
+}
+@keyframes zoomout {
+  0% {
+    -webkit-transform: translate(250px, 400px);
+    transform: translate(250px, 400px);
+    font-size: 4em;
+  }
+  60% {
+    -webkit-transform: translate(250px, 400px);
+    transform: translate(250px, 400px);
+    font-size: 4em;
+  }
+  100% {
+    -webkit-transform: translate(447.4px, 32.9px);
     transform: translate(447.4px, 32.9px);
     font-size: 30px;
   }
@@ -41,7 +64,16 @@
 /* show icon group after title animation is done */
 .efficienciesIcongroup {
   opacity: 0%;
+  -webkit-animation: showEfficiencies 0.6s ease-in 2.5s 1 normal forwards;
   animation: showEfficiencies 0.6s ease-in 2.5s 1 normal forwards;
+}
+@-webkit-keyframes showEfficiencies {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 @keyframes showEfficiencies {
   0% {
@@ -83,11 +115,16 @@ li.tooltipSublistItem {
 /* Tooltips */
 .designiconBkgndPulse {
   fill: #ee5f24;
+  -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
+  -webkit-transform-origin: 21% 55%;
+  -ms-transform-origin: 21% 55%;
   transform-origin: 21% 55%;
 }
 #designiconHotspot {
   fill: none;
+  -webkit-transform-origin: 21% 53%;
+  -ms-transform-origin: 21% 53%;
   transform-origin: 21% 53%;
 }
 #designtooltip {
@@ -103,6 +140,8 @@ li.tooltipSublistItem {
   content: "";
   width: 12px;
   height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #8db845;
   position: absolute;
@@ -113,11 +152,16 @@ li.tooltipSublistItem {
 /* Procure Packaging */
 .packagingiconBkgndPulse {
   fill: #ee5f24;
+  -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
+  -webkit-transform-origin: 33% 35%;
+  -ms-transform-origin: 33% 35%;
   transform-origin: 33% 35%;
 }
 #packagingiconHotspot {
   fill: none;
+  -webkit-transform-origin: 33% 35%;
+  -ms-transform-origin: 33% 35%;
   transform-origin: 33% 35%;
 }
 #packagingtooltip {
@@ -133,6 +177,8 @@ li.tooltipSublistItem {
   content: "";
   width: 12px;
   height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #8db845;
   position: absolute;
@@ -143,11 +189,16 @@ li.tooltipSublistItem {
 /* Manufacture Product */
 .manufactureiconBkgndPulse {
   fill: #ee5f24;
+  -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
+  -webkit-transform-origin: 46% 31%;
+  -ms-transform-origin: 46% 31%;
   transform-origin: 46% 31%;
 }
 #manufactureiconHotspot {
   fill: none;
+  -webkit-transform-origin: 46% 31%;
+  -ms-transform-origin: 46% 31%;
   transform-origin: 46% 31%;
 }
 #manufacturetooltip {
@@ -163,6 +214,8 @@ li.tooltipSublistItem {
   content: "";
   width: 12px;
   height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #8db845;
   position: absolute;
@@ -173,11 +226,16 @@ li.tooltipSublistItem {
 /* Warehouse Product */
 .warehouseiconBkgndPulse {
   fill: #ee5f24;
+  -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
+  -webkit-transform-origin: 59% 30%;
+  -ms-transform-origin: 59% 30%;
   transform-origin: 59% 30%;
 }
 #warehouseiconHotspot {
   fill: none;
+  -webkit-transform-origin: 59% 30%;
+  -ms-transform-origin: 59% 30%;
   transform-origin: 59% 30%;
 }
 #warehousetooltip {
@@ -193,6 +251,8 @@ li.tooltipSublistItem {
   content: "";
   width: 12px;
   height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #8db845;
   position: absolute;
@@ -203,11 +263,16 @@ li.tooltipSublistItem {
 /* Corporate HQ */
 .headquartersiconBkgndPulse {
   fill: #ee5f24;
+  -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
+  -webkit-transform-origin: 53% 48%;
+  -ms-transform-origin: 53% 48%;
   transform-origin: 53% 48%;
 }
 #headquartersiconHotspot {
   fill: none;
+  -webkit-transform-origin: 53% 48%;
+  -ms-transform-origin: 53% 48%;
   transform-origin: 53% 48%;
 }
 #headquarterstooltipR {
@@ -223,6 +288,8 @@ li.tooltipSublistItem {
   content: "";
   width: 12px;
   height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #8db845;
   position: absolute;
@@ -242,24 +309,50 @@ li.tooltipSublistItem {
   content: "";
   width: 12px;
   height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #8db845;
   position: absolute;
   left: 256px;
   top: 125px;
 }
-@keyframes pulse {
+@-webkit-keyframes pulse {
   0% {
     fill: #ee5f24;
+    -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
+    -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
   }
   50% {
     fill: #8db845;
+    -webkit-transform: scale(1.15, 1.15);
     transform: scale(1.15, 1.15);
   }
   100% {
     fill: #ee5f24;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    fill: #ee5f24;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+  50% {
+    fill: #8db845;
+    -webkit-transform: scale(1.15, 1.15);
+    transform: scale(1.15, 1.15);
+  }
+  100% {
+    fill: #ee5f24;
+    -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 }
@@ -267,11 +360,16 @@ li.tooltipSublistItem {
 /* Airplanes and Truck */
 #plane1iconPulse {
   fill: #808285;
+  -webkit-animation: pulseicon 2.25s infinite;
   animation: pulseicon 2.25s infinite;
+  -webkit-transform-origin: 39% 23%;
+  -ms-transform-origin: 39% 23%;
   transform-origin: 39% 23%;
 }
 #plane1iconHotspot {
   fill: none;
+  -webkit-transform-origin: 39% 23%;
+  -ms-transform-origin: 39% 23%;
   transform-origin: 39% 23%;
 }
 #plane1tooltip {
@@ -287,6 +385,8 @@ li.tooltipSublistItem {
   content: "";
   width: 12px;
   height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #8db845;
   position: absolute;
@@ -295,11 +395,16 @@ li.tooltipSublistItem {
 }
 #plane2iconPulse {
   fill: #808285;
+  -webkit-animation: pulseicon 2.25s infinite;
   animation: pulseicon 2.25s infinite;
+  -webkit-transform-origin: 50% 90%;
+  -ms-transform-origin: 50% 90%;
   transform-origin: 50% 90%;
 }
 #plane2iconHotspot {
   fill: none;
+  -webkit-transform-origin: 50% 90%;
+  -ms-transform-origin: 50% 90%;
   transform-origin: 50% 90%;
 }
 #plane2tooltip {
@@ -315,6 +420,8 @@ li.tooltipSublistItem {
   content: "";
   width: 12px;
   height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #8db845;
   position: absolute;
@@ -323,11 +430,16 @@ li.tooltipSublistItem {
 }
 #truckiconPulse {
   fill: #808285;
+  -webkit-animation: pulseicon 2.25s infinite;
   animation: pulseicon 2.25s infinite;
+  -webkit-transform-origin: 67% 23%;
+  -ms-transform-origin: 67% 23%;
   transform-origin: 67% 23%;
 }
 #truckiconHotspot {
   fill: none;
+  -webkit-transform-origin: 67% 23%;
+  -ms-transform-origin: 67% 23%;
   transform-origin: 67% 23%;
 }
 #trucktooltip {
@@ -343,30 +455,71 @@ li.tooltipSublistItem {
   content: "";
   width: 12px;
   height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #8db845;
   position: absolute;
   left: -6px;
   top: 40px;
 }
-@keyframes pulseicon {
+@-webkit-keyframes pulseicon {
   0% {
     fill: #808285;
+    -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
+    -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
   }
   50% {
     fill: #8db845;
+    -webkit-transform: scale(1.3, 1.3);
     transform: scale(1.3, 1.3);
+    -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
   }
   100% {
     fill: #808285;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes pulseicon {
+  0% {
+    fill: #808285;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+  50% {
+    fill: #8db845;
+    -webkit-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+  100% {
+    fill: #808285;
+    -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 }
 
 /* show icons one at a time - left to right */
+@-webkit-keyframes loadChain {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 @keyframes loadChain {
   0% {
     opacity: 0%;
@@ -380,102 +533,147 @@ li.tooltipSublistItem {
 }
 #designIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 3.5s 1 normal forwards;
   animation: loadChain 1s ease-in 3.5s 1 normal forwards;
 }
 #materialsIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 4.5s 1 normal forwards;
   animation: loadChain 1s ease-in 4.5s 1 normal forwards;
 }
 #packagingIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 5.5s 1 normal forwards;
   animation: loadChain 1s ease-in 5.5s 1 normal forwards;
 }
 #plane1IconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 6.5s 1 normal forwards;
   animation: loadChain 1s ease-in 6.5s 1 normal forwards;
 }
 #manufactureIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 7.5s 1 normal forwards;
   animation: loadChain 1s ease-in 7.5s 1 normal forwards;
 }
 #shipIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 8.5s 1 normal forwards;
   animation: loadChain 1s ease-in 8.5s 1 normal forwards;
 }
 #warehouseIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 9.5s 1 normal forwards;
   animation: loadChain 1s ease-in 9.5s 1 normal forwards;
 }
 #truckIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 10.5s 1 normal forwards;
   animation: loadChain 1s ease-in 10.5s 1 normal forwards;
 }
 #sellIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 11.5s 1 normal forwards;
   animation: loadChain 1s ease-in 11.5s 1 normal forwards;
 }
 #purchaseIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 12.5s 1 normal forwards;
   animation: loadChain 1s ease-in 12.5s 1 normal forwards;
 }
 #nusesIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 13.5s 1 normal forwards;
   animation: loadChain 1s ease-in 13.5s 1 normal forwards;
 }
 #refurbishIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 14.5s 1 normal forwards;
   animation: loadChain 1s ease-in 14.5s 1 normal forwards;
 }
 #endofuseIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 19s 1 normal forwards;
   animation: loadChain 1s ease-in 19s 1 normal forwards;
 }
 #collectionIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 20s 1 normal forwards;
   animation: loadChain 1s ease-in 20s 1 normal forwards;
 }
 #plane2IconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 21s 1 normal forwards;
   animation: loadChain 1s ease-in 21s 1 normal forwards;
 }
 #useIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 22s 1 normal forwards;
   animation: loadChain 1s ease-in 22s 1 normal forwards;
 }
 #upcycleIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 25s 1 normal forwards;
   animation: loadChain 1s ease-in 25s 1 normal forwards;
 }
 #upcycle-materials-arrow {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 26s 1 normal forwards;
   animation: loadChain 1s ease-in 26s 1 normal forwards;
 }
 #downcycleIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 27s 1 normal forwards;
   animation: loadChain 1s ease-in 27s 1 normal forwards;
 }
 #revalorize {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 28s 1 normal forwards;
   animation: loadChain 1s ease-in 28s 1 normal forwards;
 }
 #downcycle-design-path {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 28.5s 1 normal forwards;
   animation: loadChain 1s ease-in 28.5s 1 normal forwards;
 }
 #disposeIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 31.5s 1 normal forwards;
   animation: loadChain 1s ease-in 31.5s 1 normal forwards;
 }
 #wastetoenergyIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 32.5s 1 normal forwards;
   animation: loadChain 1s ease-in 32.5s 1 normal forwards;
 }
 #corporateIconGrp {
   opacity: 0%;
+  -webkit-animation: loadChain 1s ease-in 33.5s 1 normal forwards;
   animation: loadChain 1s ease-in 33.5s 1 normal forwards;
 }
 
+@-webkit-keyframes singleArrow {
+  0% {
+    opacity: 100%;
+    stroke-dashoffset: 25;
+  }
+  100% {
+    opacity: 100%;
+    stroke-dashoffset: -25;
+  }
+}
+
 @keyframes singleArrow {
+  0% {
+    opacity: 100%;
+    stroke-dashoffset: 25;
+  }
+  100% {
+    opacity: 100%;
+    stroke-dashoffset: -25;
+  }
+}
+@-webkit-keyframes doubleArrow {
   0% {
     opacity: 100%;
     stroke-dashoffset: 25;
@@ -513,11 +711,13 @@ li.tooltipSublistItem {
   opacity: 0%;
   stroke-dasharray: 12.5;
   stroke-dashoffset: 0;
+  -webkit-animation: singleArrow 2s linear 23s infinite normal forwards;
   animation: singleArrow 2s linear 23s infinite normal forwards;
 }
 #use-refurbish-arrow {
   opacity: 0%;
   stroke-dasharray: 12.5;
   stroke-dashoffset: 0;
+  -webkit-animation: singleArrow 2s linear 23s infinite normal forwards;
   animation: singleArrow 2s linear 23s infinite normal forwards;
 }

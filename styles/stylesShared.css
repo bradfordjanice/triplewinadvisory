@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
   margin: 20px;
   padding: 10px;
@@ -47,7 +49,16 @@ p {
   opacity: 0%;
 }
 .subtitleAnimation {
+  -webkit-animation: showSubtitle 0.4s ease-in 2.5s 1 normal forwards;
   animation: showSubtitle 0.4s ease-in 2.5s 1 normal forwards;
+}
+@-webkit-keyframes showSubtitle {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 @keyframes showSubtitle {
   0% {
@@ -185,49 +196,66 @@ p {
 /* Design Product */
 .designiconBkgnd {
   fill: #ee5f24;
+  -webkit-transform-origin: 21% 53%;
+  -ms-transform-origin: 21% 53%;
   transform-origin: 21% 53%;
 }
 
 /* Procure Packaging */
 .packagingiconBkgnd {
   fill: #ee5f24;
+  -webkit-transform-origin: 33% 35%;
+  -ms-transform-origin: 33% 35%;
   transform-origin: 33% 35%;
 }
 
 /* Manufacture Product */
 .manufactureiconBkgnd {
   fill: #ee5f24;
+  -webkit-transform-origin: 46% 31%;
+  -ms-transform-origin: 46% 31%;
   transform-origin: 46% 31%;
 }
 
 /* Warehouse Product */
 .warehouseiconBkgnd {
   fill: #ee5f24;
+  -webkit-transform-origin: 59% 25%;
+  -ms-transform-origin: 59% 25%;
   transform-origin: 59% 25%;
 }
 
 /* Corporate HQ */
 .headquartersiconBkgnd {
   fill: #ee5f24;
+  -webkit-transform-origin: 53% 48%;
+  -ms-transform-origin: 53% 48%;
   transform-origin: 53% 48%;
 }
 
 /* Airplanes and Truck */
 #plane1icon {
   fill: #808285;
+  -webkit-transform-origin: 39% 23%;
+  -ms-transform-origin: 39% 23%;
   transform-origin: 39% 23%;
 }
 #plane2icon {
   fill: #808285;
+  -webkit-transform-origin: 50% 90%;
+  -ms-transform-origin: 50% 90%;
   transform-origin: 50% 90%;
 }
 #truckicon {
   fill: #808285;
+  -webkit-transform-origin: 39% 23%;
+  -ms-transform-origin: 39% 23%;
   transform-origin: 39% 23%;
 }
 
 /* size and center animation on web page */
 /* responsive to screen size */
+/*
 @media only screen and (max-width: 600px) {
   #efficienciesAnimation,
   #typicalAnimation {
@@ -237,3 +265,4 @@ p {
     width: 85%;
   }
 }
+*/
