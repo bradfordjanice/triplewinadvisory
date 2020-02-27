@@ -134,6 +134,12 @@ p {
 .iconRed {
   fill: #ee5f24;
 }
+.iconGreen {
+  fill: #8db845;
+}
+.iconDkBlue {
+  fill: #193e4f;
+}
 .iconlabel {
   fill: #231f20;
   font-size: 14px;
