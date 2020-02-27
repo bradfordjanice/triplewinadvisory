@@ -137,9 +137,6 @@ p {
 .iconGreen {
   fill: #8db845;
 }
-.iconDkBlue {
-  fill: #193e4f;
-}
 .iconlabel {
   fill: #231f20;
   font-size: 14px;
@@ -261,14 +258,12 @@ p {
 
 /* size and center animation on web page */
 /* responsive to screen size */
-/*
 @media only screen and (max-width: 600px) {
   #efficienciesAnimation,
   #typicalAnimation {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 85%;
+    width: 95%;
   }
 }
-*/
