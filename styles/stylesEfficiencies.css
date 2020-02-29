@@ -46,20 +46,6 @@
   }
 }
 
-/* Button Group */
-#typicalbtnOutline {
-  opacity: 0%;
-}
-#circularbtnOutline {
-  opacity: 0%;
-}
-#efficiencybtnOutline {
-  opacity: 100%;
-}
-#ecologybtnOutline {
-  opacity: 0%;
-}
-
 /* VALUE CHAIN EFFICIENCIES */
 /* show icon group after title animation is done */
 .efficienciesIcongroup {

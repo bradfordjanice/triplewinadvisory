@@ -46,20 +46,6 @@
   }
 }
 
-/* Button Group */
-#typicalbtnOutline {
-  opacity: 100%;
-}
-#circularbtnOutline {
-  opacity: 0%;
-}
-#efficiencybtnOutline {
-  opacity: 0%;
-}
-#ecologybtnOutline {
-  opacity: 0%;
-}
-
 /* show icons one at a time - left to right */
 @-webkit-keyframes loadChain {
   0% {

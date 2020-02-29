@@ -70,47 +70,87 @@ p {
 }
 
 /* Button Group */
-.buttonlabel {
-  font-size: 17px;
-  fill: #fff;
+.buttonBar {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+.button {
+  font-size: 12px;
+  color: #fff;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
+  text-align: center;
+  width: 24%;
+  padding: 10px 20px;
+  display: inline-block;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
-#typicalbtnOutline {
-  fill: none;
-  stroke: #ee5f24;
-  stroke-miterlimit: 10;
-  stroke-width: 2.02px;
+.typicalbtn {
+  border: 5px double #ee5f24;
+  background-color: #ee5f24;
+  padding: 10px 20px;
+  background-clip: padding-box;
 }
-.typicalbtnBkgnd {
-  fill: #ee5f24;
+.typicalbtn:hover {
+  background-color: #ffffff;
+  color: #ee5f24;
+  border: 5px double #ee5f24;
 }
-#circularbtnOutline {
-  fill: none;
-  stroke: #1b75bc;
-  stroke-miterlimit: 10;
-  stroke-width: 2.02px;
+.typicalbtn:active {
+  background-color: #ee5f24;
+  color: #ffffff;
 }
-.circularbtnBkgnd {
-  fill: #1b75bc;
+.circularbtn {
+  border: 5px double #1b75bc;
+  background-color: #1b75bc;
+  padding: 10px 20px;
+  background-clip: padding-box;
 }
-#efficiencybtnOutline {
-  fill: none;
-  stroke: #8db845;
-  stroke-miterlimit: 10;
-  stroke-width: 2.02px;
+.circularbtn:hover {
+  background-color: #ffffff;
+  color: #1b75bc;
+  border: 5px double #1b75bc;
 }
-.efficiencybtnBkgnd {
-  fill: #8db845;
+.circularbtn:active {
+  background-color: #1b75bc;
+  color: #ffffff;
 }
-#ecologybtnOutline {
-  fill: none;
-  stroke: #193e4f;
-  stroke-miterlimit: 10;
-  stroke-width: 2.02px;
+.efficiencybtn {
+  border: 5px double #8db845;
+  background-color: #8db845;
+  padding: 10px 20px;
+  background-clip: padding-box;
 }
-.ecologybtnBkgnd {
-  fill: #193e4f;
+.efficiencybtn:hover {
+  background-color: #ffffff;
+  color: #8db845;
+  border: 5px double #8db845;
+}
+.efficiencybtn:active {
+  background-color: #8db845;
+  color: #ffffff;
+}
+.ecologybtn {
+  border: 5px double #193e4f;
+  background-color: #193e4f;
+  padding: 10px 20px;
+  background-clip: padding-box;
+}
+.ecologybtn:hover {
+  background-color: #ffffff;
+  color: #193e4f;
+  border: 5px double #193e4f;
+}
+.ecologybtn:active {
+  background-color: #193e4f;
+  color: #ffffff;
 }
 .note {
   fill: #231f20;

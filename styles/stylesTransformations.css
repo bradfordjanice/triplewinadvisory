@@ -46,20 +46,6 @@
   }
 }
 
-/* Button Group */
-#typicalbtnOutline {
-  opacity: 0%;
-}
-#circularbtnOutline {
-  opacity: 0%;
-}
-#efficiencybtnOutline {
-  opacity: 0%;
-}
-#ecologybtnOutline {
-  opacity: 100%;
-}
-
 /* TRANSFORMATIONS VALUE CHAIN */
 /* show icon group after title animation is done */
 .transformationsIcongroup {
