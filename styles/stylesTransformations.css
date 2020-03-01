@@ -13,13 +13,13 @@
 }
 @-webkit-keyframes zoomout {
   0% {
-    -webkit-transform: translate(250px, 400px);
-    transform: translate(250px, 400px);
+    -webkit-transform: translate(150px, 400px);
+    transform: translate(150px, 400px);
     font-size: 4em;
   }
   60% {
-    -webkit-transform: translate(250px, 400px);
-    transform: translate(250px, 400px);
+    -webkit-transform: translate(150px, 400px);
+    transform: translate(150px, 400px);
     font-size: 4em;
   }
   100% {
@@ -30,13 +30,13 @@
 }
 @keyframes zoomout {
   0% {
-    -webkit-transform: translate(250px, 400px);
-    transform: translate(250px, 400px);
+    -webkit-transform: translate(150px, 400px);
+    transform: translate(150px, 400px);
     font-size: 4em;
   }
   60% {
-    -webkit-transform: translate(250px, 400px);
-    transform: translate(250px, 400px);
+    -webkit-transform: translate(150px, 400px);
+    transform: translate(150px, 400px);
     font-size: 4em;
   }
   100% {
@@ -238,4 +238,341 @@
   stroke-dashoffset: 0;
   -webkit-animation: singleArrow 2s linear 15s infinite normal forwards;
   animation: singleArrow 2s linear 15s infinite normal forwards;
+}
+
+/* Tooltips */
+/* Design Product */
+.designiconBkgndPulse {
+  fill: #ee5f24;
+  -webkit-animation: pulse 2.25s infinite;
+  animation: pulse 2.25s infinite;
+  -webkit-transform-origin: 21% 49%;
+  -ms-transform-origin: 21% 49%;
+  transform-origin: 21% 49%;
+}
+#designiconHotspot {
+  fill: none;
+  -webkit-transform-origin: 21% 49%;
+  -ms-transform-origin: 21% 49%;
+  transform-origin: 21% 49%;
+}
+#designtooltip {
+  width: 230px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #193e4f;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#designtooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #193e4f;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
+/* Source Raw Materials */
+.materialsiconBkgndPulse {
+  fill: #ee5f24;
+  -webkit-animation: pulse 2.25s infinite;
+  animation: pulse 2.25s infinite;
+  -webkit-transform-origin: 24% 37%;
+  -ms-transform-origin: 24% 37%;
+  transform-origin: 24% 37%;
+}
+#materialsiconHotspot {
+  fill: none;
+  -webkit-transform-origin: 24% 37%;
+  -ms-transform-origin: 24% 37%;
+  transform-origin: 24% 37%;
+}
+#materialstooltip {
+  width: 230px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #193e4f;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#materialstooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #193e4f;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
+/* Procure Packaging */
+.packagingiconBkgndPulse {
+  fill: #ee5f24;
+  -webkit-animation: pulse 2.25s infinite;
+  animation: pulse 2.25s infinite;
+  -webkit-transform-origin: 34% 29%;
+  -ms-transform-origin: 34% 29%;
+  transform-origin: 34% 29%;
+}
+#packagingiconHotspot {
+  fill: none;
+  -webkit-transform-origin: 34% 29%;
+  -ms-transform-origin: 34% 29%;
+  transform-origin: 34% 29%;
+}
+#packagingtooltip {
+  width: 300px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #193e4f;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#packagingtooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #193e4f;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
+
+/* Manufacture Product */
+.manufactureiconBkgndPulse {
+  fill: #ee5f24;
+  -webkit-animation: pulse 2.25s infinite;
+  animation: pulse 2.25s infinite;
+  -webkit-transform-origin: 46% 27%;
+  -ms-transform-origin: 46% 27%;
+  transform-origin: 46% 27%;
+}
+#manufactureiconHotspot {
+  fill: none;
+  -webkit-transform-origin: 46% 27%;
+  -ms-transform-origin: 46% 27%;
+  transform-origin: 46% 27%;
+}
+#manufacturetooltip {
+  width: 220px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #193e4f;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#manufacturetooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #193e4f;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
+@-webkit-keyframes pulse {
+  0% {
+    fill: #ee5f24;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+  50% {
+    fill: #193e4f;
+    -webkit-transform: scale(1.15, 1.15);
+    transform: scale(1.15, 1.15);
+  }
+  100% {
+    fill: #ee5f24;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    fill: #ee5f24;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+  50% {
+    fill: #193e4f;
+    -webkit-transform: scale(1.15, 1.15);
+    transform: scale(1.15, 1.15);
+  }
+  100% {
+    fill: #ee5f24;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+/* Refurbish Product */
+.refurbishiconBkgndPulse {
+  fill: #193e4f;
+  -webkit-animation: pulseBlue 2.25s infinite;
+  animation: pulseBlue 2.25s infinite;
+  -webkit-transform-origin: 67% 52%;
+  -ms-transform-origin: 67% 52%;
+  transform-origin: 67% 52%;
+}
+#refurbishiconHotspot {
+  fill: none;
+  -webkit-transform-origin: 67% 52%;
+  -ms-transform-origin: 67% 52%;
+  transform-origin: 67% 52%;
+}
+#refurbishtooltip {
+  width: 220px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #193e4f;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#refurbishtooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #193e4f;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
+
+/* Upcycle */
+.upcycleiconBkgndPulse {
+  fill: #193e4f;
+  -webkit-animation: pulseBlue 2.25s infinite;
+  animation: pulseBlue 2.25s infinite;
+  -webkit-transform-origin: 37% 52%;
+  -ms-transform-origin: 37% 52%;
+  transform-origin: 37% 52%;
+}
+#upcycleiconHotspot {
+  fill: none;
+  -webkit-transform-origin: 37% 52%;
+  -ms-transform-origin: 37% 52%;
+  transform-origin: 37% 52%;
+}
+#upcycletooltip {
+  width: 220px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #193e4f;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#upcycletooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #193e4f;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
+
+/* Downcycle */
+.downcycleiconBkgndPulse {
+  fill: #193e4f;
+  -webkit-animation: pulseBlue 2.25s infinite;
+  animation: pulseBlue 2.25s infinite;
+  -webkit-transform-origin: 30% 65%;
+  -ms-transform-origin: 30% 65%;
+  transform-origin: 30% 65%;
+}
+#downcycleiconHotspot {
+  fill: none;
+  -webkit-transform-origin: 30% 65%;
+  -ms-transform-origin: 30% 65%;
+  transform-origin: 30% 65%;
+}
+#downcycletooltip {
+  width: 220px;
+  padding: 20px 10px 20px 8px;
+  font-size: 1em;
+  background-color: #193e4f;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+#downcycletooltip::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #193e4f;
+  position: absolute;
+  left: -6px;
+  top: 40px;
+}
+
+@-webkit-keyframes pulseBlue {
+  0% {
+    fill: #1b75bc;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+  50% {
+    fill: #193e4f;
+    -webkit-transform: scale(1.15, 1.15);
+    transform: scale(1.15, 1.15);
+  }
+  100% {
+    fill: #1b75bc;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes pulseBlue {
+  0% {
+    fill: #1b75bc;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+  50% {
+    fill: #193e4f;
+    -webkit-transform: scale(1.15, 1.15);
+    transform: scale(1.15, 1.15);
+  }
+  100% {
+    fill: #1b75bc;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
 }

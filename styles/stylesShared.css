@@ -154,9 +154,10 @@ p {
 }
 .note {
   fill: #231f20;
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
+  margin-top: 0.5em;
 }
 
 /* icons */
@@ -177,6 +178,9 @@ p {
 }
 .iconGreen {
   fill: #8db845;
+}
+.iconDarkBlue {
+  fill: #193e4f;
 }
 .iconlabel {
   fill: #231f20;
@@ -238,12 +242,14 @@ p {
   fill: #231f20;
 }
 /* Design Product */
+/*
 .designiconBkgnd {
   fill: #ee5f24;
   -webkit-transform-origin: 21% 53%;
   -ms-transform-origin: 21% 53%;
   transform-origin: 21% 53%;
 }
+*/
 
 /* Procure Packaging */
 .packagingiconBkgnd {
