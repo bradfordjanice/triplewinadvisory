@@ -240,6 +240,34 @@
   animation: singleArrow 2s linear 15s infinite normal forwards;
 }
 
+/* Tooltip list styling */
+ul.tooltipList {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+li.tooltipItem {
+  font-size: 1em;
+  color: #ffffff;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0.5em 0;
+  padding-left: 1em;
+}
+ul.tooltipSublist {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 0.5em;
+  padding-left: 1em;
+  text-indent: -1.3em;
+}
+li.tooltipSublistItem {
+  font-size: 0.9em;
+  color: #ffffff;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0.3em 0;
+  padding-left: 0;
+}
+
 /* Tooltips */
 /* Design Product */
 .designiconBkgndPulse {
@@ -257,7 +285,7 @@
   transform-origin: 21% 49%;
 }
 #designtooltip {
-  width: 230px;
+  width: 300px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
   background-color: #193e4f;
@@ -293,7 +321,7 @@
   transform-origin: 24% 37%;
 }
 #materialstooltip {
-  width: 230px;
+  width: 250px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
   background-color: #193e4f;
@@ -366,7 +394,7 @@
   transform-origin: 46% 27%;
 }
 #manufacturetooltip {
-  width: 220px;
+  width: 300px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
   background-color: #193e4f;
@@ -442,7 +470,7 @@
   transform-origin: 67% 52%;
 }
 #refurbishtooltip {
-  width: 220px;
+  width: 250px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
   background-color: #193e4f;
@@ -479,7 +507,7 @@
   transform-origin: 37% 52%;
 }
 #upcycletooltip {
-  width: 220px;
+  width: 300px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
   background-color: #193e4f;
@@ -516,7 +544,7 @@
   transform-origin: 30% 65%;
 }
 #downcycletooltip {
-  width: 220px;
+  width: 300px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
   background-color: #193e4f;
@@ -536,7 +564,6 @@
   left: -6px;
   top: 40px;
 }
-
 @-webkit-keyframes pulseBlue {
   0% {
     fill: #1b75bc;
