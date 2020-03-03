@@ -14,12 +14,12 @@
 @-webkit-keyframes zoomout {
   0% {
     -webkit-transform: translate(120px, 400px);
-    transform: translate(150px, 400px);
+    transform: translate(120px, 400px);
     font-size: 4em;
   }
   60% {
     -webkit-transform: translate(120px, 400px);
-    transform: translate(150px, 400px);
+    transform: translate(120px, 400px);
     font-size: 4em;
   }
   100% {
