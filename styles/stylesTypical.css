@@ -49,88 +49,88 @@
 /* show icons one at a time - left to right */
 @-webkit-keyframes loadChain {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   50% {
-    opacity: 100%;
+    opacity: 1;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @keyframes loadChain {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   50% {
-    opacity: 100%;
+    opacity: 1;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 #designIconGrp {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: loadChain 1s ease-in 3.5s 1 normal forwards;
   animation: loadChain 1s ease-in 3.5s 1 normal forwards;
 }
 #materialsIconGrp {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: loadChain 1s ease-in 4.5s 1 normal forwards;
   animation: loadChain 1s ease-in 4.5s 1 normal forwards;
 }
 #packagingIconGrp {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: loadChain 1s ease-in 5.5s 1 normal forwards;
   animation: loadChain 1s ease-in 5.5s 1 normal forwards;
 }
 #plane1IconGrp {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: loadChain 1s ease-in 6.5s 1 normal forwards;
   animation: loadChain 1s ease-in 6.5s 1 normal forwards;
 }
 #manufactureIconGrp {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: loadChain 1s ease-in 7.5s 1 normal forwards;
   animation: loadChain 1s ease-in 7.5s 1 normal forwards;
 }
 #shipIconGrp {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: loadChain 1s ease-in 8.5s 1 normal forwards;
   animation: loadChain 1s ease-in 8.5s 1 normal forwards;
 }
 #warehouseIconGrp {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: loadChain 1s ease-in 9.5s 1 normal forwards;
   animation: loadChain 1s ease-in 9.5s 1 normal forwards;
 }
 #truckIconGrp {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: loadChain 1s ease-in 10.5s 1 normal forwards;
   animation: loadChain 1s ease-in 10.5s 1 normal forwards;
 }
 #sellIconGrp {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: loadChain 1s ease-in 11.5s 1 normal forwards;
   animation: loadChain 1s ease-in 11.5s 1 normal forwards;
 }
 #purchaseIconGrp {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: loadChain 1s ease-in 12.5s 1 normal forwards;
   animation: loadChain 1s ease-in 12.5s 1 normal forwards;
 }
 #disposeIconGrp {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: loadChain 1s ease-in 13.5s 1 normal forwards;
   animation: loadChain 1s ease-in 13.5s 1 normal forwards;
 }
 #landfillIconGrp {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: loadChain 1s ease-in 14.5s 1 normal forwards;
   animation: loadChain 1s ease-in 14.5s 1 normal forwards;
 }
 #incinerationIconGrp {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: loadChain 1s ease-in 15.5s 1 normal forwards;
   animation: loadChain 1s ease-in 15.5s 1 normal forwards;
 }

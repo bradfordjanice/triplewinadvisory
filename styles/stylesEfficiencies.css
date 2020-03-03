@@ -13,35 +13,35 @@
 }
 @-webkit-keyframes zoomout {
   0% {
-    -webkit-transform: translate(250px, 400px);
-    transform: translate(250px, 400px);
+    -webkit-transform: translate(150px, 400px);
+    transform: translate(150px, 400px);
     font-size: 4em;
   }
   60% {
-    -webkit-transform: translate(250px, 400px);
-    transform: translate(250px, 400px);
+    -webkit-transform: translate(150px, 400px);
+    transform: translate(150px, 400px);
     font-size: 4em;
   }
   100% {
-    -webkit-transform: translate(447.4px, 32.9px);
-    transform: translate(447.4px, 32.9px);
+    -webkit-transform: translate(347.4px, 32.9px);
+    transform: translate(347.4px, 32.9px);
     font-size: 30px;
   }
 }
 @keyframes zoomout {
   0% {
-    -webkit-transform: translate(250px, 400px);
-    transform: translate(250px, 400px);
+    -webkit-transform: translate(150px, 400px);
+    transform: translate(150px, 400px);
     font-size: 4em;
   }
   60% {
-    -webkit-transform: translate(250px, 400px);
-    transform: translate(250px, 400px);
+    -webkit-transform: translate(150px, 400px);
+    transform: translate(150px, 400px);
     font-size: 4em;
   }
   100% {
-    -webkit-transform: translate(447.4px, 32.9px);
-    transform: translate(447.4px, 32.9px);
+    -webkit-transform: translate(347.4px, 32.9px);
+    transform: translate(347.4px, 32.9px);
     font-size: 30px;
   }
 }
@@ -49,25 +49,239 @@
 /* VALUE CHAIN EFFICIENCIES */
 /* show icon group after title animation is done */
 .efficienciesIcongroup {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: showEfficiencies 0.6s ease-in 2.5s 1 normal forwards;
   animation: showEfficiencies 0.6s ease-in 2.5s 1 normal forwards;
 }
 @-webkit-keyframes showEfficiencies {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @keyframes showEfficiencies {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
+}
+
+/* show icons one at a time - left to right */
+@-webkit-keyframes loadChain {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loadChain {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#designIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 3.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 3.5s 1 normal forwards;
+}
+#materialsIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 4.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 4.5s 1 normal forwards;
+}
+#packagingIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 5.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 5.5s 1 normal forwards;
+}
+#plane1IconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 6.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 6.5s 1 normal forwards;
+}
+#manufactureIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 7.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 7.5s 1 normal forwards;
+}
+#shipIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 8.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 8.5s 1 normal forwards;
+}
+#warehouseIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 9.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 9.5s 1 normal forwards;
+}
+#truckIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 10.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 10.5s 1 normal forwards;
+}
+#sellIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 11.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 11.5s 1 normal forwards;
+}
+#purchaseIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 12.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 12.5s 1 normal forwards;
+}
+
+#nusesIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 13.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 13.5s 1 normal forwards;
+}
+#refurbishIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 14.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 14.5s 1 normal forwards;
+}
+#endofuseIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 19s 1 normal forwards;
+  animation: loadChain 1s ease-in 19s 1 normal forwards;
+}
+#collectionIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 20s 1 normal forwards;
+  animation: loadChain 1s ease-in 20s 1 normal forwards;
+}
+#plane2IconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 21s 1 normal forwards;
+  animation: loadChain 1s ease-in 21s 1 normal forwards;
+}
+#useIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 22s 1 normal forwards;
+  animation: loadChain 1s ease-in 22s 1 normal forwards;
+}
+#upcycleIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 25s 1 normal forwards;
+  animation: loadChain 1s ease-in 25s 1 normal forwards;
+}
+#upcycle-materials-arrow {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 26s 1 normal forwards;
+  animation: loadChain 1s ease-in 26s 1 normal forwards;
+}
+#downcycleIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 27s 1 normal forwards;
+  animation: loadChain 1s ease-in 27s 1 normal forwards;
+}
+#revalorize {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 28s 1 normal forwards;
+  animation: loadChain 1s ease-in 28s 1 normal forwards;
+}
+#downcycle-design-path {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 28.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 28.5s 1 normal forwards;
+}
+#disposeIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 31.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 31.5s 1 normal forwards;
+}
+#wastetoenergyIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 32.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 32.5s 1 normal forwards;
+}
+#corporateIconGrp {
+  opacity: 0;
+  -webkit-animation: loadChain 1s ease-in 33.5s 1 normal forwards;
+  animation: loadChain 1s ease-in 33.5s 1 normal forwards;
+}
+
+@-webkit-keyframes singleArrow {
+  0% {
+    opacity: 1;
+    stroke-dashoffset: 25;
+  }
+  100% {
+    opacity: 1;
+    stroke-dashoffset: -25;
+  }
+}
+@keyframes singleArrow {
+  0% {
+    opacity: 1;
+    stroke-dashoffset: 25;
+  }
+  100% {
+    opacity: 1;
+    stroke-dashoffset: -25;
+  }
+}
+@-webkit-keyframes doubleArrow {
+  0% {
+    opacity: 1;
+    stroke-dashoffset: 25;
+  }
+  100% {
+    opacity: 1;
+    stroke-dashoffset: -25;
+  }
+}
+@keyframes doubleArrow {
+  0% {
+    opacity: 1;
+    stroke-dashoffset: 25;
+  }
+  100% {
+    opacity: 1;
+    stroke-dashoffset: -25;
+  }
+}
+#purchase-refurbish-arrow {
+  opacity: 0;
+  stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+  animation: doubleArrow 2s ease-in-out 15.5s infinite alternate-reverse
+    forwards;
+}
+#nuses-refurbish-arrow {
+  opacity: 0;
+  stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+  animation: doubleArrow 2s ease-in-out 15.5s infinite alternate-reverse
+    forwards;
+}
+#collection-refurbish-arrow {
+  opacity: 0;
+  stroke-dasharray: 12.5;
+  stroke-dashoffset: 0;
+  -webkit-animation: singleArrow 2s linear 23s infinite normal forwards;
+  animation: singleArrow 2s linear 23s infinite normal forwards;
+}
+#use-refurbish-arrow {
+  opacity: 0;
+  stroke-dasharray: 12.5;
+  stroke-dashoffset: 0;
+  -webkit-animation: singleArrow 2s linear 23s infinite normal forwards;
+  animation: singleArrow 2s linear 23s infinite normal forwards;
 }
 
 /* Tooltip list styling */
@@ -492,218 +706,4 @@ li.tooltipSublistItem {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
-}
-
-/* show icons one at a time - left to right */
-@-webkit-keyframes loadChain {
-  0% {
-    opacity: 0%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-@keyframes loadChain {
-  0% {
-    opacity: 0%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-#designIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 3.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 3.5s 1 normal forwards;
-}
-#materialsIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 4.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 4.5s 1 normal forwards;
-}
-#packagingIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 5.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 5.5s 1 normal forwards;
-}
-#plane1IconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 6.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 6.5s 1 normal forwards;
-}
-#manufactureIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 7.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 7.5s 1 normal forwards;
-}
-#shipIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 8.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 8.5s 1 normal forwards;
-}
-#warehouseIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 9.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 9.5s 1 normal forwards;
-}
-#truckIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 10.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 10.5s 1 normal forwards;
-}
-#sellIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 11.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 11.5s 1 normal forwards;
-}
-#purchaseIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 12.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 12.5s 1 normal forwards;
-}
-#nusesIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 13.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 13.5s 1 normal forwards;
-}
-#refurbishIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 14.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 14.5s 1 normal forwards;
-}
-#endofuseIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 19s 1 normal forwards;
-  animation: loadChain 1s ease-in 19s 1 normal forwards;
-}
-#collectionIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 20s 1 normal forwards;
-  animation: loadChain 1s ease-in 20s 1 normal forwards;
-}
-#plane2IconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 21s 1 normal forwards;
-  animation: loadChain 1s ease-in 21s 1 normal forwards;
-}
-#useIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 22s 1 normal forwards;
-  animation: loadChain 1s ease-in 22s 1 normal forwards;
-}
-#upcycleIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 25s 1 normal forwards;
-  animation: loadChain 1s ease-in 25s 1 normal forwards;
-}
-#upcycle-materials-arrow {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 26s 1 normal forwards;
-  animation: loadChain 1s ease-in 26s 1 normal forwards;
-}
-#downcycleIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 27s 1 normal forwards;
-  animation: loadChain 1s ease-in 27s 1 normal forwards;
-}
-#revalorize {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 28s 1 normal forwards;
-  animation: loadChain 1s ease-in 28s 1 normal forwards;
-}
-#downcycle-design-path {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 28.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 28.5s 1 normal forwards;
-}
-#disposeIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 31.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 31.5s 1 normal forwards;
-}
-#wastetoenergyIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 32.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 32.5s 1 normal forwards;
-}
-#corporateIconGrp {
-  opacity: 0%;
-  -webkit-animation: loadChain 1s ease-in 33.5s 1 normal forwards;
-  animation: loadChain 1s ease-in 33.5s 1 normal forwards;
-}
-
-@-webkit-keyframes singleArrow {
-  0% {
-    opacity: 100%;
-    stroke-dashoffset: 25;
-  }
-  100% {
-    opacity: 100%;
-    stroke-dashoffset: -25;
-  }
-}
-
-@keyframes singleArrow {
-  0% {
-    opacity: 100%;
-    stroke-dashoffset: 25;
-  }
-  100% {
-    opacity: 100%;
-    stroke-dashoffset: -25;
-  }
-}
-@-webkit-keyframes doubleArrow {
-  0% {
-    opacity: 100%;
-    stroke-dashoffset: 25;
-  }
-  100% {
-    opacity: 100%;
-    stroke-dashoffset: -25;
-  }
-}
-@keyframes doubleArrow {
-  0% {
-    opacity: 100%;
-    stroke-dashoffset: 25;
-  }
-  100% {
-    opacity: 100%;
-    stroke-dashoffset: -25;
-  }
-}
-#purchase-refurbish-arrow {
-  opacity: 0%;
-  stroke-dasharray: 10;
-  stroke-dashoffset: 0;
-  animation: doubleArrow 2s ease-in-out 15.5s infinite alternate-reverse
-    forwards;
-}
-#nuses-refurbish-arrow {
-  opacity: 0%;
-  stroke-dasharray: 10;
-  stroke-dashoffset: 0;
-  animation: doubleArrow 2s ease-in-out 15.5s infinite alternate-reverse
-    forwards;
-}
-#collection-refurbish-arrow {
-  opacity: 0%;
-  stroke-dasharray: 12.5;
-  stroke-dashoffset: 0;
-  -webkit-animation: singleArrow 2s linear 23s infinite normal forwards;
-  animation: singleArrow 2s linear 23s infinite normal forwards;
-}
-#use-refurbish-arrow {
-  opacity: 0%;
-  stroke-dasharray: 12.5;
-  stroke-dashoffset: 0;
-  -webkit-animation: singleArrow 2s linear 23s infinite normal forwards;
-  animation: singleArrow 2s linear 23s infinite normal forwards;
 }
