@@ -248,6 +248,9 @@ li.tooltipSublistItem {
 
 /* Tooltips */
 /* Design Product */
+#designicon:focus {
+  outline: 1px solid #ee5f24;
+}
 .designiconBkgndPulse {
   fill: #ee5f24;
   -webkit-animation: pulse 2.25s infinite;
@@ -284,6 +287,9 @@ li.tooltipSublistItem {
   top: 40px;
 }
 /* Source Raw Materials */
+#materialsicon:focus {
+  outline: 1px solid #ee5f24;
+}
 .materialsiconBkgndPulse {
   fill: #ee5f24;
   -webkit-animation: pulse 2.25s infinite;
@@ -320,6 +326,9 @@ li.tooltipSublistItem {
   top: 40px;
 }
 /* Procure Packaging */
+#packagingicon:focus {
+  outline: 1px solid #ee5f24;
+}
 .packagingiconBkgndPulse {
   fill: #ee5f24;
   -webkit-animation: pulse 2.25s infinite;
@@ -357,6 +366,9 @@ li.tooltipSublistItem {
 }
 
 /* Manufacture Product */
+#manufactureicon:focus {
+  outline: 1px solid #ee5f24;
+}
 .manufactureiconBkgndPulse {
   fill: #ee5f24;
   -webkit-animation: pulse 2.25s infinite;
@@ -433,6 +445,9 @@ li.tooltipSublistItem {
 }
 
 /* Refurbish Product */
+#refurbishicon:focus {
+  outline: 1px solid #1b75bc;
+}
 .refurbishiconBkgndPulse {
   fill: #193e4f;
   -webkit-animation: pulseBlue 2.25s infinite;
@@ -470,6 +485,9 @@ li.tooltipSublistItem {
 }
 
 /* Upcycle */
+#upcycleicon:focus {
+  outline: 1px solid #1b75bc;
+}
 .upcycleiconBkgndPulse {
   fill: #193e4f;
   -webkit-animation: pulseBlue 2.25s infinite;
@@ -507,6 +525,9 @@ li.tooltipSublistItem {
 }
 
 /* Downcycle */
+#downcycleicon:focus {
+  outline: 1px solid #1b75bc;
+}
 .downcycleiconBkgndPulse {
   fill: #193e4f;
   -webkit-animation: pulseBlue 2.25s infinite;

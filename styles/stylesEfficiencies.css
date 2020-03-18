@@ -313,6 +313,9 @@ li.tooltipSublistItem {
 }
 
 /* Tooltips */
+#designicon:focus {
+  outline: 1px solid #ee5f24;
+}
 .designiconBkgndPulse {
   fill: #ee5f24;
   -webkit-animation: pulse 2.25s infinite;
@@ -350,6 +353,9 @@ li.tooltipSublistItem {
 }
 
 /* Procure Packaging */
+#packagingicon:focus {
+  outline: 1px solid #ee5f24;
+}
 .packagingiconBkgndPulse {
   fill: #ee5f24;
   -webkit-animation: pulse 2.25s infinite;
@@ -387,6 +393,9 @@ li.tooltipSublistItem {
 }
 
 /* Manufacture Product */
+#manufactureicon:focus {
+  outline: 1px solid #ee5f24;
+}
 .manufactureiconBkgndPulse {
   fill: #ee5f24;
   -webkit-animation: pulse 2.25s infinite;
@@ -424,6 +433,9 @@ li.tooltipSublistItem {
 }
 
 /* Warehouse Product */
+#warehouseicon:focus {
+  outline: 1px solid #ee5f24;
+}
 .warehouseiconBkgndPulse {
   fill: #ee5f24;
   -webkit-animation: pulse 2.25s infinite;
@@ -461,6 +473,9 @@ li.tooltipSublistItem {
 }
 
 /* Corporate HQ */
+#headquartersicon:focus {
+  outline: 1px solid #ee5f24;
+}
 .headquartersiconBkgndPulse {
   fill: #ee5f24;
   -webkit-animation: pulse 2.25s infinite;
@@ -558,6 +573,9 @@ li.tooltipSublistItem {
 }
 
 /* Airplanes and Truck */
+#plane1iconPulse:focus {
+  outline: 1px solid #808285;
+}
 #plane1iconPulse {
   fill: #808285;
   -webkit-animation: pulseicon 2.25s infinite;
@@ -593,6 +611,9 @@ li.tooltipSublistItem {
   left: -6px;
   top: 40px;
 }
+#plane2iconPulse:focus {
+  outline: 1px solid #808285;
+}
 #plane2iconPulse {
   fill: #808285;
   -webkit-animation: pulseicon 2.25s infinite;
@@ -627,6 +648,9 @@ li.tooltipSublistItem {
   position: absolute;
   left: -6px;
   top: 265px;
+}
+#truckiconPulse:focus {
+  outline: 1px solid #808285;
 }
 #truckiconPulse {
   fill: #808285;

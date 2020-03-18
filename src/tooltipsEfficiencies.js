@@ -1,10 +1,13 @@
 // Design
 const designicon = document.getElementById("designiconHotspot");
+const designiconTabfocus = document.getElementById("designicon");
 const designtooltip = document.getElementById("designtooltip");
 let designTimeoutFunction;
 
 designicon.addEventListener("mouseover", showDesignTooltip);
 designicon.addEventListener("mouseout", stopDesignTooltip);
+designiconTabfocus.addEventListener("focusin", showDesignTooltip);
+designiconTabfocus.addEventListener("focusout", stopDesignTooltip);
 
 function showDesignTooltip(event) {
   designTimeoutFunction = setTimeout(function() {
@@ -24,11 +27,14 @@ function stopDesignTooltip(event) {
 
 // Packaging
 const packagingicon = document.getElementById("packagingiconHotspot");
+const packagingiconTabfocus = document.getElementById("packagingicon");
 const packagingtooltip = document.getElementById("packagingtooltip");
 let packagingTimeoutFunction;
 
 packagingicon.addEventListener("mouseover", showPackagingTooltip);
 packagingicon.addEventListener("mouseout", stopPackagingTooltip);
+packagingiconTabfocus.addEventListener("focusin", showPackagingTooltip);
+packagingiconTabfocus.addEventListener("focusout", stopPackagingTooltip);
 
 function showPackagingTooltip(event) {
   packagingTimeoutFunction = setTimeout(function() {
@@ -47,11 +53,14 @@ function stopPackagingTooltip(event) {
 
 // Manufacture
 const manufactureicon = document.getElementById("manufactureiconHotspot");
+const manufactureiconTabfocus = document.getElementById("manufactureicon");
 const manufacturetooltip = document.getElementById("manufacturetooltip");
 let manufactureTimeoutFunction;
 
 manufactureicon.addEventListener("mouseover", showManufactureTooltip);
 manufactureicon.addEventListener("mouseout", stopManufactureTooltip);
+manufactureiconTabfocus.addEventListener("focusin", showManufactureTooltip);
+manufactureiconTabfocus.addEventListener("focusout", stopManufactureTooltip);
 
 function showManufactureTooltip(event) {
   manufactureTimeoutFunction = setTimeout(function() {
@@ -70,11 +79,14 @@ function stopManufactureTooltip(event) {
 
 // Warehouse
 const warehouseicon = document.getElementById("warehouseiconHotspot");
+const warehouseiconTabfocus = document.getElementById("warehouseicon");
 const warehousetooltip = document.getElementById("warehousetooltip");
 let warehouseTimeoutFunction;
 
 warehouseicon.addEventListener("mouseover", showWarehouseTooltip);
 warehouseicon.addEventListener("mouseout", stopWarehouseTooltip);
+warehouseiconTabfocus.addEventListener("focusin", showWarehouseTooltip);
+warehouseiconTabfocus.addEventListener("focusout", stopWarehouseTooltip);
 
 function showWarehouseTooltip(event) {
   warehouseiconFunction = setTimeout(function() {
@@ -93,12 +105,15 @@ function stopWarehouseTooltip(event) {
 
 // Headquarters
 const headquartersicon = document.getElementById("headquartersiconHotspot");
+const headquartersTabfocus = document.getElementById("headquartersicon");
 const headquarterstooltipL = document.getElementById("headquarterstooltipL");
 const headquarterstooltipR = document.getElementById("headquarterstooltipR");
 let headquartersTimeoutFunction;
 
 headquartersicon.addEventListener("mouseover", showHeadquartersTooltip);
 headquartersicon.addEventListener("mouseout", stopHeadquartersTooltip);
+headquartersTabfocus.addEventListener("focusin", showHeadquartersTooltip);
+headquartersTabfocus.addEventListener("focusout", stopHeadquartersTooltip);
 
 function showHeadquartersTooltip(event) {
   headquartersTimeoutFunction = setTimeout(function() {
@@ -122,11 +137,14 @@ function stopHeadquartersTooltip(event) {
 
 // Plane1
 const plane1icon = document.getElementById("plane1iconHotspot");
+const plane1iconTabfocus = document.getElementById("plane1iconPulse");
 const plane1tooltip = document.getElementById("plane1tooltip");
 let plane1TimeoutFunction;
 
 plane1icon.addEventListener("mouseover", showPlane1Tooltip);
 plane1icon.addEventListener("mouseout", stopPlane1Tooltip);
+plane1iconTabfocus.addEventListener("focusin", showPlane1Tooltip);
+plane1iconTabfocus.addEventListener("focusout", stopPlane1Tooltip);
 
 function showPlane1Tooltip(event) {
   plane1TimeoutFunction = setTimeout(function() {
@@ -144,11 +162,14 @@ function stopPlane1Tooltip(event) {
 
 // Plane2
 const plane2icon = document.getElementById("plane2iconHotspot");
+const plane2iconTabfocus = document.getElementById("plane2iconPulse");
 const plane2tooltip = document.getElementById("plane2tooltip");
 let plane2TimeoutFunction;
 
 plane2icon.addEventListener("mouseover", showPlane2Tooltip);
 plane2icon.addEventListener("mouseout", stopPlane2Tooltip);
+plane2iconTabfocus.addEventListener("focusin", showPlane2Tooltip);
+plane2iconTabfocus.addEventListener("focusout", stopPlane2Tooltip);
 
 function showPlane2Tooltip(event) {
   plane2TimeoutFunction = setTimeout(function() {
@@ -166,11 +187,14 @@ function stopPlane2Tooltip(event) {
 
 // Truck
 const truckicon = document.getElementById("truckiconHotspot");
+const truckTabfocus = document.getElementById("truckiconPulse");
 const trucktooltip = document.getElementById("trucktooltip");
 let truckTimeoutFunction;
 
 truckicon.addEventListener("mouseover", showtruckTooltip);
 truckicon.addEventListener("mouseout", stoptruckTooltip);
+truckTabfocus.addEventListener("focusin", showtruckTooltip);
+truckTabfocus.addEventListener("focusout", stoptruckTooltip);
 
 function showtruckTooltip(event) {
   truckTimeoutFunction = setTimeout(function() {
