@@ -43,6 +43,7 @@ Animator: Janice Bradford
               type="button"
               class="button typicalbtn"
               style="border-style: solid;"
+              tabindex="1"
             >
               TYPICAL VALUE CHAIN MODEL
             </button>
@@ -52,6 +53,7 @@ Animator: Janice Bradford
               type="button"
               class="button circularbtn"
               style="border-style: solid;"
+              tabindex="2"
             >
               CIRCULAR VALUE CHAIN MODEL
             </button>
@@ -61,11 +63,12 @@ Animator: Janice Bradford
               type="button"
               class="button efficiencybtn"
               style="border-style: solid;"
+              tabindex="3"
             >
               EFFICIENCY MEASURES
             </button>
           </a>
-          <button type="button" class="button ecologybtn">
+          <button type="button" class="button ecologybtn" tabindex="-1">
             INDUSTRIAL ECOLOGY MEASURES
           </button>
           <p class="note">Hover over pulsing icons to learn more.</p>
@@ -167,7 +170,7 @@ Animator: Janice Bradford
                   <tspan x="0" dy="1.1em">PRODUCT</tspan>
                 </text>
                 <!-- icon -->
-                <g id="designicon">
+                <g id="designicon" tabindex="4">
                   <!-- icon background-->
                   <circle
                     class="designiconBkgndPulse"
@@ -281,7 +284,7 @@ Animator: Janice Bradford
                   <tspan x="0" dy="1.1em">MATERIALS</tspan>
                 </text>
                 <!-- icon -->
-                <g id="materialsicon">
+                <g id="materialsicon" tabindex="5">
                   <!-- icon background -->
                   <circle
                     class="materialsiconBkgndPulse"
@@ -353,7 +356,7 @@ Animator: Janice Bradford
                   <tspan x="0" dy="1.1em">PACKAGING</tspan>
                 </text>
                 <!-- icon -->
-                <g id="packagingicon">
+                <g id="packagingicon" tabindex="6">
                   <!-- icon background -->
                   <circle
                     class="packagingiconBkgndPulse"
@@ -436,7 +439,7 @@ Animator: Janice Bradford
                   <tspan x="0" dy="1.1em">PRODUCT</tspan>
                 </text>
                 <!-- icon -->
-                <g id="manufactureicon">
+                <g id="manufactureicon" tabindex="7">
                   <!-- icon background -->
                   <circle
                     class="manufactureiconBkgndPulse"
@@ -783,30 +786,33 @@ Animator: Janice Bradford
                 <tspan x="0.2em" dy="1.1em">REFURBISH</tspan>
                 <tspan x="0" dy="1.1em">PRODUCT</tspan>
               </text>
-              <!-- icon background -->
-              <circle
-                class="refurbishiconBkgndPulse"
-                cx="795.38"
-                cy="510"
-                r="40.23"
-              />
-              <!-- icon-->
-              <g>
-                <path
-                  class="iconDrawing"
-                  d="M787.74,535.44a2.56,2.56,0,0,0-.15,1.1v.05a2.54,2.54,0,1,0,.15-1.15Zm2.71.12a.85.85,0,1,1-.31-.06A.81.81,0,0,1,790.45,535.56Z"
-                  transform="translate(17.96 -23.52)"
+              <!-- Refurbish Icon -->
+              <g id="refurbishicon" tabindex="8">
+                <!-- icon background -->
+                <circle
+                  class="refurbishiconBkgndPulse"
+                  cx="795.38"
+                  cy="510"
+                  r="40.23"
                 />
-                <path
-                  class="iconDrawing"
-                  d="M799.19,529.88a2.57,2.57,0,1,0-2.55-2.33A2.59,2.59,0,0,0,799.19,529.88Zm-.31-3.36a.81.81,0,0,1,.31-.06.84.84,0,0,1,.35.07.86.86,0,1,1-1.19.93A.84.84,0,0,1,798.88,526.52Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M804.77,525.15a6,6,0,0,0-7.75-3.43,6.61,6.61,0,0,0-3.64,4.16,5,5,0,0,1-.94-.18c-1.16-2.69-2.42-5.39-3.7-7.91a11,11,0,0,1,4.39-1.2,16,16,0,0,1,2,0,.86.86,0,1,0,.11-1.71,17.47,17.47,0,0,0-2.17,0,12.72,12.72,0,0,0-5.08,1.39c-2.56-4.91-5.09-8.94-6.72-10.58a.85.85,0,0,0-1.05-.12.86.86,0,0,0-.38,1c0,.07,1.89,5.9,4.6,12.7a13.3,13.3,0,0,0-1.5,2.65c-7.14-2.9-13.44-4.91-13.52-4.93a.85.85,0,0,0-.86,1.42c1.93,1.93,7.24,5.12,13.37,8.15a8.61,8.61,0,0,0,.49,3.1,12.88,12.88,0,0,0,2.51,3.84,5.12,5.12,0,0,0-.34.71A6,6,0,0,0,788,542a5.69,5.69,0,0,0,2.08.39l.34,0a6.05,6.05,0,0,1-.13,2.71.82.82,0,0,0,0,.38,8,8,0,0,1-1.23,2.21c-1.22,1.6-4.25,2.37-6.45,2.15a9.43,9.43,0,0,1-5-2.64l-.17-.11V532h.43a2.57,2.57,0,0,0,2.56-2.57v-1.71a.86.86,0,0,0-.85-.86H754.68a.86.86,0,0,0-.85.86v1.71A2.57,2.57,0,0,0,756.4,532h.42v19.68h-.42a2.57,2.57,0,0,0-2.57,2.57v1.71a.85.85,0,0,0,.85.85H779.5a.85.85,0,0,0,.85-.85v-1.71a2.57,2.57,0,0,0-2.56-2.57h-.43v-2.41a10.79,10.79,0,0,0,4.46,2.13v0l.42.06.5.08h.1a.85.85,0,0,0,.23,0h.22c2.36,0,5.52-.78,7.1-2.85a7.39,7.39,0,0,0,1.78-4.13h0a7.79,7.79,0,0,0,0-2.55,5.9,5.9,0,0,0,2.71-1.93c1.4-1.78,1.6-4.5.55-7.28l-.16-.42.41.16a10.21,10.21,0,0,0,3.49.68,5.91,5.91,0,0,0,5.7-8Zm-22.71-.43c-3-1.49-5.64-3-7.75-4.25,2.28.82,5.08,1.86,8,3C782.22,523.93,782.14,524.33,782.06,524.72Zm-4.27,28.64a.85.85,0,0,1,.85.86v.85h-23.1v-.85a.85.85,0,0,1,.86-.86Zm-14.36-1.71h-4.07l8.94-5.29,0,0,4.1-2.42a.81.81,0,0,0,.39-.23l2.82-1.67v2.3Zm12.22-5.34v5.34h-8.89Zm-3.51-4.2-3.17-1.5,6.68-3V540Zm-5.21-2.45-2-.95,10.72-5.36v2.35Zm-4-1.87-1.75-.83,7.84-5h5.54Zm-3.59-1.69-.84-.4V532h7.33Zm-.57,1.62a.85.85,0,0,0,.48.22l11.08,5.22-2.52,1.49L758.53,540v-2.41Zm7.29,8-2.59,1.53-5-2.13v-3.18Zm-4.42,2.61-3.14,1.85V547Zm-5.27-18a.86.86,0,0,1-.86-.86v-.85h23.1v.85a.86.86,0,0,1-.85.86Zm27.53-6.08c1,.4,1.92.81,2.88,1.24l.24.1c.27.63.53,1.27.77,1.91q-2.15-.95-4.15-1.91A12.19,12.19,0,0,1,783.93,524.18Zm.56-1.62a10.4,10.4,0,0,1,.7-1.37c.27.67.56,1.35.85,2Zm-.5,6.49a6.24,6.24,0,0,1-.36-1.65c1.61.77,3.25,1.51,4.89,2.21a4.44,4.44,0,0,1,.19.95,8.73,8.73,0,0,0-2.72,1.58A10.65,10.65,0,0,1,784,529.05Zm9.45,9.94a4.24,4.24,0,0,1-7.29-4.17c.55-1.41,1.73-2.11,3.33-2.72a1.43,1.43,0,0,0,.56-.35c.65-.69.39-2-.3-4l-.08-.25a31.56,31.56,0,0,0-1.17-3v0c-.09-.19-.16-.38-.24-.56-.73-1.64-1.43-3.3-2.07-4.91v0c-1.12-2.76-2.09-5.39-2.86-7.54a120.34,120.34,0,0,1,7.63,15c1,2.42,2,4.6,2.81,6.86C794.05,534.2,795,537.06,793.44,539Zm8.38-8.37c-1.93,1.52-4.8.61-5.62.29l-1.89-.73-1.07-2.6a1.65,1.65,0,0,0,1.3-.33,1.42,1.42,0,0,0,.39-.6,5.08,5.08,0,0,1,2.72-3.33,4.25,4.25,0,0,1,4.17,7.3Z"
-                  transform="translate(17.96 -23.52)"
-                />
+                <!-- icon-->
+                <g>
+                  <path
+                    class="iconDrawing"
+                    d="M787.74,535.44a2.56,2.56,0,0,0-.15,1.1v.05a2.54,2.54,0,1,0,.15-1.15Zm2.71.12a.85.85,0,1,1-.31-.06A.81.81,0,0,1,790.45,535.56Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M799.19,529.88a2.57,2.57,0,1,0-2.55-2.33A2.59,2.59,0,0,0,799.19,529.88Zm-.31-3.36a.81.81,0,0,1,.31-.06.84.84,0,0,1,.35.07.86.86,0,1,1-1.19.93A.84.84,0,0,1,798.88,526.52Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M804.77,525.15a6,6,0,0,0-7.75-3.43,6.61,6.61,0,0,0-3.64,4.16,5,5,0,0,1-.94-.18c-1.16-2.69-2.42-5.39-3.7-7.91a11,11,0,0,1,4.39-1.2,16,16,0,0,1,2,0,.86.86,0,1,0,.11-1.71,17.47,17.47,0,0,0-2.17,0,12.72,12.72,0,0,0-5.08,1.39c-2.56-4.91-5.09-8.94-6.72-10.58a.85.85,0,0,0-1.05-.12.86.86,0,0,0-.38,1c0,.07,1.89,5.9,4.6,12.7a13.3,13.3,0,0,0-1.5,2.65c-7.14-2.9-13.44-4.91-13.52-4.93a.85.85,0,0,0-.86,1.42c1.93,1.93,7.24,5.12,13.37,8.15a8.61,8.61,0,0,0,.49,3.1,12.88,12.88,0,0,0,2.51,3.84,5.12,5.12,0,0,0-.34.71A6,6,0,0,0,788,542a5.69,5.69,0,0,0,2.08.39l.34,0a6.05,6.05,0,0,1-.13,2.71.82.82,0,0,0,0,.38,8,8,0,0,1-1.23,2.21c-1.22,1.6-4.25,2.37-6.45,2.15a9.43,9.43,0,0,1-5-2.64l-.17-.11V532h.43a2.57,2.57,0,0,0,2.56-2.57v-1.71a.86.86,0,0,0-.85-.86H754.68a.86.86,0,0,0-.85.86v1.71A2.57,2.57,0,0,0,756.4,532h.42v19.68h-.42a2.57,2.57,0,0,0-2.57,2.57v1.71a.85.85,0,0,0,.85.85H779.5a.85.85,0,0,0,.85-.85v-1.71a2.57,2.57,0,0,0-2.56-2.57h-.43v-2.41a10.79,10.79,0,0,0,4.46,2.13v0l.42.06.5.08h.1a.85.85,0,0,0,.23,0h.22c2.36,0,5.52-.78,7.1-2.85a7.39,7.39,0,0,0,1.78-4.13h0a7.79,7.79,0,0,0,0-2.55,5.9,5.9,0,0,0,2.71-1.93c1.4-1.78,1.6-4.5.55-7.28l-.16-.42.41.16a10.21,10.21,0,0,0,3.49.68,5.91,5.91,0,0,0,5.7-8Zm-22.71-.43c-3-1.49-5.64-3-7.75-4.25,2.28.82,5.08,1.86,8,3C782.22,523.93,782.14,524.33,782.06,524.72Zm-4.27,28.64a.85.85,0,0,1,.85.86v.85h-23.1v-.85a.85.85,0,0,1,.86-.86Zm-14.36-1.71h-4.07l8.94-5.29,0,0,4.1-2.42a.81.81,0,0,0,.39-.23l2.82-1.67v2.3Zm12.22-5.34v5.34h-8.89Zm-3.51-4.2-3.17-1.5,6.68-3V540Zm-5.21-2.45-2-.95,10.72-5.36v2.35Zm-4-1.87-1.75-.83,7.84-5h5.54Zm-3.59-1.69-.84-.4V532h7.33Zm-.57,1.62a.85.85,0,0,0,.48.22l11.08,5.22-2.52,1.49L758.53,540v-2.41Zm7.29,8-2.59,1.53-5-2.13v-3.18Zm-4.42,2.61-3.14,1.85V547Zm-5.27-18a.86.86,0,0,1-.86-.86v-.85h23.1v.85a.86.86,0,0,1-.85.86Zm27.53-6.08c1,.4,1.92.81,2.88,1.24l.24.1c.27.63.53,1.27.77,1.91q-2.15-.95-4.15-1.91A12.19,12.19,0,0,1,783.93,524.18Zm.56-1.62a10.4,10.4,0,0,1,.7-1.37c.27.67.56,1.35.85,2Zm-.5,6.49a6.24,6.24,0,0,1-.36-1.65c1.61.77,3.25,1.51,4.89,2.21a4.44,4.44,0,0,1,.19.95,8.73,8.73,0,0,0-2.72,1.58A10.65,10.65,0,0,1,784,529.05Zm9.45,9.94a4.24,4.24,0,0,1-7.29-4.17c.55-1.41,1.73-2.11,3.33-2.72a1.43,1.43,0,0,0,.56-.35c.65-.69.39-2-.3-4l-.08-.25a31.56,31.56,0,0,0-1.17-3v0c-.09-.19-.16-.38-.24-.56-.73-1.64-1.43-3.3-2.07-4.91v0c-1.12-2.76-2.09-5.39-2.86-7.54a120.34,120.34,0,0,1,7.63,15c1,2.42,2,4.6,2.81,6.86C794.05,534.2,795,537.06,793.44,539Zm8.38-8.37c-1.93,1.52-4.8.61-5.62.29l-1.89-.73-1.07-2.6a1.65,1.65,0,0,0,1.3-.33,1.42,1.42,0,0,0,.39-.6,5.08,5.08,0,0,1,2.72-3.33,4.25,4.25,0,0,1,4.17,7.3Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                </g>
               </g>
               <!-- hot spot -->
               <circle
@@ -1254,434 +1260,437 @@ Animator: Janice Bradford
                 </g>
               </g>
               <!-- Upcycle icon -->
-              <!-- icon background -->
-              <circle
-                class="upcycleiconBkgndPulse"
-                cx="442.31"
-                cy="510"
-                r="40.23"
-              />
-              <g>
-                <path
-                  class="iconDrawing"
-                  d="M446.69,512.44H418a1,1,0,1,0,0,1.95h27.73v38.16H414.41a2.93,2.93,0,0,0,.17-1v-5.45a1,1,0,0,0,0-2v-5.84a1,1,0,1,0,0-1.94v-5.84a1,1,0,0,0,0-1.95v-5.84a1,1,0,1,0,0-1.94v-5.45a2.93,2.93,0,0,0-.17-1h4.06a1,1,0,0,0,0-1.95h-5.88l0-2.89a.93.93,0,0,0-.28-.7.94.94,0,0,0-.69-.29h-5.84a1,1,0,0,0-1,1l-.05,3.12a2.91,2.91,0,0,0-1.9,2.73v36.2a2.93,2.93,0,0,0,2,2.75v3.09a1,1,0,0,0,1,1h5.84a1,1,0,0,0,1-1v-2.92h34.06a1,1,0,0,0,1-1v-40.1A1,1,0,0,0,446.69,512.44ZM411.6,552.55h-5.78a1,1,0,0,1-1-1v-36.2a1,1,0,0,1,1-1h5.84a1,1,0,0,1,1,1v36.2a1,1,0,0,1-1,1Zm-.93-42,0,1.94h-3.89l0-1.94Zm-3.88,45.93v-2h3.9v2Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M441.83,518.87a1,1,0,0,0,0-2,1,1,0,0,0-1,1h0A1,1,0,0,0,441.83,518.87Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M440.85,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M440.85,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M440.85,541.25a1,1,0,1,0,1.95,0,1,1,0,0,0-1.95,0Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M440.85,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M437.93,522.76a1,1,0,1,0-1-1h0A1,1,0,0,0,437.93,522.76Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M437,529.58a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M437,537.36a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M437,545.15a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M434,518.87a1,1,0,1,0-1-1h0A1,1,0,0,0,434,518.87Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M433.07,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M433.07,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M433.07,541.25a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M433.07,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M430.15,522.76a1,1,0,1,0-1-1h0A1,1,0,0,0,430.15,522.76Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M429.18,529.58a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M429.18,537.36a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M429.18,545.15a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M426.26,518.87a1,1,0,0,0,0-2,1,1,0,0,0-1,1h0A1,1,0,0,0,426.26,518.87Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M425.28,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M425.28,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M425.28,541.25a1,1,0,1,0,2,0,1,1,0,0,0-2,0Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M425.28,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M422.36,520.82a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M422.36,528.6a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M422.36,536.39a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M422.36,544.17a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M418.47,516.92a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M418.47,524.71a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M418.47,532.49a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M418.47,540.28a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M418.47,548.06a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M410.69,516.92a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M410.69,524.71a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M410.69,532.49a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M410.69,540.28a1,1,0,0,0-1,1h0a1,1,0,1,0,2,0A1,1,0,0,0,410.69,540.28Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M410.69,548.06a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M406.79,520.82a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M406.79,528.6a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M406.79,536.39a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M406.79,544.17a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M446.69,512.44H418a1,1,0,1,0,0,1.95h27.73v38.16H414.41a2.93,2.93,0,0,0,.17-1v-5.45a1,1,0,0,0,0-2v-5.84a1,1,0,1,0,0-1.94v-5.84a1,1,0,0,0,0-1.95v-5.84a1,1,0,1,0,0-1.94v-5.45a2.93,2.93,0,0,0-.17-1h4.06a1,1,0,0,0,0-1.95h-5.88l0-2.89a.93.93,0,0,0-.28-.7.94.94,0,0,0-.69-.29h-5.84a1,1,0,0,0-1,1l-.05,3.12a2.91,2.91,0,0,0-1.9,2.73v36.2a2.93,2.93,0,0,0,2,2.75v3.09a1,1,0,0,0,1,1h5.84a1,1,0,0,0,1-1v-2.92h34.06a1,1,0,0,0,1-1v-40.1A1,1,0,0,0,446.69,512.44ZM411.6,552.55h-5.78a1,1,0,0,1-1-1v-36.2a1,1,0,0,1,1-1h5.84a1,1,0,0,1,1,1v36.2a1,1,0,0,1-1,1Zm-.93-42,0,1.94h-3.89l0-1.94Zm-3.88,45.93v-2h3.9v2Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M441.83,518.87a1,1,0,0,0,0-2,1,1,0,0,0-1,1h0A1,1,0,0,0,441.83,518.87Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M440.85,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M440.85,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M440.85,541.25a1,1,0,1,0,1.95,0,1,1,0,0,0-1.95,0Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M440.85,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M437.93,522.76a1,1,0,1,0-1-1h0A1,1,0,0,0,437.93,522.76Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M437,529.58a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M437,537.36a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M437,545.15a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M434,518.87a1,1,0,1,0-1-1h0A1,1,0,0,0,434,518.87Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M433.07,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M433.07,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M433.07,541.25a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M433.07,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M430.15,522.76a1,1,0,1,0-1-1h0A1,1,0,0,0,430.15,522.76Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M429.18,529.58a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M429.18,537.36a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M429.18,545.15a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M426.26,518.87a1,1,0,0,0,0-2,1,1,0,0,0-1,1h0A1,1,0,0,0,426.26,518.87Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M425.28,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M425.28,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M425.28,541.25a1,1,0,1,0,2,0,1,1,0,0,0-2,0Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M425.28,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M422.36,520.82a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M422.36,528.6a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M422.36,536.39a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M422.36,544.17a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M418.47,516.92a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M418.47,524.71a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M418.47,532.49a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M418.47,540.28a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M418.47,548.06a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M410.69,516.92a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M410.69,524.71a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M410.69,532.49a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M410.69,540.28a1,1,0,0,0-1,1h0a1,1,0,1,0,2,0A1,1,0,0,0,410.69,540.28Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M410.69,548.06a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M406.79,520.82a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M406.79,528.6a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M406.79,536.39a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
-                <path
-                  class="iconDrawing"
-                  d="M406.79,544.17a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
-                  transform="translate(17.96 -23.52)"
-                />
+              <g id="upcycleicon" tabindex="9">
+                <!-- icon background -->
+                <circle
+                  class="upcycleiconBkgndPulse"
+                  cx="442.31"
+                  cy="510"
+                  r="40.23"
+                />
+                <!-- icon -->
+                <g>
+                  <path
+                    class="iconDrawing"
+                    d="M446.69,512.44H418a1,1,0,1,0,0,1.95h27.73v38.16H414.41a2.93,2.93,0,0,0,.17-1v-5.45a1,1,0,0,0,0-2v-5.84a1,1,0,1,0,0-1.94v-5.84a1,1,0,0,0,0-1.95v-5.84a1,1,0,1,0,0-1.94v-5.45a2.93,2.93,0,0,0-.17-1h4.06a1,1,0,0,0,0-1.95h-5.88l0-2.89a.93.93,0,0,0-.28-.7.94.94,0,0,0-.69-.29h-5.84a1,1,0,0,0-1,1l-.05,3.12a2.91,2.91,0,0,0-1.9,2.73v36.2a2.93,2.93,0,0,0,2,2.75v3.09a1,1,0,0,0,1,1h5.84a1,1,0,0,0,1-1v-2.92h34.06a1,1,0,0,0,1-1v-40.1A1,1,0,0,0,446.69,512.44ZM411.6,552.55h-5.78a1,1,0,0,1-1-1v-36.2a1,1,0,0,1,1-1h5.84a1,1,0,0,1,1,1v36.2a1,1,0,0,1-1,1Zm-.93-42,0,1.94h-3.89l0-1.94Zm-3.88,45.93v-2h3.9v2Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M441.83,518.87a1,1,0,0,0,0-2,1,1,0,0,0-1,1h0A1,1,0,0,0,441.83,518.87Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M440.85,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M440.85,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M440.85,541.25a1,1,0,1,0,1.95,0,1,1,0,0,0-1.95,0Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M440.85,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M437.93,522.76a1,1,0,1,0-1-1h0A1,1,0,0,0,437.93,522.76Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M437,529.58a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M437,537.36a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M437,545.15a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M434,518.87a1,1,0,1,0-1-1h0A1,1,0,0,0,434,518.87Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M433.07,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M433.07,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M433.07,541.25a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M433.07,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M430.15,522.76a1,1,0,1,0-1-1h0A1,1,0,0,0,430.15,522.76Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M429.18,529.58a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M429.18,537.36a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M429.18,545.15a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M426.26,518.87a1,1,0,0,0,0-2,1,1,0,0,0-1,1h0A1,1,0,0,0,426.26,518.87Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M425.28,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M425.28,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M425.28,541.25a1,1,0,1,0,2,0,1,1,0,0,0-2,0Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M425.28,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M422.36,520.82a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M422.36,528.6a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M422.36,536.39a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M422.36,544.17a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M418.47,516.92a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M418.47,524.71a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M418.47,532.49a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M418.47,540.28a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M418.47,548.06a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M410.69,516.92a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M410.69,524.71a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M410.69,532.49a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M410.69,540.28a1,1,0,0,0-1,1h0a1,1,0,1,0,2,0A1,1,0,0,0,410.69,540.28Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M410.69,548.06a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M406.79,520.82a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M406.79,528.6a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M406.79,536.39a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M406.79,544.17a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M446.69,512.44H418a1,1,0,1,0,0,1.95h27.73v38.16H414.41a2.93,2.93,0,0,0,.17-1v-5.45a1,1,0,0,0,0-2v-5.84a1,1,0,1,0,0-1.94v-5.84a1,1,0,0,0,0-1.95v-5.84a1,1,0,1,0,0-1.94v-5.45a2.93,2.93,0,0,0-.17-1h4.06a1,1,0,0,0,0-1.95h-5.88l0-2.89a.93.93,0,0,0-.28-.7.94.94,0,0,0-.69-.29h-5.84a1,1,0,0,0-1,1l-.05,3.12a2.91,2.91,0,0,0-1.9,2.73v36.2a2.93,2.93,0,0,0,2,2.75v3.09a1,1,0,0,0,1,1h5.84a1,1,0,0,0,1-1v-2.92h34.06a1,1,0,0,0,1-1v-40.1A1,1,0,0,0,446.69,512.44ZM411.6,552.55h-5.78a1,1,0,0,1-1-1v-36.2a1,1,0,0,1,1-1h5.84a1,1,0,0,1,1,1v36.2a1,1,0,0,1-1,1Zm-.93-42,0,1.94h-3.89l0-1.94Zm-3.88,45.93v-2h3.9v2Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M441.83,518.87a1,1,0,0,0,0-2,1,1,0,0,0-1,1h0A1,1,0,0,0,441.83,518.87Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M440.85,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M440.85,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M440.85,541.25a1,1,0,1,0,1.95,0,1,1,0,0,0-1.95,0Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M440.85,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M437.93,522.76a1,1,0,1,0-1-1h0A1,1,0,0,0,437.93,522.76Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M437,529.58a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M437,537.36a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M437,545.15a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M434,518.87a1,1,0,1,0-1-1h0A1,1,0,0,0,434,518.87Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M433.07,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M433.07,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M433.07,541.25a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M433.07,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M430.15,522.76a1,1,0,1,0-1-1h0A1,1,0,0,0,430.15,522.76Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M429.18,529.58a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M429.18,537.36a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M429.18,545.15a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M426.26,518.87a1,1,0,0,0,0-2,1,1,0,0,0-1,1h0A1,1,0,0,0,426.26,518.87Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M425.28,525.68a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M425.28,533.47a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M425.28,541.25a1,1,0,1,0,2,0,1,1,0,0,0-2,0Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M425.28,549a1,1,0,1,0,1-1,1,1,0,0,0-1,1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M422.36,520.82a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M422.36,528.6a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M422.36,536.39a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M422.36,544.17a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M418.47,516.92a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M418.47,524.71a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M418.47,532.49a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M418.47,540.28a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M418.47,548.06a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M410.69,516.92a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M410.69,524.71a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M410.69,532.49a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M410.69,540.28a1,1,0,0,0-1,1h0a1,1,0,1,0,2,0A1,1,0,0,0,410.69,540.28Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M410.69,548.06a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M406.79,520.82a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M406.79,528.6a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M406.79,536.39a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                  <path
+                    class="iconDrawing"
+                    d="M406.79,544.17a1,1,0,0,0-1,1h0a1,1,0,1,0,1-1Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                </g>
               </g>
               <!-- hot spot -->
               <circle
@@ -1750,20 +1759,22 @@ Animator: Janice Bradford
                   />
                 </g>
               </g>
-              <!-- icon background -->
-              <circle
-                class="downcycleiconBkgndPulse"
-                cx="330.02"
-                cy="612.11"
-                r="40.23"
-              />
-              <!-- icon -->
-              <g>
-                <path
-                  class="iconDrawing"
-                  d="M327.58,624h0a1,1,0,0,0-.31-.74L323,619a1.07,1.07,0,0,0-.76-.31,1.08,1.08,0,0,0-.74.33l-2,2.14-2-2.14a1,1,0,0,0-.76-.33,1.07,1.07,0,0,0-.77.33l-2,2.14-2-2.14a1.07,1.07,0,0,0-.77-.33,1,1,0,0,0-.76.33l-2,2.14-2-2.14a1,1,0,0,0-.76-.33h0a1,1,0,0,0-.74.31l-4.24,4.24a1,1,0,0,0-.3.76,1,1,0,0,0,.33.74l2.13,2-2.91,2.92-2-2.14a1.06,1.06,0,0,0-.76-.33h0a1.1,1.1,0,0,0-.74.31l-4.23,4.25a1,1,0,0,0-.3.75,1.07,1.07,0,0,0,.32.75l2.14,2-2.14,2a1,1,0,0,0,0,1.52l2.14,2-2.14,2a1,1,0,0,0-.33.76,1.07,1.07,0,0,0,.33.77l2.14,2-2.14,2a1,1,0,0,0-.33.76h0a1.08,1.08,0,0,0,.31.74l4.25,4.23a1,1,0,0,0,.74.31h0a1.08,1.08,0,0,0,.75-.33l2-2.14,2,2.14a1,1,0,0,0,1.52,0l2-2.14,2,2.14a1,1,0,0,0,.76.33,1.07,1.07,0,0,0,.77-.33l2-2.14,2,2.14a1,1,0,0,0,.76.33h0a1,1,0,0,0,.74-.31l4.23-4.24a1.08,1.08,0,0,0,.31-.76,1,1,0,0,0-.33-.74l-2.14-2,2.92-2.92,2,2.14a1,1,0,0,0,.76.33h0a1.06,1.06,0,0,0,.74-.31l4.24-4.25a1,1,0,0,0,.3-.75,1,1,0,0,0-.33-.75l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1.07,1.07,0,0,0-.33-.77l-2.13-2,2.13-2a1,1,0,0,0,.33-.76ZM313.8,651.91l-2-2.16a1.05,1.05,0,0,0-1.53,0l-2,2.13-2-2.13a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-2,2.13-2-2.13a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-2,2.16-2.72-2.72,2.16-2a1.05,1.05,0,0,0,0-1.53l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.16-2,2.72-2.72,2,2.16a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1.05,1.05,0,0,0,1.53,0l2-2.16,2.72,2.72-2.16,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.13,2-2.13,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.13,2-2.13,2a1.05,1.05,0,0,0,0,1.53l2.16,2Zm9.07-24.35,2.14,2-2.14,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.14,2-2.14,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.16,2-2.71,2.72-2-2.16a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-.82.87-1.34-1.26,2.14-2a1,1,0,0,0,0-1.52l-2.14-2,2.14-2a1.06,1.06,0,0,0,.33-.76v0a1.05,1.05,0,0,0-.31-.74l-4.24-4.23a1.06,1.06,0,0,0-1.5,0l-2,2.14-2-2.14a1.05,1.05,0,0,0-1.53,0l-2,2.14-1.25-1.33.87-.82a1.05,1.05,0,0,0,0-1.53l-2.16-2,2.71-2.72,2,2.16a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1.05,1.05,0,0,0,1.53,0l2-2.13,2,2.13a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.16L325,624l-2.17,2a1.05,1.05,0,0,0,0,1.53Z"
-                  transform="translate(17.96 -23.52)"
+              <g id="downcycleicon" tabindex="10">
+                <!-- icon background -->
+                <circle
+                  class="downcycleiconBkgndPulse"
+                  cx="330.02"
+                  cy="612.11"
+                  r="40.23"
                 />
+                <!-- icon -->
+                <g>
+                  <path
+                    class="iconDrawing"
+                    d="M327.58,624h0a1,1,0,0,0-.31-.74L323,619a1.07,1.07,0,0,0-.76-.31,1.08,1.08,0,0,0-.74.33l-2,2.14-2-2.14a1,1,0,0,0-.76-.33,1.07,1.07,0,0,0-.77.33l-2,2.14-2-2.14a1.07,1.07,0,0,0-.77-.33,1,1,0,0,0-.76.33l-2,2.14-2-2.14a1,1,0,0,0-.76-.33h0a1,1,0,0,0-.74.31l-4.24,4.24a1,1,0,0,0-.3.76,1,1,0,0,0,.33.74l2.13,2-2.91,2.92-2-2.14a1.06,1.06,0,0,0-.76-.33h0a1.1,1.1,0,0,0-.74.31l-4.23,4.25a1,1,0,0,0-.3.75,1.07,1.07,0,0,0,.32.75l2.14,2-2.14,2a1,1,0,0,0,0,1.52l2.14,2-2.14,2a1,1,0,0,0-.33.76,1.07,1.07,0,0,0,.33.77l2.14,2-2.14,2a1,1,0,0,0-.33.76h0a1.08,1.08,0,0,0,.31.74l4.25,4.23a1,1,0,0,0,.74.31h0a1.08,1.08,0,0,0,.75-.33l2-2.14,2,2.14a1,1,0,0,0,1.52,0l2-2.14,2,2.14a1,1,0,0,0,.76.33,1.07,1.07,0,0,0,.77-.33l2-2.14,2,2.14a1,1,0,0,0,.76.33h0a1,1,0,0,0,.74-.31l4.23-4.24a1.08,1.08,0,0,0,.31-.76,1,1,0,0,0-.33-.74l-2.14-2,2.92-2.92,2,2.14a1,1,0,0,0,.76.33h0a1.06,1.06,0,0,0,.74-.31l4.24-4.25a1,1,0,0,0,.3-.75,1,1,0,0,0-.33-.75l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1.07,1.07,0,0,0-.33-.77l-2.13-2,2.13-2a1,1,0,0,0,.33-.76ZM313.8,651.91l-2-2.16a1.05,1.05,0,0,0-1.53,0l-2,2.13-2-2.13a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-2,2.13-2-2.13a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-2,2.16-2.72-2.72,2.16-2a1.05,1.05,0,0,0,0-1.53l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.13-2,2.13-2a1,1,0,0,0,.33-.76,1,1,0,0,0-.33-.76l-2.16-2,2.72-2.72,2,2.16a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1.05,1.05,0,0,0,1.53,0l2-2.16,2.72,2.72-2.16,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.13,2-2.13,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.13,2-2.13,2a1.05,1.05,0,0,0,0,1.53l2.16,2Zm9.07-24.35,2.14,2-2.14,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.14,2-2.14,2a1,1,0,0,0-.33.76,1,1,0,0,0,.33.76l2.16,2-2.71,2.72-2-2.16a1,1,0,0,0-.76-.33,1,1,0,0,0-.76.33l-.82.87-1.34-1.26,2.14-2a1,1,0,0,0,0-1.52l-2.14-2,2.14-2a1.06,1.06,0,0,0,.33-.76v0a1.05,1.05,0,0,0-.31-.74l-4.24-4.23a1.06,1.06,0,0,0-1.5,0l-2,2.14-2-2.14a1.05,1.05,0,0,0-1.53,0l-2,2.14-1.25-1.33.87-.82a1.05,1.05,0,0,0,0-1.53l-2.16-2,2.71-2.72,2,2.16a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.13,2,2.13a1.05,1.05,0,0,0,1.53,0l2-2.13,2,2.13a1,1,0,0,0,.76.33,1,1,0,0,0,.76-.33l2-2.16L325,624l-2.17,2a1.05,1.05,0,0,0,0,1.53Z"
+                    transform="translate(17.96 -23.52)"
+                  />
+                </g>
               </g>
               <!-- hot spot -->
               <circle

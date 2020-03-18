@@ -103,6 +103,11 @@ p {
   color: #ee5f24;
   border: 5px double #ee5f24;
 }
+.typicalbtn:focus {
+  background-color: #ffffff;
+  color: #ee5f24;
+  border: 5px double #ee5f24;
+}
 .typicalbtn:active {
   background-color: #ee5f24;
   color: #ffffff;
@@ -114,6 +119,11 @@ p {
   background-clip: padding-box;
 }
 .circularbtn:hover {
+  background-color: #ffffff;
+  color: #1b75bc;
+  border: 5px double #1b75bc;
+}
+.circularbtn:focus {
   background-color: #ffffff;
   color: #1b75bc;
   border: 5px double #1b75bc;
@@ -133,6 +143,11 @@ p {
   color: #8db845;
   border: 5px double #8db845;
 }
+.efficiencybtn:focus {
+  background-color: #ffffff;
+  color: #8db845;
+  border: 5px double #8db845;
+}
 .efficiencybtn:active {
   background-color: #8db845;
   color: #ffffff;
@@ -144,6 +159,11 @@ p {
   background-clip: padding-box;
 }
 .ecologybtn:hover {
+  background-color: #ffffff;
+  color: #193e4f;
+  border: 5px double #193e4f;
+}
+.ecologybtn:focus {
   background-color: #ffffff;
   color: #193e4f;
   border: 5px double #193e4f;
@@ -166,7 +186,6 @@ p {
   stroke-miterlimit: 10;
   stroke-width: 3.26px;
 }
-
 .iconDrawingIsolated {
   fill: #808285;
 }

@@ -1,10 +1,13 @@
 // Design
 const designicon = document.getElementById("designiconHotspot");
+const designiconTabfocus = document.getElementById("designicon");
 const designtooltip = document.getElementById("designtooltip");
 let designTimeoutFunction;
 
 designicon.addEventListener("mouseover", showDesignTooltip);
 designicon.addEventListener("mouseout", stopDesignTooltip);
+designiconTabfocus.addEventListener("focusin", showDesignTooltip);
+designiconTabfocus.addEventListener("focusout", stopDesignTooltip);
 
 function showDesignTooltip(event) {
   designTimeoutFunction = setTimeout(function() {
@@ -18,17 +21,20 @@ function showDesignTooltip(event) {
 function stopDesignTooltip(event) {
   /* stops the popup from appearing before time interval completes */
   clearTimeout(designTimeoutFunction);
-  /* hides popup on mouseout */
+  /* hides popup on mouseout or losing focus */
   designtooltip.style.display = "none";
 }
 
 // Source Raw Materials
 const materialsicon = document.getElementById("materialsiconHotspot");
+const materialsiconTabfocus = document.getElementById("materialsicon");
 const materialstooltip = document.getElementById("materialstooltip");
 let materialsTimeoutFunction;
 
 materialsicon.addEventListener("mouseover", showMaterialsTooltip);
 materialsicon.addEventListener("mouseout", stopMaterialsTooltip);
+materialsiconTabfocus.addEventListener("focusin", showMaterialsTooltip);
+materialsiconTabfocus.addEventListener("focusout", stopMaterialsTooltip);
 
 function showMaterialsTooltip(event) {
   materialsTimeoutFunction = setTimeout(function() {
@@ -49,11 +55,14 @@ function stopMaterialsTooltip(event) {
 
 // Packaging
 const packagingicon = document.getElementById("packagingiconHotspot");
+const packagingiconTabfocus = document.getElementById("packagingicon");
 const packagingtooltip = document.getElementById("packagingtooltip");
 let packagingTimeoutFunction;
 
 packagingicon.addEventListener("mouseover", showPackagingTooltip);
 packagingicon.addEventListener("mouseout", stopPackagingTooltip);
+packagingiconTabfocus.addEventListener("focusin", showPackagingTooltip);
+packagingiconTabfocus.addEventListener("focusout", stopPackagingTooltip);
 
 function showPackagingTooltip(event) {
   packagingTimeoutFunction = setTimeout(function() {
@@ -72,11 +81,14 @@ function stopPackagingTooltip(event) {
 
 // Manufacture
 const manufactureicon = document.getElementById("manufactureiconHotspot");
+const manufactureiconTabfocus = document.getElementById("manufactureicon");
 const manufacturetooltip = document.getElementById("manufacturetooltip");
 let manufactureTimeoutFunction;
 
 manufactureicon.addEventListener("mouseover", showManufactureTooltip);
 manufactureicon.addEventListener("mouseout", stopManufactureTooltip);
+manufactureiconTabfocus.addEventListener("focusin", showManufactureTooltip);
+manufactureiconTabfocus.addEventListener("focusout", stopManufactureTooltip);
 
 function showManufactureTooltip(event) {
   manufactureTimeoutFunction = setTimeout(function() {
@@ -95,11 +107,14 @@ function stopManufactureTooltip(event) {
 
 // Refurbish Product
 const refurbishicon = document.getElementById("refurbishiconHotspot");
+const refurbishiconTabfocus = document.getElementById("refurbishicon");
 const refurbishtooltip = document.getElementById("refurbishtooltip");
 let refurbishTimeoutFunction;
 
 refurbishicon.addEventListener("mouseover", showrefurbishTooltip);
 refurbishicon.addEventListener("mouseout", stoprefurbishTooltip);
+refurbishiconTabfocus.addEventListener("focusin", showrefurbishTooltip);
+refurbishiconTabfocus.addEventListener("focusout", stoprefurbishTooltip);
 
 function showrefurbishTooltip(event) {
   refurbishTimeoutFunction = setTimeout(function() {
@@ -118,11 +133,14 @@ function stoprefurbishTooltip(event) {
 
 // Upcycle
 const upcycleicon = document.getElementById("upcycleiconHotspot");
+const upcycleiconTabfocus = document.getElementById("upcycleicon");
 const upcycletooltip = document.getElementById("upcycletooltip");
 let upcycleTimeoutFunction;
 
 upcycleicon.addEventListener("mouseover", showupcycleTooltip);
 upcycleicon.addEventListener("mouseout", stopupcycleTooltip);
+upcycleiconTabfocus.addEventListener("focusin", showupcycleTooltip);
+upcycleiconTabfocus.addEventListener("focusout", stopupcycleTooltip);
 
 function showupcycleTooltip(event) {
   upcycleTimeoutFunction = setTimeout(function() {
@@ -140,11 +158,14 @@ function stopupcycleTooltip(event) {
 
 // Downcycle
 const downcycleicon = document.getElementById("downcycleiconHotspot");
+const downcycleiconTabfocus = document.getElementById("downcycleicon");
 const downcycletooltip = document.getElementById("downcycletooltip");
 let downcycleTimeoutFunction;
 
 downcycleicon.addEventListener("mouseover", showdowncycleTooltip);
 downcycleicon.addEventListener("mouseout", stopdowncycleTooltip);
+downcycleiconTabfocus.addEventListener("focusin", showdowncycleTooltip);
+downcycleiconTabfocus.addEventListener("focusout", stopdowncycleTooltip);
 
 function showdowncycleTooltip(event) {
   downcycleTimeoutFunction = setTimeout(function() {
