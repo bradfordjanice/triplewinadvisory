@@ -195,27 +195,31 @@
   opacity: 0;
   stroke-dasharray: 10;
   stroke-dashoffset: 0;
-  animation: doubleArrow 2s ease-in-out 7.5s infinite alternate-reverse forwards;
+  -webkit-animation: doubleArrow 2s ease-in-out 7.5s 17 alternate-reverse
+    forwards;
+  animation: doubleArrow 2s ease-in-out 7.5s 17 alternate-reverse forwards;
 }
 #nuses-refurbish-arrow {
   opacity: 0;
   stroke-dasharray: 10;
   stroke-dashoffset: 0;
-  animation: doubleArrow 2s ease-in-out 7.5s infinite alternate-reverse forwards;
+  -webkit-animation: doubleArrow 2s ease-in-out 7.5s 17 alternate-reverse
+    forwards;
+  animation: doubleArrow 2s ease-in-out 7.5s 17 alternate-reverse forwards;
 }
 #collection-refurbish-arrow {
   opacity: 0;
   stroke-dasharray: 12.5;
   stroke-dashoffset: 0;
-  -webkit-animation: singleArrow 2s linear 15s infinite normal forwards;
-  animation: singleArrow 2s linear 15s infinite normal forwards;
+  -webkit-animation: singleArrow 2s linear 15s 13 normal forwards;
+  animation: singleArrow 2s linear 15s 13 normal forwards;
 }
 #use-refurbish-arrow {
   opacity: 0;
   stroke-dasharray: 12.5;
   stroke-dashoffset: 0;
-  -webkit-animation: singleArrow 2s linear 15s infinite normal forwards;
-  animation: singleArrow 2s linear 15s infinite normal forwards;
+  -webkit-animation: singleArrow 2s linear 15s 13 normal forwards;
+  animation: singleArrow 2s linear 15s 13 normal forwards;
 }
 
 /* Tooltip list styling */
@@ -249,16 +253,26 @@ li.tooltipSublistItem {
 /* Tooltips */
 /* Design Product */
 #designicon:focus {
-  outline: 1px solid #883201;
+  outline: 1px solid #c24e24;
 }
 .designiconBkgndPulse {
-  fill: #883201;
-  -webkit-animation: pulse 2.25s infinite;
-  animation: pulse 2.25s infinite;
+  fill: #c24e24;
+  -webkit-animation: pulse 2.25s 18;
+  animation: pulse 2.25s 18;
   -webkit-transform-origin: 21% 49%;
   -ms-transform-origin: 21% 49%;
   transform-origin: 21% 49%;
 }
+/*
+.designiconBkgndEndPulse {
+  fill: #C24E24;
+  -webkit-animation: endpulse 42.75s 1;
+  animation: endpulse 42.75s 1;
+  -webkit-transform-origin: 21% 49%;
+  -ms-transform-origin: 21% 49%;
+  transform-origin: 21% 49%;
+}
+*/
 #designiconHotspot {
   fill: none;
   -webkit-transform-origin: 21% 49%;
@@ -288,12 +302,12 @@ li.tooltipSublistItem {
 }
 /* Source Raw Materials */
 #materialsicon:focus {
-  outline: 1px solid #883201;
+  outline: 1px solid #c24e24;
 }
 .materialsiconBkgndPulse {
-  fill: #883201;
-  -webkit-animation: pulse 2.25s infinite;
-  animation: pulse 2.25s infinite;
+  fill: #c24e24;
+  -webkit-animation: pulse 2.25s 18;
+  animation: pulse 2.25s 18;
   -webkit-transform-origin: 24% 37%;
   -ms-transform-origin: 24% 37%;
   transform-origin: 24% 37%;
@@ -327,12 +341,12 @@ li.tooltipSublistItem {
 }
 /* Procure Packaging */
 #packagingicon:focus {
-  outline: 1px solid #883201;
+  outline: 1px solid #c24e24;
 }
 .packagingiconBkgndPulse {
-  fill: #883201;
-  -webkit-animation: pulse 2.25s infinite;
-  animation: pulse 2.25s infinite;
+  fill: #c24e24;
+  -webkit-animation: pulse 2.25s 18;
+  animation: pulse 2.25s 18;
   -webkit-transform-origin: 34% 29%;
   -ms-transform-origin: 34% 29%;
   transform-origin: 34% 29%;
@@ -367,12 +381,12 @@ li.tooltipSublistItem {
 
 /* Manufacture Product */
 #manufactureicon:focus {
-  outline: 1px solid #883201;
+  outline: 1px solid #c24e24;
 }
 .manufactureiconBkgndPulse {
-  fill: #883201;
-  -webkit-animation: pulse 2.25s infinite;
-  animation: pulse 2.25s infinite;
+  fill: #c24e24;
+  -webkit-animation: pulse 2.25s 18;
+  animation: pulse 2.25s 18;
   -webkit-transform-origin: 46% 27%;
   -ms-transform-origin: 46% 27%;
   transform-origin: 46% 27%;
@@ -406,7 +420,7 @@ li.tooltipSublistItem {
 }
 @-webkit-keyframes pulse {
   0% {
-    fill: #883201;
+    fill: #c24e24;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     -webkit-transition-timing-function: ease-in;
@@ -418,14 +432,14 @@ li.tooltipSublistItem {
     transform: scale(1.15, 1.15);
   }
   100% {
-    fill: #883201;
+    fill: #c24e24;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 }
 @keyframes pulse {
   0% {
-    fill: #883201;
+    fill: #c24e24;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     -webkit-transition-timing-function: ease-in;
@@ -438,20 +452,50 @@ li.tooltipSublistItem {
     transform: scale(1.15, 1.15);
   }
   100% {
-    fill: #883201;
+    fill: #c24e24;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 }
-
+/*
+@-webkit-keyframes endpulse {
+  0% {
+    fill: #7b9f3c;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+  100% {
+    fill: #193e4f;
+    -webkit-transform: scale(1.15, 1.15);
+    transform: scale(1.15, 1.15);
+  }
+}
+@keyframes endpulse {
+  0% {
+    fill: #7b9f3c;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+  100% {
+    fill: #193e4f;
+    -webkit-transform: scale(1.15, 1.15);
+    transform: scale(1.15, 1.15);
+  }
+}
+*/
 /* Refurbish Product */
 #refurbishicon:focus {
   outline: 1px solid #1b75bc;
 }
 .refurbishiconBkgndPulse {
-  fill: #193e4f;
-  -webkit-animation: pulseBlue 2.25s infinite;
-  animation: pulseBlue 2.25s infinite;
+  fill: #1b75bc;
+  -webkit-animation: pulseBlue 2.25s 18;
+  animation: pulseBlue 2.25s 18;
   -webkit-transform-origin: 67% 52%;
   -ms-transform-origin: 67% 52%;
   transform-origin: 67% 52%;
@@ -489,9 +533,9 @@ li.tooltipSublistItem {
   outline: 1px solid #1b75bc;
 }
 .upcycleiconBkgndPulse {
-  fill: #193e4f;
-  -webkit-animation: pulseBlue 2.25s infinite;
-  animation: pulseBlue 2.25s infinite;
+  fill: #1b75bc;
+  -webkit-animation: pulseBlue 2.25s 18;
+  animation: pulseBlue 2.25s 18;
   -webkit-transform-origin: 37% 52%;
   -ms-transform-origin: 37% 52%;
   transform-origin: 37% 52%;
@@ -529,9 +573,9 @@ li.tooltipSublistItem {
   outline: 1px solid #1b75bc;
 }
 .downcycleiconBkgndPulse {
-  fill: #193e4f;
-  -webkit-animation: pulseBlue 2.25s infinite;
-  animation: pulseBlue 2.25s infinite;
+  fill: #1b75bc;
+  -webkit-animation: pulseBlue 2.25s 18;
+  animation: pulseBlue 2.25s 18;
   -webkit-transform-origin: 30% 65%;
   -ms-transform-origin: 30% 65%;
   transform-origin: 30% 65%;

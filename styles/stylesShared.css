@@ -93,23 +93,23 @@ p {
   cursor: pointer;
 }
 .typicalbtn {
-  border: 5px double #883201;
-  background-color: #883201;
+  border: 5px double #c24e24;
+  background-color: #c24e24;
   padding: 10px 20px;
   background-clip: padding-box;
 }
 .typicalbtn:hover {
   background-color: #ffffff;
-  color: #883201;
-  border: 5px double #883201;
+  color: #c24e24;
+  border: 5px double #c24e24;
 }
 .typicalbtn:focus {
   background-color: #ffffff;
-  color: #883201;
-  border: 5px double #883201;
+  color: #c24e24;
+  border: 5px double #c24e24;
 }
 .typicalbtn:active {
-  background-color: #883201;
+  background-color: #c24e24;
   color: #ffffff;
 }
 .circularbtn {
@@ -193,7 +193,7 @@ p {
   fill: #1b75bc;
 }
 .iconRed {
-  fill: #883201;
+  fill: #c24e24;
 }
 .iconGreen {
   fill: #7b9f3c;
@@ -227,11 +227,11 @@ p {
 .pathRed {
   fill: none;
   stroke-miterlimit: 10;
-  stroke: #883201;
+  stroke: #c24e24;
   stroke-width: 2.56px;
 }
 .arrowRed {
-  fill: #883201;
+  fill: #c24e24;
 }
 .pathGreyDashed {
   fill: none;

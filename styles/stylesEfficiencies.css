@@ -314,10 +314,10 @@ li.tooltipSublistItem {
 
 /* Tooltips */
 #designicon:focus {
-  outline: 1px solid #883201;
+  outline: 1px solid #c24e24;
 }
 .designiconBkgndPulse {
-  fill: #883201;
+  fill: #c24e24;
   -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
   -webkit-transform-origin: 21% 55%;
@@ -354,10 +354,10 @@ li.tooltipSublistItem {
 
 /* Procure Packaging */
 #packagingicon:focus {
-  outline: 1px solid #883201;
+  outline: 1px solid #c24e24;
 }
 .packagingiconBkgndPulse {
-  fill: #883201;
+  fill: #c24e24;
   -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
   -webkit-transform-origin: 33% 35%;
@@ -394,10 +394,10 @@ li.tooltipSublistItem {
 
 /* Manufacture Product */
 #manufactureicon:focus {
-  outline: 1px solid #883201;
+  outline: 1px solid #c24e24;
 }
 .manufactureiconBkgndPulse {
-  fill: #883201;
+  fill: #c24e24;
   -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
   -webkit-transform-origin: 46% 31%;
@@ -434,10 +434,10 @@ li.tooltipSublistItem {
 
 /* Warehouse Product */
 #warehouseicon:focus {
-  outline: 1px solid #883201;
+  outline: 1px solid #c24e24;
 }
 .warehouseiconBkgndPulse {
-  fill: #883201;
+  fill: #c24e24;
   -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
   -webkit-transform-origin: 59% 30%;
@@ -474,10 +474,10 @@ li.tooltipSublistItem {
 
 /* Corporate HQ */
 #headquartersicon:focus {
-  outline: 1px solid #883201;
+  outline: 1px solid #c24e24;
 }
 .headquartersiconBkgndPulse {
-  fill: #883201;
+  fill: #c24e24;
   -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
   -webkit-transform-origin: 53% 48%;
@@ -534,7 +534,7 @@ li.tooltipSublistItem {
 }
 @-webkit-keyframes pulse {
   0% {
-    fill: #883201;
+    fill: #c24e24;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     -webkit-transition-timing-function: ease-in;
@@ -546,14 +546,14 @@ li.tooltipSublistItem {
     transform: scale(1.15, 1.15);
   }
   100% {
-    fill: #883201;
+    fill: #c24e24;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 }
 @keyframes pulse {
   0% {
-    fill: #883201;
+    fill: #c24e24;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     -webkit-transition-timing-function: ease-in;
@@ -566,7 +566,7 @@ li.tooltipSublistItem {
     transform: scale(1.15, 1.15);
   }
   100% {
-    fill: #883201;
+    fill: #c24e24;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
