@@ -2,10 +2,10 @@
 
 /* title and subtitle */
 .title {
-  fill: #ee5f24;
+  fill: #883201;
 }
 .titleUnderline {
-  stroke: #ee5f24;
+  stroke: #883201;
 }
 .titleAnimation {
   -webkit-animation: zoomout 2s ease-in-out 0s 1 normal forwards;

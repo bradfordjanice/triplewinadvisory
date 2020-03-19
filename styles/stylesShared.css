@@ -79,7 +79,7 @@ p {
   padding-bottom: 10px;
 }
 .button {
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
@@ -93,23 +93,23 @@ p {
   cursor: pointer;
 }
 .typicalbtn {
-  border: 5px double #ee5f24;
-  background-color: #ee5f24;
+  border: 5px double #883201;
+  background-color: #883201;
   padding: 10px 20px;
   background-clip: padding-box;
 }
 .typicalbtn:hover {
   background-color: #ffffff;
-  color: #ee5f24;
-  border: 5px double #ee5f24;
+  color: #883201;
+  border: 5px double #883201;
 }
 .typicalbtn:focus {
   background-color: #ffffff;
-  color: #ee5f24;
-  border: 5px double #ee5f24;
+  color: #883201;
+  border: 5px double #883201;
 }
 .typicalbtn:active {
-  background-color: #ee5f24;
+  background-color: #883201;
   color: #ffffff;
 }
 .circularbtn {
@@ -133,23 +133,23 @@ p {
   color: #ffffff;
 }
 .efficiencybtn {
-  border: 5px double #8db845;
-  background-color: #8db845;
+  border: 5px double #7b9f3c;
+  background-color: #7b9f3c;
   padding: 10px 20px;
   background-clip: padding-box;
 }
 .efficiencybtn:hover {
   background-color: #ffffff;
-  color: #8db845;
-  border: 5px double #8db845;
+  color: #7b9f3c;
+  border: 5px double #7b9f3c;
 }
 .efficiencybtn:focus {
   background-color: #ffffff;
-  color: #8db845;
-  border: 5px double #8db845;
+  color: #7b9f3c;
+  border: 5px double #7b9f3c;
 }
 .efficiencybtn:active {
-  background-color: #8db845;
+  background-color: #7b9f3c;
   color: #ffffff;
 }
 .ecologybtn {
@@ -193,10 +193,10 @@ p {
   fill: #1b75bc;
 }
 .iconRed {
-  fill: #ee5f24;
+  fill: #883201;
 }
 .iconGreen {
-  fill: #8db845;
+  fill: #7b9f3c;
 }
 .iconDarkBlue {
   fill: #193e4f;
@@ -227,11 +227,11 @@ p {
 .pathRed {
   fill: none;
   stroke-miterlimit: 10;
-  stroke: #ee5f24;
+  stroke: #883201;
   stroke-width: 2.56px;
 }
 .arrowRed {
-  fill: #ee5f24;
+  fill: #883201;
 }
 .pathGreyDashed {
   fill: none;

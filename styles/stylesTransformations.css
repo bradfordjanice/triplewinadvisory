@@ -249,10 +249,10 @@ li.tooltipSublistItem {
 /* Tooltips */
 /* Design Product */
 #designicon:focus {
-  outline: 1px solid #ee5f24;
+  outline: 1px solid #883201;
 }
 .designiconBkgndPulse {
-  fill: #ee5f24;
+  fill: #883201;
   -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
   -webkit-transform-origin: 21% 49%;
@@ -288,10 +288,10 @@ li.tooltipSublistItem {
 }
 /* Source Raw Materials */
 #materialsicon:focus {
-  outline: 1px solid #ee5f24;
+  outline: 1px solid #883201;
 }
 .materialsiconBkgndPulse {
-  fill: #ee5f24;
+  fill: #883201;
   -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
   -webkit-transform-origin: 24% 37%;
@@ -327,10 +327,10 @@ li.tooltipSublistItem {
 }
 /* Procure Packaging */
 #packagingicon:focus {
-  outline: 1px solid #ee5f24;
+  outline: 1px solid #883201;
 }
 .packagingiconBkgndPulse {
-  fill: #ee5f24;
+  fill: #883201;
   -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
   -webkit-transform-origin: 34% 29%;
@@ -367,10 +367,10 @@ li.tooltipSublistItem {
 
 /* Manufacture Product */
 #manufactureicon:focus {
-  outline: 1px solid #ee5f24;
+  outline: 1px solid #883201;
 }
 .manufactureiconBkgndPulse {
-  fill: #ee5f24;
+  fill: #883201;
   -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
   -webkit-transform-origin: 46% 27%;
@@ -406,7 +406,7 @@ li.tooltipSublistItem {
 }
 @-webkit-keyframes pulse {
   0% {
-    fill: #ee5f24;
+    fill: #883201;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     -webkit-transition-timing-function: ease-in;
@@ -418,14 +418,14 @@ li.tooltipSublistItem {
     transform: scale(1.15, 1.15);
   }
   100% {
-    fill: #ee5f24;
+    fill: #883201;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 }
 @keyframes pulse {
   0% {
-    fill: #ee5f24;
+    fill: #883201;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     -webkit-transition-timing-function: ease-in;
@@ -438,7 +438,7 @@ li.tooltipSublistItem {
     transform: scale(1.15, 1.15);
   }
   100% {
-    fill: #ee5f24;
+    fill: #883201;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
