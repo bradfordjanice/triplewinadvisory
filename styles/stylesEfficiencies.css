@@ -259,29 +259,31 @@
   opacity: 0;
   stroke-dasharray: 10;
   stroke-dashoffset: 0;
-  animation: doubleArrow 2s ease-in-out 15.5s infinite alternate-reverse
+  -webkit-animation: doubleArrow 2s ease-in-out 15.5s 14 alternate-reverse
     forwards;
+  animation: doubleArrow 2s ease-in-out 15.5s 14 alternate-reverse forwards;
 }
 #nuses-refurbish-arrow {
   opacity: 0;
   stroke-dasharray: 10;
   stroke-dashoffset: 0;
-  animation: doubleArrow 2s ease-in-out 15.5s infinite alternate-reverse
+  -webkit-animation: doubleArrow 2s ease-in-out 15.5s 14 alternate-reverse
     forwards;
+  animation: doubleArrow 2s ease-in-out 15.5s 14 alternate-reverse forwards;
 }
 #collection-refurbish-arrow {
   opacity: 0;
   stroke-dasharray: 12.5;
   stroke-dashoffset: 0;
-  -webkit-animation: singleArrow 2s linear 23s infinite normal forwards;
-  animation: singleArrow 2s linear 23s infinite normal forwards;
+  -webkit-animation: singleArrow 2s linear 23s 10 normal forwards;
+  animation: singleArrow 2s linear 23s 10 normal forwards;
 }
 #use-refurbish-arrow {
   opacity: 0;
   stroke-dasharray: 12.5;
   stroke-dashoffset: 0;
-  -webkit-animation: singleArrow 2s linear 23s infinite normal forwards;
-  animation: singleArrow 2s linear 23s infinite normal forwards;
+  -webkit-animation: singleArrow 2s linear 23s 10 normal forwards;
+  animation: singleArrow 2s linear 23s 10 normal forwards;
 }
 
 /* Tooltip list styling */

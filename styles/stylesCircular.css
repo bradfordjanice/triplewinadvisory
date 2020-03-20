@@ -207,25 +207,29 @@
   opacity: 0;
   stroke-dasharray: 10;
   stroke-dashoffset: 0;
-  animation: doubleArrow 2s ease-in-out 7.5s infinite alternate-reverse forwards;
+  -webkit-animation: doubleArrow 2s ease-in-out 7.5s 14 alternate-reverse
+    forwards;
+  animation: doubleArrow 2s ease-in-out 7.5s 14 alternate-reverse forwards;
 }
 #nuses-refurbish-arrow {
   opacity: 0;
   stroke-dasharray: 10;
   stroke-dashoffset: 0;
-  animation: doubleArrow 2s ease-in-out 7.5s infinite alternate-reverse forwards;
+  -webkit-animation: doubleArrow 2s ease-in-out 7.5s 14 alternate-reverse
+    forwards;
+  animation: doubleArrow 2s ease-in-out 7.5s 14 alternate-reverse forwards;
 }
 #collection-refurbish-arrow {
   opacity: 0;
   stroke-dasharray: 12.5;
   stroke-dashoffset: 0;
-  -webkit-animation: singleArrow 2s linear 15s infinite normal forwards;
-  animation: singleArrow 2s linear 15s infinite normal forwards;
+  -webkit-animation: singleArrow 2s linear 15s 10 normal forwards;
+  animation: singleArrow 2s linear 15s 10 normal forwards;
 }
 #use-refurbish-arrow {
   opacity: 0;
   stroke-dasharray: 12.5;
   stroke-dashoffset: 0;
-  -webkit-animation: singleArrow 2s linear 15s infinite normal forwards;
-  animation: singleArrow 2s linear 15s infinite normal forwards;
+  -webkit-animation: singleArrow 2s linear 15s 10 normal forwards;
+  animation: singleArrow 2s linear 15s 10 normal forwards;
 }

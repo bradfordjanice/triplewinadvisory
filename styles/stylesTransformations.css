@@ -257,22 +257,12 @@ li.tooltipSublistItem {
 }
 .designiconBkgndPulse {
   fill: #c24e24;
-  -webkit-animation: pulse 2.25s 18;
-  animation: pulse 2.25s 18;
+  -webkit-animation: pulse 2.25s infinite;
+  animation: pulse 2.25s infinite;
   -webkit-transform-origin: 21% 49%;
   -ms-transform-origin: 21% 49%;
   transform-origin: 21% 49%;
 }
-/*
-.designiconBkgndEndPulse {
-  fill: #C24E24;
-  -webkit-animation: endpulse 42.75s 1;
-  animation: endpulse 42.75s 1;
-  -webkit-transform-origin: 21% 49%;
-  -ms-transform-origin: 21% 49%;
-  transform-origin: 21% 49%;
-}
-*/
 #designiconHotspot {
   fill: none;
   -webkit-transform-origin: 21% 49%;
@@ -306,8 +296,8 @@ li.tooltipSublistItem {
 }
 .materialsiconBkgndPulse {
   fill: #c24e24;
-  -webkit-animation: pulse 2.25s 18;
-  animation: pulse 2.25s 18;
+  -webkit-animation: pulse 2.25s infinite;
+  animation: pulse 2.25s infinite;
   -webkit-transform-origin: 24% 37%;
   -ms-transform-origin: 24% 37%;
   transform-origin: 24% 37%;
@@ -345,8 +335,8 @@ li.tooltipSublistItem {
 }
 .packagingiconBkgndPulse {
   fill: #c24e24;
-  -webkit-animation: pulse 2.25s 18;
-  animation: pulse 2.25s 18;
+  -webkit-animation: pulse 2.25s infinite;
+  animation: pulse 2.25s infinite;
   -webkit-transform-origin: 34% 29%;
   -ms-transform-origin: 34% 29%;
   transform-origin: 34% 29%;
@@ -385,8 +375,8 @@ li.tooltipSublistItem {
 }
 .manufactureiconBkgndPulse {
   fill: #c24e24;
-  -webkit-animation: pulse 2.25s 18;
-  animation: pulse 2.25s 18;
+  -webkit-animation: pulse 2.25s infinite;
+  animation: pulse 2.25s infinite;
   -webkit-transform-origin: 46% 27%;
   -ms-transform-origin: 46% 27%;
   transform-origin: 46% 27%;
@@ -457,45 +447,15 @@ li.tooltipSublistItem {
     transform: scale(1, 1);
   }
 }
-/*
-@-webkit-keyframes endpulse {
-  0% {
-    fill: #7b9f3c;
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    -webkit-transition-timing-function: ease-in;
-    transition-timing-function: ease-in;
-  }
-  100% {
-    fill: #193e4f;
-    -webkit-transform: scale(1.15, 1.15);
-    transform: scale(1.15, 1.15);
-  }
-}
-@keyframes endpulse {
-  0% {
-    fill: #7b9f3c;
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    -webkit-transition-timing-function: ease-in;
-    -o-transition-timing-function: ease-in;
-    transition-timing-function: ease-in;
-  }
-  100% {
-    fill: #193e4f;
-    -webkit-transform: scale(1.15, 1.15);
-    transform: scale(1.15, 1.15);
-  }
-}
-*/
+
 /* Refurbish Product */
 #refurbishicon:focus {
   outline: 1px solid #1b75bc;
 }
 .refurbishiconBkgndPulse {
   fill: #1b75bc;
-  -webkit-animation: pulseBlue 2.25s 18;
-  animation: pulseBlue 2.25s 18;
+  -webkit-animation: pulseBlue 2.25s infinite;
+  animation: pulseBlue 2.25s infinite;
   -webkit-transform-origin: 67% 52%;
   -ms-transform-origin: 67% 52%;
   transform-origin: 67% 52%;
@@ -534,8 +494,8 @@ li.tooltipSublistItem {
 }
 .upcycleiconBkgndPulse {
   fill: #1b75bc;
-  -webkit-animation: pulseBlue 2.25s 18;
-  animation: pulseBlue 2.25s 18;
+  -webkit-animation: pulseBlue 2.25s infinite;
+  animation: pulseBlue 2.25s infinite;
   -webkit-transform-origin: 37% 52%;
   -ms-transform-origin: 37% 52%;
   transform-origin: 37% 52%;
@@ -574,8 +534,8 @@ li.tooltipSublistItem {
 }
 .downcycleiconBkgndPulse {
   fill: #1b75bc;
-  -webkit-animation: pulseBlue 2.25s 18;
-  animation: pulseBlue 2.25s 18;
+  -webkit-animation: pulseBlue 2.25s infinite;
+  animation: pulseBlue 2.25s infinite;
   -webkit-transform-origin: 30% 65%;
   -ms-transform-origin: 30% 65%;
   transform-origin: 30% 65%;
