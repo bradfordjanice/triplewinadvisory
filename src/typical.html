@@ -31,10 +31,15 @@ Animator: Janice Bradford
 
   <body>
     <main>
-      <div id="typicalAnimation">
+      <section id="typicalAnimation">
         <!-- Buttons -->
-        <div class="buttonBar">
-          <button type="button" class="button typicalbtn">
+        <nav class="buttonBar">
+          <button
+            type="button"
+            class="button typicalbtn"
+            tabindex="-1"
+            role="button"
+          >
             TYPICAL VALUE CHAIN MODEL
           </button>
           <a href="circular.html">
@@ -42,6 +47,8 @@ Animator: Janice Bradford
               type="button"
               class="button circularbtn"
               style="border-style: solid;"
+              tabindex="1"
+              role="button"
             >
               CIRCULAR VALUE CHAIN MODEL
             </button>
@@ -51,6 +58,8 @@ Animator: Janice Bradford
               type="button"
               class="button efficiencybtn"
               style="border-style: solid;"
+              tabindex="2"
+              role="button"
             >
               EFFICIENCY MEASURES
             </button>
@@ -60,17 +69,25 @@ Animator: Janice Bradford
               type="button"
               class="button ecologybtn"
               style="border-style: solid;"
+              tabindex="3"
+              role="button"
             >
               INDUSTRIAL ECOLOGY MEASURES
             </button>
           </a>
-        </div>
+        </nav>
         <!-- SVG Animation -->
         <svg
+          role="img"
+          aria-labelledby="typicalmanufacturingsystem"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="100 0 1175.68 818.87"
         >
+          <desc id="typicalmanufacturingsystem">
+            Typical Value Chain Model: A business as usual "take-make-waste"
+            manufacuring system.
+          </desc>
           <defs>
             <clipPath id="clip-path" transform="translate(17.96 -23.52)">
               <path
@@ -83,6 +100,8 @@ Animator: Janice Bradford
           <!-- Triple Win Advisory Logo -->
           <g id="logo">
             <image
+              role="img"
+              aria-label="Triple Win Advisory Logo"
               id="logo-img"
               width="800"
               height="300"
@@ -95,7 +114,7 @@ Animator: Janice Bradford
           <!-- TYPICAL VALUE CHAIN GRAPHIC -->
 
           <!-- title group -->
-          <g id="typicalTitlegroup">
+          <g id="typicalTitlegroup" aria-describedby="tvctitle tvcsubtitle">
             <!-- title -->
             <text
               class="title titleAnimation"
@@ -104,7 +123,9 @@ Animator: Janice Bradford
               x="0"
               y="0"
             >
-              <tspan class="" x="0" y="0">TYPICAL VALUE CHAIN MODEL</tspan>
+              <tspan id="tvctitle" class="" x="0" y="0">
+                TYPICAL VALUE CHAIN MODEL
+              </tspan>
             </text>
             <!-- title underline -->
             <line
@@ -122,16 +143,19 @@ Animator: Janice Bradford
               x="0"
               y="0"
             >
-              <tspan x="0" y="0">
+              <tspan id="tvcsubtitle" x="0" y="0">
                 A business as usual "take-make-waste" manufacturing system.
               </tspan>
             </text>
           </g>
 
           <!-- Typical Value Chain icon group -->
-          <g class="typicalIcongroup">
+          <g
+            class="typicalIcongroup"
+            aria-label="The typical value chain model."
+          >
             <!-- Design Product -->
-            <g id="designIconGrp">
+            <g id="designIconGrp" aria-describedby="dplabel1 dplabel2">
               <!-- label -->
               <text
                 class="iconlabel"
@@ -140,8 +164,8 @@ Animator: Janice Bradford
                 x="0"
                 y="0"
               >
-                <tspan x="0.2em" dy="1.1em">DESIGN</tspan>
-                <tspan x="0" dy="1.1em">PRODUCT</tspan>
+                <tspan id="dplabel1" x="0.2em" dy="1.1em">DESIGN</tspan>
+                <tspan id="dplabel2" x="0" dy="1.1em">PRODUCT</tspan>
               </text>
               <!-- icon -->
               <g id="designicon">
@@ -232,7 +256,7 @@ Animator: Janice Bradford
               </g>
             </g>
             <!-- Source Raw Materials Icon -->
-            <g id="materialsIconGrp">
+            <g id="materialsIconGrp" aria-describedby="srmlabel1 srmlabel2">
               <!-- Arrow from Design Product icon to Source Raw Materials icon-->
               <g id="design-materials-arrow">
                 <g>
@@ -255,8 +279,8 @@ Animator: Janice Bradford
                 x="0"
                 y="0"
               >
-                <tspan x="0.2em" dy="1.1em">SOURCE RAW</tspan>
-                <tspan x="0" dy="1.1em">MATERIALS</tspan>
+                <tspan id="srmlabel1" x="0.2em" dy="1.1em">SOURCE RAW</tspan>
+                <tspan id="srmlabel2" x="0" dy="1.1em">MATERIALS</tspan>
               </text>
               <!-- icon -->
               <circle
@@ -300,7 +324,7 @@ Animator: Janice Bradford
               </g>
             </g>
             <!-- Procure Packaging Icon -->
-            <g id="packagingIconGrp">
+            <g id="packagingIconGrp" aria-describedby="pplabel1 pplabel2">
               <!-- path from Raw Materials to Procure Packaging -->
               <path
                 id="materials-packaging-path"
@@ -316,8 +340,8 @@ Animator: Janice Bradford
                 x="0"
                 y="0"
               >
-                <tspan x="0.2em" dy="1.1em">PROCURE</tspan>
-                <tspan x="0" dy="1.1em">PACKAGING</tspan>
+                <tspan id="pplabel1" x="0.2em" dy="1.1em">PROCURE</tspan>
+                <tspan id="pplabel2" x="0" dy="1.1em">PACKAGING</tspan>
               </text>
               <!-- icon -->
               <g id="packagingicon">
@@ -359,7 +383,7 @@ Animator: Janice Bradford
               </g>
             </g>
             <!-- Plane 1 -->
-            <g id="plane1IconGrp">
+            <g id="plane1IconGrp" aria-label="Transportation by plane">
               <!-- icon -->
               <g id="plane1icon">
                 <path
@@ -370,7 +394,7 @@ Animator: Janice Bradford
               </g>
             </g>
             <!-- Manufacture Product Icon -->
-            <g id="manufactureIconGrp">
+            <g id="manufactureIconGrp" aria-describedby="mplabel1 mplabel2">
               <!-- path from Procure Packaging to Manufacture Product -->
               <path
                 id="packaging-manufacture-path"
@@ -386,8 +410,8 @@ Animator: Janice Bradford
                 x="0"
                 y="0"
               >
-                <tspan x="0" dy="1.1em">MANUFACTURE</tspan>
-                <tspan x="0" dy="1.1em">PRODUCT</tspan>
+                <tspan id="mplabel1" x="0" dy="1.1em">MANUFACTURE</tspan>
+                <tspan id="mplabel2" x="0" dy="1.1em">PRODUCT</tspan>
               </text>
               <!-- icon -->
               <g id="manufactureicon">
@@ -415,7 +439,7 @@ Animator: Janice Bradford
               </g>
             </g>
             <!-- Ship -->
-            <g id="shipIconGrp">
+            <g id="shipIconGrp" aria-label="Transportation by ship">
               <g id="ship-icon">
                 <path
                   class="iconDrawingIsolated"
@@ -475,7 +499,7 @@ Animator: Janice Bradford
               </g>
             </g>
             <!-- Warehouse Product Icon -->
-            <g id="warehouseIconGrp">
+            <g id="warehouseIconGrp" aria-describedby="wplabel1 wplabel2">
               <!-- path from Manufacture Product to Warehouse Product -->
               <path
                 id="manufacture-warehouse-path"
@@ -491,8 +515,8 @@ Animator: Janice Bradford
                 x="0"
                 y="0"
               >
-                <tspan x="0" dy="1.1em">WAREHOUSE</tspan>
-                <tspan x="0" dy="1.1em">PRODUCT</tspan>
+                <tspan id="wplabel1" x="0" dy="1.1em">WAREHOUSE</tspan>
+                <tspan id="wplabel2" x="0" dy="1.1em">PRODUCT</tspan>
               </text>
               <!-- icon -->
               <g id="warehouseicon">
@@ -524,7 +548,7 @@ Animator: Janice Bradford
               </g>
             </g>
             <!-- truck -->
-            <g id="truckIconGrp">
+            <g id="truckIconGrp" aria-label="Transportation by truck">
               <g id="truck-icon">
                 <path
                   class="iconDrawingIsolated"
@@ -539,7 +563,7 @@ Animator: Janice Bradford
               </g>
             </g>
             <!-- Sell Product in Market Icon -->
-            <g id="sellIconGrp">
+            <g id="sellIconGrp" aria-describedby="spmlabel1 spmlabel2">
               <!-- path from Warehouse Product to Sell Product -->
               <path
                 id="warehouse-sell-path"
@@ -555,8 +579,8 @@ Animator: Janice Bradford
                 x="0"
                 y="0"
               >
-                <tspan x="0" dy="1.1em">SELL PRODUCT</tspan>
-                <tspan x="0" dy="1.1em">IN MARKET</tspan>
+                <tspan id="spmlabel1" x="0" dy="1.1em">SELL PRODUCT</tspan>
+                <tspan id="spmlabel2" x="0" dy="1.1em">IN MARKET</tspan>
               </text>
               <!-- icon -->
               <circle
@@ -601,7 +625,7 @@ Animator: Janice Bradford
               </g>
             </g>
             <!-- Consumer Purchase Icon -->
-            <g id="purchaseIconGrp">
+            <g id="purchaseIconGrp" aria-describedby="cplabel1 cplabel2">
               <!-- path from Sell Product to Consumer Purchase -->
               <path
                 id="sell-purchase-path"
@@ -617,8 +641,8 @@ Animator: Janice Bradford
                 x="0"
                 y="0"
               >
-                <tspan x="0" dy="1.1em">CONSUMER</tspan>
-                <tspan x="0" dy="1.1em">PURCHASE</tspan>
+                <tspan id="cplabel1" x="0" dy="1.1em">CONSUMER</tspan>
+                <tspan id="cplabel2" x="0" dy="1.1em">PURCHASE</tspan>
               </text>
               <!-- icon -->
               <circle
@@ -657,7 +681,11 @@ Animator: Janice Bradford
               </g>
             </g>
             <!-- Dispose of Product icon-->
-            <g id="disposeIconGrp" data-name="A8-Dispose of Product">
+            <g
+              id="disposeIconGrp"
+              data-name="A8-Dispose of Product"
+              aria-describedby="doplabel1 doplabel2"
+            >
               <!-- path from Consumer Purchase to Dispose of Product -->
               <path
                 id="purchase-dispose-path"
@@ -673,8 +701,8 @@ Animator: Janice Bradford
                 x="0"
                 y="0"
               >
-                <tspan x="0" dy="1.1em">DISPOSE OF</tspan>
-                <tspan x="0" dy="1.1em">PRODUCT</tspan>
+                <tspan id="doplabel1" x="0" dy="1.1em">DISPOSE OF</tspan>
+                <tspan id="doplabel2" x="0" dy="1.1em">PRODUCT</tspan>
               </text>
               <circle class="iconRed" cx="1002.67" cy="469.43" r="40.23" />
               <g>
@@ -716,7 +744,7 @@ Animator: Janice Bradford
               </g>
             </g>
             <!-- Incineration icon -->
-            <g id="incinerationIconGrp">
+            <g id="incinerationIconGrp" aria-describedby="ilabel1">
               <!-- path from Dispose of Product to Incineration -->
               <g id="dispose-incineration-arrow">
                 <path
@@ -737,7 +765,7 @@ Animator: Janice Bradford
                 x="0"
                 y="0"
               >
-                <tspan x="0" dy="1.1em">INCINERATION</tspan>
+                <tspan id="ilabel1" x="0" dy="1.1em">INCINERATION</tspan>
               </text>
               <!-- icon -->
               <circle class="iconRed" cx="958.38" cy="592.88" r="40.23" />
@@ -748,7 +776,7 @@ Animator: Janice Bradford
               />
             </g>
             <!-- Landfill icon -->
-            <g id="landfillIconGrp">
+            <g id="landfillIconGrp" aria-describedby="llabel1">
               <!-- path from Dispose of Product to Landfill -->
               <g id="dispose-landfill-arrow">
                 <path
@@ -769,7 +797,7 @@ Animator: Janice Bradford
                 x="0"
                 y="0"
               >
-                <tspan x="0" dy="1.1em">LANDFILL</tspan>
+                <tspan id="llabel1" x="0" dy="1.1em">LANDFILL</tspan>
               </text>
               <!-- icon -->
               <circle class="iconRed" cx="850.9" cy="592.51" r="40.23" />
@@ -782,7 +810,7 @@ Animator: Janice Bradford
           </g>
           <!-- end of icon group -->
         </svg>
-      </div>
+      </section>
       <!-- entire typical value chain animation in this div -->
     </main>
   </body>

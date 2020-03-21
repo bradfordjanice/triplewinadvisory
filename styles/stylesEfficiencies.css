@@ -2,10 +2,10 @@
 
 /* title and subtitle */
 .title {
-  fill: #8db845;
+  fill: #7b9f3c;
 }
 .titleUnderline {
-  stroke: #8db845;
+  stroke: #7b9f3c;
 }
 .titleAnimation {
   -webkit-animation: zoomout 2s ease-in-out 0s 1 normal forwards;
@@ -259,29 +259,31 @@
   opacity: 0;
   stroke-dasharray: 10;
   stroke-dashoffset: 0;
-  animation: doubleArrow 2s ease-in-out 15.5s infinite alternate-reverse
+  -webkit-animation: doubleArrow 2s ease-in-out 15.5s 14 alternate-reverse
     forwards;
+  animation: doubleArrow 2s ease-in-out 15.5s 14 alternate-reverse forwards;
 }
 #nuses-refurbish-arrow {
   opacity: 0;
   stroke-dasharray: 10;
   stroke-dashoffset: 0;
-  animation: doubleArrow 2s ease-in-out 15.5s infinite alternate-reverse
+  -webkit-animation: doubleArrow 2s ease-in-out 15.5s 14 alternate-reverse
     forwards;
+  animation: doubleArrow 2s ease-in-out 15.5s 14 alternate-reverse forwards;
 }
 #collection-refurbish-arrow {
   opacity: 0;
   stroke-dasharray: 12.5;
   stroke-dashoffset: 0;
-  -webkit-animation: singleArrow 2s linear 23s infinite normal forwards;
-  animation: singleArrow 2s linear 23s infinite normal forwards;
+  -webkit-animation: singleArrow 2s linear 23s 10 normal forwards;
+  animation: singleArrow 2s linear 23s 10 normal forwards;
 }
 #use-refurbish-arrow {
   opacity: 0;
   stroke-dasharray: 12.5;
   stroke-dashoffset: 0;
-  -webkit-animation: singleArrow 2s linear 23s infinite normal forwards;
-  animation: singleArrow 2s linear 23s infinite normal forwards;
+  -webkit-animation: singleArrow 2s linear 23s 10 normal forwards;
+  animation: singleArrow 2s linear 23s 10 normal forwards;
 }
 
 /* Tooltip list styling */
@@ -313,8 +315,11 @@ li.tooltipSublistItem {
 }
 
 /* Tooltips */
+#designicon:focus {
+  outline: 1px solid #c24e24;
+}
 .designiconBkgndPulse {
-  fill: #ee5f24;
+  fill: #c24e24;
   -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
   -webkit-transform-origin: 21% 55%;
@@ -331,7 +336,7 @@ li.tooltipSublistItem {
   width: 230px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
-  background-color: #8db845;
+  background-color: #7b9f3c;
   border-radius: 6px;
   position: absolute;
   display: none;
@@ -343,15 +348,18 @@ li.tooltipSublistItem {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #8db845;
+  background-color: #7b9f3c;
   position: absolute;
   left: -6px;
   top: 40px;
 }
 
 /* Procure Packaging */
+#packagingicon:focus {
+  outline: 1px solid #c24e24;
+}
 .packagingiconBkgndPulse {
-  fill: #ee5f24;
+  fill: #c24e24;
   -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
   -webkit-transform-origin: 33% 35%;
@@ -368,7 +376,7 @@ li.tooltipSublistItem {
   width: 300px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
-  background-color: #8db845;
+  background-color: #7b9f3c;
   border-radius: 6px;
   position: absolute;
   display: none;
@@ -380,15 +388,18 @@ li.tooltipSublistItem {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #8db845;
+  background-color: #7b9f3c;
   position: absolute;
   left: -6px;
   top: 40px;
 }
 
 /* Manufacture Product */
+#manufactureicon:focus {
+  outline: 1px solid #c24e24;
+}
 .manufactureiconBkgndPulse {
-  fill: #ee5f24;
+  fill: #c24e24;
   -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
   -webkit-transform-origin: 46% 31%;
@@ -405,7 +416,7 @@ li.tooltipSublistItem {
   width: 220px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
-  background-color: #8db845;
+  background-color: #7b9f3c;
   border-radius: 6px;
   position: absolute;
   display: none;
@@ -417,15 +428,18 @@ li.tooltipSublistItem {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #8db845;
+  background-color: #7b9f3c;
   position: absolute;
   left: -6px;
   top: 40px;
 }
 
 /* Warehouse Product */
+#warehouseicon:focus {
+  outline: 1px solid #c24e24;
+}
 .warehouseiconBkgndPulse {
-  fill: #ee5f24;
+  fill: #c24e24;
   -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
   -webkit-transform-origin: 59% 30%;
@@ -442,7 +456,7 @@ li.tooltipSublistItem {
   width: 280px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
-  background-color: #8db845;
+  background-color: #7b9f3c;
   border-radius: 6px;
   position: absolute;
   display: none;
@@ -454,15 +468,18 @@ li.tooltipSublistItem {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #8db845;
+  background-color: #7b9f3c;
   position: absolute;
   left: -6px;
   top: 40px;
 }
 
 /* Corporate HQ */
+#headquartersicon:focus {
+  outline: 1px solid #c24e24;
+}
 .headquartersiconBkgndPulse {
-  fill: #ee5f24;
+  fill: #c24e24;
   -webkit-animation: pulse 2.25s infinite;
   animation: pulse 2.25s infinite;
   -webkit-transform-origin: 53% 48%;
@@ -479,7 +496,7 @@ li.tooltipSublistItem {
   width: 230px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
-  background-color: #8db845;
+  background-color: #7b9f3c;
   border-radius: 6px;
   position: absolute;
   display: none;
@@ -491,7 +508,7 @@ li.tooltipSublistItem {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #8db845;
+  background-color: #7b9f3c;
   position: absolute;
   left: -6px;
   top: 125px;
@@ -500,7 +517,7 @@ li.tooltipSublistItem {
   width: 230px;
   padding: 20px 25px 20px 8px;
   font-size: 1em;
-  background-color: #8db845;
+  background-color: #7b9f3c;
   border-radius: 6px;
   position: absolute;
   display: none;
@@ -512,33 +529,33 @@ li.tooltipSublistItem {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #8db845;
+  background-color: #7b9f3c;
   position: absolute;
   left: 256px;
   top: 125px;
 }
 @-webkit-keyframes pulse {
   0% {
-    fill: #ee5f24;
+    fill: #c24e24;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
   }
   50% {
-    fill: #8db845;
+    fill: #7b9f3c;
     -webkit-transform: scale(1.15, 1.15);
     transform: scale(1.15, 1.15);
   }
   100% {
-    fill: #ee5f24;
+    fill: #c24e24;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 }
 @keyframes pulse {
   0% {
-    fill: #ee5f24;
+    fill: #c24e24;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     -webkit-transition-timing-function: ease-in;
@@ -546,18 +563,21 @@ li.tooltipSublistItem {
     transition-timing-function: ease-in;
   }
   50% {
-    fill: #8db845;
+    fill: #7b9f3c;
     -webkit-transform: scale(1.15, 1.15);
     transform: scale(1.15, 1.15);
   }
   100% {
-    fill: #ee5f24;
+    fill: #c24e24;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 }
 
 /* Airplanes and Truck */
+#plane1iconPulse:focus {
+  outline: 1px solid #808285;
+}
 #plane1iconPulse {
   fill: #808285;
   -webkit-animation: pulseicon 2.25s infinite;
@@ -576,7 +596,7 @@ li.tooltipSublistItem {
   width: 300px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
-  background-color: #8db845;
+  background-color: #7b9f3c;
   border-radius: 6px;
   position: absolute;
   display: none;
@@ -588,10 +608,13 @@ li.tooltipSublistItem {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #8db845;
+  background-color: #7b9f3c;
   position: absolute;
   left: -6px;
   top: 40px;
+}
+#plane2iconPulse:focus {
+  outline: 1px solid #808285;
 }
 #plane2iconPulse {
   fill: #808285;
@@ -611,7 +634,7 @@ li.tooltipSublistItem {
   width: 300px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
-  background-color: #8db845;
+  background-color: #7b9f3c;
   border-radius: 6px;
   position: absolute;
   display: none;
@@ -623,10 +646,13 @@ li.tooltipSublistItem {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #8db845;
+  background-color: #7b9f3c;
   position: absolute;
   left: -6px;
   top: 265px;
+}
+#truckiconPulse:focus {
+  outline: 1px solid #808285;
 }
 #truckiconPulse {
   fill: #808285;
@@ -646,7 +672,7 @@ li.tooltipSublistItem {
   width: 230px;
   padding: 20px 10px 20px 8px;
   font-size: 1em;
-  background-color: #8db845;
+  background-color: #7b9f3c;
   border-radius: 6px;
   position: absolute;
   display: none;
@@ -658,7 +684,7 @@ li.tooltipSublistItem {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #8db845;
+  background-color: #7b9f3c;
   position: absolute;
   left: -6px;
   top: 40px;
@@ -672,7 +698,7 @@ li.tooltipSublistItem {
     transition-timing-function: ease-in-out;
   }
   50% {
-    fill: #8db845;
+    fill: #7b9f3c;
     -webkit-transform: scale(1.3, 1.3);
     transform: scale(1.3, 1.3);
     -webkit-transition-timing-function: ease-in-out;
@@ -694,7 +720,7 @@ li.tooltipSublistItem {
     transition-timing-function: ease-in-out;
   }
   50% {
-    fill: #8db845;
+    fill: #7b9f3c;
     -webkit-transform: scale(1.3, 1.3);
     transform: scale(1.3, 1.3);
     -webkit-transition-timing-function: ease-in-out;
