@@ -10,7 +10,7 @@ designiconTabfocus.addEventListener("focusin", showDesignTooltip);
 designiconTabfocus.addEventListener("focusout", stopDesignTooltip);
 
 function showDesignTooltip(event) {
-  designTimeoutFunction = setTimeout(function() {
+  designTimeoutFunction = setTimeout(function () {
     designiconPos = designicon.getBoundingClientRect();
     designtooltip.style.left = designiconPos.right + 10 + "px";
     designtooltip.style.top = window.scrollY + designiconPos.top - 30 + "px";
@@ -37,7 +37,7 @@ packagingiconTabfocus.addEventListener("focusin", showPackagingTooltip);
 packagingiconTabfocus.addEventListener("focusout", stopPackagingTooltip);
 
 function showPackagingTooltip(event) {
-  packagingTimeoutFunction = setTimeout(function() {
+  packagingTimeoutFunction = setTimeout(function () {
     packagingiconPos = packagingicon.getBoundingClientRect();
     packagingtooltip.style.left = packagingiconPos.right + 10 + "px";
     packagingtooltip.style.top =
@@ -63,7 +63,7 @@ manufactureiconTabfocus.addEventListener("focusin", showManufactureTooltip);
 manufactureiconTabfocus.addEventListener("focusout", stopManufactureTooltip);
 
 function showManufactureTooltip(event) {
-  manufactureTimeoutFunction = setTimeout(function() {
+  manufactureTimeoutFunction = setTimeout(function () {
     manufactureiconPos = manufactureicon.getBoundingClientRect();
     manufacturetooltip.style.left = manufactureiconPos.right + 10 + "px";
     manufacturetooltip.style.top =
@@ -89,7 +89,7 @@ warehouseiconTabfocus.addEventListener("focusin", showWarehouseTooltip);
 warehouseiconTabfocus.addEventListener("focusout", stopWarehouseTooltip);
 
 function showWarehouseTooltip(event) {
-  warehouseiconFunction = setTimeout(function() {
+  warehouseiconFunction = setTimeout(function () {
     warehouseiconPos = warehouseicon.getBoundingClientRect();
     warehousetooltip.style.left = warehouseiconPos.right + 10 + "px";
     warehousetooltip.style.top =
@@ -116,15 +116,15 @@ headquartersTabfocus.addEventListener("focusin", showHeadquartersTooltip);
 headquartersTabfocus.addEventListener("focusout", stopHeadquartersTooltip);
 
 function showHeadquartersTooltip(event) {
-  headquartersTimeoutFunction = setTimeout(function() {
+  headquartersTimeoutFunction = setTimeout(function () {
     headquartersiconPos = headquartersicon.getBoundingClientRect();
     headquarterstooltipR.style.left = headquartersiconPos.right + 19 + "px";
     headquarterstooltipR.style.top =
-      window.scrollY + headquartersiconPos.top - 100 + "px";
+      window.scrollY + headquartersiconPos.top - 175 + "px";
     headquarterstooltipR.style.display = "block";
     headquarterstooltipL.style.left = headquartersiconPos.left - 280 + "px";
     headquarterstooltipL.style.top =
-      window.scrollY + headquartersiconPos.top - 100 + "px";
+      window.scrollY + headquartersiconPos.top - 175 + "px";
     headquarterstooltipL.style.display = "block";
   }, 500);
 }
@@ -147,7 +147,7 @@ plane1iconTabfocus.addEventListener("focusin", showPlane1Tooltip);
 plane1iconTabfocus.addEventListener("focusout", stopPlane1Tooltip);
 
 function showPlane1Tooltip(event) {
-  plane1TimeoutFunction = setTimeout(function() {
+  plane1TimeoutFunction = setTimeout(function () {
     plane1iconPos = plane1icon.getBoundingClientRect();
     plane1tooltip.style.left = plane1iconPos.right + 10 + "px";
     plane1tooltip.style.top = window.scrollY + plane1iconPos.top - 30 + "px";
@@ -172,7 +172,7 @@ plane2iconTabfocus.addEventListener("focusin", showPlane2Tooltip);
 plane2iconTabfocus.addEventListener("focusout", stopPlane2Tooltip);
 
 function showPlane2Tooltip(event) {
-  plane2TimeoutFunction = setTimeout(function() {
+  plane2TimeoutFunction = setTimeout(function () {
     plane2iconPos = plane2icon.getBoundingClientRect();
     plane2tooltip.style.left = plane2iconPos.right + 10 + "px";
     plane2tooltip.style.top = window.scrollY + plane2iconPos.top - 255 + "px";
@@ -197,7 +197,7 @@ truckTabfocus.addEventListener("focusin", showtruckTooltip);
 truckTabfocus.addEventListener("focusout", stoptruckTooltip);
 
 function showtruckTooltip(event) {
-  truckTimeoutFunction = setTimeout(function() {
+  truckTimeoutFunction = setTimeout(function () {
     truckiconPos = truckicon.getBoundingClientRect();
     trucktooltip.style.left = truckiconPos.right + 10 + "px";
     trucktooltip.style.top = window.scrollY + truckiconPos.top - 30 + "px";
