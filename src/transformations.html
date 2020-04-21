@@ -37,13 +37,23 @@ Animator: Janice Bradford
     <main>
       <section id="transformationsAnimation">
         <!-- Buttons -->
+        <button
+          aria-label="Close"
+          onclick="tab.close()"
+          type="button"
+          id="closebtn"
+          style="border-style: solid;"
+          tabindex="1"
+        >
+          X
+        </button>
         <nav class="buttonBar">
           <a href="typical.html">
             <button
               type="button"
               class="button typicalbtn"
               style="border-style: solid;"
-              tabindex="1"
+              tabindex="2"
               role="button"
             >
               TYPICAL VALUE CHAIN MODEL
@@ -54,7 +64,7 @@ Animator: Janice Bradford
               type="button"
               class="button circularbtn"
               style="border-style: solid;"
-              tabindex="2"
+              tabindex="3"
               role="button"
             >
               CIRCULAR VALUE CHAIN MODEL
@@ -65,7 +75,7 @@ Animator: Janice Bradford
               type="button"
               class="button efficiencybtn"
               style="border-style: solid;"
-              tabindex="3"
+              tabindex="4"
               role="button"
             >
               EFFICIENCY MEASURES
@@ -192,7 +202,7 @@ Animator: Janice Bradford
                   <tspan id="dplabel2" x="0" dy="1.1em">PRODUCT</tspan>
                 </text>
                 <!-- icon -->
-                <g id="designicon" tabindex="4">
+                <g id="designicon" tabindex="5">
                   <!-- icon background-->
                   <circle
                     class="designiconBkgndPulse"
@@ -311,7 +321,7 @@ Animator: Janice Bradford
                   <tspan id="srmlabel2" x="0" dy="1.1em">MATERIALS</tspan>
                 </text>
                 <!-- icon -->
-                <g id="materialsicon" tabindex="5">
+                <g id="materialsicon" tabindex="6">
                   <!-- icon background -->
                   <circle
                     class="materialsiconBkgndPulse"
@@ -386,7 +396,7 @@ Animator: Janice Bradford
                   <tspan id="pplabel2" x="0" dy="1.1em">PACKAGING</tspan>
                 </text>
                 <!-- icon -->
-                <g id="packagingicon" tabindex="6">
+                <g id="packagingicon" tabindex="7">
                   <!-- icon background -->
                   <circle
                     class="packagingiconBkgndPulse"
@@ -472,7 +482,7 @@ Animator: Janice Bradford
                   <tspan id="mplabel2" x="0" dy="1.1em">PRODUCT</tspan>
                 </text>
                 <!-- icon -->
-                <g id="manufactureicon" tabindex="7">
+                <g id="manufactureicon" tabindex="8">
                   <!-- icon background -->
                   <circle
                     class="manufactureiconBkgndPulse"
@@ -823,7 +833,7 @@ Animator: Janice Bradford
                 <tspan id="rplabel2" x="0" dy="1.1em">PRODUCT</tspan>
               </text>
               <!-- Refurbish Icon -->
-              <g id="refurbishicon" tabindex="8">
+              <g id="refurbishicon" tabindex="9">
                 <!-- icon background -->
                 <circle
                   class="refurbishiconBkgndPulse"
@@ -1298,7 +1308,7 @@ Animator: Janice Bradford
                 </g>
               </g>
               <!-- Upcycle icon -->
-              <g id="upcycleicon" tabindex="9">
+              <g id="upcycleicon" tabindex="10">
                 <!-- icon background -->
                 <circle
                   class="upcycleiconBkgndPulse"
@@ -1800,7 +1810,7 @@ Animator: Janice Bradford
                   />
                 </g>
               </g>
-              <g id="downcycleicon" tabindex="10">
+              <g id="downcycleicon" tabindex="11">
                 <!-- icon background -->
                 <circle
                   class="downcycleiconBkgndPulse"
@@ -2282,4 +2292,5 @@ Animator: Janice Bradford
     </main>
   </body>
   <script src="../src/tooltipsTransformations.js"></script>
+  <script src="../src/closeTab.js"></script>
 </html>

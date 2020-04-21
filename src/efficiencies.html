@@ -37,13 +37,23 @@ Animator: Janice Bradford
     <main>
       <section id="efficienciesAnimation">
         <!-- Buttons -->
+        <button
+          aria-label="Close"
+          onclick="tab.close()"
+          type="button"
+          id="closebtn"
+          style="border-style: solid;"
+          tabindex="1"
+        >
+          X
+        </button>
         <nav class="buttonBar">
           <a href="typical.html">
             <button
               type="button"
               class="button typicalbtn"
               style="border-style: solid;"
-              tabindex="1"
+              tabindex="2"
               role="button"
             >
               TYPICAL VALUE CHAIN MODEL
@@ -54,7 +64,7 @@ Animator: Janice Bradford
               type="button"
               class="button circularbtn"
               style="border-style: solid;"
-              tabindex="2"
+              tabindex="3"
               role="button"
             >
               CIRCULAR VALUE CHAIN MODEL
@@ -70,7 +80,7 @@ Animator: Janice Bradford
               type="button"
               class="button ecologybtn"
               style="border-style: solid;"
-              tabindex="3"
+              tabindex="4"
               role="button"
             >
               INDUSTRIAL ECOLOGY MEASURES
@@ -178,7 +188,7 @@ Animator: Janice Bradford
                   <tspan id="dplabel2" x="0" dy="1.1em">PRODUCT</tspan>
                 </text>
                 <!-- icon -->
-                <g id="designicon" tabindex="4">
+                <g id="designicon" tabindex="5">
                   <!-- icon background-->
                   <circle
                     class="designiconBkgndPulse"
@@ -370,7 +380,7 @@ Animator: Janice Bradford
                   <tspan id="pplabel2" x="0" dy="1.1em">PACKAGING</tspan>
                 </text>
                 <!-- icon -->
-                <g id="packagingicon" tabindex="5">
+                <g id="packagingicon" tabindex="6">
                   <!-- icon background -->
                   <circle
                     class="packagingiconBkgndPulse"
@@ -428,7 +438,7 @@ Animator: Janice Bradford
                 aria-describedby="plane1tooltip"
               >
                 <!-- icon -->
-                <g id="plane1iconPulse" tabindex="6">
+                <g id="plane1iconPulse" tabindex="7">
                   <path
                     d="M450.66,205.3c-1.87.17-2.54.45-9.8,2l-2.39-2.14,2-.44a2.6,2.6,0,0,0-1.11-5.09l-5.67,1.25-10.83-9.71a3,3,0,0,0-2.58-.68,2.93,2.93,0,0,0-2.1,3.94l6.46,16.43-3.7.81a21.5,21.5,0,0,0-4.44,1.62l-4.56-5.25a2.81,2.81,0,0,0-4.71,2.92l2.57,6.14c-1.94,1.25-3.24,2.22-3.3,2.27a.86.86,0,0,0,.34,1.54c.07,0,1.66.35,3.94.68l.24,6.65a2.81,2.81,0,0,0,5.5.68l1.94-6.68a22,22,0,0,0,4.72-.39l3.7-.82,1,17.63a2.94,2.94,0,0,0,3.56,2.7,3,3,0,0,0,2.06-1.7l5.76-13.35,5.67-1.25a2.6,2.6,0,1,0-1.11-5.08l-2,.44,1.27-3c7.26-1.63,8-1.65,9.74-2.28h0c4.12-1.48,6.54-4.1,6-6.51S455,204.92,450.66,205.3Zm-10.93-4a.87.87,0,1,1,.37,1.69l-3.23.71-1.59-1.43Zm-19.94-7.54a1.19,1.19,0,0,1,1.91-1.32l17.07,15.29-12.41,2.72Zm-10.2,15a1.05,1.05,0,0,1,1,.34l4.26,4.91c-1.14.59-2.35,1.29-3.61,2.07l-2.45-5.87A1.07,1.07,0,0,1,409.59,208.85Zm4.47,20.34a1.07,1.07,0,0,1-1.3-1l-.23-6.35c1.47.18,2.86.31,4.14.37l-1.82,6.24A1,1,0,0,1,414.06,229.19Zm30.14-7.51a.87.87,0,0,1,.37,1.7l-4.45,1,.85-2ZM431.91,239a1.19,1.19,0,0,1-2.28-.4l-1-17.91L441,217.94Zm-9.1-18.82a21.53,21.53,0,0,1-5.16.34,63.08,63.08,0,0,1-8.45-.91,65.2,65.2,0,0,1,7.44-4.44,21.61,21.61,0,0,1,4.68-1.77c29.25-6.39,27.61-6.15,29.25-6.32a4.25,4.25,0,0,1,1.44,6.58C450.45,214.17,452,213.71,422.81,220.16Zm31.68-7.64a5.7,5.7,0,0,0-1.2-5.48c1.4.14,3.57.68,3.86,2C457.39,210.13,456.31,211.45,454.49,212.52Z"
                     transform="translate(17.96 -23.52)"
@@ -467,7 +477,7 @@ Animator: Janice Bradford
                   <tspan id="mplabel2" x="0" dy="1.1em">PRODUCT</tspan>
                 </text>
                 <!-- icon -->
-                <g id="manufactureicon" tabindex="7">
+                <g id="manufactureicon" tabindex="8">
                   <!-- icon background -->
                   <circle
                     class="manufactureiconBkgndPulse"
@@ -588,7 +598,7 @@ Animator: Janice Bradford
                   <tspan id="wplabel2" x="0" dy="1.1em">PRODUCT</tspan>
                 </text>
                 <!-- icon -->
-                <g id="warehouseicon" tabindex="8">
+                <g id="warehouseicon" tabindex="9">
                   <!-- icon background -->
                   <circle
                     class="warehouseiconBkgndPulse"
@@ -636,7 +646,7 @@ Animator: Janice Bradford
                 aria-label="Transportation by truck"
               >
                 <!-- icon -->
-                <g id="truckiconPulse" tabindex="9">
+                <g id="truckiconPulse" tabindex="10">
                   <path
                     d="M790.55,218.39l-2.42-2.29v-7.22a4.11,4.11,0,0,0-3.17-4l-8.06-1.9.3-1.28a1,1,0,0,0-.74-1.2l-29.82-7a1,1,0,0,0-1.2.73L740,217.27a1,1,0,0,0,.74,1.2l3.11.73a5,5,0,0,0,9.51,2.24l19.6,4.63h0a5,5,0,0,0,9.51,2.24l4.95,1.17a1,1,0,0,0,1.19-.74l2.22-9.39A1,1,0,0,0,790.55,218.39Zm-42.4,3.88a3,3,0,1,1,3.6-2.23A3,3,0,0,1,748.15,222.27Zm22.72-2.4-8.73-2.07a1,1,0,0,0-.46,1.94l8.74,2.06-.37,1.54-16.24-3.83a5,5,0,0,0-9.5-2.25l-2.14-.5,1.18-5,27.89,6.58-.37,1.54Zm3.87-16.4-3,12.92-27.88-6.58,3.35-14.2L775,202.19Zm7.33,2.75,2.44.58a2.12,2.12,0,0,1,1.64,2.08v6.39l-5.88-1.38,1.81-7.67Zm-4.81,22.92a3,3,0,0,1-2.27-3.41,1.07,1.07,0,0,0,.07-.19,1.23,1.23,0,0,0,0-.2,3,3,0,1,1,2.18,3.8ZM788,222.72l-1.84-.43.24-1,1.84.44Zm.7-3-2.81-.66a1,1,0,0,0-1.2.74l-.7,3a1,1,0,0,0,.74,1.19l2.81.67-.62,2.66-4-.94a5,5,0,0,0-9.5-2.25L772,223.8l4.46-18.9,3.68.87-2,8.63a1,1,0,0,0,.74,1.2l7.81,1.84,2.12,2-.07.31Z"
                     transform="translate(17.96 -23.52)"
@@ -1100,7 +1110,7 @@ Animator: Janice Bradford
               aria-label="Transportation by plane"
             >
               <!-- icon -->
-              <g id="plane2iconPulse" tabindex="10">
+              <g id="plane2iconPulse" tabindex="11">
                 <path
                   d="M562.07,774.27c-.18,2.46,2.59,4.7,6.88,5.57h0c1.85.37,2.55.29,10,.86l1.68,2.73-2.05-.15a2.61,2.61,0,0,0-.37,5.2l5.79.41,7.63,12.38a2.93,2.93,0,0,0,5.41-1.79l-1.54-17.59,3.78.27a22.06,22.06,0,0,0,4.72-.29l2.89,6.33a2.81,2.81,0,0,0,5.34-1.47l-.72-6.61c2.21-.66,3.74-1.22,3.81-1.24a.87.87,0,0,0,.11-1.58c-.06,0-1.49-.81-3.59-1.77l1.65-6.44a2.8,2.8,0,0,0-5.07-2.22l-3.76,5.85a21.64,21.64,0,0,0-4.63-1l-3.78-.27,4-17.2a2.93,2.93,0,0,0-2.64-3.59,3,3,0,0,0-2.46,1l-9.32,11.16-5.79-.41a2.6,2.6,0,0,0-.37,5.19l2.05.15-2.06,2.46c-7.41-.49-8.11-.68-10-.57C565.3,770,562.25,771.81,562.07,774.27Zm22.4-9.71-1.37,1.65-3.3-.24a.87.87,0,1,1,.13-1.73Zm10,6.81-12.67-.91,14.68-17.59a1.2,1.2,0,0,1,2.08,1Zm17.31-2.71-1.58,6.15q-2-.88-3.87-1.53l3.52-5.47a1.07,1.07,0,0,1,1.93.85Zm-3.34,18.82-2.7-5.92c1.26-.25,2.62-.57,4-1l.68,6.32a1.06,1.06,0,0,1-1.13,1.18A1.07,1.07,0,0,1,608.45,787.48Zm-26.72-2.23,1.13,1.82-4.55-.32a.87.87,0,0,1,.13-1.74Zm-.67-4.4,12.67.91,1.56,17.87a1.18,1.18,0,0,1-1.27,1.29,1.16,1.16,0,0,1-.93-.56Zm-11.51-2.67a4.46,4.46,0,0,1-1.42-3.48,4.52,4.52,0,0,1,1.9-3.24c1.64-.06,0-.07,29.85,2a21.42,21.42,0,0,1,4.88,1.08,63.45,63.45,0,0,1,8,3.32,62.63,62.63,0,0,1-8.24,2.12,21.29,21.29,0,0,1-5.14.4C569.54,778.25,571.17,778.48,569.55,778.18Zm-5.75-3.79c.1-1.37,2.16-2.22,3.53-2.56a5.82,5.82,0,0,0-.93,2.75,5.74,5.74,0,0,0,.53,2.85C565,776.64,563.72,775.48,563.8,774.39Z"
                   transform="translate(17.96 -23.52)"
@@ -1995,7 +2005,7 @@ Animator: Janice Bradford
                 <tspan id="chqlabel2" x="0" dy="1.1em">HQ</tspan>
               </text>
               <!-- icon -->
-              <g id="headquartersicon" tabindex="11">
+              <g id="headquartersicon" tabindex="12">
                 <!-- icon background -->
                 <circle
                   class="headquartersiconBkgndPulse"
@@ -2508,4 +2518,5 @@ Animator: Janice Bradford
   </body>
 
   <script src="../src/tooltipsEfficiencies.js"></script>
+  <script src="../src/closeTab.js"></script>
 </html>

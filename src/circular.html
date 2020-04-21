@@ -37,13 +37,23 @@ Animator: Janice Bradford
     <main>
       <section id="circularAnimation">
         <!-- Buttons -->
+        <button
+          aria-label="Close"
+          onclick="tab.close()"
+          type="button"
+          id="closebtn"
+          style="border-style: solid;"
+          tabindex="1"
+        >
+          X
+        </button>
         <nav class="buttonBar">
           <a href="typical.html">
             <button
               type="button"
               class="button typicalbtn"
               style="border-style: solid;"
-              tabindex="1"
+              tabindex="2"
               role="button"
             >
               TYPICAL VALUE CHAIN MODEL
@@ -57,7 +67,7 @@ Animator: Janice Bradford
               type="button"
               class="button efficiencybtn"
               style="border-style: solid;"
-              tabindex="2"
+              tabindex="3"
               role="button"
             >
               EFFICIENCY MEASURES
@@ -68,7 +78,7 @@ Animator: Janice Bradford
               type="button"
               class="button ecologybtn"
               style="border-style: solid;"
-              tabindex="3"
+              tabindex="4"
               role="button"
             >
               INDUSTRIAL ECOLOGY MEASURES
@@ -1881,4 +1891,5 @@ Animator: Janice Bradford
       <!-- entire circular animation in this div -->
     </main>
   </body>
+  <script src="../src/closeTab.js"></script>
 </html>

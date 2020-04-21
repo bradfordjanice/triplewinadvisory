@@ -24,7 +24,7 @@ p {
 #circularAnimation,
 #transformationsAnimation {
   display: block;
-  width: 750px;
+  width: 720px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -92,6 +92,30 @@ p {
   -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
+}
+#closebtn {
+  border: 1px;
+  border-color: #333;
+  background-color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 14;
+  font-weight: bold;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  display: inline-block;
+  margin-left: 94.5%;
+  margin-bottom: 5px;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+#closebtn:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 .typicalbtn {
   border: 5px double #c24e24;
