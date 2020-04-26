@@ -10,7 +10,7 @@ designiconTabfocus.addEventListener("focusin", showDesignTooltip);
 designiconTabfocus.addEventListener("focusout", stopDesignTooltip);
 
 function showDesignTooltip(event) {
-  designTimeoutFunction = setTimeout(function() {
+  designTimeoutFunction = setTimeout(function () {
     designiconPos = designicon.getBoundingClientRect();
     designtooltip.style.left = designiconPos.right + 10 + "px";
     designtooltip.style.top = window.scrollY + designiconPos.top - 30 + "px";
@@ -37,7 +37,7 @@ materialsiconTabfocus.addEventListener("focusin", showMaterialsTooltip);
 materialsiconTabfocus.addEventListener("focusout", stopMaterialsTooltip);
 
 function showMaterialsTooltip(event) {
-  materialsTimeoutFunction = setTimeout(function() {
+  materialsTimeoutFunction = setTimeout(function () {
     materialsiconPos = materialsicon.getBoundingClientRect();
     materialstooltip.style.left = materialsiconPos.right + 10 + "px";
     materialstooltip.style.top =
@@ -65,7 +65,7 @@ packagingiconTabfocus.addEventListener("focusin", showPackagingTooltip);
 packagingiconTabfocus.addEventListener("focusout", stopPackagingTooltip);
 
 function showPackagingTooltip(event) {
-  packagingTimeoutFunction = setTimeout(function() {
+  packagingTimeoutFunction = setTimeout(function () {
     packagingiconPos = packagingicon.getBoundingClientRect();
     packagingtooltip.style.left = packagingiconPos.right + 10 + "px";
     packagingtooltip.style.top =
@@ -91,7 +91,7 @@ manufactureiconTabfocus.addEventListener("focusin", showManufactureTooltip);
 manufactureiconTabfocus.addEventListener("focusout", stopManufactureTooltip);
 
 function showManufactureTooltip(event) {
-  manufactureTimeoutFunction = setTimeout(function() {
+  manufactureTimeoutFunction = setTimeout(function () {
     manufactureiconPos = manufactureicon.getBoundingClientRect();
     manufacturetooltip.style.left = manufactureiconPos.right + 10 + "px";
     manufacturetooltip.style.top =
@@ -117,9 +117,9 @@ refurbishiconTabfocus.addEventListener("focusin", showrefurbishTooltip);
 refurbishiconTabfocus.addEventListener("focusout", stoprefurbishTooltip);
 
 function showrefurbishTooltip(event) {
-  refurbishTimeoutFunction = setTimeout(function() {
+  refurbishTimeoutFunction = setTimeout(function () {
     refurbishiconPos = refurbishicon.getBoundingClientRect();
-    refurbishtooltip.style.left = refurbishiconPos.right + 10 + "px";
+    refurbishtooltip.style.left = refurbishiconPos.left - 280 + "px";
     refurbishtooltip.style.top =
       window.scrollY + refurbishiconPos.top - 30 + "px";
     refurbishtooltip.style.display = "block";
@@ -143,7 +143,7 @@ upcycleiconTabfocus.addEventListener("focusin", showupcycleTooltip);
 upcycleiconTabfocus.addEventListener("focusout", stopupcycleTooltip);
 
 function showupcycleTooltip(event) {
-  upcycleTimeoutFunction = setTimeout(function() {
+  upcycleTimeoutFunction = setTimeout(function () {
     upcycleiconPos = upcycleicon.getBoundingClientRect();
     upcycletooltip.style.left = upcycleiconPos.right + 10 + "px";
     upcycletooltip.style.top = window.scrollY + upcycleiconPos.top - 30 + "px";
@@ -168,7 +168,7 @@ downcycleiconTabfocus.addEventListener("focusin", showdowncycleTooltip);
 downcycleiconTabfocus.addEventListener("focusout", stopdowncycleTooltip);
 
 function showdowncycleTooltip(event) {
-  downcycleTimeoutFunction = setTimeout(function() {
+  downcycleTimeoutFunction = setTimeout(function () {
     downcycleiconPos = downcycleicon.getBoundingClientRect();
     downcycletooltip.style.left = downcycleiconPos.right + 10 + "px";
     downcycletooltip.style.top =

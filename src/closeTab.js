@@ -20,8 +20,6 @@ var animationWindow;
 // DEFINITIONS FOR CLOSING THE TAB THAT HAS THE ANIMATIONS
 const closeAnimationTabBtn = document.getElementById("closebtn");
 
-let closeAnimationTab;
-
 closeAnimationTabBtn.addEventListener("click", closeAnimationTab);
 
 function closeAnimationTab(event) {
