@@ -484,7 +484,7 @@ li.tooltipSublistItem {
   transform: rotate(45deg);
   background-color: #193e4f;
   position: absolute;
-  left: -6px;
+  left: 260px;
   top: 40px;
 }
 

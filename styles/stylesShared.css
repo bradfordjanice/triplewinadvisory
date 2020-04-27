@@ -1,8 +1,11 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 body {
-  margin: 20px;
-  padding: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1em;
   background-color: white;
@@ -10,23 +13,14 @@ body {
 h1 {
   font-size: 2em;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 h2 {
   font-size: 1.25em;
 }
 p {
   font-size: 1em;
-}
-
-/* size and center animation on web page */
-#efficienciesAnimation,
-#typicalAnimation,
-#circularAnimation,
-#transformationsAnimation {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
 }
 
 /* title and subtitle */
@@ -79,7 +73,7 @@ p {
   padding-bottom: 10px;
 }
 .button {
-  font-size: 14px;
+  font-size: 12px;
   color: #fff;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
@@ -92,11 +86,36 @@ p {
   transition-duration: 0.4s;
   cursor: pointer;
 }
+#closebtn {
+  border: 1px;
+  border-color: #333;
+  background-color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 14;
+  font-weight: bold;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  display: inline-block;
+  margin-left: 94.5%;
+  margin-bottom: 5px;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+#closebtn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
 .typicalbtn {
   border: 5px double #c24e24;
   background-color: #c24e24;
-  padding: 10px 20px;
+  padding: 5px 5px;
   background-clip: padding-box;
+  height: 49.6px;
 }
 .typicalbtn:hover {
   background-color: #ffffff;
@@ -115,8 +134,9 @@ p {
 .circularbtn {
   border: 5px double #1b75bc;
   background-color: #1b75bc;
-  padding: 10px 20px;
+  padding: 5px 5px;
   background-clip: padding-box;
+  height: 49.6px;
 }
 .circularbtn:hover {
   background-color: #ffffff;
@@ -135,8 +155,9 @@ p {
 .efficiencybtn {
   border: 5px double #7b9f3c;
   background-color: #7b9f3c;
-  padding: 10px 20px;
+  padding: 5px 5px;
   background-clip: padding-box;
+  height: 49.6px;
 }
 .efficiencybtn:hover {
   background-color: #ffffff;
@@ -155,8 +176,9 @@ p {
 .ecologybtn {
   border: 5px double #193e4f;
   background-color: #193e4f;
-  padding: 10px 20px;
+  padding: 5px 5px;
   background-clip: padding-box;
+  height: 49.6px;
 }
 .ecologybtn:hover {
   background-color: #ffffff;
@@ -259,4 +281,62 @@ p {
 }
 .arrowBlack {
   fill: #231f20;
+}
+
+/* Responsive Design */
+/* Modify the size of the animations so no scrolling is required */
+/* Modify the size of the buttons to fit the width of the animation */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* Mobile devices layout to be done by Pegasus */
+  /* Screen shots of the graphic will replace the animations */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* Mobile devices layout to be done by Pegasus */
+  /* Screen shots of the graphic will replace the animations */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* size and center animation on web page */
+  #efficienciesAnimation,
+  #typicalAnimation,
+  #circularAnimation,
+  #transformationsAnimation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 81%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* size and center animation on web page */
+  #efficienciesAnimation,
+  #typicalAnimation,
+  #circularAnimation,
+  #transformationsAnimation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* size and center animation on web page */
+  #efficienciesAnimation,
+  #typicalAnimation,
+  #circularAnimation,
+  #transformationsAnimation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
 }
