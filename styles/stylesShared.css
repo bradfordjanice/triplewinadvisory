@@ -313,8 +313,8 @@ p {
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
   /* size and center animation on web page */
   #efficienciesAnimation,
   #typicalAnimation,
@@ -323,12 +323,12 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 64%;
+    width: 50%;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 1600px and up) */
+@media only screen and (min-width: 1600px) {
   /* size and center animation on web page */
   #efficienciesAnimation,
   #typicalAnimation,
@@ -337,6 +337,6 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 50%;
   }
 }
