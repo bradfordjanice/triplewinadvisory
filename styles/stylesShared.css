@@ -310,6 +310,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    /* height: 90vh;*/ /*Didn't work because it overflowed */
   }
 }
 
