@@ -91,7 +91,7 @@ warehouseiconTabfocus.addEventListener("focusout", stopWarehouseTooltip);
 function showWarehouseTooltip(event) {
   warehouseiconFunction = setTimeout(function () {
     warehouseiconPos = warehouseicon.getBoundingClientRect();
-    warehousetooltip.style.left = warehouseiconPos.right + 10 + "px";
+    warehousetooltip.style.left = warehouseiconPos.left - 310 + "px";
     warehousetooltip.style.top =
       window.scrollY + warehouseiconPos.top - 30 + "px";
     warehousetooltip.style.display = "block";
@@ -199,7 +199,7 @@ truckTabfocus.addEventListener("focusout", stoptruckTooltip);
 function showtruckTooltip(event) {
   truckTimeoutFunction = setTimeout(function () {
     truckiconPos = truckicon.getBoundingClientRect();
-    trucktooltip.style.left = truckiconPos.right + 10 + "px";
+    trucktooltip.style.left = truckiconPos.left - 250 + "px";
     trucktooltip.style.top = window.scrollY + truckiconPos.top - 30 + "px";
     trucktooltip.style.display = "block";
   }, 500);
