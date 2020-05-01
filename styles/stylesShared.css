@@ -69,13 +69,10 @@ p {
 
 /* Button Group */
 .buttonBar {
-  /*display: inline-block;*/
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /*width: 50%;*/
   width: 95vw;
-  /*height: 10vh;*/
   padding-top: 0px;
   padding-bottom: 10px;
 }
@@ -289,17 +286,22 @@ p {
 .arrowBlack {
   fill: #231f20;
 }
-#efficienciesAnimation,
-#typicalAnimation,
-#circularAnimation {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 70vh;
-}
-#transformationsAnimation {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 75vh;
+
+/* Responsive design for medium to large screens */
+@media only screen and (min-width: 769px) {
+  /* size and center animation on web page */
+  #efficienciesAnimation,
+  #typicalAnimation,
+  #circularAnimation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70vh;
+  }
+  #transformationsAnimation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 75vh;
+  }
 }
