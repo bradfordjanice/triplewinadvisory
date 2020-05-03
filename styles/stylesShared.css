@@ -1,5 +1,9 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
+html {
+  height: 100vh;
+}
+
 body {
   margin-top: 10px;
   margin-left: 20px;
@@ -65,10 +69,10 @@ p {
 
 /* Button Group */
 .buttonBar {
-  display: inline-block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 95vw;
   padding-top: 0px;
   padding-bottom: 10px;
 }
@@ -283,60 +287,21 @@ p {
   fill: #231f20;
 }
 
-/* Responsive Design */
-/* Modify the size of the animations so no scrolling is required */
-/* Modify the size of the buttons to fit the width of the animation */
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  /* Mobile devices layout to be done by Pegasus */
-  /* Screen shots of the graphic will replace the animations */
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  /* Mobile devices layout to be done by Pegasus */
-  /* Screen shots of the graphic will replace the animations */
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Responsive design for medium to large screens */
+@media only screen and (min-width: 769px) {
   /* size and center animation on web page */
   #efficienciesAnimation,
   #typicalAnimation,
-  #circularAnimation,
-  #transformationsAnimation {
+  #circularAnimation {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 81%;
+    height: 70vh;
   }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  /* size and center animation on web page */
-  #efficienciesAnimation,
-  #typicalAnimation,
-  #circularAnimation,
   #transformationsAnimation {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  /* size and center animation on web page */
-  #efficienciesAnimation,
-  #typicalAnimation,
-  #circularAnimation,
-  #transformationsAnimation {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+    height: 75vh;
   }
 }
