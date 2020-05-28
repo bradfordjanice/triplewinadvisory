@@ -37,6 +37,8 @@ Animator: Janice Bradford
     <main>
       <section>
         <!-- Buttons -->
+        <!-- Hide Close button in portfolio version -->
+        <!--
         <button
           aria-label="Close"
           onclick="tab.close()"
@@ -47,6 +49,7 @@ Animator: Janice Bradford
         >
           X
         </button>
+        -->
         <nav class="buttonBar">
           <a href="typical.html">
             <button
@@ -1105,9 +1108,9 @@ Animator: Janice Bradford
                 />
               </g>
             </g>
-            <!-- Product Use icon -->
+            <!-- Material Use icon -->
             <g id="useIconGrp" aria-describedby="pulabel1">
-              <!-- path from End-of-Use Product Collection to Product Use -->
+              <!-- path from End-of-Use Product Collection to Material Use -->
               <path
                 id="collection-use-path"
                 class="pathGreyDashed"
@@ -1122,7 +1125,7 @@ Animator: Janice Bradford
                 x="0"
                 y="0"
               >
-                <tspan id="pulabel1" x="0" y="0">PRODUCT USE</tspan>
+                <tspan id="pulabel1" x="0" y="0">MATERIAL USE</tspan>
               </text>
               <!-- icon -->
               <circle
@@ -1241,7 +1244,7 @@ Animator: Janice Bradford
                 />
               </g>
             </g>
-            <!-- arrow from Product Use to Refurbish Product -->
+            <!-- arrow from Material Use to Refurbish Product -->
             <g id="use-refurbish-arrow">
               <g>
                 <path
@@ -1257,7 +1260,7 @@ Animator: Janice Bradford
             </g>
             <!-- Upcycle Symbol and Icon -->
             <g id="upcycleIconGrp" aria-describedby="ulabel1 upcycletooltip">
-              <!-- arrow from Product Use to Upcycle -->
+              <!-- arrow from Material Use to Upcycle -->
               <g id="use-upcycle-arrow">
                 <g>
                   <path
@@ -1767,7 +1770,7 @@ Animator: Janice Bradford
               id="downcycleIconGrp"
               aria-describedby="dlabel1 downcycletooltip"
             >
-              <!-- path from Product Use to Downcycle -->
+              <!-- path from Material Use to Downcycle -->
               <path
                 id="use-downcycle-path"
                 class="pathGreyDashed"
@@ -1857,7 +1860,7 @@ Animator: Janice Bradford
             </text>
             <!-- Dispose of Product Icon -->
             <g id="disposeIconGrp" aria-describedby="doplabel1 doplabel2">
-              <!-- path from Product Use to Dispose of Product -->
+              <!-- path from Material Use to Dispose of Product -->
               <path
                 id="use-dispose-path"
                 class="pathGreyDashed"
@@ -2291,5 +2294,8 @@ Animator: Janice Bradford
     </main>
   </body>
   <script src="../src/tooltipsTransformations.js"></script>
+  <!-- Hide Close button in portfolio version -->
+  <!--
   <script src="../src/closeTab.js"></script>
+  -->
 </html>
